@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Australian Defence Force: Uncut">
+	<Package name="ADFU_UI">
+		<Container name="User Interface">
+			<Key ID="STR_ADFU_UI_NEWSFEED1">
+					<Original>Australian Defence Force</Original>
+					<English>Australian Defence Force</English>
+			</Key>
+			<Key ID="STR_ADFU_UI_NEWSFEED2">
+					<Original>Uncut</Original>
+					<English>Uncut</English>
+			</Key>
+			<Key ID="STR_ADFU_UI_NEWSFEED3">
+					<Original>Version - 0.5.1</Original>
+					<English>Version - 0.5.1</English>
+			</Key>
+			<Key ID="STR_ADFU_UI_NEWSFEED4">
+					<Original>Temp Website &lt;a href="http://www.day0.com.au/community/groups/viewgroup/1-adfuncut">Here&lt;/a&gt;</Original>
+					<English>Temp Website &lt;a href="http://www.day0.com.au/community/groups/viewgroup/1-adfuncut">Here&lt;/a&gt;</English>
+			</Key>
+			<Key ID="STR_ADFU_UI_NEWSFEED5">
+					<Original>Report Issues At &lt;a href="http://www.day0.com.au/forum/trouble-shooting/2708-bug-reports">Here&lt;/a&gt;</Original>
+					<English>Report Issues At &lt;a href="http://www.day0.com.au/forum/trouble-shooting/2708-bug-reports">Here&lt;/a&gt;</English>
+			</Key>
+		</Container>
+	</Package>
+</Project>

@@ -1,0 +1,650 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,500,600,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+<!--
+body
+{
+    background-color: black;
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Exo 2', sans-serif;
+}
+a 
+{
+    color: orange;    
+}
+lh
+{
+    font-weight: bold;
+}
+li
+{
+    list-style: none;
+}
+section.adf-section
+{
+    width: 95%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 20px;
+}
+td.section-header
+{
+    cursor: default;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    font-weight: 500;
+    vertical-align: top;
+    color: beige;
+    font-size: 1.5em;
+    background-color: rgba(0,0,0,0.9);
+    height: 30px;
+}
+td.section-body
+{
+    vertical-align: top;
+    cursor: default;
+    text-align: justify;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+}
+td.section-Table
+{
+    vertical-align: top;
+    cursor: default;
+    text-align: justify;
+    padding: 20px 10px 20px 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+}
+-->
+</style>
+</head>
+<body>
+<div style="text-align: center"; clear: both; "><img src="logo.png" width="185" /></div>
+<section name="intro" class="adf-section">
+    <table>
+        <tr>
+            <td class="section-header">Intro</td>
+            <td class="section-body" style="width: 95%;" rowspan="2">
+                Australian Defense Force (ADF) Uncut is an ongoing project aimed at re-creating as authentically as possible the uniforms, vehicles and weapons pertinent to the ADF.
+                We are directly supported by <a href="www.day0.com.au">Day0</a>, an Australian gaming community that provide us a home and host our official ADF Uncut Arma 3 servers.<br />
+                <br />
+                You can contact the ADF Uncut team via these platforms.<br />
+                
+                Site: 		<a href="http://www.day0.com.au/forum/adfuncut">DAY0 FORUMS</a><br />
+                TEAMSPEAK: 	TS.DAY0.COM.AU
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</section>
+
+<section name="install" class="adf-section">
+    <table>
+        <tr>
+            <td class="section-body" style="width: 95%;" rowspan="2">
+                1. Un-zip the downloaded file<br />
+				2. Place the @ADFUncut folder in your Arma 3 installation e.g. C:\Program Files\Steam\Steamapps\Common\ArmA 3\<br />
+				3. Add ADFUncut & CBA_A3 to your games launch parameters or use Arma 3's launcher<br />
+					&emsp;&emsp;&emsp;&emsp;I. If you do not have CBA_A3 you can download it here: <a href="http://forums.bistudio.com/showthread.php?178224-CBA-Community-Base-Addons-ARMA-3">CBA_A3</a><br />
+					&emsp;&emsp;&emsp;&emsp;II. If using launch parameters it should look like this: -mod=@ADFUncut;@CBA_A3<br />
+				4. Once your game is loaded you may want to re-bind ADF Uncut's new actions, these can be found in Configure>>Controls>>Configure Addons
+                <div style="clear: both;"></div>
+            </td>
+            <td class="section-header">Install</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</section>
+<section name="credits" class="adf-section">
+    <table>
+        <tr>
+            <td class="section-header">Credits</td>
+            <td class="section-body" style="width: 95%;" rowspan="2">
+                <b>The ADF Uncut Team:</b><br />
+				Raid - Modelling, Configs and General ADFU Development<br />
+				MrNemesis - Admin and Website<br />
+				Howells - Modelling, Textures<br />
+				L30 - Modelling<br />
+				Chain - Modelling, Configs<br />
+				TheAussieButcher - Textures, Research, Moral Support<br />
+				CatatonicChimp - Git Repository<br /><br />
+
+
+				Past Members:<br />
+				BlazenChamber - Sound, Recruitment, Model adjustments<br />
+				P1nGa (pastor399) - Configs, Oxygen, Textures, Modelling<br />
+				Stabs - Textures<br />
+				Toonie - Models<br /><br />
+
+
+				Special Thanks:<br />
+				C130J Hercules - USAF Team & Lala14<br />
+				CH-47F & Blackhawk HUD - geraldbolso1899<br />
+				3D Models - Zach Gibson, Jack Nelson (M4)<br />
+				FHQ - Alwarren<br />
+				R3F Armes - For Inspirations<br />
+				Slatts - For Being A Top Guy<br />
+				Robalo - For past usage of Joint Rails<br />
+				Binkowski - General Q&A<br />
+				Bohemia Interactive<br />
+				Day0 Community<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    
+</section>
+<section name="classnames" class="adf-section">
+    <table>
+        <tr>
+            <td class="section-body" style="width: 95%;" rowspan="2">
+            <table style="margin: auto;">
+                <td class="section-Table">
+                    <h3 style="text-align: center;">AMP</h3>
+                    <ul>
+                        <lh>Soldiers</lh>
+                        			<li>ADFU_rifleman_amp</li>
+						<li>ADFU_squadleader_amp</li>
+						<li>ADFU_teamleader_amp</li>
+						<li>ADFU_grenadier_amp</li>
+						<li>ADFU_engineer_amp</li>
+						<li>ADFU_explosive_amp</li>
+						<li>ADFU_marksman_amp</li>
+						<li>ADFU_lightGunner_amp</li>
+						<li>ADFU_heavyGunner_amp</li>
+						<li>ADFU_riflemanAT_amp</li>
+						<li>ADFU_medic_amp</li>
+						<li>ADFU_ammobearer_amp</li>
+						<li>ADFU_helicopterPilot_amp</li>
+						<li>ADFU_jetPilot_amp</li>
+                        <li><br /></li>
+                        <lh>Vests</lh>
+						<li>ADFU_PlateCarrier_Black</li>
+						<li>ADFU_PlateCarrier_Sand</li>
+						<li>ADFU_PlateCarrier_Green</li>
+						<li>ADFU_PlateCarrier_AMP</li>
+						<li>ADFU_PlateCarrier_Black_Snake</li>
+						<li>ADFU_PlateCarrier_Sand_Snake</li>
+						<li>ADFU_PlateCarrier_Green_Snake</li>
+						<li>ADFU_PlateCarrier_Black_Digi</li>
+						<li>ADFU_PlateCarrier_Sand_Digi</li>
+						<li>ADFU_PlateCarrier_Green_Digi</li>
+						<li>ADFU_CarrierLite_Black</li>
+						<li>ADFU_CarrierLite_Sand</li>
+						<li>ADFU_CarrierLite_Green</li>
+						<li>ADFU_CarrierLite_AMP</li>
+						<li>ADFU_CarrierLite_Black_Snake</li>
+						<li>ADFU_CarrierLite_Sand_Snake</li>
+						<li>ADFU_CarrierLite_Green_Snake</li>
+						<li>ADFU_CarrierLite_Black_Digi</li>
+						<li>ADFU_CarrierLite_Sand_Digi</li>
+						<li>ADFU_CarrierLite_Green_Digi</li>
+						<li>ADFU_CarrierHeavy_Black</li>
+						<li>ADFU_CarrierHeavy_Sand</li>
+						<li>ADFU_CarrierHeavy_Green</li>
+						<li>ADFU_CarrierHeavy_AMP</li>
+						<li>ADFU_CarrierHeavy_Black_Snake</li>
+						<li>ADFU_CarrierHeavy_Sand_Snake</li>
+						<li>ADFU_CarrierHeavy_Green_Snake</li>
+						<li>ADFU_CarrierHeavy_Black_Digi</li>
+						<li>ADFU_CarrierHeavy_Sand_Digi</li>
+						<li>ADFU_CarrierHeavy_Green_Digi</li>
+						<li>ADFU_PlateCarrier_BLACK_MEDIC</li>
+						<li>ADFU_PlateCarrier_GREEN_MEDIC</li>
+						<li>ADFU_PlateCarrier_SAND_MEDIC</li>
+						<li><br /></li>
+						<lh>Headgear</lh>
+						<li>ADFU_booniehat_amp</li>
+						<li>ADFU_cap_tan</li>
+						<li>ADFU_cap_green</li>
+						<li>ADFU_cap_black</li>
+						<li>ADFU_cap_amp</li>
+						<li>ADFU_Helmet_Black</li>
+						<li>ADFU_Helmet_Desert</li>
+						<li>ADFU_Helmet_Grass</li>
+						<li>ADFU_Helmet_Sand</li>
+						<li>ADFU_Helmet_Snake</li>
+						<li>ADFU_Helmet_CamInk</li>
+						<li>ADFU_Helmet_Cam</li>
+						<li>ADFU_Helmet_Medic_Black</li>
+						<li>ADFU_Helmet_Medic_Desert</li>
+						<li>ADFU_Helmet_Medic_Grass</li>
+						<li>ADFU_Helmet_Medic_Sand</li>
+						<li>ADFU_Helmet_Medic_Snake</li>
+						<li>ADFU_Helmet_Medic_CamInk</li>
+						<li>ADFU_Helmet_Medic_Cam</li>
+						<li>ADFU_ECH_Desert </li>
+						<li>ADFU_ECH_Grass</li>
+						<li>ADFU_ECH_Sand</li>
+						<li>ADFU_ECH_Snake</li>
+						<li>ADFU_ECH_CamInk</li>
+						<li>ADFU_ECH_Cam</li>
+						<li>ADFU_ECH_MEDIC_Desert</li>
+						<li>ADFU_ECH_MEDIC_Grass</li>
+						<li>ADFU_ECH_MEDIC_Sand</li>
+						<li>ADFU_ECH_MEDIC_Snake</li>
+						<li>ADFU_ECH_MEDIC_CamInk</li>
+						<li>ADFU_ECH_MEDIC_Cam</li>
+                        <li><br /></li>
+						<lh>Backpacks</lh>
+						<li>ADFU_assaultpack_black</li>
+						<li>ADFU_assaultpack_green</li>
+						<li>ADFU_assaultpack_tan</li>
+						<li>ADFU_assaultpack_amp</li>
+						<li>ADFU_assaultpack_black_medic</li>
+						<li>ADFU_assaultpack_green_medic</li>
+						<li>ADFU_assaultpack_tan_medic</li>
+						<li>ADFU_assaultpack_amp_medic</li>
+						<li>ADFU_kitbag_black</li>
+						<li>ADFU_kitbag_green</li>
+						<li>ADFU_kitbag_tan</li>
+						<li>ADFU_kitbag_amp</li>
+						<li>ADFU_kitbag_black_medic</li>
+						<li>ADFU_kitbag_green_medic</li>
+						<li>ADFU_kitbag_tan_medic</li>
+						<li>ADFU_kitbag_amp_medic</li>
+						<li>ADFU_carryall_black</li>
+						<li>ADFU_carryall_green</li>
+						<li>ADFU_carryall_tan</li>
+						<li>ADFU_carryall_amp</li>
+						<li>ADFU_carryall_black_medic</li>
+						<li>ADFU_carryall_green_medic</li>
+						<li>ADFU_carryall_tan_medic</li>
+						<li>ADFU_carryall_amp_medic</li>
+						<li><br /></li>
+                        <lh>Uniforms</lh>
+                        <li>ADFU_uniform_amp_cam</li>
+						<li>ADFU_uniform_amp_grn </li>
+						<li>ADFU_uniform_amp_tan</li>
+						<li>ADFU_uniform_amp_cam_ss </li>
+						<li>ADFU_uniform_amp_grn_ss </li>
+						<li>ADFU_uniform_amp_tan_ss</li>
+						<li>ADFU_uniform_amp_tee_grn</li>
+						<li>ADFU_uniform_amp_tee_tan</li>
+						<li>ADFU_uniform_amp_tee_khk</li>
+						<li>ADFU_coveralls_black </li>
+						<li>ADFU_coveralls_green </li>
+						<li>ADFU_coveralls_tan</li>
+                       </ul> 
+                    </td> 
+					<td class="section-Table">
+                    <h3 style="text-align: center;">DPCU</h3>
+                    <ul>
+                        <lh>Soldiers</lh>
+                        <li>ADFU_rifleman_dpcu</li>
+						<li>ADFU_engineer_dpcu</li>
+						<li>ADFU_grenadier_dpcu</li>
+						<li>ADFU_marksman_dpcu</li>
+						<li>ADFU_medic_dpcu</li>
+						<li>ADFU_riflemanAT_dpcu</li>
+						<li>ADFU_crewman_dpcu</li>
+						<li>ADFU_teamleader_dpcu</li>
+						<li>ADFU_squadleader_dpcu</li>
+						<li>ADFU_pilot_dpcu</li>
+						<li>ADFU_lightGunner_dpcu</li>
+						<li>ADFU_heavyGunner_dpcu</li>
+						<li>ADFU_ammobearer_dpcu</li>
+                        <li><br /></li>
+                        <lh>Vehicles</lh>
+                        <li>ADFU_ka60_dpcu</li>
+						<li>ADFU_ah9_dpcu</li>
+						<li>ADFU_mh9_dpcu</li>
+                        <li>ADFU_hunter_dpcu</li>
+						<li>ADFU_hunterHMG_dpcu</li>
+						<li>ADFU_hunterGMG_dpcu</li>
+                        <li><br /></li>
+                        <lh>Vests</lh>
+                        <li>ADFU_carrierLite_dpcu</li>
+						<li>ADFU_plateCarrier_dpcu</li>
+						<li>ADFU_tacticalVest_dpcu</li>
+                        <li><br /></li>
+						<lh>Headgear</lh>
+                        <li>ADFU_HelmetC_dpcu</li>
+						<li>ADFU_helmetB_dpcu</li>
+						<li>ADFU_booniehat_dpcu</li>
+                        <li><br /></li>
+						<lh>Backpacks</lh>
+                        <li>ADFU_AssaultPack_dpcu</li>
+						<li>ADFU_Carryall_dpcu</li>
+						<li>ADFU_Carryall_dpcu_diver</li>
+						<li>ADFU_Carryall_dpcu_medic</li>
+						<li>ADFU_Carryall_dpcu_engineer</li>
+						<li>ADFU_Carryall_dpcu_at</li>
+                        <li><br /></li>
+                        <lh>Uniform</lh>
+                        <li>ADFU_uniform_dpcu</li>
+						<li>ADFU_uniform_dpcu_recon</li>
+						<li>ADFU_uniform_dpcu_medic</li>
+						<li>ADFU_uniform_dpcu_tee</li>
+						<li>ADFU_coveralls_dpcu</li>
+						<li><br /></li>
+                    </ul> 
+                    <h3 style="text-align: center;">DPDU</h3>
+                    <ul>
+                        <lh>Soldiers</lh>
+                        <li>ADFU_rifleman_dpdu</li>
+						<li>ADFU_grenadier_dpdu</li>
+						<li>ADFU_marksman_dpdu</li>
+						<li>ADFU_medic_dpdu</li>
+						<li>ADFU_riflemanAT_dpdu</li>
+						<li>ADFU_engineer_dpdu</li>
+						<li>ADFU_explosive_dpdu</li>
+						<li>ADFU_helicopterPilot_dpdu</li>
+						<li>ADFU_teamleader_dpdu</li>
+						<li>ADFU_squadleader_dpdu</li>
+						<li>ADFU_lightGunner_dpdu</li>
+						<li>ADFU_heavyGunner_dpdu</li>
+                        <li><br /></li>
+                        <lh>Vests</lh>
+                        <li>ADFU_carrierlite_dpdu</li>
+						<li>ADFU_tacticalvest_dpdu</li>
+                        <li><br /></li>
+						<lh>Headgear</lh>
+                        <li>ADFU_booniehat_dpdu</li>
+						<li>ADFU_helmetB_dpdu</li>
+                        <li><br /></li>
+						<lh>Backpacks</lh>
+                        <li>ADFU_carryall_dpdu</li>
+						<li>ADFU_carryall_dpdu_medic</li>
+						<li>ADFU_carryall_dpdu_engineer</li>
+						<li>ADFU_carryall_dpdu_at</li>
+                        <li><br /></li>
+                        <lh>Uniform</lh>
+                        <li>ADFU_uniform_dpdu</li>
+						<li>ADFU_uniform_dpdu_medic</li>
+						<li>ADFU_uniform_dpdu_recon</li>
+						<li>ADFU_uniform_dpdu_pilot</li>
+						<li><br /></li>
+                    </ul> 
+					</td>
+                    <td class="section-Table">
+                    <h3 style="text-align: center;">Weapons</h3>
+					<ul>
+						<lh>Weapon Crates</lh>
+							<li>ADFU_weaponbox_launchers</li>
+							<li>ADFU_weaponbox_optics</li>
+							<li>ADFU_weaponbox_pistols</li>
+							<li>ADFU_weaponbox_m4a5</li>
+							<li>ADFU_weaponbox_f88</li>
+							<li>ADFU_weaponbox_mg</li>
+							<li>ADFU_weaponbox_sr25</li>
+							<li>ADFU_weaponbox_amp</li>
+							<li>ADFU_weaponbox_dpcu</li>
+							<li>ADFU_weaponbox_dpdu</li>
+						<li><br /></li>
+						<lh>Vehicles</lh>
+							<li>ADFU_land_aslav_coax</li>
+							<li>ADFU_land_aslav_mag58</li>
+							<li>ADFU_land_aslav_M242</li>
+							<li>ADFU_air_blackhawk_MAG58</li>
+							<li>ADFU_air_blackhawk_MAG582</li>
+							<li>ADFU_air_chinook_M134</li>
+							<li>ADFU_air_chinook_M134_2</li>
+						<li><br /></li>
+                        <lh>Launchers</lh>
+							<li>ADFU_carlgustav_m3</li>
+							<li>ADFU_carlgustav_m3_mrco</li>
+							<li>ADFU_weapon_m72a6</li>
+						<li><br /></li>
+						<lh>Pistols</lh>
+							<li>ADFU_weapon_hpII</li>
+							<li>ADFU_weapon_usp</li>
+							<li>ADFU_weapon_usp_snds</li>
+						<li><br /></li>
+						<lh>Grenades</lh>
+							<li>ADFU_f1_grenade</li>
+							<li>ADFU_f3_practice</li>
+							<li><br /></li>
+						<lh>Rifles</lh>
+							<li>ADFU_F88SA1</li>
+							<li>ADFU_F88SA1_fg</li>
+							<li>ADFU_F88SA1_gl</li>
+							<li>ADFU_F88SA1_elcan</li>
+							<li>ADFU_F88SA1_gl_elcan</li>
+							<li>ADFU_F88SA1_tag48</li>
+							<li>ADFU_F88SA1_gl_ta648</li>
+							<li>ADFU_F88SA1_mrco</li>
+							<li>ADFU_F88SA1_gl_mrco</li>
+							<li>ADFU_F88SA1_hamr</li>
+							<li>ADFU_F88SA1_gl_hamr</li>
+							<li><br /></li>
+								<li>ADFU_f88sa2</li>
+								<li>ADFU_f88sa2_fg</li>
+								<li>ADFU_f88sa2_camo</li>
+								<li>ADFU_f88sa2_camo_fg</li>
+								<li>ADFU_f88sa2_gl</li>
+								<li>ADFU_f88sa2_gl_camo</li>
+								<li>ADFU_f88sa2_elcan</li>
+								<li>ADFU_f88sa2_gl_elcan</li>
+								<li>ADFU_f88sa2_camo_elcan</li>
+								<li>ADFU_f88sa2_gl_camo_elcan</li>
+								<li>ADFU_f88sa2_ta648</li>
+								<li>ADFU_f88sa2_gl_ta648</li>
+								<li>ADFU_f88sa2_camo_ta648</li>
+								<li>ADFU_f88sa2_gl_camo_ta648</li>
+								<li>ADFU_f88sa2_mrco</li>
+								<li>ADFU_f88sa2_gl_mrco</li>
+								<li>ADFU_f88sa2_camo_mrco</li>
+								<li>ADFU_f88sa2_gl_camo_mrco</li>
+								<li>ADFU_f88sa2_hamr</li>
+								<li>ADFU_f88sa2_gl_hamr</li>
+								<li>ADFU_f88sa2_camo_hamr</li>
+								<li>ADFU_f88sa2_gl_camo_hamr</li>
+							<li><br /></li>
+									<li>ADFU_m4a5</li>
+									<li>ADFU_m4a5_afg</li>
+									<li>ADFU_m4a5_vfg</li>
+									<li>ADFU_m4a5_m203</li>
+									<li>ADFU_m4a5_m203fg</li>
+									<li>ADFU_m4a5_des</li>
+									<li>ADFU_m4a5_afg_des</li>
+									<li>ADFU_m4a5_vfg_des</li>
+									<li>ADFU_m4a5_m203_des</li>
+									<li>ADFU_m4a5_m203fg_des</li>
+									<li>ADFU_m4a5_des2</li>
+									<li>ADFU_m4a5_afg_des2</li>
+									<li>ADFU_m4a5_vfg_des2</li>
+									<li>ADFU_m4a5_m203_des2</li>
+									<li>ADFU_m4a5_m203fg_des2</li>
+									<li>ADFU_m4a5_wdl</li>
+									<li>ADFU_m4a5_afg_wdl</li>
+									<li>ADFU_m4a5_vfg_wdl</li>
+									<li>ADFU_m4a5_m203_wdl</li>
+									<li>ADFU_m4a5_m203fg_wdl</li>
+									<li>ADFU_m4a5_wdl2</li>
+									<li>ADFU_m4a5_afg_wdl2</li>
+									<li>ADFU_m4a5_vfg_wdl2</li>
+									<li>ADFU_m4a5_m203_wdl2</li>
+									<li>ADFU_m4a5_m203fg_wdl2</li>
+									<li>ADFU_m4_eotech</li>
+									<li>ADFU_m4_ta31</li>
+									<li>ADFU_m4a5_afg_eotech</li>
+									<li>ADFU_m4a5_afg_eotech_sd</li>
+									<li>ADFU_m4a5_afg_ta31</li>
+									<li>ADFU_m4a5_vfg_eotech</li>
+									<li>ADFU_m4a5_vfg_elcan</li>
+									<li>ADFU_m4a5_m203_eotechX3</li>
+									<li>ADFU_m4a5_m203_ta31</li>
+									<li>ADFU_m4a5_m203fg_eotechX3</li>
+									<li>ADFU_m4a5_m203fg_eotechX3_sd</li>
+									<li>ADFU_m4a5_m203fg_elcan</li>
+									<li>ADFU_m4_des_eotech</li>
+									<li>ADFU_m4_des_ta31</li>
+									<li>ADFU_m4a5_afg_des_eotech</li>
+									<li>ADFU_m4a5_afg_des_eotech_sd</li>
+									<li>ADFU_m4a5_afg_des_ta31</li>
+									<li>ADFU_m4a5_vfg_des_eotech</li>
+									<li>ADFU_m4a5_vfg_des_elcan</li>
+									<li>ADFU_m4a5_m203_des_eotechX3</li>
+									<li>ADFU_m4a5_m203_des_ta31</li>
+									<li>ADFU_m4a5_m203fg_des_eotechX3</li>
+									<li>ADFU_m4a5_m203fg_des_eotechX3_sd</li>
+									<li>ADFU_m4a5_m203fg_des_elcan</li>
+									<li>ADFU_m4_wdl_eotech</li>
+									<li>ADFU_m4_wdl_ta31</li>
+									<li>ADFU_m4a5_afg_wdl_eotech</li>
+									<li>ADFU_m4a5_afg_wdl_eotech_sd</li>
+									<li>ADFU_m4a5_afg_wdl_ta31</li>
+									<li>ADFU_m4a5_vfg_wdl_eotech</li>
+									<li>ADFU_m4a5_vfg_wdl_elcan</li>
+									<li>ADFU_m4a5_m203_wdl_eotechX3</li>
+									<li>ADFU_m4a5_m203_wdl_ta31</li>
+									<li>ADFU_m4a5_m203fg_wdl_eotechX3</li>
+									<li>ADFU_m4a5_m203fg_wdl_eotechX3_sd</li>
+									<li>ADFU_m4a5_m203fg_wdl_elcan</li>
+							<li><br /></li>
+										<li>ADFU_mag58</li>
+										<li>ADFU_mag58_elcan</li>
+										<li>ADFU_mag58_ta648</li>
+										<li>ADFU_mag58_mrco</li>
+										<li>ADFU_mag58_hamr</li>
+							<li><br /></li>
+											<li>ADFU_maximi</li>
+											<li>ADFU_maximi_elcan</li>
+							<li><br /></li>
+												<li>ADFU_minimi</li>
+												<li>ADFU_minimi_elcan</li>
+												<li>ADFU_minimi_para</li>
+												<li>ADFU_minimi_para_elcan</li>
+							<li><br /></li>
+													<li>ADFU_sr25</li>
+													<li>ADFU_sr25_ta648</li>
+													<li>ADFU_sr25_sos</li>
+							<li><br /></li>
+					</ul>
+                    </td>
+					<td class="section-Table">
+                    <h3 style="text-align: center;">Vehicles</h3>
+                    <ul>
+                        <lh>S70 Blackhawk</lh>
+                            <li>ADFU_air_blackhawk</li>
+                            <li>ADFU_air_blackhawk_mag58</li>
+                            <li>ADFU_air_blackhawk_mev</li>
+                            <li>ADFU_air_blackhawk_cargo</li>
+                        <li><br /></li>
+                        <lh>Aslav</lh>
+                            <li>ADFU_land_aslav</li>
+                            <li>ADFU_land_aslav_up</li>
+                            <li>ADFU_land_aslav_mag58</li>
+                            <li>ADFU_land_aslav_mag58_up</li>
+                        <li><br /></li>
+                        <lh>Landrover</lh>
+							<li>ADFU_land_LandRover_Transport</li>
+						<li><br /></li>
+						<lh>Aslav</lh>
+							<li>ADFU_land_aslav</li>
+							<li>ADFU_land_aslav_up</li>
+							<li>ADFU_land_aslav_mag58</li>
+							<li>ADFU_land_aslav_mag58_up</li>
+						<li><br /></li>
+						<lh>CH-47F Chinook</lh>
+							<li>ADFU_air_chinook</li>
+						<li><br /></li>
+                    </ul>
+					<h3 style="text-align: center;">Magazines</h3>
+					<ul>
+						<lh>Rockets</lh>
+							<li>ADFU_magazine_84mm_base</li>
+							<li>ADFU_magazine_84mm_asm_509</li>
+							<li>ADFU_magazine_84mm_he_441d</li>
+							<li>ADFU_magazine_84mm_heat_551c</li>
+							<li>ADFU_magazine_84mm_heat_751</li>
+							<li>ADFU_magazine_84mm_hedp_502</li>
+							<li>ADFU_M_M72_AT</li>
+						<li><br /></li>
+						<lh>Vehicle</lh>
+							<li>ADFU_air_blackhawk_200Rnd_762x51_Tracer</li>
+							<li>ADFU_land_aslav_1000Rnd_762x51_Tracer</li>
+							<li>ADFU_land_aslav_200rnd_762x51_Tracer</li>
+							<li>ADFU_land_aslav_360RND_25MM_HE</li>
+							<li>ADFU_land_aslav_360RND_25MM_AP</li>
+							<li>ADFU_air_chinook_2000Rnd_762x51</li>
+							<li>ADFU_air_chinook_4000Rnd_762x51</li>
+						<li><br /></li>
+						<lh>Rifles</lh>
+							<li>ADFU_30Rnd_aug</li>
+							<li>ADFU_30Rnd_aug_TR</li>
+							<li>ADFU_30Rnd_aug_TY</li>
+							<li>ADFU_30Rnd_aug_TG</li>
+							<li>ADFU_30Rnd_aug_IR</li>
+							<li>ADFU_30Rnd_aug_mixed</li>
+							<li>ADFU_30Rnd_STANAG</li>
+							<li>ADFU_30Rnd_STANAG_TR</li>
+							<li>ADFU_30Rnd_STANAG_TG</li>
+							<li>ADFU_30Rnd_STANAG_TY</li>
+							<li>ADFU_30Rnd_STANAG_IR</li>
+							<li>ADFU_30Rnd_STANAG_mixed</li>
+							<li>ADFU_100Rnd_556_Belt</li>
+							<li>ADFU_100Rnd_556_Belt_TR</li>
+							<li>ADFU_100Rnd_556_Belt_TR5</li>
+							<li>ADFU_200Rnd_556_Belt</li>
+							<li>ADFU_200Rnd_556_Belt_TR</li>
+							<li>ADFU_200Rnd_556_Belt_TR5</li>
+							<li>ADFU_50Rnd_762_Belt</li>
+							<li>ADFU_50Rnd_762_Belt_TR</li>
+							<li>ADFU_50Rnd_762_Belt_TR5</li>
+							<li>ADFU_100Rnd_762_Belt</li>
+							<li>ADFU_100Rnd_762_Belt_TR</li>
+							<li>ADFU_100_Rnd_762_Belt_TR5</li>
+							<li>ADFU_150Rnd_762_Belt</li>
+							<li>ADFU_150Rnd_762_Belt_TR</li>
+							<li>ADFU_150Rnd_762_Belt_TR5</li>
+						<li><br /></li>
+					</ul>
+					<h3 style="text-align: center;">Accessories</h3>
+					<ul>
+						<lh>Silencers</lh>
+							<li>ADFU_weapon_usp_silencer</li>
+							<li>ADFU_sr25_snds</li>
+							<li>ADFU_f88_muzzle_snds</li>
+							<li>ADFU_f88_muzzle_snds_tan</li>
+							<li>ADFU_m4a5_muzzle_snds</li>
+							<li>ADFU_m4a5_muzzle_snds_tan</li>
+							<li>ADFU_m4a5_muzzle_snds_wdl</li>
+						<li><br /></li>
+						<lh>Laser & Light</lh>
+							<li>ADFU_F88SA1_laser</li>
+							<li>ADFU_F88SA1_light</li>
+							<li>ADFU_f88sa2_light</li>
+							<li>ADFU_f88sa2_light_tan</li>
+							<li>ADFU_f88sa2_laser</li>
+							<li>ADFU_f88sa2_laser_tan</li>
+						<li><br /></li>
+						<lh>Optics</lh>
+							<li>ADFU_swarovski_optic</li>
+							<li>ADFU_elcan_c79</li>
+							<li>ADFU_acog_ta648</li>
+							<li>ADFU_acog_ta648_rds</li>
+							<li>ADFU_acog_ta648_t</li>
+							<li>ADFU_acog_ta648_rds_t</li>
+							<li>ADFU_acog_ta31</li>
+							<li>ADFU_acog_ta31_t</li>
+							<li>ADFU_eotech552</li>
+						<li><br /></li>
+					</ul>
+                    </td>  					
+                </table>
+            </td>
+			
+        <td class="section-header">Classes</td>
+		</tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>

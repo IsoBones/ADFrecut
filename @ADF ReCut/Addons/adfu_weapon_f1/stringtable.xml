@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Australian Defence Force: Uncut">
+	<Package name="ADFU_weapon_F1">
+		<Container name="General">
+			<Key ID="STR_ADFU_weapon_F1_NAME">
+					<Original>F1 Grenade</Original>
+					<English>F1 Grenade</English>
+			</Key>
+			<Key ID="STR_ADFU_weapon_F1_DESC">
+					<Original>Australian Fragmentation Grenade</Original>
+					<English>Australian Fragmentation Grenade</English>
+			</Key>
+			<Key ID="STR_ADFU_weapon_F1_SHORT">
+					<Original>F1 Grenade</Original>
+					<English>F1 Grenade</English>
+			</Key>
+			
+			<Key ID="STR_ADFU_weapon_F3_NAME">
+					<Original>F3 Grenade</Original>
+					<English>F3 Grenade</English>
+			</Key>
+			<Key ID="STR_ADFU_weapon_F3_DESC">
+					<Original>Australian Practice Grenade</Original>
+					<English>Australian Practice Grenade</English>
+			</Key>
+			<Key ID="STR_ADFU_weapon_F3_SHORT">
+					<Original>F3 Grenade</Original>
+					<English>F3 Grenade</English>
+			</Key>
+		</Container>
+	</Package>
+</Project>
