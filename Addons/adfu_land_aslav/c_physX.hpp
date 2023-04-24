@@ -1,7 +1,7 @@
 class complexGearbox
 		{
 			GearboxRatios[] = {"R1",-4.84,"N",0,"D1",3.43,"D2",2.01,"D3",1.42,"D4",1,"D5",0.83,"D6",0.59};
-			TransmissionRatios[] = {"High",7.3};
+			TransmissionRatios[] = {"High",7.75};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
 			driveString = "D";
@@ -9,6 +9,7 @@ class complexGearbox
 			reverseString = "R";
 		};
 		simulation = "carX";
+		maxSpeed = 100;
 		dampersBumpCoef = 6.0;
 		differentialType = "rear_limited";
 		frontRearSplit = 0.5;
@@ -16,22 +17,13 @@ class complexGearbox
 		rearBias = 1.3;
 		centreBias = 1.3;
 		clutchStrength = 35.0;
-		enginePower = 295;
-		maxOmega = 245;
-		peakTorque = 2217;
+		enginePower = 205;
+		maxOmega = 475;
+		peakTorque = 341.6;
 		dampingRateFullThrottle = 0.08;
 		dampingRateZeroThrottleClutchEngaged = 0.35;
 		dampingRateZeroThrottleClutchDisengaged = 0.35;
-		torqueCurve[] = {
-							{0, 0},
-							{(1600/2640), (2650/2850)},
-							{(1800/2640), (2800/2850)},
-							{(1900/2640), (2850/2850)},
-							{(2000/2640), (2800/2850)},
-							{(2200/2640), (2750/2850)},
-							{(2400/2640), (2600/2850)},
-							{(2640/2640), (2350/2850)}
-						};
+		torqueCurve[] = {{"(0/2300)","(0/2260)"},{"(1200/2300)","(1625/2260)"},{"(1400/2300)","(2100/2260)"},{"(1500/2300)","(2200/2260)"},{"(1550/2300)","(2260/2260)"},{"(1600/2300)","(2200/2260)"},{"(2300/2300)","(1700/2260)"},{"(4700/2300)","(0/2260)"}};
 		changeGearMinEffectivity[] = {0.5,0.15,0.97,0.97,0.97,0.97,0.97,0.985};
 		switchTime = 0.1;
 		latency = 1.4;
@@ -45,8 +37,8 @@ class complexGearbox
 				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
 				width = "0.2";
-				mass = 187.5;
-				MOI = 50;
+				mass = 150;
+				MOI = 60;
 				dampingRate = 0.1;
 				dampingRateDamaged = 1.0;
 				dampingRateDestroyed = 1000.0;
@@ -56,10 +48,10 @@ class complexGearbox
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.1125;
-				mMaxDroop = 0.1125;
-				sprungMass = 2200;
-				springStrength = 110000;
-				springDamperRate = 27900;
+				maxDroop = 0.1125;
+				sprungMass = 1650;
+				springStrength = 82500;
+				springDamperRate = 23334.5;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
