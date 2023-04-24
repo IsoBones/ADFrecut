@@ -141,10 +141,7 @@ class cfgWeapons
 				soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
 
 				begin1[] = {"\ADFU_weapon_mag58\sound\mag-58.ogg",1.3,1,1400};
-				begin2[] = {"\ADFU_weapon_mag58\sound\mag-58.ogg",1.3,1,1400};
-				begin3[] = {"\ADFU_weapon_mag58\sound\mag-58.ogg",1.3,1,1400};
-				begin4[] = {"\ADFU_weapon_mag58\sound\mag-58.ogg",1.3,1,1400};
-				soundBegin[] = {"begin1",0.25,"begin2",0.25,"begin3",0.25,"begin4",0.25};
+				soundBegin[] = {"begin1",1};
  			};
 			soundContinuous = 0;
 			soundBurst = 0;
@@ -222,132 +219,98 @@ class cfgWeapons
 	};
 
 
-	class gatling_30mm;
-	class ADFU_land_aslav_M242: gatling_30mm
+	class autocannon_Base_F;
+	class player;
+	class ADFU_land_aslav_M242: autocannon_Base_F
 	{
-		scope = 2;
-		displayName = "M242 25MM Bushmaster";
+		aiDispersioncoefX = 4;
+		aiDispersioncoefY = 6;
+		airateoffire = 2;
+		airateoffiredistance = 1000;
+		canlock = 0;
+
+		FCSMaxLeadSpeed = 0;
+
+	class GunParticles
+	{
+		class Effect
+		{
+			effectName = "AutoCannonFired";
+			positionName = "Usti hlavne";
+			directionName = "Konec hlavne";
+		};
+	};
+
+	displayName = "25mm M242";
+	muzzles[] = {"AP","HE"};
+	class HE: autocannon_Base_F {
+		displayName = "25mm M242 - MP-T";
 		magazines[] = {"ADFU_land_aslav_360RND_25MM_HE","ADFU_land_aslav_360RND_25MM_AP"};
-		modes[] = {"Single", "LowROF", "HighROF"};
-		nameSound = "cannon";
-		class Single: Mode_SemiAuto
+		magazineWell[] = {};
+		canlock = 0;
+		magazineReloadTime = 0.3;
+		modes[] = {"single","100rpm","player","close","short","medium","far"};
+		class player: player
 		{
-			sounds[] = {StandardSound};
-			class StandardSound
- 			{
-				weaponSoundEffect = "DefaultRifle";
-
-				closure1[] = {"A3\sounds_f\weapons\closure\sfx7", 0.15, 1, 10};
-				closure2[] = {"A3\sounds_f\weapons\closure\sfx8", 0.15, 1, 10};
-				soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
-
-				begin1[] = {"ADFU_land_aslav\sound\25mm_cannon",db15,1.0,1000};
-				soundBegin[] = {"begin1",1};
- 			};
-			displayName = "Single";
-			sound[] = {"ADFU_land_aslav\sound\25mm_cannon",db15,1.0,1000};
-			weaponSoundEffect = "DefaultRifle";
-			soundContinuous = 0;
-			reloadTime = 0.5;
-			flash = "gunfire";
-			flashSize = 0.001;
-			maxLeadSpeed = 600;
-			autoFire = 0;
-			aiDispersionCoefX = 2;
-			ffMagnitude = 0.2;
-			ffFrequency = 2;
-			ffCount = 1;
-			dispersion = 0.001;
-			minRange = 1;
-			minRangeProbab = 0.1;
-			midRange = 1200;
-			midRangeProbab = 0.7;
-			maxRange = 3000;
-			maxRangeProbab = 0.04;
+			reloadTime=__EVAL(60/200);
+			textureType = "fullAuto";
 		};
-		class LowROF: Mode_Burst
+		class 100rpm: player
 		{
-			sounds[] = {StandardSound};
-			class StandardSound
- 			{
-				weaponSoundEffect = "DefaultRifle";
-
-				closure1[] = {"A3\sounds_f\weapons\closure\sfx7", 0.15, 1, 10};
-				closure2[] = {"A3\sounds_f\weapons\closure\sfx8", 0.15, 1, 10};
-				soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
-
-				begin1[] = {"ADFU_land_aslav\sound\25mm_cannon",db15,1.0,1000};
-				soundBegin[] = {"begin1",1};
- 			};
-			displayName = "Low Speed";
-			soundContinuous = 0;
-			reloadTime = 0.6;
-			flash = "gunfire";
-			flashSize = 0.001;
-			maxLeadSpeed = 600;
-			autoFire = 1;
-			burst = 1;
-			aiDispersionCoefX = 2;
-			ffMagnitude = 0.2;
-			ffFrequency = 2;
-			ffCount = 1;
-			dispersion = 0.001;
-			minRange = 1;
-			minRangeProbab = 0.1;
-			midRange = 1200;
-			midRangeProbab = 0.7;
-			maxRange = 3000;
-			maxRangeProbab = 0.04;
+			reloadTime=__EVAL(60/100);
+			textureType = "burst";
 		};
-		class HighROF: Mode_FullAuto
+		class single: player
 		{
-			sounds[] = {StandardSound};
-			class StandardSound
- 			{
-				weaponSoundEffect = "DefaultRifle";
-
-				closure1[] = {"A3\sounds_f\weapons\closure\sfx7", 0.15, 1, 10};
-				closure2[] = {"A3\sounds_f\weapons\closure\sfx8", 0.15, 1, 10};
-				soundClosure[] = {"closure1", 0.500000, "closure2", 0.500000};
-
-				begin1[] = {"ADFU_land_aslav\sound\25mm_cannon",db15,1.0,1000};
-				soundBegin[] = {"begin1",1};
- 			};
-			displayName = "High Speed";
-			soundContinuous = 1;
-			reloadTime = 0.315;
-			flash = "gunfire";
-			flashSize = 0.001;
-			maxLeadSpeed = 600;
-			autoFire = 1;
-			burst = 1;
-			aiDispersionCoefX = 2;
-			ffMagnitude = 0.2;
-			ffFrequency = 2;
-			ffCount = 1;
-			dispersion = 0.001;
-			minRange = 1;
-			minRangeProbab = 0.1;
-			midRange = 1200;
-			midRangeProbab = 0.7;
-			maxRange = 3000;
-			maxRangeProbab = 0.04;
+			autofire=0;
+			textureType = "semi";
 		};
-
-		class GunParticles
+		FCSMaxLeadSpeed = 0;
+		minZeroing = 200;
+	};
+	class AP: autocannon_Base_F {
+		displayName = "25mm M242 - AP-T";
+		magazines[] = {"ADFU_land_aslav_360RND_25MM_AP"};
+		magazineWell[] = {};
+		canlock = 0;
+		showToPlayer=0;
+		class player: player
 		{
-			class effect_smoke
-			{
-				effectName = "AutoCannonFired";
-				positionName = "Konec hlavne";
-				directionName = "Usti hlavne";
-			};
-			// class effect_eject
-			// {
-				// effectName = "ADFU_m242_casingeject";
-				// positionName = "cannon_eject_end";
-				// directionName = "cannon_eject_begin";
-			// };
+			showToPlayer = 0;
+			reloadTime=__EVAL(60/200);
 		};
+		class close: player
+		{
+			showToPlayer=0;
+			reloadTime=__EVAL(60/200);
+			aiBurstTerminable=1;
+			burst=8;
+			burstRangeMax=6;
+			aiRateOfFire = 0.35;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=200;
+			minRange=0;
+			minRangeProbab=0.1;
+			midRange=400;
+			midRangeProbab=0.69999999;
+			maxRange=800;
+			maxRangeProbab=0.80000001;
+		};
+		class short: close
+		{
+			showToPlayer = 0;
+			reloadTime=__EVAL(60/200);
+		};
+		class medium: short
+		{
+			showToPlayer=0;
+			reloadTime=__EVAL(60/200);
+		};
+		class far: medium
+		{
+			showToPlayer=0;
+			reloadTime=__EVAL(60/100);
+		};
+	};
 	};
 };
