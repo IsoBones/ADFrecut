@@ -11,12 +11,12 @@
 					<English>Australian Defence Force: Uncut</English>
 			</Key>
 			<Key ID="STR_ADFU_faction_NAME">
-					<Original>Australia</Original>
-					<English>Australia</English>
+					<Original>ADF</Original>
+					<English>ADF</English>
 			</Key>
 			<Key ID="STR_ADFU_OPFOR_FACTION_NAME">
-					<Original>Australia Opfor</Original>
-					<English>Australia Opfor</English>
+					<Original>ADF Opfor</Original>
+					<English>ADF Opfor</English>
 			</Key>
 		</Container>
 		<Container name="Vehicle_Classes">
