@@ -248,7 +248,7 @@ class cfgWeapons
 	displayName = "25mm M242";
 	muzzles[] = {"AP","HE"};
 	class HE: autocannon_Base_F {
-		displayName = "25mm M242 - MP-T";
+		displayName = "M242 Bushmaster";
 		magazines[] = {"ADFU_land_aslav_360RND_25MM_HE","ADFU_land_aslav_360RND_25MM_AP"};
 		magazineWell[] = {};
 		canlock = 0;
