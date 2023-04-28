@@ -455,6 +455,7 @@ class CfgWeapons
 	};
 	class ADFU_F88SA1: ADFU_F88SA1_base
 	{
+		baseWeapon= "F88SA1 Austeyr";
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		ADFU_weapon_switch=0;

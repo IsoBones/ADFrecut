@@ -118,6 +118,7 @@ class CfgWeapons
 	};
 	class ADFU_f88sa2: ADFU_f88sa2_base
 	{
+		baseWeapon= "F88SA2 Austeyr";
 		scope=2;
 		displayName="F88S-A2 Austeyr";
 		author="$STR_ADFU_AUTHOR";
@@ -136,6 +137,7 @@ class CfgWeapons
 	};
 	class ADFU_f88sa2_camo: ADFU_f88sa2
 	{
+		baseWeapon= "F88SA2 Austeyr (Camo)";
 		scope=2;
 		displayName="F88S-A2 Austeyr (Camo)";
 		author="$STR_ADFU_AUTHOR";
