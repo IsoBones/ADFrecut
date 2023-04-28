@@ -141,6 +141,13 @@ class CfgPatches
 		author="$STR_ADFU_AUTHOR";
 	};
 };
+class CfgEditorSubcategories
+{
+	class ADFU_MEN_AMP // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Men (Multicam)"; // Name visible in the list
+	};
+};
 class CfgVehicles
 {
 	class B_Soldier_base_F;
@@ -484,6 +491,7 @@ class CfgVehicles
 	{
 		scope=1;
 		faction="ADFU";
+		editorSubcategory= "ADFU_MEN_AMP";
 		author="$STR_ADFU_AUTHOR";
 		genericNames="NATOMen";
 		vehicleClass="ADFU_MEN_AMP";
@@ -1423,6 +1431,7 @@ class CfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
+		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Helicopter Pilot";
 		Items[]=
 		{
@@ -1487,6 +1496,7 @@ class CfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
+		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Pilot";
 		Items[]=
 		{

@@ -18,7 +18,7 @@ class CfgPatches
 		};
 		author[]=
 		{
-			"Australian Defence Force: Uncut"
+			"ADF Re-Cut Team"
 		};
 		version="0.5.0";
 		versionStr="0.5.0";
@@ -273,7 +273,7 @@ class CfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_Soldier_base_F";
 		side=1;
-		faction="ADFU";
+		faction="BLU_F";
 		vehicleClass="";
 	};
 	class ADFU_OPFOR_Soldier_base_F: B_Soldier_base_F

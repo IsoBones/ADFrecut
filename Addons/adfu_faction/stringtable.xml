@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="Australian Defence Force: Uncut">
+<Project name="ADF Re-Cut">
 	<Package name="ADFU_faction">
 		<Container name="General">
 			<Key ID="STR_ADFU_AUTHOR">
-					<Original>ADF Uncut</Original>
-					<English>ADF Uncut</English>
+					<Original>ADF Re-Cut</Original>
+					<English>ADF Re-Cut</English>
 			</Key>
 			<Key ID="STR_ADFU_TITLE">
-					<Original>Australian Defence Force: Uncut</Original>
-					<English>Australian Defence Force: Uncut</English>
+					<Original>ADF Re-Cut: A continuation of ADFU</Original>
+					<English>ADF Re-Cut: A continuation of ADFU</English>
 			</Key>
 			<Key ID="STR_ADFU_faction_NAME">
 					<Original>ADF</Original>

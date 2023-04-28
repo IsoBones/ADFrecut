@@ -42,6 +42,13 @@ class CfgPatches
 		};
 	};
 };
+class CfgEditorSubcategories
+{
+	class ADFU_MEN_DPDU // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Men (DPDU)"; // Name visible in the list
+	};
+};
 class cfgVehicles
 {
 	class ADFU_Soldier_base_F;
@@ -50,6 +57,7 @@ class cfgVehicles
 		scope=1;
 		_generalMacro="ADFU_uniform_dpdu_Base";
 		faction="ADFU";
+		editorSubcategory= "ADFU_MEN_DPDU";
 		vehicleClass="ADFU_MEN_DPDU";
 		author="$STR_ADFU_AUTHOR";
 		genericNames="NATOMen";
