@@ -173,7 +173,7 @@ class CfgVehicles
 	class ADFU_land_aslav_base_F: Wheeled_APC_F
 	{
 		scope=1;
-		author="ADF-Uncut";
+		author="ADF Re-Cut";
 		_generalMacro="ADFU_land_aslav_base_F";
 		accuracy=0.25;
 		displayName="ASLAV";
@@ -731,7 +731,7 @@ class CfgVehicles
 		side=1;
 		faction="ADFU";
 		vehicleClass="Armored";
-		displayName="ASLAV-25";
+		displayName="ASLAV";
 		model="adfu_land_aslav\ASLAV.p3d";
 		mapSize=9;
 		picture="\adfu_land_aslav\data\UI\Picture_aslav_CA.paa";
@@ -759,39 +759,46 @@ class CfgVehicles
 			"\adfu_land_aslav\data\body2\lavbody2_co.paa",
 			"\adfu_land_aslav\data\labels\labels_01.paa"
 		};
+		class AnimationSources: AnimationSources
+		{
+			class proxy
+			{
+				source="user";
+				animPeriod=0.1;
+				initPhase=0;
+			};
+			class HideTurret
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.001;
+			};
+			class slat_armor
+			{
+				DisplayName="Slat Armour";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFU";
+			};
+			class slat_armor2
+			{
+				DisplayName="Slat Armour Turret";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFU";
+			};
+		};
 		class EventHandlers: EventHandlers
 		{
 			init="(_this select 0) execVM ""\adfu_land_aslav\script\init.sqf""";
 		};
 	};
-	class ADFU_land_aslav_up: ADFU_land_aslav
-	{
-		displayName="ASLAV-25 UP";
-		model="adfu_land_aslav\ASLAV.p3d";
-		author="$STR_ADFU_AUTHOR";
-		armor=450;
-		armorStructural=8;
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\adfu_land_aslav\data\body1\lavbody_co.paa",
-			"\adfu_land_aslav\data\body2\lavbody2_co.paa",
-			"\adfu_land_aslav\data\labels\labels_01.paa"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init="(_this select 0) execVM ""\adfu_land_aslav\script\init.sqf""; (_this select 0) animate ['slat_armor',1]; (_this select 0) animate ['slat_armor2',1]";
-		};
-	};
 	class ADFU_land_aslav_mag58: ADFU_land_aslav
 	{
 		scope=2;
-		displayName="ASLAV-25 + MAG 58";
+		displayName="ASLAV + MAG-58";
 		model="adfu_land_aslav\ASLAV_MAG58.p3d";
 		author="$STR_ADFU_AUTHOR";
 		class Turrets: Turrets
@@ -902,30 +909,6 @@ class CfgVehicles
 					};
 				};
 			};
-		};
-	};
-	class ADFU_land_aslav_mag58_up: ADFU_land_aslav_mag58
-	{
-		displayName="ASLAV-25 UP + MAG 58";
-		model="adfu_land_aslav\ASLAV_MAG58.p3d";
-		author="$STR_ADFU_AUTHOR";
-		armor=450;
-		armorStructural=8;
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\adfu_land_aslav\data\body1\lavbody_co.paa",
-			"\adfu_land_aslav\data\body2\lavbody2_co.paa",
-			"\adfu_land_aslav\data\labels\labels_01.paa"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init="(_this select 0) execVM ""\adfu_land_aslav\script\init.sqf""; (_this select 0) animate ['slat_armor',1]; (_this select 0) animate ['slat_armor2',1]";
 		};
 	};
 };
