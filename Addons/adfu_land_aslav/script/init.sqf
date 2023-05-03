@@ -3,7 +3,7 @@
 	Author: ADF-Uncut
 
 	Description:
-	Random Vehicle Names
+	Random Vehicle Names, but only if we don't have an override from the server.
 	
 	01 Send Me To Takistan
 	02 Adrenaline Rush
@@ -29,7 +29,9 @@
 	Returns:
 	Nothing
 */
-if (local _this) then
+//Check if we don't have a server set override:
+_markingSet = _this getVariable ["PlatoonMarkings", 0];
+if ((_markingSet isEqualTo 0) and (local _this)) then
 {
 	_baseTextures = [
 						"\adfu_land_aslav\data\body1\lavbody_co.paa",

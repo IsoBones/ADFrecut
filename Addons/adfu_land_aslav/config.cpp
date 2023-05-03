@@ -723,6 +723,167 @@ class CfgVehicles
 				weapon="ADFU_land_aslav_M242";
 			};
 		};
+		class Attributes
+		{
+			class PlatoonMarkings
+			{
+				//--- Mandatory properties
+				displayName = "Platoon Markings";
+				tooltip = "The platoon markings shown on the side of the vehicle!";
+				property = "ADFU_PlatoonMarkings"; //Unique config property name saved in SQM
+				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
+
+				//Expression called when applying the attribute in Eden and at the scenario start
+				//The expression is called twice - first for data validation, and second for actual saving
+				//Entity is passed as _this, value is passed as _value
+				//%s is replaced by attribute config name. It can be used only once in the expression
+				//In MP scenario, the expression is called only on server.
+				expression = "_this setVariable ['%s', _value, true]; if (_value < 10) then {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_%1.paa', _value]]};";
+
+				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
+				//Entity (unit, group, marker, comment etc.) is passed as _this
+				//Returned value is the default value
+				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
+				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
+				defaultValue = 1;
+				
+				class Values 
+				{
+					class One {
+						name = "Value 1";
+						tooltip = "TODO: something useful";
+						value = 1;
+						picture = "\adfu_land_aslav\data\labels\labels_01.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_01.paa";
+					};
+					class Two: One {
+						name = "Value 2";
+						value = 2;
+						picture = "\adfu_land_aslav\data\labels\labels_02.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_02.paa";
+					};
+					class Three: One {
+						name = "Value 3";
+						value = 3;
+						picture = "\adfu_land_aslav\data\labels\labels_03.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_03.paa";
+					};
+					class Four: One {
+						name = "Value 4";
+						value = 4;
+						picture = "\adfu_land_aslav\data\labels\labels_04.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_04.paa";
+					};
+					class Five: One {
+						name = "Value 5";
+						value = 5;
+						picture = "\adfu_land_aslav\data\labels\labels_05.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_05.paa";
+					};
+					class Six: One {
+						name = "Value 6";
+						value = 6;
+						picture = "\adfu_land_aslav\data\labels\labels_06.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_06.paa";
+					};
+					class Seven: One {
+						name = "Value 7";
+						value = 7;
+						picture = "\adfu_land_aslav\data\labels\labels_07.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_07.paa";
+					};
+					class Eight: One {
+						name = "Value 8";
+						value = 8;
+						picture = "\adfu_land_aslav\data\labels\labels_08.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_08.paa";
+					};
+					class Nine: One {
+						name = "Value 9";
+						value = 9;
+						picture = "\adfu_land_aslav\data\labels\labels_09.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_09.paa";
+					};
+					class Ten: One {
+						name = "Value 10";
+						value = 10;
+						picture = "\adfu_land_aslav\data\labels\labels_10.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_10.paa";
+					};
+					class Eleven: One {
+						name = "Value 11";
+						value = 11;
+						picture = "\adfu_land_aslav\data\labels\labels_11.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_11.paa";
+					};
+					class Twelve: One {
+						name = "Value 12";
+						value = 12;
+						picture = "\adfu_land_aslav\data\labels\labels_12.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_12.paa";
+					};
+					class Thirteen: One {
+						name = "Value 13";
+						value = 13;
+						picture = "\adfu_land_aslav\data\labels\labels_13.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_13.paa";
+					};
+					class Fourteen: One {
+						name = "Value 14";
+						value = 14;
+						picture = "\adfu_land_aslav\data\labels\labels_14.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_14.paa";
+					};
+					class Fifteen: One {
+						name = "Value 15";
+						value = 15;
+						picture = "\adfu_land_aslav\data\labels\labels_15.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_15.paa";
+					};
+					class Sixteen: One {
+						name = "Value 16";
+						value = 16;
+						picture = "\adfu_land_aslav\data\labels\labels_16.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_16.paa";
+					};
+					class Seventeen: One {
+						name = "Value 17";
+						value = 17;
+						picture = "\adfu_land_aslav\data\labels\labels_17.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_17.paa";
+					};
+					class Eighteen: One {
+						name = "Value 18";
+						value = 18;
+						picture = "\adfu_land_aslav\data\labels\labels_18.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_18.paa";
+					};
+					class Nineteen: One {
+						name = "Value 19";
+						value = 19;
+						picture = "\adfu_land_aslav\data\labels\labels_19.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_19.paa";
+					};
+					class Twenty: One {
+						name = "Value 20";
+						value = 20;
+						picture = "\adfu_land_aslav\data\labels\labels_20.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_20.paa";
+					};
+					class Zero: One {
+						name = "Random";
+						tooltip = "Choose the markings randomly.";
+						value = 0;
+					};
+				};
+
+				//--- Optional properties
+				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
+				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
+				condition = "object"; // Condition for attribute to appear (see the table below)
+				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+			};
+		};
 	};
 	class ADFU_land_aslav: ADFU_land_aslav_base_F
 	{
