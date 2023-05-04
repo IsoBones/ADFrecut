@@ -728,8 +728,8 @@ class CfgVehicles
 			class PlatoonMarkings
 			{
 				//--- Mandatory properties
-				displayName = "Platoon Markings";
-				tooltip = "The platoon markings shown on the side of the vehicle!";
+				displayName = "Vehicle Callsigns";
+				tooltip = "The vehicle callsign shown on the sides and back of the vehicle";
 				property = "ADFU_PlatoonMarkings"; //Unique config property name saved in SQM
 				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
 
@@ -750,125 +750,132 @@ class CfgVehicles
 				class Values 
 				{
 					class One {
-						name = "Value 1";
-						tooltip = "TODO: something useful";
+						name = "Send me to Takistan | 3-3";
+						tooltip = "Select this callsign";
 						value = 1;
 						picture = "\adfu_land_aslav\data\labels\labels_01.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_01.paa";
 					};
 					class Two: One {
-						name = "Value 2";
+						name = "Adrenaline Rush | 11-A";
 						value = 2;
 						picture = "\adfu_land_aslav\data\labels\labels_02.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_02.paa";
 					};
 					class Three: One {
-						name = "Value 3";
+						name = "Bullryder | 7-B";
 						value = 3;
 						picture = "\adfu_land_aslav\data\labels\labels_03.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_03.paa";
 					};
 					class Four: One {
-						name = "Value 4";
+						name = "Achilles | 15-A";
 						value = 4;
 						picture = "\adfu_land_aslav\data\labels\labels_04.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_04.paa";
 					};
 					class Five: One {
-						name = "Value 5";
+						name = "Agamemnon | 1-A";
 						value = 5;
 						picture = "\adfu_land_aslav\data\labels\labels_05.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_05.paa";
 					};
 					class Six: One {
-						name = "Value 6";
+						name = "Angry Birds | 5-A";
 						value = 6;
 						picture = "\adfu_land_aslav\data\labels\labels_06.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_06.paa";
 					};
 					class Seven: One {
-						name = "Value 7";
+						name = "Shebrolet | 4-S";
 						value = 7;
 						picture = "\adfu_land_aslav\data\labels\labels_07.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_07.paa";
 					};
 					class Eight: One {
-						name = "Value 8";
+						name = "ANZAC Spirit | 8-A";
 						value = 8;
 						picture = "\adfu_land_aslav\data\labels\labels_08.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_08.paa";
 					};
 					class Nine: One {
-						name = "Value 9";
+						name = "DILLIGAF | 2-D";
 						value = 9;
 						picture = "\adfu_land_aslav\data\labels\labels_09.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_09.paa";
 					};
 					class Ten: One {
-						name = "Value 10";
+						name = "Cant help ya | 5-C";
 						value = 10;
 						picture = "\adfu_land_aslav\data\labels\labels_10.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_10.paa";
 					};
 					class Eleven: One {
-						name = "Value 11";
+						name = "Courage | 15";
 						value = 11;
 						picture = "\adfu_land_aslav\data\labels\labels_11.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_11.paa";
 					};
 					class Twelve: One {
-						name = "Value 12";
+						name = "Vandal | 11";
 						value = 12;
 						picture = "\adfu_land_aslav\data\labels\labels_12.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_12.paa";
 					};
 					class Thirteen: One {
-						name = "Value 13";
+						name = "Tiny Teddy | 7";
 						value = 13;
 						picture = "\adfu_land_aslav\data\labels\labels_13.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_13.paa";
 					};
 					class Fourteen: One {
-						name = "Value 14";
+						name = "The Sandgroper | 14";
 						value = 14;
 						picture = "\adfu_land_aslav\data\labels\labels_14.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_14.paa";
 					};
 					class Fifteen: One {
-						name = "Value 15";
+						name = "Comalgo | 3";
 						value = 15;
 						picture = "\adfu_land_aslav\data\labels\labels_15.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_15.paa";
 					};
 					class Sixteen: One {
-						name = "Value 16";
+						name = "Recon Redneck | 2";
 						value = 16;
 						picture = "\adfu_land_aslav\data\labels\labels_16.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_16.paa";
 					};
 					class Seventeen: One {
-						name = "Value 17";
+						name = "Cerebral | 1";
 						value = 17;
 						picture = "\adfu_land_aslav\data\labels\labels_17.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_17.paa";
 					};
 					class Eighteen: One {
-						name = "Value 18";
+						name = "Circle Work | 8";
 						value = 18;
 						picture = "\adfu_land_aslav\data\labels\labels_18.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_18.paa";
 					};
 					class Nineteen: One {
-						name = "Value 19";
+						name = "Bollocks | 5";
 						value = 19;
 						picture = "\adfu_land_aslav\data\labels\labels_19.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_19.paa";
 					};
 					class Twenty: One {
-						name = "Value 20";
+						name = "Hammer time | 31";
 						value = 20;
 						picture = "\adfu_land_aslav\data\labels\labels_20.paa";
 						pictureRight = "\adfu_land_aslav\data\labels\labels_20.paa";
+					};
+					class TwentyOne: One {
+						name = "NONE";
+						tooltip = "No callsign marking will be displayed.";
+						value = 21;
+						picture = "\adfu_land_aslav\data\labels\labels_21.paa";
+						pictureRight = "\adfu_land_aslav\data\labels\labels_21.paa";
 					};
 					class Zero: One {
 						name = "Random";
