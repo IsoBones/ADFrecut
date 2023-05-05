@@ -32,7 +32,7 @@ class CfgWeapons
 	{
 		scope=2;
 		model="\ADFU_weapon_maximi\ADFU_F89_Maximi.p3d";
-		displayName="F89 FN Maximi";
+		displayName="Maximi";
 		author="$STR_ADFU_AUTHOR";
 		picture="\ADFU_weapon_maximi\UI\gear_f89_max_x_ca.paa";
 		handAnim[]=
