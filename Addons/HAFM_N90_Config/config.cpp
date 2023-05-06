@@ -1,19 +1,13 @@
 class CfgPatches
 {
-	class HAFM_NH90_Config
+	class HAFM_MRH90_Config
 	{
 		units[]=
 		{
-			"NH90",
-			"NH90Marine",
-			"NH90_GR",
-			"NH90_GR2",
-			"NH90_AAF",
-			"NH90Armed_AAF",
-			"NH90Armed_GR",
-			"NH90Armed_GR2",
-			"NH90Armed",
-			"HAFM_NH90Wreck"
+			"MRH90",
+			"MRH90Navy",
+			"MRH90Armed",
+			"HAFM_MRH90Wreck"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -231,28 +225,28 @@ class CfgVehicles
 			class HitGlass6;
 		};
 	};
-	class NH90: Helicopter_Base_H
+	class MRH90: Helicopter_Base_H
 	{
 		features="Randomization: No      <br />Camo selections: 2 - main body, tail with rotor and gear      <br />Script door sources: CargoRamp_Open, Door_L, Door_R      <br />Script animations: Holder      <br />Executed scripts: None       <br />Firing from vehicles: No      <br />Slingload: Slingloads up to 4000 kg      <br />Cargo proxy indexes: 1 to 14";
 		mapSize=16.82;
-		author="Aplion";
-		_generalMacro="NH90";
+		author="Aplion | Adapted by ADFRC";
+		_generalMacro="MRH90";
 		displayName="MRH-90 Taipan";
 		model="\HAFM_NH90\NH90.p3d";
 		scope=2;
 		side=1;
-		faction="BLU_F";
+		faction="ADFU";
 		vehicleClass="Air";
 		AGM_FastRoping=1;
 		AGM_FastRoping_Positions[]=
 		{
 			{1.47,1.8099999,-0.0099999998}
 		};
-		crew="B_Helipilot_F";
+		crew="ADFU_pilot_dpcu";
 		typicalCargo[]=
 		{
-			"B_Helipilot_F",
-			"B_Helipilot_F"
+			"ADFU_pilot_dpcu",
+			"ADFU_pilot_dpcu"
 		};
 		picture="\HAFM_NH90\UI\NH90_CA.paa";
 		icon="\HAFM_NH90\UI\Map_NH90_CA.paa";
@@ -1675,7 +1669,7 @@ class CfgVehicles
 			};
 			class sideDoors1Open
 			{
-				displayName="SideDoors Open";
+				displayName="Open Doors";
 				position="side";
 				radius=15;
 				showwindow=0;
@@ -1685,7 +1679,7 @@ class CfgVehicles
 			};
 			class sideDoors1Close
 			{
-				displayName="SideDoors Close";
+				displayName="Close Doors";
 				position="side";
 				radius=15;
 				showwindow=0;
@@ -1741,7 +1735,7 @@ class CfgVehicles
 		};
 		class Armory
 		{
-			description="HAFM NH90";
+			description="ADF MRH-90 Taipan";
 		};
 		weapons[]=
 		{
@@ -1852,21 +1846,21 @@ class CfgVehicles
 			"Transport"
 		};
 	};
-	class NH90Marine: NH90
+	class MRH90Navy: MRH90
 	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_Marine";
-		displayName="NH90 Marine";
+		author="Aplion | Adapted by ADFRC";
+		_generalMacro="HAFM_MRH90_Marine";
+		displayName="MRH-90 Taipan RAN";
 		model="\HAFM_NH90\NH90marine.p3d";
 		scope=2;
 		side=1;
 		faction="BLU_F";
 		vehicleClass="Air";
-		crew="B_Helipilot_F";
+		crew="ADFU_pilot_dpcu";
 		typicalCargo[]=
 		{
-			"B_Helipilot_F",
-			"B_Helipilot_F"
+			"ADFU_pilot_dpcu",
+			"ADFU_pilot_dpcu"
 		};
 		availableForSupportTypes[]=
 		{
@@ -1900,96 +1894,14 @@ class CfgVehicles
 			};
 		};
 	};
-	class NH90_GR: NH90
+	class MRH90Armed: MRH90
 	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_GR";
-		scope=2;
-		side=2;
-		faction="ADFU";
-		vehicleClass="HAFM_Helis";
-		crew="I_helipilot_F";
-		typicalCargo[]=
-		{
-			"I_helicrew_F",
-			"I_helicrew_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\gr\GRouterHaul_co.paa",
-			"HAFM_NH90\gr\GRupperTail_co.paa",
-			"HAFM_NH90\gr\GRmisc_co.paa",
-			"HAFM_NH90\gr\GRdoors_co.paa"
-		};
-	};
-	class NH90_GR2: NH90
-	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_GR2";
+		author="Aplion | Adapted by ADFRC";
+		model="\HAFM_NH90\NH90Armed.p3d";
+		displayName="MRH-90 Taipan (Armed)";
 		scope=2;
 		side=1;
 		faction="ADFU";
-		vehicleClass="HAFM_Helis";
-		crew="B_Helipilot_F";
-		typicalCargo[]=
-		{
-			"B_Helipilot_F",
-			"B_Helipilot_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\gr\GRouterHaul_co.paa",
-			"HAFM_NH90\gr\GRupperTail_co.paa",
-			"HAFM_NH90\gr\GRmisc_co.paa",
-			"HAFM_NH90\gr\GRdoors_co.paa"
-		};
-	};
-	class NH90_AAF: NH90
-	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_AAF";
-		scope=2;
-		side=2;
-		faction="IND_F";
-		vehicleClass="Air";
-		crew="I_helipilot_F";
-		typicalCargo[]=
-		{
-			"I_helicrew_F",
-			"I_helicrew_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\aaf\AAFouterHaul_co.paa",
-			"HAFM_NH90\aaf\AAFupperTail_co.paa",
-			"HAFM_NH90\aaf\AAFmisc_co.paa",
-			"HAFM_NH90\aaf\AAFdoors_co.paa"
-		};
-	};
-	class NH90Armed_AAF: NH90
-	{
-		author="Aplion";
-		model="\HAFM_NH90\NH90Armed.p3d";
-		displayName="NH90 Armed";
-		_generalMacro="HAFM_NH90_Armed_AAF";
-		scope=2;
-		side=2;
-		faction="IND_F";
 		vehicleClass="Air";
 		AGM_FastRoping=1;
 		AGM_FastRoping_Positions[]=
@@ -1997,11 +1909,11 @@ class CfgVehicles
 			{0.60000002,-4,-0.25},
 			{-0.60000002,-4,-0.25}
 		};
-		crew="I_helipilot_F";
+		crew="ADFU_pilot_dpcu";
 		typicalCargo[]=
 		{
-			"I_helicrew_F",
-			"I_helicrew_F"
+			"ADFU_pilot_dpcu",
+			"ADFU_pilot_dpcu"
 		};
 		availableForSupportTypes[]=
 		{
@@ -2010,10 +1922,10 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"HAFM_NH90\aaf\AAFouterHaul_co.paa",
-			"HAFM_NH90\aaf\AAFupperTail_co.paa",
-			"HAFM_NH90\aaf\AAFmisc_co.paa",
-			"HAFM_NH90\aaf\AAFdoors_co.paa"
+			"HAFM_NH90\data\outerHaul_co.paa",
+			"HAFM_NH90\data\upperTail_co.paa",
+			"HAFM_NH90\data\misc_co.paa",
+			"HAFM_NH90\data\doors_co.paa"
 		};
 		class Turrets: Turrets
 		{
@@ -2218,88 +2130,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class NH90Armed_GR: NH90Armed_AAF
-	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_Armed_GR";
-		scope=2;
-		side=2;
-		faction="ADFU";
-		vehicleClass="HAFM_Helis";
-		crew="I_helipilot_F";
-		typicalCargo[]=
-		{
-			"I_helicrew_F",
-			"I_helicrew_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\gr\GRouterHaul_co.paa",
-			"HAFM_NH90\gr\GRupperTail_co.paa",
-			"HAFM_NH90\gr\GRmisc_co.paa",
-			"HAFM_NH90\gr\GRdoors_co.paa"
-		};
-	};
-	class NH90Armed_GR2: NH90Armed_AAF
-	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_Armed_GR2";
-		scope=2;
-		side=1;
-		faction="ADFU";
-		vehicleClass="HAFM_Helis";
-		crew="B_Helipilot_F";
-		typicalCargo[]=
-		{
-			"B_Helipilot_F",
-			"B_Helipilot_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\gr\GRouterHaul_co.paa",
-			"HAFM_NH90\gr\GRupperTail_co.paa",
-			"HAFM_NH90\gr\GRmisc_co.paa",
-			"HAFM_NH90\gr\GRdoors_co.paa"
-		};
-	};
-	class NH90Armed: NH90Armed_AAF
-	{
-		author="Aplion";
-		_generalMacro="HAFM_NH90_Armed";
-		scope=2;
-		side=1;
-		faction="BLU_F";
-		vehicleClass="Air";
-		crew="B_Helipilot_F";
-		typicalCargo[]=
-		{
-			"B_Helipilot_F",
-			"B_Helipilot_F"
-		};
-		availableForSupportTypes[]=
-		{
-			"Drop",
-			"Transport"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"HAFM_NH90\data\outerHaul_co.paa",
-			"HAFM_NH90\data\upperTail_co.paa",
-			"HAFM_NH90\data\misc_co.paa",
-			"HAFM_NH90\data\doors_co.paa"
-		};
-	};
-	class HAFM_NH90Wreck: HelicopterWreck
+	class HAFM_MRH90Wreck: HelicopterWreck
 	{
 		scope=1;
 		class Armory

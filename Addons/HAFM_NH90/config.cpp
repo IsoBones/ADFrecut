@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class HAFM_NH90
+	class HAFM_MRH90
 	{
 		units[]={};
 		weapons[]={};
@@ -9,7 +9,7 @@ class CfgPatches
 		{
 			"A3_Air_F",
 			"A3_Weapons_F",
-			"HAFM_NH90_Config"
+			"HAFM_MRH90_Config"
 		};
 	};
 };
