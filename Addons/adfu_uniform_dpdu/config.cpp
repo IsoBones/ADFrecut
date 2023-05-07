@@ -154,6 +154,7 @@ class cfgVehicles
 	class ADFU_rifleman_dpdu: ADFU_soldier_base_dpdu
 	{
 		scope=2;
+		scopeCurator=2;
 		_generalMacro="B_Soldier_F";
 		displayName="Rifleman";
 		author="$STR_ADFU_AUTHOR";

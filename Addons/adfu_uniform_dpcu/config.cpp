@@ -162,6 +162,7 @@ class cfgVehicles
 	class ADFU_rifleman_dpcu: ADFU_DPCU_Soldier_Base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_rifleman_dpcu";
 		displayName="Rifleman";
@@ -181,6 +182,7 @@ class cfgVehicles
 	class ADFU_engineer_dpcu: ADFU_rifleman_dpcu
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_engineer_dpcu";
 		displayName="Combat Engineer";
@@ -214,6 +216,7 @@ class cfgVehicles
 	class ADFU_grenadier_dpcu: ADFU_rifleman_dpcu
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_grenadier_dpcu";
 		displayName="Grenadier";

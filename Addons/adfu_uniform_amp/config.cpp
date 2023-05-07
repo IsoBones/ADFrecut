@@ -623,6 +623,7 @@ class CfgVehicles
 	class ADFU_rifleman_amp: ADFU_uniform_amp_tan_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		faction="ADFU";
 		icon="iconMan";
@@ -857,6 +858,7 @@ class CfgVehicles
 	class ADFU_grenadier_amp: ADFU_uniform_amp_grn_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Grenadier";
 		icon="iconManExplosive";
@@ -1039,6 +1041,7 @@ class CfgVehicles
 	class ADFU_marksman_amp: ADFU_uniform_amp_grn_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Marksman";
 		weapons[]=
@@ -1344,6 +1347,7 @@ class CfgVehicles
 	class ADFU_medic_amp: ADFU_uniform_amp_grn_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Combat Medic";
 		attendant=1;
@@ -1430,6 +1434,7 @@ class CfgVehicles
 	class ADFU_helicopterPilot_amp: ADFU_coveralls_green_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Helicopter Pilot";
@@ -1495,6 +1500,7 @@ class CfgVehicles
 	class ADFU_jetPilot_amp: ADFU_coveralls_tan_base
 	{
 		scope=2;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Pilot";

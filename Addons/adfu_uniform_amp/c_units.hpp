@@ -118,6 +118,7 @@
 	class ADFU_rifleman_amp: ADFU_uniform_amp_tan_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		faction = "ADFU";
 		icon = "iconMan";
@@ -164,6 +165,7 @@
 	class ADFU_grenadier_amp: ADFU_uniform_amp_grn_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		displayName = "Grenadier";
 		icon = "iconManExplosive";
@@ -208,6 +210,7 @@
 	class ADFU_marksman_amp: ADFU_uniform_amp_grn_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		displayName = "Marksman";
 		weapons[] = {"ADFU_sr25_ta648","ADFU_weapon_usp_snds","Throw","Put"};
@@ -260,6 +263,7 @@
 	class ADFU_medic_amp: ADFU_uniform_amp_grn_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		displayName = "Combat Medic";
 		attendant = 1;
@@ -286,6 +290,7 @@
 	class ADFU_helicopterPilot_amp: ADFU_coveralls_green_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		displayName = "Helicopter Pilot";
 		Items[] = {"FirstAidKit"};
@@ -300,6 +305,7 @@
 	class ADFU_jetPilot_amp: ADFU_coveralls_tan_base
 	{
 		scope = 2;
+		scopeCurator=2;
 		author = "$STR_ADFU_AUTHOR";
 		displayName = "Pilot";
 		Items[] = {"FirstAidKit"};

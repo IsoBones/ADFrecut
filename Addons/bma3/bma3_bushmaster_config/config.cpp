@@ -1744,6 +1744,7 @@ class CfgVehicles
 	class adfu_bushmaster_unarmed_F: adfu_bushmaster_base_F
 	{
 		scope=2;
+		scopeCurator=2;
 		displayName="Bushmaster Transport";
 		model="bma3\bma3_bushmaster\bma3_bushmaster_unarmed.p3d";
 		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed.paa";
@@ -1883,6 +1884,7 @@ class CfgVehicles
 	class adfu_bushmaster_unarmed_ecm_F: adfu_bushmaster_unarmed_F
 	{
 		scope=2;
+		scopeCurator=2;
 		displayName="Bushmaster Transport ECM";
 		model="bma3\bma3_bushmaster\bma3_bushmaster_unarmed.p3d";
 		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed_ecm.paa";
@@ -1952,6 +1954,7 @@ class CfgVehicles
 	class adfu_bushmaster_unarmed_command_F: adfu_bushmaster_unarmed_F
 	{
 		scope=2;
+		scopeCurator=2;
 		displayName="Bushmaster Transport Command";
 		model="bma3\bma3_bushmaster\bma3_bushmaster_unarmed.p3d";
 		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed_command.paa";
@@ -2021,6 +2024,7 @@ class CfgVehicles
 	class adfu_bushmaster_pws127mm_F: adfu_bushmaster_unarmed_F
 	{
 		scope=2;
+		scopeCurator=2;
 		displayName="Bushmaster (Armed)";
 		model="bma3\bma3_bushmaster\bma3_bushmaster_r400.p3d";
 		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed_command.paa";
@@ -2217,6 +2221,7 @@ class CfgVehicles
 	class adfu_bushmaster_pws127mm_ecm_F: adfu_bushmaster_pws127mm_F
 	{
 		scope=2;
+		scopeCurator=2;
 		displayName="Bushmaster (Armed) ECM";
 		model="bma3\bma3_bushmaster\bma3_bushmaster_r400.p3d";
 		Icon="\bma3\bma3_bushmaster_data\ui\bushmaster_map_unarmed_command.paa";
