@@ -29,22 +29,18 @@ class CfgWeapons
 {
 	class Pistol_Base_F;
 	class ADFU_pistol_base: Pistol_Base_F
-	{
-		class Single;
-		
+	{		
 	};
 	class ADFU_weapon_hpII: ADFU_pistol_base
 	{
 		scope=2;
+		scopeArsenal = 2;
+		BaseWeapon = "ADFU_weapon_hpII";
 		displayName="Browning High Power MkII";
 		author="$STR_ADFU_AUTHOR";
 		model="\ADFU_weapon_hpII\ADFU_PISTOL_HPII.p3d";
 		picture="\ADFU_weapon_hpII\UI\gear_ADFU_HPII_x_ca.paa";
 		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		class Library
-		{
-			libTextDesc="Browning High Power MkII";
-		};
 		cursor="";
 		magazines[]=
 		{
