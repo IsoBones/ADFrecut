@@ -738,7 +738,7 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value < 10) then {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [2, format ['\adfu_land_aslav\data\labels\labels_%1.paa', _value]]};";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
