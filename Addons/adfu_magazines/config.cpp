@@ -31,7 +31,8 @@ class CfgPatches
 			"ADFU_100_Rnd_762_Belt_TR5",
 			"ADFU_150Rnd_762_Belt",
 			"ADFU_150Rnd_762_Belt_TR",
-			"ADFU_150Rnd_762_Belt_TR5"
+			"ADFU_150Rnd_762_Belt_TR5",
+			"ADFRC_10Rnd_9x19_Mag"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -40,7 +41,7 @@ class CfgPatches
 		};
 		author[]=
 		{
-			"ADF-UNCUT"
+			"ADF Re-Cut | ADF-UNCUT"
 		};
 		weapons[]={};
 		ammo[]=
@@ -93,6 +94,7 @@ class CfgAmmo
 };
 class CfgMagazines
 {
+	class 16Rnd_9x21_Mag;
 	class CA_Magazine;
 	class 30Rnd_556x45_Stanag;
 	class 30Rnd_556x45_Stanag_Tracer_Red;
@@ -359,5 +361,15 @@ class CfgMagazines
 		displayName="150Round 7.62mm Tracer 1:5 Red";
 		author="$STR_ADFU_AUTHOR";
 		tracersEvery=5;
+	};
+	class ADFRC_10Rnd_9x19_Mag: 16Rnd_9x21_Mag
+	{
+		scope= 2;
+		scopeArsenal= 2;
+		displayName= "10 Round 9x19 Browning";
+		displayNameShort= "10 Rnd 9mm";
+		descriptionShort="Calibre: 9x19 mm<br/>Rounds: 10<br/>Used in: Browning High Power MKII";
+		count= 10;
+		type= 256;
 	};
 };
