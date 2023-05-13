@@ -32,7 +32,7 @@ class CfgWeapons
 	{
 		scope=2;
 		model="\ADFU_weapon_maximi\ADFU_F89_Maximi.p3d";
-		displayName="Maximi";
+		displayName="FN Maximi";
 		author="$STR_ADFU_AUTHOR";
 		picture="\ADFU_weapon_maximi\UI\gear_f89_max_x_ca.paa";
 		handAnim[]=
@@ -83,73 +83,10 @@ class CfgWeapons
 		hasBipod=1;
 		class FullAuto: Mode_FullAuto
 		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
+			sounds[]= {"StandardSound"};
 			class StandardSound
 			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx7",
-					1.122018,
-					1,
-					10
-				};
-				closure2[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx8",
-					1.122018,
-					1,
-					10
-				};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-				begin1[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin2[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin3[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin4[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+				soundSetShot[] = {"Mk200_Shot_SoundSet","Mk200_Tail_SoundSet","Mk200_InteriorTail_SoundSet"};
 			};
 			reloadTime=0.092500001;
 			dispersion=0.0011;
@@ -175,67 +112,7 @@ class CfgWeapons
 			};
 			class StandardSound
 			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx7",
-					1.122018,
-					1,
-					10
-				};
-				closure2[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx8",
-					1.122018,
-					1,
-					10
-				};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-				begin1[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin2[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin3[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				begin4[]=
-				{
-					"ADFU_weapon_maximi\sound\ADFU_max_single",
-					"db4",
-					1,
-					1000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+				soundSetShot[] = {"Mk200_Shot_SoundSet","Mk200_Tail_SoundSet","Mk200_InteriorTail_SoundSet"};
 			};
 			weaponSoundEffect="DefaultRifle";
 			reloadTime=0.079999998;
