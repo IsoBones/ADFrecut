@@ -130,117 +130,19 @@ class CfgWeapons
 			"FullAuto",
 			"FullAutoDeployed"
 		};
-		bullet1[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_01",
-			0.79432797,
-			1,
-			15
-		};
-		bullet2[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_02",
-			0.79432797,
-			1,
-			15
-		};
-		bullet3[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_03",
-			0.79432797,
-			1,
-			15
-		};
-		bullet4[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\metal_762_04",
-			0.79432797,
-			1,
-			15
-		};
-		bullet5[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_01",
-			0.79432797,
-			1,
-			15
-		};
-		bullet6[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_02",
-			0.79432797,
-			1,
-			15
-		};
-		bullet7[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_03",
-			0.79432797,
-			1,
-			15
-		};
-		bullet8[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\dirt_762_04",
-			0.79432797,
-			1,
-			15
-		};
-		bullet9[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_01",
-			0.79432797,
-			1,
-			15
-		};
-		bullet10[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_02",
-			0.79432797,
-			1,
-			15
-		};
-		bullet11[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_03",
-			0.79432797,
-			1,
-			15
-		};
-		bullet12[]=
-		{
-			"A3\sounds_f\weapons\shells\7_62\grass_762_04",
-			0.79432797,
-			1,
-			15
-		};
-		soundBullet[]=
-		{
-			"bullet1",
-			0.082999997,
-			"bullet2",
-			0.082999997,
-			"bullet3",
-			0.082999997,
-			"bullet4",
-			0.082999997,
-			"bullet5",
-			0.082999997,
-			"bullet6",
-			0.082999997,
-			"bullet7",
-			0.082999997,
-			"bullet8",
-			0.082999997,
-			"bullet9",
-			0.082999997,
-			"bullet10",
-			0.082999997,
-			"bullet11",
-			0.082999997,
-			"bullet12",
-			0.082999997
-		};
+		bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01",0.5011872,1,15};
+		bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02",0.5011872,1,15};
+		bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03",0.5011872,1,15};
+		bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04",0.5011872,1,15};
+		bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01",0.39810717,1,15};
+		bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02",0.39810717,1,15};
+		bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03",0.39810717,1,15};
+		bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04",0.39810717,1,15};
+		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01",0.25118864,1,15};
+		bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02",0.25118864,1,15};
+		bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03",0.25118864,1,15};
+		bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04",0.25118864,1,15};
+		soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
 		discreteDistance[]={300,400,500,600,700,800,900,1000};
 		soundBipodDeploy[]=
 		{
@@ -272,73 +174,18 @@ class CfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
+			sound = ["",10,1];
+			soundBegin = ["sound",1];
+			soundBeginWater = ["sound",1];
+			soundBurst = 0;
+			soundClosure = ["sound",1];
+			soundContinuous = 0;
+			soundEnd = ["sound",1];
+			soundLoop = [];
+			sounds[] = {"StandardSound"};
 			class StandardSound
 			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx7",
-					1.122018,
-					1,
-					10
-				};
-				closure2[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx8",
-					1.122018,
-					1,
-					10
-				};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-				begin1[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_01",
-					1.7,
-					1.35,
-					900
-				};
-				begin2[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_02",
-					1.7,
-					1.35,
-					900
-				};
-				begin3[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_03",
-					1.7,
-					1.35,
-					900
-				};
-				begin4[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_04",
-					1.7,
-					1.35,
-					900
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+				soundsetshot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet"};
 			};
 			displayName="Bipod Folded";
 			reloadTime=0.079999998;
@@ -346,8 +193,6 @@ class CfgWeapons
 			recoil="recoil_auto_mk200";
 			recoilProne="recoil_auto_prone_mk200";
 			weaponSoundEffect="DefaultRifle";
-			soundContinuous=0;
-			soundBurst=0;
 			minRange=0;
 			minRangeProbab=0.89999998;
 			midRange=15;
@@ -360,73 +205,10 @@ class CfgWeapons
 		class FullAutoDeployed: Mode_SemiAuto
 		{
 			displayName="Bipod Deployed";
-			sounds[]=
-			{
-				"StandardSound"
-			};
+			sounds[] = {"StandardSound"};
 			class StandardSound
 			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx7",
-					1.122018,
-					1,
-					10
-				};
-				closure2[]=
-				{
-					"A3\sounds_f\weapons\closure\sfx8",
-					1.122018,
-					1,
-					10
-				};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-				begin1[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_01",
-					1.7,
-					1.35,
-					900
-				};
-				begin2[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_02",
-					1.7,
-					1.35,
-					900
-				};
-				begin3[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_03",
-					1.7,
-					1.35,
-					900
-				};
-				begin4[]=
-				{
-					"ADFU_weapon_minimi\sound\weapon_minimi_single_04",
-					1.7,
-					1.35,
-					900
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.25,
-					"begin2",
-					0.25,
-					"begin3",
-					0.25,
-					"begin4",
-					0.25
-				};
+				soundsetshot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet"};
 			};
 			weaponSoundEffect="DefaultRifle";
 			reloadTime=0.079999998;
