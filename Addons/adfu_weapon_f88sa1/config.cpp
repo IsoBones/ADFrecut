@@ -650,4 +650,76 @@ class CfgWeapons
 			};
 		};
 	};
+	class ADFU_F88SA1_swarovski_laser: ADFU_F88SA1
+	{
+		scope=1;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_swarovski_optic";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="ADFU_F88SA1_laser";
+			};
+		};
+	};
+	class ADFU_F88SA1_gl_eotech_laser: ADFU_F88SA1_gl
+	{
+		scope=1;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="ADFU_F88SA1_laser";
+			};
+		};
+	};
+	class ADFU_F88SA1_eotech_laser: ADFU_F88SA1_gl
+	{
+		scope=1;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="ADFU_F88SA1_laser";
+			};
+		};
+	};
+	class ADFU_F88SA1_ta648_laser: ADFU_F88SA1
+	{
+		scope=1;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_acog_ta648";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="ADFU_F88SA1_laser";
+			};
+		};
+	};
 };
