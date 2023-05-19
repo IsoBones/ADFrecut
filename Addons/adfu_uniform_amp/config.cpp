@@ -145,7 +145,7 @@ class CfgEditorSubcategories
 {
 	class ADFU_MEN_AMP // Category class, you point to it in editorSubcategory property
 	{
-		displayName = "Men (Multicam)"; // Name visible in the list
+		displayName = "$STR_ADFU_MEN_AMP"; // Name visible in the list
 	};
 };
 class CfgVehicles
@@ -169,6 +169,100 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
+		};
+	};
+	class ADFU_assaultpack_black_tl: ADFU_assaultpack_black
+	{
+		scope=1;
+		displayName="ADF Carryall SASR TL";
+		hiddenSelectionsTextures[]=
+		{
+			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+		};
+		class TransportMagazines
+		{
+			class _xx_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=15;
+			};
+			class _xx_UGL_FlareGreen_F
+			{
+				magazine="UGL_FlareGreen_F";
+				count=4;
+			};
+			class _xx_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=4;
+			};
+			class _xx_1Rnd_SmokeRed_Grenade_shell
+			{
+				magazine="1Rnd_SmokeRed_Grenade_shell";
+				count=2;
+			};
+			class _xx_1Rnd_SmokePurple_Grenade_shell
+			{
+				magazine="1Rnd_SmokePurple_Grenade_shell";
+				count=2;
+			};
+			class _xx_1Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine="1Rnd_SmokeBlue_Grenade_shell";
+				count=2;
+			};
+		};
+	};
+	class ADFU_assaultpack_black_breach: ADFU_assaultpack_black
+	{
+		scope=1;
+		displayName="ADF Carryall SASR Breacher";
+		hiddenSelectionsTextures[]=
+		{
+			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+		};
+		class TransportMagazines
+		{
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
+				magazine="ClaymoreDirectionalMine_Remote_Mag";
+				count=2;
+			};
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
+		};
+	};
+	class ADFU_assaultpack_black_eng: ADFU_assaultpack_black
+	{
+		scope=1;
+		displayName="ADF Carryall SASR Breacher";
+		hiddenSelectionsTextures[]=
+		{
+			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+		};
+		class TransportItems
+		{
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count=1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
+				magazine="ClaymoreDirectionalMine_Remote_Mag";
+				count=1;
+			};
+			class _xx_DemoCharge_Remote_Mag
+			{
+				magazine="DemoCharge_Remote_Mag";
+				count=1;
+			};
 		};
 	};
 	class ADFU_assaultpack_green: ADFU_assaultpack_black
@@ -620,25 +714,26 @@ class CfgVehicles
 			"ADFU_uniform_amp\Uniform\team_ca.paa"
 		};
 	};
-	class ADFU_rifleman_amp: ADFU_uniform_amp_tan_base
+	class ADFU_rifleman_amp: ADFU_uniform_amp_cam_base
 	{
 		scope=2;
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		faction="ADFU";
 		icon="iconMan";
+		editorSubcategory="ADFU_MEN_AMP";
 		vehicleClass="ADFU_MEN_AMP";
-		displayName="Rifleman";
+		displayName="Operator";
 		weapons[]=
 		{
-			"ADFU_m4a5_afg_wdl_eotech",
+			"ADFU_sasr_m4a5",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_afg_wdl_eotech",
+			"ADFU_sasr_m4a5",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
@@ -663,11 +758,6 @@ class CfgVehicles
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -684,11 +774,6 @@ class CfgVehicles
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -697,7 +782,7 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_Snake",
+			"ADFU_Helmet_Cam",
 			"ADFU_PlateCarrier_Green_Snake",
 			"ItemGPS",
 			"ItemMap",
@@ -707,7 +792,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_Snake",
+			"ADFU_Helmet_Cam",
 			"ADFU_PlateCarrier_Green_Snake",
 			"ItemGPS",
 			"ItemMap",
@@ -721,30 +806,20 @@ class CfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Squad Leader";
+		displayName="Troop Leader";
 		weapons[]=
 		{
-			"ADFU_m4a5_m203fg_des_eotechX3_sd",
+			"ADFU_sasr_m4a5_acog",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_m203fg_des_eotechX3_sd",
+			"ADFU_sasr_m4a5_acog",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
-		};
-		Items[]=
-		{
-			"FirstAidKit",
-			"NVGoggles_OPFOR"
-		};
-		RespawnItems[]=
-		{
-			"FirstAidKit",
-			"NVGoggles_OPFOR"
 		};
 		magazines[]=
 		{
@@ -756,11 +831,6 @@ class CfgVehicles
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -777,11 +847,6 @@ class CfgVehicles
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
 			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
 			"SmokeShell",
@@ -790,8 +855,8 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_Grass",
-			"ADFU_PlateCarrier_Green_Digi",
+			"H_Cap_headphones",
+			"ADFU_PlateCarrier_Green_Snake",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -800,8 +865,8 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_Grass",
-			"ADFU_PlateCarrier_Green_Digi",
+			"H_Cap_headphones",
+			"ADFU_PlateCarrier_Green_Snake",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -815,10 +880,10 @@ class CfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Team Leader";
+		displayName="Patrol Leader";
 		weapons[]=
 		{
-			"ADFU_m4a5_vfg_elcan",
+			"ADFU_sasr_m4a5gl_acog",
 			"ADFU_weapon_usp_snds",
 			"ADFU_weapon_m72a6",
 			"Throw",
@@ -826,7 +891,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_vfg_elcan",
+			"ADFU_sasr_m4a5gl_acog",
 			"ADFU_weapon_usp_snds",
 			"ADFU_weapon_m72a6",
 			"Throw",
@@ -836,6 +901,7 @@ class CfgVehicles
 		{
 			"ADFU_Helmet_Desert",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_blk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -846,6 +912,7 @@ class CfgVehicles
 		{
 			"ADFU_Helmet_Desert",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_blk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -853,9 +920,9 @@ class CfgVehicles
 			"ItemRadio"
 		};
 		icon="iconManLeader";
-		backpack="ADFU_kitbag_amp";
+		backpack="ADFU_assaultpack_black_tl";
 	};
-	class ADFU_grenadier_amp: ADFU_uniform_amp_grn_base
+	class ADFU_grenadier_amp: ADFU_rifleman_amp
 	{
 		scope=2;
 		scopeCurator=2;
@@ -864,72 +931,23 @@ class CfgVehicles
 		icon="iconManExplosive";
 		weapons[]=
 		{
-			"ADFU_m4a5_m203_wdl_ta31",
+			"ADFU_sasr_m4a5gl",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_m203_wdl_ta31",
+			"ADFU_sasr_m4a5gl",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
-		{
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
-		respawnMagazines[]=
-		{
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_Snake",
+			"ADFU_Helmet_Cam",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_khk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -938,41 +956,31 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_Snake",
+			"ADFU_Helmet_Cam",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_khk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		backpack="ADFU_carryall_tan";
+		backpack="ADFU_assaultpack_black_tl";
 	};
 	class ADFU_engineer_amp: ADFU_rifleman_amp
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Engineer Specialist";
+		displayName="Operator Engineer";
 		engineer=1;
+		saboteur=1;
+		canDeactivateMines=1;
 		detectSkill=80;
-		weapons[]=
-		{
-			"ADFU_m4a5_afg_ta31",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"ADFU_m4a5_afg_ta31",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_Sand",
-			"ADFU_PlateCarrier_Green_Digi",
+			"ADFU_Helmet_Cam",
+			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -981,8 +989,9 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_Sand",
-			"ADFU_PlateCarrier_Green_Digi",
+			"ADFU_Helmet_Cam",
+			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -997,20 +1006,20 @@ class CfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Explosive Specialist";
+		displayName="Breacher";
 		saboteur=1;
 		canDeactivateMines=1;
 		detectSkill=80;
 		weapons[]=
 		{
-			"ADFU_m4a5_vfg_des_elcan",
+			"ADFU_sasr_m4a5",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_vfg_des_elcan",
+			"ADFU_sasr_m4a5",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
@@ -1018,7 +1027,8 @@ class CfgVehicles
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Black",
-			"ADFU_CarrierLite_Green_Snake",
+			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1028,17 +1038,18 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Black",
-			"ADFU_CarrierLite_Green_Snake",
+			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		backpack="ADFU_kitbag_green";
+		backpack="ADFU_assaultpack_black_breach";
 		icon="iconManExplosive";
 	};
-	class ADFU_marksman_amp: ADFU_uniform_amp_grn_base
+	class ADFU_marksman_amp: ADFU_uniform_amp_tee_tan_base
 	{
 		scope=2;
 		scopeCurator=2;
@@ -1046,14 +1057,14 @@ class CfgVehicles
 		displayName="Marksman";
 		weapons[]=
 		{
-			"ADFU_sr25_ta648",
+			"ADFU_MK18_SASR",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_sr25_ta648",
+			"ADFU_MK18_SASR",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
@@ -1068,15 +1079,8 @@ class CfgVehicles
 			"20Rnd_762x51_Mag",
 			"20Rnd_762x51_Mag",
 			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
 			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
+			"SmokeShell",
 			"SmokeShell",
 			"ADFU_f1_grenade",
 			"ADFU_f1_grenade"
@@ -1091,23 +1095,17 @@ class CfgVehicles
 			"20Rnd_762x51_Mag",
 			"20Rnd_762x51_Mag",
 			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
 			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
+			"SmokeShell",
 			"SmokeShell",
 			"ADFU_f1_grenade",
 			"ADFU_f1_grenade"
 		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_CamInk",
-			"ADFU_CarrierLite_Green_Digi",
+			"ADFU_Helmet_Sand",
+			"ADFU_PlateCarrier_Green",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1116,8 +1114,9 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_CamInk",
-			"ADFU_CarrierLite_Green_Digi",
+			"ADFU_Helmet_Sand",
+			"ADFU_PlateCarrier_Green",
+			"G_Bandanna_oli",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1125,206 +1124,58 @@ class CfgVehicles
 			"ItemRadio"
 		};
 	};
-	class ADFU_lightGunner_amp: ADFU_rifleman_amp
+	class ADFU_CToperator_amp: ADFU_rifleman_amp
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Light Machine Gunner";
+		displayName="Counter-Terrorism Operator";
 		weapons[]=
 		{
-			"ADFU_minimi_para_elcan",
-			"ADFU_weapon_usp_snds",
+			"ADFU_CTmp5",
+			"ADFU_weapon_usp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_minimi_para_elcan",
-			"ADFU_weapon_usp_snds",
+			"ADFU_CTmp5",
+			"ADFU_weapon_usp",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"16Rnd_9x21_Mag",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"ADFU_200Rnd_556_Belt_TR5",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
-		linkedItems[]=
-		{
-			"ADFU_Helmet_Cam",
-			"ADFU_PlateCarrier_Green_Snake",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"ADFU_Helmet_Cam",
-			"ADFU_PlateCarrier_Green_Snake",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		icon="iconManMG";
-	};
-	class ADFU_heavyGunner_amp: ADFU_rifleman_amp
-	{
-		scope=2;
-		author="$STR_ADFU_AUTHOR";
-		displayName="Heavy Machine Gunner";
-		weapons[]=
-		{
-			"ADFU_maximi_elcan",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"ADFU_maximi_elcan",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"16Rnd_9x21_Mag",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
+			"30Rnd_9x21_Mag_SMG_02",
 			"16Rnd_9x21_Mag",
 			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
-		respawnMagazines[]=
-		{
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"ADFU_150Rnd_762_Belt_TR5",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"1Rnd_HE_Grenade_shell",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
-		linkedItems[]=
-		{
-			"ADFU_Helmet_Grass",
-			"ADFU_PlateCarrier_Green_Digi",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"ADFU_Helmet_Grass",
-			"ADFU_PlateCarrier_Green_Digi",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		icon="iconManMG";
-	};
-	class ADFU_riflemanAT_amp: ADFU_rifleman_amp
-	{
-		scope=2;
-		author="$STR_ADFU_AUTHOR";
-		displayName="Rifleman AT";
-		weapons[]=
-		{
-			"ADFU_m4a5_afg_eotech_sd",
-			"ADFU_carlgustav_m3",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"ADFU_m4a5_afg_eotech_sd",
-			"ADFU_carlgustav_m3",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_magazine_84mm_heat_551c",
-			"ADFU_magazine_84mm_heat_551c",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
-		};
-		respawnMagazines[]=
-		{
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_30Rnd_STANAG",
-			"ADFU_magazine_84mm_heat_551c",
-			"ADFU_magazine_84mm_heat_551c",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFU_f1_grenade",
-			"ADFU_f1_grenade"
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
 			"ADFU_Helmet_Black",
-			"ADFU_PlateCarrier_AMP",
+			"ADFU_PlateCarrier_Black_Digi",
+			"G_AirPurifyingRespirator_01_F",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1334,41 +1185,53 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"ADFU_Helmet_Black",
-			"ADFU_PlateCarrier_AMP",
+			"ADFU_PlateCarrier_Black_Digi",
+			"G_AirPurifyingRespirator_01_F",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		backpack="ADFU_kitbag_amp";
-		icon="iconManAT";
+		icon="iconManRecon";
 	};
-	class ADFU_medic_amp: ADFU_uniform_amp_grn_base
+	class ADFU_CTMedic_amp: ADFU_CToperator_amp
 	{
 		scope=2;
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="Combat Medic";
+		displayName="Counter-Terrorism Medic";
+		attendant=1;
+		icon="iconManMedic";
+		picture="pictureHeal";
+		backpack="ADFU_kitbag_black_medic";
+	};
+	class ADFU_medic_amp: ADFU_rifleman_amp
+	{
+		scope=2;
+		scopeCurator=2;
+		author="$STR_ADFU_AUTHOR";
+		displayName="Operator Medic";
 		attendant=1;
 		weapons[]=
 		{
-			"ADFU_m4a5_afg_wdl_eotech",
+			"ADFU_sasr_m4a5_eotech",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_m4a5_afg_wdl_eotech",
+			"ADFU_sasr_m4a5_eotech",
 			"ADFU_weapon_usp_snds",
 			"Throw",
 			"Put"
 		};
 		linkedItems[]=
 		{
-			"ADFU_Helmet_Medic_Grass",
+			"ADFU_Helmet_Medic_Sand",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_blk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1377,8 +1240,9 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFU_Helmet_Medic_Grass",
+			"ADFU_Helmet_Medic_Sand",
 			"ADFU_PlateCarrier_Green_Snake",
+			"G_Bandanna_blk",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -1387,49 +1251,7 @@ class CfgVehicles
 		};
 		icon="iconManMedic";
 		picture="pictureHeal";
-		backpack="ADFU_carryall_amp";
-	};
-	class ADFU_ammobearer_amp: ADFU_rifleman_amp
-	{
-		scope=2;
-		author="$STR_ADFU_AUTHOR";
-		displayName="Ammo-Bearer";
-		attendant=1;
-		weapons[]=
-		{
-			"ADFU_m4a5_vfg_des_elcan",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"ADFU_m4a5_vfg_des_elcan",
-			"ADFU_weapon_usp_snds",
-			"Throw",
-			"Put"
-		};
-		linkedItems[]=
-		{
-			"ADFU_Helmet_CamInk",
-			"ADFU_CarrierHeavy_Green",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"ADFU_Helmet_CamInk",
-			"ADFU_CarrierHeavy_Green",
-			"ItemGPS",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		backpack="ADFU_kitbag_tan";
+		backpack="ADFU_kitbag_black_medic";
 	};
 	class ADFU_helicopterPilot_amp: ADFU_coveralls_green_base
 	{
@@ -1448,13 +1270,13 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"ADFU_weapon_usp_snds",
+			"ADFU_weapon_usp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_weapon_usp_snds",
+			"ADFU_weapon_usp",
 			"Throw",
 			"Put"
 		};
@@ -1462,23 +1284,24 @@ class CfgVehicles
 		{
 			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
 			"SmokeShell",
-			"SmokeShell"
+			"SmokeShell",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
 		};
 		respawnmagazines[]=
 		{
 			"16Rnd_9x21_Mag",
 			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
-			"16Rnd_9x21_Mag",
 			"SmokeShell",
-			"SmokeShell"
+			"SmokeShell",
+			"SmokeShellPurple",
+			"SmokeShellPurple"
 		};
 		linkedItems[]=
 		{
 			"H_PilotHelmetHeli_O",
+			"V_TacVest_oli",
 			"ItemMap",
 			"ItemGPS",
 			"ItemCompass",
@@ -1489,6 +1312,7 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"H_PilotHelmetHeli_O",
+			"V_TacVest_oli",
 			"ItemMap",
 			"ItemGPS",
 			"ItemCompass",
@@ -2711,6 +2535,55 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Headgear\Helmet-Cam-M.paa"
+		};
+	};
+	class srifle_EBR_F;
+	class ADFU_MK18_SASR: srifle_EBR_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_KHS_blk";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_B";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "bipod_01_F_blk";
+			};
+		};
+	};
+	class SMG_05_F;
+	class ADFU_CTmp5: SMG_05_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_Holosight_blk_F";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_L";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
 		};
 	};
 };
