@@ -1443,4 +1443,131 @@ class CfgWeapons
 			};
 		};
 	};
+/* New Classes For SASR*/
+	class ADFU_sasr_m4a5: ADFU_m4a5_vfg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552_3XDOWN";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class ADFU_sasr_m4a5gl: ADFU_m4a5_m203fg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552_3XDOWN";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class ADFU_sasr_m4a5_acog: ADFU_m4a5_vfg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_acog_ta31_t";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class ADFU_sasr_m4a5gl_acog: ADFU_m4a5_m203fg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_acog_ta31_t";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class ADFU_sasr_m4a5gl_eotech: ADFU_m4a5_m203fg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
+	class ADFU_sasr_m4a5_eotech: ADFU_m4a5_vfg_wdl2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_eotech552";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ADFU_m4a5_muzzle_snds_wdl";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
 };
