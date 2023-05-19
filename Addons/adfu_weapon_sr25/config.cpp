@@ -467,4 +467,27 @@ class CfgWeapons
 			};
 		};
 	};
+	class ADFU_sr25_KHS: ADFU_sr25
+	{
+		scope=2;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				item="optic_KHS_blk";
+				slot="CowsSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item="ADFU_sr25_snds";
+				slot=MuzzleSlot;
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+		};
+	};
 };
