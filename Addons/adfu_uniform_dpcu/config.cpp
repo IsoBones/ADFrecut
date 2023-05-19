@@ -163,6 +163,7 @@ class cfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_rifleman_dpcu";
 		displayName="Rifleman";
+		editorSubcategory= "ADFU_MEN_DPCU";
 		vehicleClass="$STR_ADFU_MEN_DPCU";
 		uniformAccessories[]={};
 		uniformClass="ADFU_uniform_dpcu";
@@ -524,7 +525,91 @@ class cfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_DPCU_Crewman";
-		displayName="Cavalryman";
+		displayName="Crewman";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADFU_uniform_dpcu\data\uniform_DPCU_co.paa"
+		};
+		weapons[]=
+		{
+			"ADFU_F88SA1_eotech_laser",
+			"ADFU_weapon_hpII",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"ADFU_F88SA1_eotech_laser",
+			"ADFU_weapon_hpII",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"16Rnd_9x21_Mag",
+			"ADFU_F1_GRENADE",
+			"ADFU_F1_GRENADE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"ADFU_30Rnd_aug",
+			"16Rnd_9x21_Mag",
+			"ADFU_F1_GRENADE",
+			"ADFU_F1_GRENADE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"H_HelmetCrew_I",
+			"ADFU_carrierLite_dpcu",
+			"g_combat",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"H_HelmetCrew_I",
+			"ADFU_carrierLite_dpcu",
+			"g_combat",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		backpack="";
+	};
+	class ADFU_cavalryman_dpcu: ADFU_rifleman_dpcu
+	{
+		scope=2;
+		author="$STR_ADFU_AUTHOR";
+		_generalMacro="ADFU_DPCU_Crewman";
+		displayName="Crewman";
 		hiddenSelections[]=
 		{
 			"Camo"
