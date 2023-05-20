@@ -177,7 +177,7 @@ class CfgVehicles
 		displayName="ADF Carryall SASR TL";
 		hiddenSelectionsTextures[]=
 		{
-			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+			"\ADFU_uniform_amp\Backpacks\AssaultPack-Black.paa"
 		};
 		class TransportMagazines
 		{
@@ -219,7 +219,7 @@ class CfgVehicles
 		displayName="ADF Carryall SASR Breacher";
 		hiddenSelectionsTextures[]=
 		{
-			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+			"\ADFU_uniform_amp\Backpacks\AssaultPack-Black.paa"
 		};
 		class TransportMagazines
 		{
@@ -241,7 +241,7 @@ class CfgVehicles
 		displayName="ADF Carryall SASR Breacher";
 		hiddenSelectionsTextures[]=
 		{
-			"\ADFU_uniform_amp\Backpacks\CarryAll-Black.paa"
+			"\ADFU_uniform_amp\Backpacks\AssaultPack-Black.paa"
 		};
 		class TransportItems
 		{
@@ -1394,17 +1394,18 @@ class CfgGroups
 	{
 		name="BLUFOR";
 		side=1;
-		class ADF
+		class ADFU
 		{
 			name="ADF";
-			class Infantry
+			class SpecOps
 			{
-				name="Infantry";
-				class ADFU_InfSquad_AMP
+				name="Special Forces (SASR)";
+				class ADFU_PatrolTeam_AMP
 				{
 					faction="ADFU";
-					name="Rifle Squad (AMP)";
+					name="SASR Patrol";
 					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
@@ -1428,79 +1429,32 @@ class CfgGroups
 					};
 					class Unit3
 					{
-						position[]={10,-10,0};
-						rank="PRIVATE";
-						side=1;
-						vehicle="ADFU_lightGunner_amp";
-					};
-					class Unit4
-					{
 						position[]={-10,-10,0};
 						rank="PRIVATE";
 						side=1;
-						vehicle="ADFU_riflemanAT_amp";
+						vehicle="ADFU_medic_amp";
 					};
-					class Unit5
+					class Unit4
 					{
 						position[]={15,-15,0};
 						rank="CORPORAL";
 						side=1;
 						vehicle="ADFU_marksman_amp";
 					};
-					class Unit6
+					class Unit5
 					{
 						position[]={-15,-15,0};
 						rank="PRIVATE";
 						side=1;
 						vehicle="ADFU_explosive_amp";
 					};
-					class Unit7
-					{
-						position[]={20,-20,0};
-						rank="PRIVATE";
-						side=1;
-						vehicle="ADFU_medic_amp";
-					};
 				};
-				class ADFU_InfTeam_AMP
+				class ADFU_SmallTeam_AMP
 				{
-					faction="ADF";
+					faction="ADFU";
 					side=1;
-					name="Fire Team (AMP)";
-					class Unit0
-					{
-						position[]={0,0,0};
-						rank="SERGEANT";
-						side=1;
-						vehicle="ADFU_Teamleader_amp";
-					};
-					class Unit1
-					{
-						position[]={5,-5,0};
-						rank="CORPORAL";
-						side=1;
-						vehicle="ADFU_rifleman_amp";
-					};
-					class Unit2
-					{
-						position[]={-5,-5,0};
-						rank="PRIVATE";
-						side=1;
-						vehicle="ADFU_grenadier_amp";
-					};
-					class Unit3
-					{
-						position[]={10,-10,0};
-						rank="PRIVATE";
-						side=1;
-						vehicle="ADFU_rifleman_amp";
-					};
-				};
-				class ADFU_SupportTeam_AMP
-				{
-					faction="ADF";
-					side=1;
-					name="Support Team (AMP)";
+					name="SASR Recce Element";
+					icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
@@ -1513,21 +1467,63 @@ class CfgGroups
 						position[]={5,-5,0};
 						rank="CORPORAL";
 						side=1;
-						vehicle="ADFU_heavygunner_amp";
+						vehicle="ADFU_rifleman_amp";
 					};
 					class Unit2
 					{
 						position[]={-5,-5,0};
 						rank="PRIVATE";
 						side=1;
-						vehicle="ADFU_heavygunner_amp";
+						vehicle="ADFU_marksman_amp";
+					};
+				};
+				class ADFU_AttackTeam_AMP
+				{
+					faction="ADFU";
+					side=1;
+					name="SASR Mounted Patrol";
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="PRIVATE";
+						side=1;
+						vehicle="ADFU_land_LandRover_Transport";
+					};
+					class Unit1
+					{
+						position[]={5,-5,0};
+						rank="CAPTAIN";
+						side=1;
+						vehicle="ADFU_teamleader_amp";
+					};
+					class Unit2
+					{
+						position[]={-5,-5,0};
+						rank="LIEUTENANT";
+						side=1;
+						vehicle="ADFU_marksman_amp";
 					};
 					class Unit3
 					{
 						position[]={10,-10,0};
-						rank="PRIVATE";
+						rank="LIEUTENANT";
 						side=1;
-						vehicle="ADFU_ammobearer_amp";
+						vehicle="ADFU_grenadier_amp";
+					};
+					class Unit4
+					{
+						position[]={15,-15,0};
+						rank="LIEUTENANT";
+						side=1;
+						vehicle="ADFU_medic_amp";
+					};
+					class Unit5
+					{
+						position[]={20,-20,0};
+						rank="LIEUTENANT";
+						side=1;
+						vehicle="ADFU_explosive_amp";
 					};
 				};
 			};
