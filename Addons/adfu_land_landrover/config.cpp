@@ -15,7 +15,7 @@ class CfgPatches
 		};
 		author[]=
 		{
-			"ADF Re-Cut"
+			"Australian Defence Force: Uncut"
 		};
 		authorUrl="http://www.adf-uncut.com.au";
 		version="0.4.5";
@@ -1355,7 +1355,7 @@ class CfgVehicles
 	class ADFU_land_LandRover_Transport: ADFU_land_LandRover_Base
 	{
 		scope=2;
-		crew="ADFU_rifleman_amp";
+		crew="ADFU_engineer_amp";
 		side=1;
 		faction="ADFU";
 		author="$STR_ADFU_AUTHOR";
