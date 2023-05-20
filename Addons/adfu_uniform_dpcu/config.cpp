@@ -609,7 +609,7 @@ class cfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_DPCU_Crewman";
-		displayName="Crewman";
+		displayName="Cavalryman";
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -1819,8 +1819,9 @@ class CfgGroups
 				{
 					faction="ADFU";
 					author="$STR_ADFU_AUTHOR";
-					name="Rifle Squad (DPCU)";
+					name="Rifle Section";
 					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						side=1;
@@ -1853,21 +1854,21 @@ class CfgGroups
 					{
 						side=1;
 						vehicle="ADFU_medic_dpcu";
-						rank="PRIVATE";
+						rank="CORPORAL";
 						position[]={-10,-5,0};
 					};
 					class Unit5
 					{
 						side=1;
-						vehicle="ADFU_lightgunner_dpcu";
+						vehicle="ADFU_ammobearer_dpcu";
 						rank="PRIVATE";
 						position[]={15,-10,0};
 					};
 					class Unit6
 					{
 						side=1;
-						vehicle="ADFU_marksman_dpcu";
-						rank="CORPORAL";
+						vehicle="ADFU_grenadier_dpcu";
+						rank="PRIVATE";
 						position[]={-15,-10,0};
 					};
 					class Unit7
@@ -1878,12 +1879,13 @@ class CfgGroups
 						position[]={0,5,0};
 					};
 				};
-				class InfTeam_DPCU
+				class ADFU_InfTeam_DPCU
 				{
 					faction="ADFU";
 					author="$STR_ADFU_AUTHOR";
-					name="Fire Team (DPCU)";
+					name="Fire Team";
 					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						side=1;
@@ -1901,24 +1903,25 @@ class CfgGroups
 					class Unit2
 					{
 						side=1;
-						vehicle="ADFU_marksman_dpcu";
+						vehicle="ADFU_grenadier_dpcu";
 						rank="PRIVATE";
 						position[]={0,-10,0};
 					};
 					class Unit3
 					{
 						side=1;
-						vehicle="ADFU_medic_dpcu";
+						vehicle="ADFU_ammobearer_dpcu";
 						rank="PRIVATE";
 						position[]={0,-15,0};
 					};
 				};
-				class ADFU_SupportTeam_DPCU
+				class ADFU_ReconSquad_DPCU
 				{
 					faction="ADF";
 					side=1;
 					author="$STR_ADFU_AUTHOR";
-					name="Support Team (DPCU)";
+					name="Cavalry Foot Patrol";
+					icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
@@ -1929,23 +1932,280 @@ class CfgGroups
 					class Unit1
 					{
 						position[]={5,-5,0};
-						rank="CORPORAL";
+						rank="PRIVATE";
 						side=1;
-						vehicle="ADFU_heavygunner_dpcu";
+						vehicle="ADFU_cavalryman_dpcu";
 					};
 					class Unit2
 					{
 						position[]={-5,-5,0};
 						rank="PRIVATE";
 						side=1;
-						vehicle="ADFU_heavygunner_dpcu";
+						vehicle="ADFU_cavalryman_dpcu";
 					};
 					class Unit3
 					{
 						position[]={10,-10,0};
+						rank="CORPORAL";
+						side=1;
+						vehicle="ADFU_marksman_dpcu";
+					};
+				};
+				class ADFU_InfAssault_DPCU
+				{
+					faction="ADF";
+					side=1;
+					author="$STR_ADFU_AUTHOR";
+					name="Manoeuvre Support Section";
+					icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFU_squadleader_dpcu";
+						rank="LIEUTENANT";
+						position[]={0,-7.5,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_dpcu";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit2
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_ass_dpcu";
+						rank="PRIVATE";
+						position[]={10,0,0};
+					};
+					class Unit3
+					{
+						side=1;
+						vehicle="ADFU_medic_dpcu";
+						rank="PRIVATE";
+						position[]={10,-5,0};
+					};
+					class Unit4
+					{
+						side=1;
+						vehicle="ADFU_teamleader_dpcu";
+						rank="SERGEANT";
+						position[]={-10,-5,0};
+					};
+					class Unit5
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_dpcu";
+						rank="PRIVATE";
+						position[]={15,-10,0};
+					};
+					class Unit6
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_ass_dpcu";
+						rank="PRIVATE";
+						position[]={20,-10,0};
+					};
+					class Unit7
+					{
+						side=1;
+						vehicle="ADFU_riflemanAT_dpcu";
+						rank="PRIVATE";
+						position[]={0,5,0};
+					};
+					class Unit8
+					{
+						side=1;
+						vehicle="ADFU_teamleader_dpcu";
+						rank="SERGEANT";
+						position[]={-20,-10,0};
+					};
+					class Unit9
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_dpcu";
+						rank="PRIVATE";
+						position[]={20,-15,0};
+					};
+					class Unit10
+					{
+						side=1;
+						vehicle="ADFU_heavyGunner_ass_dpcu";
+						rank="PRIVATE";
+						position[]={25,-15,0};
+					};
+					class Unit11
+					{
+						side=1;
+						vehicle="ADFU_riflemanAT_dpcu";
+						rank="PRIVATE";
+						position[]={-5,15,0};
+					};
+				};
+			};
+			class Motorized
+			{
+				name="Motorized";
+				class ADFU_MotInf_Team_DPCU_Bush
+				{
+					faction="ADFU";
+					author="$STR_ADFU_AUTHOR";
+					name="Bushmaster Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="LIEUTENANT";
+						side=1;
+						Vehicle="ADFU_squadleader_dpcu";
+					};
+					class Unit1
+					{
+						position[]={0,-5,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFU_teamleader_dpcu";
+					};
+					class Unit2
+					{
+						position[]={0,-10,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFU_medic_dpcu";
+					};
+					class Unit3
+					{
+						position[]={0,-15,0};
 						rank="PRIVATE";
 						side=1;
-						vehicle="ADFU_ammobearer_dpcu";
+						Vehicle="ADFU_grenadier_dpcu";
+					};
+					class Unit4
+					{
+						position[]={5,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_lightGunner_dpcu";
+					};
+					class Unit5
+					{
+						position[]={-5,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_riflemanAT_dpcu";
+					};
+					class Unit6
+					{
+						position[]={0,100,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="adfu_bushmaster_pws127mm_F";
+					};
+				};
+				class ADFU_MotInf_Team_DPCU_MATV
+				{
+					faction="ADFU";
+					author="$STR_ADFU_AUTHOR";
+					name="M-ATV Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={5,0,0};
+						rank="LIEUTENANT";
+						side=1;
+						Vehicle="ADFU_squadleader_dpcu";
+					};
+					class Unit1
+					{
+						position[]={-5,0,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFU_teamleader_dpcu";
+					};
+					class Unit2
+					{
+						position[]={10,-5,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFU_medic_dpcu";
+					};
+					class Unit3
+					{
+						position[]={-10,-5,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_grenadier_dpcu";
+					};
+					class Unit4
+					{
+						position[]={-10,-10,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_riflemanAT_dpcu";
+					};
+					class Unit5
+					{
+						position[]={20,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_hunter_dpcu";
+					};
+					class Unit6
+					{
+						position[]={0,0,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_hunterHMG_dpcu";
+					};
+				};
+			};
+			class Mechanized
+			{
+				name="Mechanized (ASLAV)";
+				class ADFU_MechInfSquad_DPCU_ASLAV
+				{
+					faction="ADFU";
+					author="$STR_ADFU_AUTHOR";
+					name="ASLAV Cavalry Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					class Unit0
+					{
+						position[]={5,0,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFU_teamleader_dpcu";
+					};
+					class Unit1
+					{
+						position[]={-5,0,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFU_cavalryman_dpcu";
+					};
+					class Unit2
+					{
+						position[]={10,-5,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFU_cavalryman_dpcu";
+					};
+					class Unit3
+					{
+						position[]={-10,-5,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFU_marksman_dpcu";
+					};
+					class Unit4
+					{
+						position[]={0,0,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFU_land_aslav_mag58";
 					};
 				};
 			};
