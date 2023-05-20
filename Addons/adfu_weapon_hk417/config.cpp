@@ -5,7 +5,13 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F_Exp"};
 		requiredVersion = 0.1;
 		units[] = {};
-		weapons[] = {"arifle_SPAR_03_snd_F"};
+		weapons[] = 
+		{
+			"arifle_SPAR_03_snd_F",
+			"ADFU_weapon_hk417_base",
+			"ADFU_weapon_hk417_sand",
+			"ADFU_hk417_sand_army"
+		};
 	};
 };
 
@@ -20,6 +26,7 @@ class CfgWeapons
 {
 	class ADFU_weapon_hk417_base: arifle_SPAR_03_snd_F
 	{
+		scope=1;
 		class WeaponSlotsInfo;
 	};
 	class ADFU_weapon_hk417_sand: ADFU_weapon_hk417_base
@@ -51,6 +58,29 @@ class CfgWeapons
 					adfu_m4a5_muzzle_snds_wdl = 1;
 				};
 				
+			};
+		};
+	};
+	class ADFU_hk417_sand_army: ADFU_weapon_hk417_sand
+	{
+		scope=1;
+		author="$STR_ADFU_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="ADFU_acog_ta648_rds_t";
+			};
+			class LinkedItemsPointer
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "bipod_01_F_snd";
 			};
 		};
 	};
