@@ -930,7 +930,7 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		weapons[]=
 		{
-			"ADFU_minimi_eotech552",
+			"ADFU_minimi_eotech",
 			"ADFU_weapon_hpII",
 			"Throw",
 			"Put",
@@ -938,7 +938,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFU_minimi_eotech552",
+			"ADFU_minimi_eotech",
 			"ADFU_weapon_hpII",
 			"Throw",
 			"Put",
@@ -1315,32 +1315,33 @@ class cfgVehicles
 		{
 			class _xx_1Rnd_HE_Grenade_shell
 			{
-				name="1Rnd_HE_Grenade_shell";
+				magazine="1Rnd_HE_Grenade_shell";
 				count=10;
 			};
 			class _xx_UGL_FlareGreen_F
 			{
-				name="UGL_FlareGreen_F";
+				magazine="UGL_FlareGreen_F";
 				count=2;
 			};
 			class _xx_1Rnd_Smoke_Grenade_shell
 			{
-				name="1Rnd_Smoke_Grenade_shell";
+				magazine="1Rnd_Smoke_Grenade_shell";
 				count=4;
 			};
 			class _xx_1Rnd_SmokeRed_Grenade_shell
 			{
 				name="1Rnd_SmokeRed_Grenade_shell";
+				magazine="1Rnd_SmokeRed_Grenade_shell";
 				count=4;
 			};
 			class _xx_1Rnd_SmokeOrange_Grenade_shell
 			{
-				name="1Rnd_SmokeOrange_Grenade_shell";
+				magazine="1Rnd_SmokeOrange_Grenade_shell";
 				count=2;
 			};
 			class _xx_1Rnd_SmokeBlue_Grenade_shell
 			{
-				name="1Rnd_SmokeBlue_Grenade_shell";
+				magazine="1Rnd_SmokeBlue_Grenade_shell";
 				count=2;
 			};
 		};
