@@ -1330,7 +1330,6 @@ class cfgVehicles
 			};
 			class _xx_1Rnd_SmokeRed_Grenade_shell
 			{
-				name="1Rnd_SmokeRed_Grenade_shell";
 				magazine="1Rnd_SmokeRed_Grenade_shell";
 				count=4;
 			};
