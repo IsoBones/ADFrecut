@@ -1,6 +1,6 @@
 class RotorLibHelicopterProperties
 {
-	RTDconfig = "A3_Aegis\Air_F_Aegis\Heli_Attack_03\RTD_Heli_Attack_03.xml";
+	RTDconfig = "adfu_air_apache\RTD_Heli_Attack_03.xml";
 	defaultCollective = 0.621;
 	autoHoverCorrection[] =
     {

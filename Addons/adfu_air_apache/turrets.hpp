@@ -210,12 +210,12 @@ class Turrets: Turrets
 		gunEnd = "konec hlavne";
 		weapons[] =
         {
-            Gatling_30mm,
+            Gatling_30mm_Heli_Attack_03_F,
             Laserdesignator_mounted
         };
 		magazines[] =
         {
-            250Rnd_30mm_HE_shells,
+            1200Rnd_Gatling_30mm_Heli_Attack_03_F,
             Laserbatteries
         };
 

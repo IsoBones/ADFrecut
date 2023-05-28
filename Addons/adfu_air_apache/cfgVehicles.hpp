@@ -6,7 +6,7 @@ class CfgVehicles
     /* Bases */
 	class Heli_Attack_03_base_F: Helicopter_Base_F
     {
-        author = "ADF Re-Cut";
+        author = $STR_A3_A_AveryTheKitty;
 		mapSize = 15.5;
 		class SpeechVariants
 		{
@@ -19,13 +19,13 @@ class CfgVehicles
 		textSingular = $STR_A3_nameSound_veh_air_gunship_s;
 		textPlural = $STR_A3_nameSound_veh_air_gunship_p;
 		nameSound = veh_air_gunship_s;
-		scope = 1;
+		scope = private;
 		displayName = $STR_A3_A_CfgVehicles_Heli_Attack_03_base_F0;
 		model = "\adfu_air_apache\Heli_Attack_03_F.p3d";
-		icon = "\adfu_air_apache\Data\UI\Map_Heli_Attack_03_CA.paa";
-		picture = "\adfu_air_apache\Data\UI\Heli_Attack_03_CA.paa";
+		icon = "\adfu_air_apache\data\ui\Map_Heli_Attack_03_CA.paa";
+		picture = "\adfu_air_apache\data\ui\Heli_Attack_03_CA.paa";
 		vehicleClass = Air;
-		editorSubcategory = "EdSubcat_Helicopters";
+		editorSubcategory = EdSubcat_Helicopters;
 		accuracy = 0.5;
 		cost = 3000000;
 		threat[] =
@@ -164,6 +164,7 @@ class CfgVehicles
 				radius = 0.4;
 				explosionShielding = 1.5;
 				minimalHit = 0.05;
+				passThrough = false;
 			};
 			class HitGlass2: HitGlass1
 			{
@@ -436,7 +437,7 @@ class CfgVehicles
 			};
 			class TransportPylonsComponent
 			{
-				uiPicture = "\adfu_air_apache\Data\UI\Heli_Attack_03_EDEN_CA.paa";
+				uiPicture = "\adfu_air_apache\data\ui\Heli_Attack_03_EDEN_CA.paa";
 				class Pylons
 				{
 					class PylonLeft1
@@ -641,6 +642,7 @@ class CfgVehicles
         #include "mfd_driver.hpp"
 
         /* Weapons & Ammunition */
+		#include "CfgWeapons.hpp"
 		weapons[] = {CMFlareLauncher};
 		magazines[] = {192Rnd_CMFlare_Chaff_Magazine};
 
@@ -651,27 +653,41 @@ class CfgVehicles
         /* Liveries */
 		class TextureSources
 		{
-			class ADF
+			class BAF
 			{
-				displayName = "Australian Army Aviation";
-				author = "ADF Re-Cut";
+				displayName = $STR_A3_A_TextureSources_BAF0;
+				author = $STR_A3_A_AveryTheKitty;
 				textures[] =
 				{
-                    "\adfu_air_apache\Data\Heli_Attack_03_body_CO.paa",
-                    "\adfu_air_apache\Data\Heli_Attack_03_details_CO.paa",
-                    "\adfu_air_apache\Data\Heli_Attack_03_adds_CO.paa"
+                    "\adfu_air_apache\DataHeli_Attack_03_body_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_details_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_adds_CO.paa"
 				};
 				factions[] = {};
 			};
+            /*
 			class Grey
 			{
 				displayName = $STR_A3_TextureSources_Grey0;
-				author = "ADF Re-Cut";
+				author = $STR_A3_A_AveryTheKitty;
 				textures[] =
 				{
-                    "\adfu_air_apache\Data\Heli_Attack_03_body_grey_CO.paa",
-                    "\adfu_air_apache\Data\Heli_Attack_03_details_grey_CO.paa",
-                    "\adfu_air_apache\Data\Heli_Attack_03_adds_grey_CO.paa"
+                    "\adfu_air_apache\DataHeli_Attack_03_body_grey_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_details_grey_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_adds_grey_CO.paa"
+				};
+				factions[] = {};
+			};
+            */
+			class Indep
+			{
+				displayName = $STR_A3_TextureSources_Indep0;
+				author = $STR_A3_A_AveryTheKitty;
+				textures[] =
+				{
+                    "\adfu_air_apache\DataHeli_Attack_03_body_INDP_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_details_INDP_CO.paa",
+                    "\adfu_air_apache\DataHeli_Attack_03_adds_INDP_CO.paa"
 				};
 				factions[] = {};
 			};
@@ -686,9 +702,9 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
         {
-            "\adfu_air_apache\Data\Heli_Attack_03_body_CO.paa",
-            "\adfu_air_apache\Data\Heli_Attack_03_details_CO.paa",
-            "\adfu_air_apache\Data\Heli_Attack_03_adds_CO.paa"
+            "\adfu_air_apache\DataHeli_Attack_03_body_CO.paa",
+            "\adfu_air_apache\DataHeli_Attack_03_details_CO.paa",
+            "\adfu_air_apache\DataHeli_Attack_03_adds_CO.paa"
         };
 
         /* Lights */
@@ -866,6 +882,7 @@ class CfgVehicles
 				source = Hit;
 				hitpoint = HitGlass1;
 				raw = true;
+				passThrough = false;
 			};
 			class HitGlass2: HitGlass1
 			{
@@ -894,7 +911,7 @@ class CfgVehicles
 			class Muzzle_flash
 			{
 				source = ammorandom;
-				weapon = Gatling_30mm;
+				weapon = Gatling_30mm_Heli_Attack_03_F;
 			};
         };
 
@@ -942,8 +959,12 @@ class CfgVehicles
 		{
 			fired = "_this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};
+		
+		/*Sounds*/
+		#include "sounds.hpp"
+		
     };
 
     /* Factions */
-    #include "cfgBLUFOR.hpp"    // ADF
+    #include "cfgBLUFOR.hpp"    // BAF
 };
