@@ -43,12 +43,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"\adfu_air_c130\data\Plane_Transport_01_body_blue_CO.paa",
-			"\adfu_air_c130\data\Plane_Transport_01_wings_blue_CO.paa",
+			"\adfu_air_c130\data\Plane_Transport_01_body_au_CO.paa",
+			"\adfu_air_c130\data\Plane_Transport_01_wings_au_CO.paa",
 			"\adfu_air_c130\data\Plane_Transport_01_interior_CO.paa"
 		};
-		weapons[] = {CMFlareLauncher_Quadruples};
-		magazines[] = {240Rnd_CMFlare_Chaff_Magazine};
+		weapons[] = {CMFlareLauncher_Triples};
+		magazines[] = {300Rnd_CMFlare_Chaff_Magazine};
 		driveOnComponent[] = {};
 		cabinOpening = false;
 		gearRetracting = true;
@@ -775,74 +775,26 @@ class CfgVehicles
 		#include "flightModel.hpp"
 		class TextureSources
 		{
-			class Blue
+			class No37Sqn
 			{
-				displayName = $STR_A3_TEXTURESOURCES_BLUE0;
+				displayName = "No. 37 Squadron";
 				author = "ADF Re-Cut";
 				textures[] =
 				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_blue_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_blue_CO.paa",
+					"\adfu_air_c130\data\Plane_Transport_01_body_au_CO.paa",
+					"\adfu_air_c130\data\Plane_Transport_01_wings_au_CO.paa",
 					"\adfu_air_c130\data\Plane_Transport_01_interior_CO.paa"
 				};
 				factions[] = {};
 			};
-			class Olive
+			class No36Sqn
 			{
-				displayName = $STR_A3_TEXTURESOURCES_OLIVE0;
+				displayName = "No. 36 Squadron";
 				author = "ADF Re-Cut";
 				textures[] =
 				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_olive_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_olive_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_interior_CO.paa"
-				};
-				factions[] = {};
-			};
-			class Hex
-			{
-				displayName = $STR_A3_TEXTURESOURCES_HEX0;
-				author = "ADF Re-Cut";
-				textures[] =
-				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_OPFOR_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_OPFOR_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_interior_OPFOR_CO.paa"
-				};
-				factions[] = {};
-			};
-			class GreenHex
-			{
-				displayName = $STR_A3_TEXTURESOURCES_GREENHEX0;
-				author = "ADF Re-Cut";
-				textures[] =
-				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_ghex_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_ghex_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_interior_OPFOR_CO.paa"
-				};
-				factions[] = {};
-			};
-			class Grey
-			{
-				displayName = $STR_A3_TEXTURESOURCES_GREY0;
-				author = "ADF Re-Cut";
-				textures[] =
-				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_grey_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_grey_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_interior_OPFOR_CO.paa"
-				};
-				factions[] = {};
-			};
-			class Indep
-			{
-				displayName = $STR_A3_TEXTURESOURCES_INDEP0;
-				author = "ADF Re-Cut";
-				textures[] =
-				{
-					"\adfu_air_c130\data\Plane_Transport_01_body_INDP_CO.paa",
-					"\adfu_air_c130\data\Plane_Transport_01_wings_INDP_CO.paa",
+					"\adfu_air_c130\data\Plane_Transport_01_body_aucamo_CO.paa",
+					"\adfu_air_c130\data\Plane_Transport_01_wings_aucamo_CO.paa",
 					"\adfu_air_c130\data\Plane_Transport_01_interior_CO.paa"
 				};
 				factions[] = {};
@@ -1203,5 +1155,5 @@ class CfgVehicles
 	};
 
     /* Factions */
-    #include "cfgBLUFOR.hpp"    // US & BAF
+    #include "cfgBLUFOR.hpp"    // ADF
 };
