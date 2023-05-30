@@ -105,6 +105,7 @@ class CfgVehicles
 		scope=0;
 		model="ADFU_air_blackhawk\S70A";
 		displayName="S70A-9 Black Hawk";
+		editorPreview = "\Addons\EditorPreviews\ADFU_air_blackhawk.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_BASE";
 		side=1;
@@ -5505,6 +5506,7 @@ class CfgVehicles
 		scope=0;
 		model="ADFU_air_blackhawk\S70A_MAG58";
 		displayName="S70A-9 Black Hawk";
+		editorPreview = "\Addons\EditorPreviews\ADFU_air_blackhawk_mag58.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_BASE_MAG58";
 		cargoProxyIndexes[]={2,3,6,7,9,10,11,12};
@@ -5736,6 +5738,7 @@ class CfgVehicles
 		scope=2;
 		model="ADFU_air_blackhawk\S70A";
 		displayName="S70 Blackhawk";
+		editorPreview = "ADFU_air_blackhawk\data\ADFU_air_blackhawk.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_BASE_F";
 		mapSize=16.82;
@@ -5925,6 +5928,7 @@ class CfgVehicles
 		scope=2;
 		model="ADFU_air_blackhawk\S70A_MAG58";
 		displayName="S70 Blackhawk MAG-58";
+		editorPreview = "ADFU_air_blackhawk\data\ADFU_air_blackhawk_mag58.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_MAG58_F";
 		mapSize=16.82;
@@ -6168,6 +6172,7 @@ class CfgVehicles
 		scope=2;
 		model="ADFU_air_blackhawk\S70A_MEV";
 		displayName="S70 Blackhawk Medivac";
+		editorPreview = "ADFU_air_blackhawk\data\ADFU_air_blackhawk_mev.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_MEV_F";
 		mapSize=16.82;
@@ -6354,6 +6359,7 @@ class CfgVehicles
 		scope=2;
 		model="ADFU_air_blackhawk\S70A_CARGO";
 		displayName="S70 Blackhawk Cargo";
+		editorPreview = "ADFU_air_blackhawk\data\ADFU_air_blackhawk_cargo.jpg";
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_air_blackhawk_BASE_F";
 		mapSize=16.82;

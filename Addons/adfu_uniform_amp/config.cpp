@@ -724,6 +724,7 @@ class CfgVehicles
 		editorSubcategory="ADFU_MEN_AMP";
 		vehicleClass="ADFU_MEN_AMP";
 		displayName="Operator";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_rifleman_amp.jpg";
 		weapons[]=
 		{
 			"ADFU_sasr_m4a5",
@@ -807,6 +808,7 @@ class CfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Troop Leader";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_squadleader_amp.jpg";
 		weapons[]=
 		{
 			"ADFU_sasr_m4a5_acog",
@@ -881,6 +883,7 @@ class CfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Patrol Leader";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_teamleader_amp.jpg";
 		weapons[]=
 		{
 			"ADFU_sasr_m4a5gl_acog",
@@ -928,6 +931,7 @@ class CfgVehicles
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Grenadier";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_grenadier_amp.jpg";
 		icon="iconManExplosive";
 		weapons[]=
 		{
@@ -972,6 +976,7 @@ class CfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Operator Engineer";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_engineer_amp.jpg";
 		engineer=1;
 		saboteur=1;
 		canDeactivateMines=1;
@@ -1007,6 +1012,7 @@ class CfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Breacher";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_explosive_amp.jpg";
 		saboteur=1;
 		canDeactivateMines=1;
 		detectSkill=80;
@@ -1055,6 +1061,7 @@ class CfgVehicles
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Marksman";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_marksman_amp.jpg";
 		weapons[]=
 		{
 			"ADFU_MK18_SASR",
@@ -1129,6 +1136,7 @@ class CfgVehicles
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Counter-Terrorism Operator";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_CToperator_amp.jpg";
 		weapons[]=
 		{
 			"ADFU_CTmp5",
@@ -1201,6 +1209,7 @@ class CfgVehicles
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Counter-Terrorism Medic";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_CTmedic_amp.jpg";
 		attendant=1;
 		icon="iconManMedic";
 		picture="pictureHeal";
@@ -1212,6 +1221,7 @@ class CfgVehicles
 		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		displayName="Operator Medic";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_medic_amp.jpg";
 		attendant=1;
 		weapons[]=
 		{
@@ -1260,6 +1270,7 @@ class CfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Helicopter Pilot";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_helicopterPilot_amp.jpg";
 		Items[]=
 		{
 			"FirstAidKit"
@@ -1328,6 +1339,7 @@ class CfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
 		displayName="Pilot";
+		editorPreview = "adfu_uniform_amp\preview\ADFU_jetPilot_amp.jpg";
 		Items[]=
 		{
 			"FirstAidKit"

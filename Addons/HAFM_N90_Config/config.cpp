@@ -231,6 +231,7 @@ class CfgVehicles
 		author="Aplion | Adapted by ADFRC";
 		_generalMacro="MRH90";
 		displayName="MRH-90 Taipan";
+		editorPreview = "\HAFM_NH90\preview\MRH90.jpg";
 		model="\HAFM_NH90\NH90.p3d";
 		scope=2;
 		side=1;

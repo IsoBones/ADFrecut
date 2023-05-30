@@ -900,6 +900,7 @@ class CfgVehicles
 		faction="ADFU";
 		vehicleClass="Armored";
 		displayName="ASLAV";
+		editorPreview = "\adfu_land_aslav\data\ADFU_land_aslav.jpg";
 		model="adfu_land_aslav\ASLAV.p3d";
 		mapSize=9;
 		picture="\adfu_land_aslav\data\UI\Picture_aslav_CA.paa";
@@ -967,6 +968,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="ASLAV (MAG-58)";
+		editorPreview = "\adfu_land_aslav\data\ADFU_land_aslav_mag58.jpg";
 		model="adfu_land_aslav\ASLAV_MAG58.p3d";
 		author="$STR_ADFU_AUTHOR";
 		class Turrets: Turrets

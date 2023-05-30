@@ -147,6 +147,7 @@ class cfgVehicles
 		editorSubcategory="ADFU_MEN_DPDU";
 		_generalMacro="B_Soldier_F";
 		displayName="Commando";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_rifleman_dpdu.jpg";
 		author="$STR_ADFU_AUTHOR";
 		uniformAccessories[]={};
 		nakedUniform="U_BasicBody";
@@ -175,6 +176,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Grenadier";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_grenadier_dpdu.jpg";
 		icon="iconManExplosive";
 		weapons[]=
 		{
@@ -260,6 +262,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Designated Marksman";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_marksman_dpdu.jpg";
 		weapons[]=
 		{
 			"ADFU_sr25_KHS",
@@ -334,6 +337,7 @@ class cfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		scope=2;
 		displayName="Commando Medic";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_medic_dpdu.jpg";
 		attendant=1;
 		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		uniformAccessories[]={};
@@ -384,6 +388,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="AT Gunner";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_riflemanAT_dpdu.jpg";
 		weapons[]=
 		{
 			"ADFU_hk416_sand",
@@ -457,6 +462,7 @@ class cfgVehicles
 	{
 		author="$STR_ADFU_AUTHOR";
 		displayName="Commando Engineer";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_engineer_dpdu.jpg";
 		engineer=1;
 		saboteur=1;
 		canDeactivateMines=1;
@@ -489,6 +495,7 @@ class cfgVehicles
 	{
 		author="$STR_ADFU_AUTHOR";
 		displayName="Breacher";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_explosive_dpdu.jpg";
 		saboteur=1;
 		canDeactivateMines=1;
 		detectSkill=80;
@@ -556,6 +563,7 @@ class cfgVehicles
 		author="$STR_ADFU_AUTHOR";
 		scope=2;
 		displayName="Helicopter Pilot";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_helicopterPilot_dpdu.jpg";
 		model="\A3\Characters_F\Common\coveralls.p3d";
 		uniformAccessories[]={};
 		uniformClass="ADFU_uniform_dpdu_pilot";
@@ -642,6 +650,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Brick Leader";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_teamleader_dpdu.jpg";
 		weapons[]=
 		{
 			"ADFU_hk416_GL_sand",
@@ -727,6 +736,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Section Leader";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_squadleader_dpdu.jpg";
 		magazines[]=
 		{
 			"30Rnd_556x45_Stanag_Sand_red",
@@ -807,6 +817,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Section Gunner";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_lightGunner_dpdu.jpg";
 		weapons[]=
 		{
 			"ADFU_minimi_para_elcan",
@@ -884,6 +895,7 @@ class cfgVehicles
 			"\ADFU_uniform_dpdu\data\dpdu-uniform.paa"
 		};
 		displayName="Section Gunner (Heavy)";
+		editorPreview = "adfu_uniform_dpdu\preview\ADFU_heavyGunner_dpdu.jpg";
 		weapons[]=
 		{
 			"ADFU_maximi_eotech",

@@ -17,7 +17,6 @@ class CfgPatches
 		{
 			"ADF Re-Cut"
 		};
-		authorUrl="http://www.adf-uncut.com.au";
 		version="0.4.5";
 		versionStr="0.4.5";
 		versionAr[]={0,4,5};
@@ -1360,6 +1359,7 @@ class CfgVehicles
 		faction="ADFU";
 		author="$STR_ADFU_AUTHOR";
 		displayname="Landrover 4x4 Transport";
+		editorPreview = "adfu_land_landrover\data\ADFU_land_LandRover_Transport.jpg";
 		hiddenSelectionsTextures[]=
 		{
 			"ADFU_land_landrover\data\lr_base_acr_co.paa"
