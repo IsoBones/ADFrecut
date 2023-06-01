@@ -4,7 +4,7 @@
 		scope = public; 
 		scopeCurator = public; 
 		displayName = ##b##; 
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K; 
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC"; 
 		editorCategory = EdCat_Weapons; 
 		editorSubcategory = ##c##; 
 		vehicleClass = WeaponsPrimary; 
