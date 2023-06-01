@@ -7,6 +7,8 @@
 
 #include "basicDefines_A3.hpp"
 #include "cfgPatches.hpp"
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"
 #include "ASDG.hpp"
 #include "cfgMagazines.hpp"
 class CfgRecoils
@@ -62,7 +64,7 @@ class CfgWeapons
 			"\A3\Weapons_F_beta\rifles\mk20\data\Anim\mk20.rtm"
 		};
 		descriptionShort = $STR_A3_A_CfgWeapons_arifle_AUG_base_F1;
-		reloadAction = GestureReloadAUG;
+		reloadAction = "GestureReloadMk20";
 		magazines[] =
 		{
 			30Rnd_556x45_AUG_Mag_F,
@@ -78,6 +80,36 @@ class CfgWeapons
 		recoil = recoil_aug;
 		maxZeroing = 1000;
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
+		bullet1[] = {"\A3\Sounds_F\weapons\shells\7_62\metal_762_01",db-6,1,15};
+		bullet2[] = {"\A3\Sounds_F\weapons\shells\7_62\metal_762_02",db-6,1,15};
+		bullet3[] = {"\A3\Sounds_F\weapons\shells\7_62\metal_762_03",db-6,1,15};
+		bullet4[] = {"\A3\Sounds_F\weapons\shells\7_62\metal_762_04",db-6,1,15};
+		bullet5[] = {"\A3\Sounds_F\weapons\shells\7_62\dirt_762_01",db-8,1,15};
+		bullet6[] = {"\A3\Sounds_F\weapons\shells\7_62\dirt_762_02",db-8,1,15};
+		bullet7[] = {"\A3\Sounds_F\weapons\shells\7_62\dirt_762_03",db-8,1,15};
+		bullet8[] = {"\A3\Sounds_F\weapons\shells\7_62\dirt_762_04",db-8,1,15};
+		bullet9[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_01",db-12,1,15};
+		bullet10[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_02",db-12,1,15};
+		bullet11[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_03",db-12,1,15};
+		bullet12[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_04",db-12,1,15};
+		soundBullet[] =
+		{
+			bullet1,1/12,
+			bullet2,1/12,
+			bullet3,1/12,
+			bullet4,1/12,
+			bullet5,1/12,
+			bullet6,1/12,
+			bullet7,1/12,
+			bullet8,1/12,
+			bullet9,1/12,
+			bullet10,1/12,
+			bullet11,1/12,
+			bullet12,1/12
+		};
+		drySound[] = {"\adfu_weapon_ef88\Data\Sounds\AUG_dry",db-2,1,10};
+		reloadMagazineSound[] = {"\adfu_weapon_ef88\Data\Sounds\AUG_reload",db0,1,10};
+		changeFiremodeSound[] = {"",db0,0,0};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class MuzzleSlot: asdg_MuzzleSlot_556
@@ -127,6 +159,25 @@ class CfgWeapons
 			midRangeProbab = 0.7;
 			maxRange = 250;
 			maxRangeProbab = 0.2;
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] =
+				{
+					AUG_Shot_SoundSet,
+					AUG_Tail_SoundSet,
+					AUG_InteriorTail_SoundSet
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] =
+				{
+					AUG_silencerShot_SoundSet,
+					AUG_silencerTail_SoundSet,
+					AUG_silencerInteriorTail_SoundSet
+				};
+			};
 		};
 		class FullAuto: Mode_FullAuto
 		{
@@ -139,6 +190,25 @@ class CfgWeapons
 			maxRange = 30;
 			maxRangeProbab = 0.05;
 			aiRateOfFire = 1e-006;
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] =
+				{
+					AUG_Shot_SoundSet,
+					AUG_Tail_SoundSet,
+					AUG_InteriorTail_SoundSet
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[] =
+				{
+					AUG_silencerShot_SoundSet,
+					AUG_silencerTail_SoundSet,
+					AUG_silencerInteriorTail_SoundSet
+				};
+			};
 		};
 		class fullauto_medium: FullAuto
 		{
@@ -194,7 +264,7 @@ class CfgWeapons
 		handAnim[] =
 		{
 			OFP2_ManSkeleton,
-			"\A3\Weapons_F_beta\rifles\mk20\data\Anim\mk20.rtm"
+			"\A3\Weapons_F_beta\Rifles\MK20\Data\Anim\mk20G.rtm"
 		};
 		inertia = 0.5;
 		dexterity = 1.6;
@@ -236,6 +306,7 @@ class CfgWeapons
 			};
 			discreteDistanceInitIndex = 1;
 			reloadAction = GestureReloadKatibaUGL;
+			reloadMagazineSound[] = {"\adfu_weapon_ef88\Data\Sounds\AUG_UGL_reload",db-2,1,10};
 		};
 		muzzles[] =
 		{
@@ -272,49 +343,49 @@ class CfgWeapons
 	};
 	class arifle_AUG_F: arifle_AUG_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = EF88;
+		displayName = "EF88 (Tan)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_F_X_CA.paa";
 		baseWeapon = arifle_AUG_F;
 	};
 	class arifle_AUG_GL_F: arifle_AUG_GL_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = EF88-GL;
+		displayName = "EF88-GL (Tan)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_GL_F_X_CA.paa";
 		baseWeapon = arifle_AUG_GL_F;
 	};
 	class arifle_AUG_C_F: arifle_AUG_C_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = $STR_A3_A_CfgWeapons_arifle_AUG_C_F0;
+		displayName = "EF88-C (Tan)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_C_F_X_CA.paa";
 		baseWeapon = arifle_AUG_C_F;
 	};
 	class arifle_AUG_black_F: arifle_AUG_black_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = EF88 (Black);
+		displayName = "EF88 (Black)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_black_F_X_CA.paa";
 		baseWeapon = arifle_AUG_black_F;
 	};
 	class arifle_AUG_GL_black_F: arifle_AUG_GL_black_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = EF88-GL (Black);
+		displayName = "EF88-GL (Black)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_GL_black_F_X_CA.paa";
 		baseWeapon = arifle_AUG_GL_black_F;
 	};
 	class arifle_AUG_C_black_F: arifle_AUG_C_black_base_F
 	{
-		author = $STR_A3_A_AveryTheKitty_Luchador_and_Toadie2K;
+		author = "A3 Aegis/Atlas Team | Adapted by ADFRC";
 		scope = public;
-		displayName = $STR_A3_A_CfgWeapons_arifle_AUG_C_black_F0;
+		displayName = "EF88-C (Black)";
 		picture = "\adfu_weapon_ef88\Data\UI\icon_arifle_AUG_C_black_F_X_CA.paa";
 		baseWeapon = arifle_AUG_C_black_F;
 	};
