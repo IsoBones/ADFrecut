@@ -9,7 +9,7 @@
 
 class CfgPatches
 {
-	class kot_kondor
+	class ADFU_accessories
 	{
 		requiredAddons[] = {"A3_Characters_F"};
 		requiredVersion = 2.0;
@@ -73,44 +73,49 @@ class CfgGlasses
 	class adfu_condor_blk_clear: kot_kondor_blk_clr
 	{
 		scope = 2;
-		displayName = "Condor Ballistic Glasses (Clear)";
-		hiddenSelections[] = {"kondor"};
-		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_blk_clr_CA.paa"};
+		displayName = "Ballistic Glasses (Clear)";
 		author = "ADF Re-Cut";
 	};
-	class adfu_condor_blk_blk: adfu_condor_blk_clear
+	class adfu_condor_blk_blk: kot_kondor_blk_blk
 	{
-		displayName = "Condor Ballistic Glasses (Black)";
+		scope=2;
+		displayName = "Ballistic Glasses (Black)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_blk_blk_CA.paa"};
 	};
-	class adfu_condor_blk_ylw: adfu_condor_blk_clear
+	class adfu_condor_blk_ylw: kot_kondor_blk_ylw
 	{
-		displayName = "Condor Ballistic Glasses (Yellow)";
+		scope=2;
+		displayName = "Ballistic Glasses (Yellow)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_blk_ylw_CA.paa"};
 	};
-	class adfu_condor_blk_blu: adfu_condor_blk_clear
+	class adfu_condor_blk_blu: kot_kondor_blk_blu
 	{
-		displayName = "Condor Ballistic Glasses (Blue)";
+		scope=2;
+		displayName = "Ballistic Glasses (Blue)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_blk_blu_CA.paa"};
 	};
-	class adfu_condor_grn_blk: adfu_condor_blk_clear
+	class adfu_condor_grn_blk: kot_kondor_grn_blk
 	{
-		displayName = "Condor Ballistic Glasses (Black, Green Frame)";
+		scope=2;
+		displayName = "Ballistic Glasses (Black, Green Frame)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_grn_blk_CA.paa"};
 	};
-	class adfu_condor_grn_clr: adfu_condor_blk_clear
+	class adfu_condor_grn_clr: kot_kondor_grn_clr
 	{
-		displayName = "Condor Ballistic Glasses (Clear, Green Frame)";
+		scope=2;
+		displayName = "Ballistic Glasses (Clear, Green Frame)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_grn_clr_CA.paa"};
 	};
-	class adfu_condor_tan_blk: adfu_condor_blk_clear
+	class adfu_condor_tan_blk: kot_kondor_tan_blk
 	{
-		displayName = "Condor Ballistic Glasses (Black, Tan Frame)";
+		scope=2;
+		displayName = "Ballistic Glasses (Black, Tan Frame)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_tan_blk_CA.paa"};
 	};
-	class adfu_condor_tan_clr: adfu_condor_blk_clear
+	class adfu_condor_tan_clr: kot_kondor_tan_clr
 	{
-		displayName = "Condor Ballistic Glasses (Clear, Tan Frame)";
+		scope=2;
+		displayName = "Ballistic Glasses (Clear, Tan Frame)";
 		hiddenSelectionsTextures[] = {"\kot_kondor\data\kondor_tan_clr_CA.paa"};
 	};
 };
