@@ -9,7 +9,7 @@ class CfgMagazines
 		author = $STR_A3_A_AveryTheKitty;
 		displayName = "5.56 mm 30Rnd AUG Reload Tracer (Red) Mag";
         descriptionShort = "Caliber: 5.56x45 mm STANAG<br />Rounds: 30<br />Used in: EF88" /*$STR_A3_A_CfgMagazines_30Rnd_556x45_AUG_Mag_F1*/;
-		modelSpecial = "\adfu_magazines_magproxies\Mag_556x45_AUG_30Rnd.p3d";
+		modelSpecial = "\adfu_weapon_ef88\MagProxies\Mag_556x45_AUG_30Rnd.p3d";
 		ammo = B_556x45_Ball_Tracer_Red;
 		hiddenSelections[] = {Camo};
 		hiddenSelectionsTextures[] = {"\adfu_weapon_ef88\data\AUG_CO.paa"};
