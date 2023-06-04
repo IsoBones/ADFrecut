@@ -1143,7 +1143,7 @@ class cfgVehicles
 	{
 		author="$STR_ADFU_AUTHOR";
 		scope=2;
-		displayName="ADF Carry-all (DPDU)";
+		displayName="ADF Carryall [DPDU]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_dpdu\data\dpdu-carryall.paa"
@@ -1179,7 +1179,7 @@ class cfgVehicles
 	{
 		author="$STR_ADFU_AUTHOR";
 		scope=2;
-		displayName="Medic Ruck (DPDU)";
+		displayName="ADF Carryall Medic [DPDU]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_dpdu\data\dpdu-carrymedic.paa"
@@ -1288,7 +1288,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Boonie (DPDU)";
+		displayName="ADF Boonie [DPDU]";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -1303,7 +1303,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Helmet (DPDU)";
+		displayName="ADF ECH [DPDU]";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -1393,7 +1393,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Carrier Rig (DPDU)";
+		displayName="ADF Carrier-Lite [DPDU]";
 		hiddenSelections[]=
 		{
 			"camo"
