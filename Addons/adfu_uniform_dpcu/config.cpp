@@ -1326,7 +1326,7 @@ class cfgVehicles
 	{
 		scope=1;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Assault Pack (DPCU)";
+		displayName="ADF Assault Pack [DPCU]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_dpcu\data\assaultpack_DPCU_co.paa"
@@ -1369,7 +1369,7 @@ class cfgVehicles
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Carryall (DPCU)";
+		displayName="ADF Carryall [DPCU]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_dpcu\data\carryall_DPCU_co.paa"
@@ -1460,7 +1460,7 @@ class cfgVehicles
 	};
 	class ADFU_Carryall_dpcu_diver: ADFU_Carryall_dpcu
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADFU_AUTHOR";
 		displayName="ADF Diver Carryall (DPCU)";
 		hiddenSelectionsTextures[]=
@@ -1554,7 +1554,7 @@ class cfgVehicles
 	};
 	class ADFU_Carryall_dpcu_at: B_Carryall_Base
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADFU_AUTHOR";
 		displayName="ADF Carryall AT (DPCU)";
 		hiddenSelectionsTextures[]=
@@ -1661,7 +1661,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Helmet Ballistic (DPCU)";
+		displayName="ADF ECH [DPCU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[]=
 		{
@@ -1676,8 +1676,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Boonie (DPCU)";
-		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
+		displayName="ADF Boonie [DPCU]";
 		model="\A3\Characters_F\common\booniehat";
 		hiddenSelections[]=
 		{
@@ -1695,7 +1694,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Carrier Lite (DPCU)";
+		displayName="ADF Carrier-Lite [DPCU]";
 		model="\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
 		picture="\ADFU_uniform_dpcu\data\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[]=
@@ -1723,7 +1722,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Carrier Rig (DPCU)";
+		displayName="ADF Carrier Rig [DPCU]";
 		picture="\ADFU_uniform_dpcu\data\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[]=
 		{
@@ -1738,7 +1737,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="$STR_ADFU_AUTHOR";
-		displayName="ADF Tactical Vest (DPCU)";
+		displayName="ADF Tactical Vest [DPCU]";
 		picture="\ADFU_uniform_dpcu\data\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[]=
 		{
