@@ -158,7 +158,7 @@ class CfgVehicles
 	class ADFU_assaultpack_black: B_assaultpack_Base
 	{
 		scope=2;
-		displayName="ADF AssaultPack [Black]";
+		displayName="ADF Assault Pack [Black]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Black.paa"
@@ -268,7 +268,7 @@ class CfgVehicles
 	class ADFU_assaultpack_green: ADFU_assaultpack_black
 	{
 		scope=2;
-		displayName="ADF AssaultPack [Green]";
+		displayName="ADF Assault Pack [Green]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Green.paa"
@@ -277,7 +277,7 @@ class CfgVehicles
 	class ADFU_assaultpack_tan: ADFU_assaultpack_black
 	{
 		scope=2;
-		displayName="ADF AssaultPack [Tan]";
+		displayName="ADF Assault Pack [Tan]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Tan.paa"
@@ -286,7 +286,7 @@ class CfgVehicles
 	class ADFU_assaultpack_amp: ADFU_assaultpack_black
 	{
 		scope=2;
-		displayName="ADF AssaultPack [AMP]";
+		displayName="ADF Assault Pack [AMP]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Cam.paa"
@@ -295,7 +295,7 @@ class CfgVehicles
 	class ADFU_assaultpack_black_medic: B_assaultpack_Base
 	{
 		scope=2;
-		displayName="ADF AssaultPack Medic [Black]";
+		displayName="ADF Assault Pack Medic [Black]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Black-M.paa"
@@ -320,7 +320,7 @@ class CfgVehicles
 	class ADFU_assaultpack_green_medic: ADFU_assaultpack_black_medic
 	{
 		scope=2;
-		displayName="ADF AssaultPack Medic [Green]";
+		displayName="ADF Assault Pack Medic [Green]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Green-M.paa"
@@ -329,7 +329,7 @@ class CfgVehicles
 	class ADFU_assaultpack_tan_medic: ADFU_assaultpack_black_medic
 	{
 		scope=2;
-		displayName="ADF AssaultPack Medic [Tan]";
+		displayName="ADF Assault Pack Medic [Tan]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Tan-M.paa"
@@ -338,7 +338,7 @@ class CfgVehicles
 	class ADFU_assaultpack_amp_medic: ADFU_assaultpack_black_medic
 	{
 		scope=2;
-		displayName="ADF AssaultPack Medic [AMP]";
+		displayName="ADF Assault Pack Medic [AMP]";
 		hiddenSelectionsTextures[]=
 		{
 			"\ADFU_uniform_amp\Backpacks\AssaultPack-Cam-M.paa"
@@ -595,7 +595,7 @@ class CfgVehicles
 		uniformClass="ADFU_uniform_amp_cam";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Uniform\CDO\CDO-Cam.paa",
+			"ADFU_uniform_amp\Uniform\SASR\SASR-Cam.paa",
 			"ADFU_uniform_amp\Uniform\team_ca.paa"
 		};
 		hiddenSelections[]=
@@ -616,7 +616,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Uniform\CDO\CDO-Green.paa",
+			"ADFU_uniform_amp\Uniform\SASR\SASR-Green.paa",
 			"ADFU_uniform_amp\Uniform\team_ca.paa"
 		};
 	};
@@ -632,7 +632,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Uniform\CDO\CDO-Tan.paa",
+			"ADFU_uniform_amp\Uniform\SASR\SASR-Tan.paa",
 			"ADFU_uniform_amp\Uniform\team_ca.paa"
 		};
 	};
@@ -1939,7 +1939,7 @@ class cfgWeapons
 	class ADFU_CarrierHeavy_Black: V_PlateCarrier1_rgr
 	{
 		scope=2;
-		displayName="ADF Carrier-Lite [B]";
+		displayName="ADF Carrier-Heavy [B]";
 		model="\A3\Characters_F\BLUFOR\equip_b_vest01";
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 		hiddenSelections[]=
@@ -1965,7 +1965,7 @@ class cfgWeapons
 	};
 	class ADFU_CarrierHeavy_Sand: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [T]";
+		displayName="ADF Carrier-Heavy [T]";
 		hiddenSelectionsTextures[]=
 		{
 			"ADFU_uniform_amp\Vest\Vest-Tan.paa"
@@ -1974,7 +1974,7 @@ class cfgWeapons
 	};
 	class ADFU_CarrierHeavy_Green: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [G]";
+		displayName="ADF Carrier-Heavy [G]";
 		hiddenSelectionsTextures[]=
 		{
 			"ADFU_uniform_amp\Vest\Vest-Green.paa"
@@ -1983,7 +1983,7 @@ class cfgWeapons
 	};
 	class ADFU_CarrierHeavy_AMP: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [A]";
+		displayName="ADF Carrier-Heavy [AMP]";
 		hiddenSelectionsTextures[]=
 		{
 			"ADFU_uniform_amp\Vest\Vest-Cam.paa"
@@ -1992,55 +1992,55 @@ class cfgWeapons
 	};
 	class ADFU_CarrierHeavy_Black_Snake: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [B-S]";
+		displayName="ADF Carrier-Heavy [B-S]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Tan.paa"
+			"ADFU_uniform_amp\Vest\Vest-Black-Snake.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
 	class ADFU_CarrierHeavy_Sand_Snake: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [T-S]";
+		displayName="ADF Carrier-Heavy [T-S]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Tan.paa"
+			"ADFU_uniform_amp\Vest\Vest-Tan-Snake.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
 	class ADFU_CarrierHeavy_Green_Snake: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [G-S]";
+		displayName="ADF Carrier-Heavy [G-S]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Green.paa"
+			"ADFU_uniform_amp\Vest\Vest-Green-Snake.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
 	class ADFU_CarrierHeavy_Black_Digi: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [B-D]";
+		displayName="ADF Carrier-Heavy [B-D]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Tan.paa"
+			"ADFU_uniform_amp\Vest\Vest-Black-Digi.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
 	class ADFU_CarrierHeavy_Sand_Digi: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [T-D]";
+		displayName="ADF Carrier-Heavy [T-D]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Tan.paa"
+			"ADFU_uniform_amp\Vest\Vest-Tan-Digi.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
 	class ADFU_CarrierHeavy_Green_Digi: ADFU_CarrierHeavy_Black
 	{
-		displayName="ADF Carrier-Lite [G-D]";
+		displayName="ADF Carrier-Heavy [G-D]";
 		hiddenSelectionsTextures[]=
 		{
-			"ADFU_uniform_amp\Vest\Vest-Green.paa"
+			"ADFU_uniform_amp\Vest\Vest-Green-Digi.paa"
 		};
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
 	};
@@ -2048,7 +2048,7 @@ class cfgWeapons
 	{
 		scope=2;
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
-		displayName="ADF Carrier Rig Black MEDIC (AMP)";
+		displayName="ADF Carrier Rig [B-MEDIC]";
 		model="\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
 		hiddenSelections[]=
 		{
@@ -2075,7 +2075,7 @@ class cfgWeapons
 	{
 		scope=2;
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
-		displayName="ADF Carrier Rig Green MEDIC (AMP)";
+		displayName="ADF Carrier Rig [G-MEDIC]";
 		model="\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
 		hiddenSelections[]=
 		{
@@ -2102,7 +2102,7 @@ class cfgWeapons
 	{
 		scope=2;
 		picture="\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa";
-		displayName="ADF Carrier Rig Sand MEDIC (AMP)";
+		displayName="ADF Carrier Rig [T-MEDIC]";
 		model="\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
 		hiddenSelections[]=
 		{
