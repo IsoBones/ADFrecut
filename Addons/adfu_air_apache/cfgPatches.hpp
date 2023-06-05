@@ -2,13 +2,16 @@ class CfgPatches
 {
 	class adfu_air_apache
 	{
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"A3_Weapons_F",
+			"adfu_air_c130",
+			"adfu_faction"
+		};
 		requiredVersion = 0.1;
 		units[] =
         {
-            /* From "cfgIndep.hpp" */
-            I_Heli_Attack_03_F,
-			adfu_air_apache
+			"adfu_air_apache"
         };
 		weapons[] = {/* Automated */};
 	};
