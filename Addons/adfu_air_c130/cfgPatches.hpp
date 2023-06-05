@@ -1,20 +1,15 @@
 class CfgPatches
 {
-	class A3_Aegis_Air_F_Aegis_Plane_Transport_01
+	class adfu_air_c130
 	{
 		requiredAddons[] = {};
 		requiredVersion = 0.1;
 		units[] =
         {
-            /* From "cfgOPFOR.hpp" */
-            O_Plane_Transport_01_infantry_F,
-            O_Plane_Transport_01_vehicle_F,
-            O_T_Plane_Transport_01_infantry_ghex_F,
-            O_T_Plane_Transport_01_vehicle_ghex_F,
-
-            /* From "cfgIndep.hpp" */
-            I_Plane_Transport_01_infantry_F,
-            I_Plane_Transport_01_vehicle_F
+            adfu_air_c130_inf,
+			adfu_air_c130_vic,
+			adfu_air_c130_inf_auscam,
+			adfu_air_c130_vic_auscam
         };
 		weapons[] = {/* Automated */};
 	};
