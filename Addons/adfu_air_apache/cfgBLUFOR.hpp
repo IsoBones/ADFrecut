@@ -1,7 +1,7 @@
 /* ADF */
 class adfu_air_apache: Heli_Attack_03_base_F
 {
-    author = ADF Re-Cut;
+    author = "ADF Re-Cut";
 	displayName = "AH-64E Apache Guardian";
 	editorPreview = "adfu_air_apache\preview\adfu_air_apache.jpg";
 	scope = 2;
