@@ -11,6 +11,7 @@
 #include "CfgSoundSets.hpp"
 #include "ASDG.hpp"
 #include "cfgMagazines.hpp"
+#include "cfgMoves.hpp"
 class CfgRecoils
 {
 	class recoil_default;
@@ -64,7 +65,7 @@ class CfgWeapons
 			"\A3\Weapons_F_beta\rifles\mk20\data\Anim\mk20.rtm"
 		};
 		descriptionShort = $STR_A3_A_CfgWeapons_arifle_AUG_base_F1;
-		reloadAction = "GestureReloadMk20";
+		reloadAction = "GestureReloadAUG";
 		magazines[] =
 		{
 			30Rnd_556x45_AUG_Mag_F,
