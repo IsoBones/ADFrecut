@@ -1,178 +1,209 @@
-class CannonCore;
+class gatling_30mm_base;
 class Mode_FullAuto;
-class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
-class 1200Rnd_Gatling_30mm_Heli_Attack_03_F;
+class close;
+class short;
+class medium;
+class far;
 class Gatling_30mm_HE_Plane_CAS_01_Yellow_F;
 class CfgWeapons
 {
-	class ADFU_Chaingun_30mm: CannonCore
+	class ADFU_gatling_30mm_base: gatling_30mm_base
 	{
-		scope = 2;
-		displayName = "M230 Chaingun";
+		displayName = "Chain Gun M230 30mm";
 		magazines[] =
 		{
-			"ADFU_1200Rnd_Chaingun_30mm",
-			"ADFU_1200Rnd_Chaingun_30mm_Yellow",
+			"ADFU_1200Rnd_Chaingun_30mm"
 		};
-		canLock = false;
-		ballisticsComputer = BallisticsAutoZero + BallisticsManualZero + BallisticsFCS;
-		cursor = EmptyCursor;
-		cursorAim = mg;
-		showAimCursorInternal = false;
-		modes[] =
-		{
-			LowROF,
-			close,
-			short,
-			medium,
-			far
-		};
-		nameSound = cannon;
-		shotFromTurret = true;
-		autoFire = false;
-		burst = 5;
-		reloadTime = 0.096;
-		FCSMaxLeadSpeed = 30.5556;
-		FCSZeroingDelay = 0.5;
-		maxZeroing = 2500;
-		aiDispersionCoefY = 0.5;
-		aiDispersionCoefX = 0.5;
+		modes[] = {"Burst10","Burst20","Burst50","close","short","medium","far"};
+		cursorAim = "EmptyCursor";
+		canLock = 2;
+		ballisticsComputer = "16";
+		FCSMaxLeadSpeed = 27.778;
+		FCSZeroingDelay = 1;
+		reloadMagazineSound[] = {"",1,1};
 		class GunParticles
 		{
-			class Effect
+			class EffectSmokeLeft
 			{
-				effectName = MachineGun2;
-				positionName = "Usti hlavne";
-				directionName = "Konec hlavne";
+				effectName = "MachineGun2";
+				positionName = "usti hlavne";
+				directionName = "gun_smoke_left";
 			};
-			class Shell
+			class EffectSmokeRight
 			{
-				positionName = shell_eject_pos;
-				directionName = shell_eject_dir;
-				effectName = HeavyGunCartridge1;
+				effectName = "MachineGun2";
+				positionName = "usti hlavne";
+				directionName = "gun_smoke_right";
+			};
+			class EffectCartridge
+			{
+				positionName = "gun_eject";
+				directionName = "gun_eject_dir";
+				effectName = "MachineGunCartridge1";
 			};
 		};
-		class LowROF: Mode_FullAuto
+		class Burst10: Mode_FullAuto
 		{
-			displayName = "Low ROF";
-			sounds[] = {StandardSound};
-			class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType
-            {
-                soundSetShot[] =
-                {
-                    Autocannon30mmTurret_Shot_SoundSet,
-                    Autocannon30mmTurret_Tail_SoundSet
-                };
-            };
-			soundContinuous = false;
-			autoFire = true;
-			flash = gunfire;
-			flashSize = 0.1;
-			recoil = Empty;
-			ffMagnitude = 0.5;
-			ffFrequency = 11;
-			ffCount = 6;
-			burst = 5;
-			showToPlayer = true;
+			displayName = "Burst 10";
+			textureType = "semi";
 			reloadTime = 0.096;
-			dispersion = 0.0066;
-			aiRateOfFire = 1;
-			aiRateOfFireDistance = 10;
-			minRange = 0;
-			minRangeProbab = 0.01;
-			midRange = 1;
-			midRangeProbab = 0.01;
-			maxRange = 2;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+				};
+			};
+			autoFire = 1;
+			burst = 10;
+			minRange = 1000;
+			minRangeProbab = 0.03;
+			midRange = 2000;
+			midRangeProbab = 0.02;
+			maxRange = 3000;
 			maxRangeProbab = 0.01;
+			showToPlayer = 1;
 		};
-		class close: LowROF
+		class Burst20: Burst10
 		{
-			aiBurstTerminable = true;
-			showToPlayer = false;
-			burst = 16;
-			burstRangeMax = 37;
-			aiRateOfFire = 0.5;
-			aiRateOfFireDispersion = 1;
-			aiRateOfFireDistance = 50;
-			minRange = 0;
-			minRangeProbab = 0.1;
-			midRange = 50;
-			midRangeProbab = 0.65;
-			maxRange = 400;
-			maxRangeProbab = 0.75;
+			displayName = "20 Burst";
+			textureType = "burst";
+			burst = 20;
 		};
-		class near: close{};
-		class short: close
+		class Burst50: Burst20
 		{
-			aiBurstTerminable = true;
-			showToPlayer = false;
-			burst = 12;
-			burstRangeMax = 32;
-			aiRateOfFire = 1;
-			aiRateOfFireDispersion = 2;
-			aiRateOfFireDistance = 200;
-			minRange = 200;
-			minRangeProbab = 0.65;
-			midRange = 400;
-			midRangeProbab = 0.75;
-			maxRange = 1000;
-			maxRangeProbab = 0.7;
+			displayName = "Full";
+			textureType = "fullAuto";
+			burst = 1;
 		};
-		class medium: close
+		class close: close
 		{
-			aiBurstTerminable = true;
-			showToPlayer = false;
-			burst = 12;
-			burstRangeMax = 28;
-			aiRateOfFire = 2;
-			aiRateOfFireDispersion = 2;
-			aiRateOfFireDistance = 800;
-			minRange = 800;
-			minRangeProbab = 0.7;
-			midRange = 1400;
-			midRangeProbab = 0.4;
-			maxRange = 1800;
-			maxRangeProbab = 0.15;
+			reloadTime = 0.096;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+				};
+			};
 		};
-		class far: close
+		class short: short
 		{
-			aiBurstTerminable = true;
-			showToPlayer = false;
-			burst = 9;
-			burstRangeMax = 20;
-			aiRateOfFire = 4;
-			aiRateOfFireDispersion = 4;
-			aiRateOfFireDistance = 1400;
-			minRange = 1400;
-			minRangeProbab = 0.5;
-			midRange = 1800;
-			midRangeProbab = 0.15;
-			maxRange = 2500;
-			maxRangeProbab = 0.05;
+			reloadTime = 0.096;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+				};
+			};
+		};
+		class medium: medium
+		{
+			reloadTime = 0.096;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+				};
+			};
+		};
+		class far: far
+		{
+			reloadTime = 0.096;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					Autocannon30mmTurret_Shot_SoundSet,
+                    Autocannon30mmTurret_Tail_SoundSet
+				};
+			};
+		};
+	};
+	class ADFU_Chaingun_30mm: ADFU_gatling_30mm_base
+	{
+		author = "ADF Re-Cut";
+		scope = 2;
+		displayName = "Chain Gun M230 30mm";
+		muzzles[] = {"HEDP"};
+		class HEDP: ADFU_gatling_30mm_base
+		{
+			magazines[] = {"ADFU_1200Rnd_Chaingun_30mm"};
+		};
+	};
+};
+class B_30mm_HE_Tracer_Red;
+class CfgAmmo
+{
+	class ADFU_30mm_HEDP_T: B_30mm_HE_Tracer_Red
+	{
+		hit = 105;
+		indirectHit = 10;
+		indirectHitRange = 2;
+		explosive = 0.3;
+		airFriction = -0.00078;
+		tracerScale = 2;
+		caliber = 4.2;
+		tracerEndTime = 30;
+		timeToLive = 30;
+		typicalSpeed = 805;
+		laserlock = 0;
+		airlock = 0;
+		irlock = 0;
+		muzzleEffect = "";
+		class CamShakeExplode
+		{
+			power = "(25*0.2)";
+			duration = "((round (25^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((2 + 25^0.5)*8)";
+		};
+		class CamShakeHit
+		{
+			power = 50;
+			duration = "((round (50^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
 		};
 	};
 };
 class VehicleMagazine;
 class CfgMagazines
 {
-	class ADFU_1200Rnd_Chaingun_30mm: 1000Rnd_Gatling_30mm_Plane_CAS_01_F
+	class ADFU_1200Rnd_Chaingun_30mm: VehicleMagazine
 	{
 		author = "ADF Re-Cut";
 		scope = 2;
-		displayName = "30 mm HE Shells";
+		displayName = "30mm 1200Rnd M789 HEDP-T";
+		displayNameShort = "HEDP Tracer";
+		ammo = "ADFU_30mm_HEDP_T";
 		count = 1200;
-		muzzleImpulseFactor[] =
-		{
-			0.25,    // X
-			0.25     // Y
-		};
+		initSpeed = 805;
+		maxLeadSpeed = 500;
+		tracersEvery = 1;
+		nameSound = "cannon";
 	};
 	class ADFU_1200Rnd_Chaingun_30mm_Tracer: ADFU_1200Rnd_Chaingun_30mm
 	{
 		author = "ADF Re-Cut";
 		scope = 2;
-		displayName = "30 mm HE Tracer (Yellow) Shells";
+		displayName = "DEPRECATED";
 		ammo = "Gatling_30mm_HE_Plane_CAS_01_Yellow_F";
 	};
 };
