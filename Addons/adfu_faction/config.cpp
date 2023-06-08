@@ -278,6 +278,12 @@ class CfgVehicles
 		scopeCurator=0;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_Soldier_base_F";
+		identityTypes[]= 
+		{
+            "LanguageENG_F",
+            "Head_NATO",
+            "NoGlasses"
+        };
 		side=1;
 		faction="BLU_F";
 		vehicleClass="";
