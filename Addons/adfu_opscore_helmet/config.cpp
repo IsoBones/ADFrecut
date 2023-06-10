@@ -588,7 +588,7 @@ class CfgWeapons
 class CfgGlasses
 {
 	class None;
-	class FPGP2_Headgear_Face_Shemagh_rgr_1: None
+	class ADFU_Headgear_Face_Shemagh_rgr_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -600,7 +600,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo2","camo3","camo4"};
 		hiddenSelectionsTextures[] = {""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_BLK_1: None
+	class ADFU_Headgear_Face_Shemagh_BLK_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -612,7 +612,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
 		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\shemagh_blk_co.paa",""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_cbr_1: None
+	class ADFU_Headgear_Face_Shemagh_cbr_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -624,7 +624,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
 		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\shemagh_cbr_co.paa",""};
 	};
-	class FPGP2_Headgear_Face_ESS_1: None
+	class ADFU_Headgear_Face_ESS_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -636,7 +636,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo3","camo4"};
 		hiddenSelectionsTextures[] = {""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_rgr_ess_1: None
+	class ADFU_Headgear_Face_Shemagh_rgr_ess_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -648,7 +648,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo3","camo4"};
 		hiddenSelectionsTextures[] = {""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_BLK_ess_1: None
+	class ADFU_Headgear_Face_Shemagh_BLK_ess_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -660,7 +660,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo3","camo4"};
 		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\shemagh_blk_co.paa",""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_cbr_ess_1: None
+	class ADFU_Headgear_Face_Shemagh_cbr_ess_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -672,7 +672,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo3","camo4"};
 		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\shemagh_cbr_co.paa",""};
 	};
-	class FPGP2_Headgear_Face_gatorz_1: None
+	class ADFU_Headgear_Face_gatorz_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -684,7 +684,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2","camo4"};
 		hiddenSelectionsTextures[] = {""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_rgr_gatorz_1: None
+	class ADFU_Headgear_Face_Shemagh_rgr_gatorz_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -696,7 +696,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo2","camo4"};
 		hiddenSelectionsTextures[] = {""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_BLK_gatorz_1: None
+	class ADFU_Headgear_Face_Shemagh_BLK_gatorz_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
@@ -708,7 +708,7 @@ class CfgGlasses
 		hiddenSelections[] = {"camo1","camo2","camo4"};
 		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\shemagh_blk_co.paa",""};
 	};
-	class FPGP2_Headgear_Face_Shemagh_cbr_gatorz_1: None
+	class ADFU_Headgear_Face_Shemagh_cbr_gatorz_1: None
 	{
 		scope = 2;
 		author = "Exer | ADF Re-Cut";
