@@ -36,8 +36,7 @@ class CfgPatches
 			"ADFU_weapon_usp",
 			"ADFU_weapon_hpII",
 			"ADFU_weapon_f1",
-			"ADFU_weapon_carlgustav",
-			"ADFU_weapon_m72a6"
+			"ADFU_weapon_carlgustav"
 		};
 	};
 };
@@ -139,11 +138,6 @@ class CfgVehicles
 			{
 				weapon="ADFU_carlgustav_m3";
 				count=10;
-			};
-			class _xx_ADFU_weapon_m72a6
-			{
-				weapon="ADFU_weapon_m72a6";
-				count=50;
 			};
 		};
 		class TransportMagazines
