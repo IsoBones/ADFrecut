@@ -864,6 +864,258 @@ class CfgWeapons
 			};
 		};
 	};
+	class adfu_opscore_marine_Snakeskin_amcu_amp_1_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 1 (Amp)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_amp.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_ct_2_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 2 (Comtac III)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_ct.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery2","amp","light"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery2","amp","light"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_amp_2_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 2 (Amp)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_amp.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_ct_3_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 3 (Comtac III)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_ct.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_amp_3_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 3 (Amp)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_amp.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_ct_4_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 4 (Comtac III)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_ct.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery2","amp"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery2","amp"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_amp_4_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 4 (Amp)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_amp.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery2","comtac"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery2","comtac"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_ct_5_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 5 (Comtac III)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_ct.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","amp"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","amp"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
+	class adfu_opscore_marine_Snakeskin_amcu_amp_5_Aus: ItemCore
+	{
+		author = "Exer | ADF Re-Cut";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "ADF Opscore Maritime AMCU 5 (Amp)";
+		picture = "adfu_opscore_helmet\icons\opscore_img_tan_amp.paa";
+		model = "adfu_opscore_helmet\opscore_mt.p3d";
+		hiddenSelections[] = {"patch","camo","battery1","comtac"};
+		hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 10;
+			uniformModel = "adfu_opscore_helmet\opscore_mt.p3d";
+			modelSides[] = {"TCivilian","TWest"};
+			hiddenSelections[] = {"patch","camo","battery1","comtac"};
+			hiddenSelectionsTextures[] = {"adfu_opscore_helmet\data\helmetpatch_aus_co.paa","adfu_opscore_helmet\data\helmet_amcu_co.paa",""};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 15;
+					passThrough = 0.75;
+				};
+			};
+		};
+	};
 };
 class CfgGlasses
 {
