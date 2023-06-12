@@ -47,7 +47,7 @@ class Stage4 {
 	};
 };
 class Stage5 {
-	texture = "PRE_SCPF_1\data\helmet\glasses_SMDI.paa";
+	texture = "adfu_opscore_helmet\data\helmet\glasses_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform {
 		aside[] = { 1, 0, 0 };
