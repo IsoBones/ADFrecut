@@ -9,11 +9,7 @@ class CfgPatches
 		{
 			"A3_Weapons_F"
 		};
-		author[]=
-		{
-			"Australian Defence Force: Uncut"
-		};
-		authorUrl="http://www.adf-uncut.com.au";
+		author= $STR_ADFU_AUTHOR;
 		version="0.5.0";
 		versionStr="0.5.0";
 		versionAr[]={0,5,0};
@@ -62,7 +58,7 @@ class CfgAmmo
 	class SmokeShell;
 	class ADFU_f1_grenade_a: GrenadeHand
 	{
-		model="\ADFU_weapon_f1\f1_grenade";
+		model="\ADFU_weapon_f1\f1_grenade_item";
 		soundHit1[]=
 		{
 			"ADFU_weapon_f1\sound\f1_grenade",
