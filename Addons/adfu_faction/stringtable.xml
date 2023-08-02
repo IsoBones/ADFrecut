@@ -21,8 +21,8 @@
 		</Container>
 		<Container name="Vehicle_Classes">
 			<Key ID="STR_ADFU_MEN_DPCU">
-					<Original>Men (Australian Army)</Original>
-					<English>Men (Australian Army)</English>
+					<Original>Men (Army DPCU)</Original>
+					<English>Men (Army DPCU)</English>
 			</Key>
 			<Key ID="STR_ADFU_MEN_DPDU">
 					<Original>Men (2nd Commandos)</Original>
