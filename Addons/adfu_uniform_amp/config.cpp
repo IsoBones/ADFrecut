@@ -1333,10 +1333,10 @@ class CfgVehicles
 	class ADFU_jetPilot_amp: ADFU_coveralls_tan_base
 	{
 		scope=1;
-		scopeCurator=1;
+		scopeCurator=2;
 		author="$STR_ADFU_AUTHOR";
 		editorSubcategory= "ADFU_MEN_AMP";
-		displayName="Pilot";
+		displayName="Jet Pilot";
 		editorPreview = "adfu_uniform_amp\preview\ADFU_jetPilot_amp.jpg";
 		Items[]=
 		{

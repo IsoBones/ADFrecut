@@ -1972,7 +1972,7 @@ class CfgGroups
 				};
 				class ADFU_InfAssault_DPCU
 				{
-					faction="ADF";
+					faction="ADFU";
 					side=1;
 					author="$STR_ADFU_AUTHOR";
 					name="Manoeuvre Support Section";
