@@ -302,6 +302,7 @@ class SlotInfo;
 class CowsSlot_ADFU;
 class PointerSlot;
 class WeaponSlotsInfo;
+class launch_MRAWS_base_F;
 class cfgWeapons
 {
 	class Launcher_Base_F;
@@ -317,7 +318,7 @@ class cfgWeapons
 			"OFP2_ManSkeleton",
 			"\ADFU_weapon_carlgustav\anim\m3_carlgustav.rtm"
 		};
-		reloadAction="";
+		reloadAction="ReloadRPG";
 		drySound[]=
 		{
 			"A3\sounds_f\weapons\other\dry6",
