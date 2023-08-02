@@ -28,7 +28,7 @@ class CfgEditorSubcategories
 {
 	class ADFU_MEN_AMCU // Category class, you point to it in editorSubcategory property
 	{
-		displayName = " Men (AMCU)"; // Name visible in the list
+		displayName = "Men (Army AMCU)"; // Name visible in the list
 	};
 };
 class cfgVehicles
@@ -137,7 +137,7 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\ADFU_uniform_amcu\data\uniform_amcu_CO.paa"
+			"\adfu_uniform_amcu\data\clothing_recut_amc_u_co.paa"
 		};
 		backpack="";
 	};
@@ -155,7 +155,10 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\ADFU_uniform_amcu\data\uniform_amcu_CO.paa"
+			"\adfu_uniform_amcu\data\clothing_recut_amc_u_co.paa"
+		};
+		hiddenSelectionsMaterials[] = {
+			"\adfu_uniform_amcu\data\clothing1.rvmat"
 		};
 	};
 };
