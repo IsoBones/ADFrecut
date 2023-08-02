@@ -35,27 +35,28 @@ class CowsSlot_ADFU: CowsSlot
 	displayName="$STR_A3_CowsSlot0";
 	compatibleItems[]=
 	{
-		"ADFU_elcan_c79",
-		"ADFU_acog_ta648",
-		"ADFU_acog_ta648_rds",
-		"ADFU_acog_ta648_t",
-		"ADFU_acog_ta648_rds_t",
 		"ADFU_acog_ta31",
 		"ADFU_acog_ta31_t",
+		"ADFU_acog_ta648",
+		"ADFU_acog_ta648_rds",
+		"ADFU_acog_ta648_rds_t",
+		"ADFU_acog_ta648_t",
+		"ADFU_elcan_c79",
+		"ADFU_elcan_c79",
 		"ADFU_eotech552",
 		"ADFU_eotech552_3XDOWN",
 		"ADFU_eotech552_3XUP",
-		"optic_Nightstalker",
-		"optic_NVS",
-		"optic_DMS",
-		"optic_LRPS",
-		"optic_SOS",
-		"optic_MRCO",
-		"optic_Arco",
-		"optic_aco",
 		"optic_ACO_grn",
-		"optic_hamr",
+		"optic_Arco",
+		"optic_DMS",
 		"optic_Holosight",
+		"optic_LRPS",
+		"optic_MRCO",
+		"optic_NVS",
+		"optic_Nightstalker",
+		"optic_SOS",
+		"optic_aco",
+		"optic_hamr",
 		"optic_tws",
 		"optic_tws_mg"
 	};
@@ -564,7 +565,7 @@ class cfgWeapons
 	};
 	class ADFU_eotech552_3XUP: ADFU_eotech552_3XDOWN
 	{
-		scope=1;
+		scope=2;
 		displayName="EOTech 552 + 3x Magnifier";
 		author="$STR_ADFU_AUTHOR";
 		model="\ADFU_weapon_optics\optic_eotech_552_3XUp.p3d";
