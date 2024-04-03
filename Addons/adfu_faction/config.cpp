@@ -271,10 +271,7 @@ class CfgVehicles
     class adfu_Soldier_base_F: SoldierWB
     {
         class EventHandlers;
-        class HitPoints
-        {
-        };
-		scope=1;
+                scope=1;
 		scopeCurator=0;
 		author="$STR_ADFU_AUTHOR";
 		_generalMacro="ADFU_Soldier_base_F";
