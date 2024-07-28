@@ -1,0 +1,23 @@
+#define _ARMA_
+
+class reticle_lowglow_red
+{
+//Type: 11 (Arma3/VBS2)
+//Arma1 flag= 1;
+mainLight=Sun;//(1)
+FogMode=Fog;//(1)
+Ambient[]= 	{1,0,0,5};
+Diffuse[]= 	{1,0,0,1};
+Emmisive[]= 	{10,0,0,1};
+ForcedDiffuse[]= 	{1,0,0,0};
+Specular[]= 	{1,0,0,0.5};
+//Specular2[]= 	{1,0,0,0.5};
+SpecularPower=30;
+PixelShaderId=Normal;//0 (default)
+VertexShaderId=Basic;//0 (default)
+renderFlags[] = {AddBlend};
+class TegGen0
+{
+	uvSource=None;
+};
+};

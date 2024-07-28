@@ -1,0 +1,47 @@
+class asdg_SlotInfo;
+class asdg_OpticRail;
+class asdg_MuzzleSlot;
+class asdg_FrontSideRail;
+class asdg_UnderSlot;
+class asdg_PistolUnderRail;
+class asdg_PistolOpticMount;
+class asdg_PistolOpticRail1913;
+class asdg_OpticRail1913: asdg_OpticRail
+{
+    class compatibleItems
+    {
+		ADFRC_elcan_c79 = 1;
+		ADFRC_acog_ta648 = 1;
+		ADFRC_acog_ta648_rds = 1;
+		ADFRC_acog_ta648_t = 1;
+		ADFRC_acog_ta648_rds_t = 1;
+		ADFRC_acog_ta31 = 1;
+		ADFRC_acog_ta31_t = 1;
+		ADFRC_eotech552 = 1;
+		ADFRC_eotech552_3XDOWN = 1;
+		ADFRC_eotech552_3XUP = 1;
+    };
+};
+class asdg_OpticRail1913_short;
+class asdg_OpticRail1913_short_MG;
+class asdg_OpticRail1913_long;
+class asdg_OpticSideMount;
+class asdg_OpticSideRail_AK;
+class asdg_OpticSideRail_SVD;
+class asdg_OpticSideRail_AKSVD;
+class asdg_MuzzleSlot_762;
+class asdg_MuzzleSlot_65;
+class asdg_MuzzleSlot_556;
+class asdg_MuzzleSlot_762MG;
+class asdg_MuzzleSlot_338;
+class asdg_MuzzleSlot_93x64;
+class asdg_MuzzleSlot_9MM;
+class asdg_MuzzleSlot_9MM_SMG;
+class asdg_MuzzleSlot_45ACP;
+class asdg_MuzzleSlot_45ACP_SMG;
+class asdg_MuzzleSlot_545R;
+class asdg_MuzzleSlot_762R;
+class asdg_MuzzleSlot_762R_PK;
+class asdg_MuzzleSlot_762R_SVD;
+class asdg_MuzzleSlot_58;
+class asdg_MuzzleSlot_46;
