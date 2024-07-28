@@ -258,6 +258,32 @@ class CfgVehicles
 					"bma3\bma3_bushmaster_data\labels\labels_airforce_01.paa"
 				 };
 			};
+			class adf_med_001
+			{
+				displayName = "Australian Army Medical";
+				author = "ADFRC - Quiggs";
+				factions[] = {};
+				textures[] = 
+				{
+					"bma3\bma3_bushmaster_data\camo1\camo1_co.paa",
+					"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+					"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
+					"bma3\bma3_bushmaster_data\labels\labels_army_med.paa"
+				 };
+			};
+			class adf_un_001
+			{
+				displayName = "Australian Army United Nations";
+				author = "ADFRC - Quiggs";
+				factions[] = {};
+				textures[] = 
+				{
+					"bma3\bma3_bushmaster_data\camo1\camo1_co.paa",
+					"bma3\bma3_bushmaster_data\camo2\camo2_co.paa",
+					"bma3\bma3_bushmaster_data\camo3\camo3_co.paa",
+					"bma3\bma3_bushmaster_data\labels\labels_army_un.paa"
+				 };
+			};
 		};
 		
 		#include "CfgSounds.hpp"

@@ -102,4 +102,20 @@ class CfgVehicles
 		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_mprimer_CO.paa"};
 	};
+	class B_Truck_01_flatbed_F;
+	class ADFRC_hemtt_flatbed: B_Truck_01_flatbed_F
+	{
+		author = "ADFRC Quiggs";
+		editorPreview = "\A3\EditorPreviews_F_enoch\Data\CfgVehicles\B_Truck_01_flatbed_F.jpg";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "HEMTT Flatbed";
+		crew = "ADFRC_cavalryman_dpcu";
+		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
+		side = 1;
+		faction = "ADF";
+		textureList[] = {};
+		hiddenSelections[]= {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[]= {"\ADF_Land\adfrc_hemtt\data\truck_01_ext_01_co.paa","\ADF_Land\adfrc_hemtt\data\truck_01_ext_02_co.paa","\ADF_Land\adfrc_hemtt\data\Truck_01_ammo_CO.paa"};
+	};
 };
