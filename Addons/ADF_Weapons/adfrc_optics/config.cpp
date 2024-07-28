@@ -581,7 +581,7 @@ class cfgWeapons
 		descriptionShort="Holographic Weapon Sight &lt;br /&gt; Flip Down Magnifier";
 		
         MRT_SwitchItemNextClass = "ADFRC_eotech552_3XDOWN";
-        MRT_switchItemHintText = "1x";
+        MRT_switchItemHintText = "3x";
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
