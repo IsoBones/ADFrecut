@@ -210,12 +210,12 @@ class Turrets: Turrets
 		gunEnd = "konec hlavne";
 		weapons[] =
         {
-            ADFRC_Chaingun_30mm,
+            ADFU_Chaingun_30mm,
             Laserdesignator_mounted
         };
 		magazines[] =
         {
-            ADFRC_1200Rnd_Chaingun_30mm,
+            1200Rnd_ADFU_Chaingun_30mm,
             Laserbatteries
         };
 
