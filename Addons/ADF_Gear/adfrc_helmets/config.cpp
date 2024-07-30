@@ -1015,11 +1015,11 @@ class CfgWeapons
 	// BASEGAME RESKINS //
 
 	// BOONIE HATS AND CAPS
-	class adfrc_booniehat_amp: H_Booniehat_tan
+	class adfrc_booniehat_amc: H_Booniehat_tan
 	{
 		scope = 2;
 		author=$STR_ADFU_AUTHOR;
-		displayName = "ADF Boonie [AMP]";
+		displayName = "ADF Boonie [AMC]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_Cam_co.paa"};
 	};
@@ -1064,9 +1064,9 @@ class CfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Cap_Black_co.paa"};
 	};
-	class adfrc_cap_amp: H_Cap_red
+	class adfrc_cap_amc: H_Cap_red
 	{
-		displayName = "ADF Cap [AMP]";
+		displayName = "ADF Cap [AMC]";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_red_CA.paa";
 		model = "\A3\Characters_F\common\capb";
 		hiddenSelections[] = {"camo"};
