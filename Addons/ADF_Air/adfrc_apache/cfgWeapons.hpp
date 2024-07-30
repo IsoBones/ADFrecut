@@ -7,12 +7,12 @@ class far;
 class Gatling_30mm_HE_Plane_CAS_01_Yellow_F;
 class CfgWeapons
 {
-	class ADFU_gatling_30mm_base: gatling_30mm_base
+	class ADFRC_gatling_30mm_base: gatling_30mm_base
 	{
 		displayName = "Chain Gun M230 30mm";
 		magazines[] =
 		{
-			"ADFU_1200Rnd_Chaingun_30mm"
+			"ADFRC_1200Rnd_Chaingun_30mm"
 		};
 		modes[] = {"Burst10","Burst20","Burst50","close","short","medium","far"};
 		cursorAim = "EmptyCursor";
@@ -136,22 +136,22 @@ class CfgWeapons
 			};
 		};
 	};
-	class ADFU_Chaingun_30mm: ADFU_gatling_30mm_base
+	class ADFRC_Chaingun_30mm: ADFRC_gatling_30mm_base
 	{
 		author = "ADF Re-Cut";
 		scope = 2;
 		displayName = "Chain Gun M230 30mm";
 		muzzles[] = {"HEDP"};
-		class HEDP: ADFU_gatling_30mm_base
+		class HEDP: ADFRC_gatling_30mm_base
 		{
-			magazines[] = {"ADFU_1200Rnd_Chaingun_30mm"};
+			magazines[] = {"ADFRC_1200Rnd_Chaingun_30mm"};
 		};
 	};
 };
 class B_30mm_HE_Tracer_Red;
 class CfgAmmo
 {
-	class ADFU_30mm_HEDP_T: B_30mm_HE_Tracer_Red
+	class ADFRC_30mm_HEDP_T: B_30mm_HE_Tracer_Red
 	{
 		hit = 105;
 		indirectHit = 10;
@@ -186,20 +186,20 @@ class CfgAmmo
 class VehicleMagazine;
 class CfgMagazines
 {
-	class ADFU_1200Rnd_Chaingun_30mm: VehicleMagazine
+	class ADFRC_1200Rnd_Chaingun_30mm: VehicleMagazine
 	{
 		author = "ADF Re-Cut";
 		scope = 2;
 		displayName = "30mm 1200Rnd M789 HEDP-T";
 		displayNameShort = "HEDP Tracer";
-		ammo = "ADFU_30mm_HEDP_T";
+		ammo = "ADFRC_30mm_HEDP_T";
 		count = 1200;
 		initSpeed = 805;
 		maxLeadSpeed = 500;
 		tracersEvery = 1;
 		nameSound = "cannon";
 	};
-	class ADFU_1200Rnd_Chaingun_30mm_Tracer: ADFU_1200Rnd_Chaingun_30mm
+	class ADFRC_1200Rnd_Chaingun_30mm_Tracer: ADFRC_1200Rnd_Chaingun_30mm
 	{
 		author = "ADF Re-Cut";
 		scope = 2;
