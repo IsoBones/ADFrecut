@@ -6,7 +6,7 @@ class CfgWeapons
 {
     class ADFRC_gatling_30mm_base: gatling_30mm_base
     {
-        displayName = "Chain Gun M230 30mm";
+        displayName = "30mm M230 Chain Gun";
         magazines[] =
         {
             "ADFRC_1200Rnd_Chaingun_30mm"
@@ -74,7 +74,7 @@ class CfgWeapons
     {
         author = "ADF Re-Cut";
         scope = 2;
-        displayName = "Chain Gun M230 30mm";
+        displayName = "30mm M230 Chain Gun";
         muzzles[] = {"HEDP"};
         class HEDP: ADFRC_gatling_30mm_base
         {
