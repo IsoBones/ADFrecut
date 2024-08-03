@@ -55,11 +55,7 @@ if ((_markingSet isEqualTo 0) and (local _this)) then
 						"\ADF_Land\adfrc_aslav\data\labels\labels_13.paa",
 						"\ADF_Land\adfrc_aslav\data\labels\labels_14.paa",
 						"\ADF_Land\adfrc_aslav\data\labels\labels_15.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_16.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_17.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_18.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_19.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_20.paa"
+						"\ADF_Land\adfrc_aslav\data\labels\labels_16.paa"
 					];
 
 	//_texture = _baseTextures call BIS_fnc_selectRandom;
