@@ -500,9 +500,9 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment = PylonMissile_1Rnd_LG_scalpel;
+						attachment = PylonMissile_1Rnd_AAA_missiles;
 						priority = 5;
-						hardpoints[] = {0};
+						hardpoints[] = {B_ASRAAM};
 						turret[] = {0};
 						UIposition[] =
                         {
@@ -521,6 +521,7 @@ class CfgVehicles
                             B_SHIEKER,
                             UNI_SCALPEL,
                             gatling_30mm_base,
+							B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -539,6 +540,7 @@ class CfgVehicles
                             B_SHIEKER,
                             UNI_SCALPEL,
                             gatling_30mm_base,
+							B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -586,10 +588,36 @@ class CfgVehicles
 						displayName = $STR_vehicle_default;
 						attachment[] =
                         {
-							PylonMissile_1Rnd_LG_scalpel,
+							PylonMissile_1Rnd_AAA_missiles,
                             PylonRack_12Rnd_missiles,
 							PylonRack_4Rnd_LG_scalpel,
                             PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_12Rnd_missiles,
+							PylonMissile_1Rnd_AAA_missiles
+                        };
+					};
+					class CAS
+					{
+						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
+						attachment[] =
+                        {
+							PylonMissile_1Rnd_AAA_missiles,
+                            PylonRack_12Rnd_missiles,
+							PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_12Rnd_missiles,
+							PylonMissile_1Rnd_AAA_missiles
+                        };
+					};
+					class AT
+					{
+						displayName = $STR_A3_cfgmagazines_titan_at_dns;
+						attachment[] =
+                        {
+							PylonMissile_1Rnd_LG_scalpel,
+                            PylonRack_12Rnd_missiles,
+							PylonRack_12Rnd_missiles,
+							PylonRack_12Rnd_missiles,
                             PylonRack_12Rnd_missiles,
 							PylonMissile_1Rnd_LG_scalpel
                         };

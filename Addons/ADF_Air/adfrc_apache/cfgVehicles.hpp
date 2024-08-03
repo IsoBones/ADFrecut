@@ -442,9 +442,9 @@ class CfgVehicles
 				{
 					class PylonLeft1
 					{
-						attachment = "PylonMissile_1Rnd_LG_scalpel"; // Hellfire missile
+						attachment = "PylonMissile_1Rnd_AAA_missiles"; // ASRAAM missile
 						priority = 5;
-						hardpoints[] = {"B_MISSILE_PYLON", "UNI_SCALPEL"};
+						hardpoints[] = {"B_ASRAAM"};
 						turret[] = {0};
 						UIposition[] = {0.06, 0.4};  // X, Y
 					};
@@ -452,14 +452,14 @@ class CfgVehicles
 					{
 						attachment = "PylonRack_12Rnd_missiles"; // Hydra 70 rockets
 						priority = 4;
-						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL"};
+						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL", "B_ASRRAM_EJECTOR"};
 						UIposition[] = {0.08, 0.35};  // X, Y
 					};
 					class PylonLeft3: PylonLeft1
 					{
 						attachment = "PylonRack_4Rnd_LG_scalpel"; // Hellfire missile
 						priority = 3;
-						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL"};
+						hardpoints[] = {"DAR", "DAGR", "UNI_SCALPEL", "B_ASRRAM_EJECTOR"};
 						UIposition[] = {0.1, 0.3};  // X, Y
 					};
 					class PylonRight3: PylonLeft3
@@ -490,13 +490,39 @@ class CfgVehicles
 						displayName = "$STR_vehicle_default";
 						attachment[] =
 						{
-							"PylonMissile_1Rnd_LG_scalpel", // Hellfire missile
-							"PylonRack_12Rnd_missiles", // Hydra 70 rockets
+							"PylonMissile_1Rnd_AAA_missiles", // AA missile
+							"PylonRack_12Rnd_missiles", // DAR rockets
 							"PylonRack_4Rnd_LG_scalpel", // Hellfire missile
 							"PylonRack_4Rnd_LG_scalpel", // Hellfire missile
-							"PylonRack_12Rnd_missiles", // Hydra 70 rockets
-							"PylonMissile_1Rnd_LG_scalpel" // Hellfire missile
+							"PylonRack_12Rnd_missiles", // DAR rockets
+							"PylonMissile_1Rnd_AAA_missiles" // AA missile
 						};
+					};
+					class CAS
+					{
+						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
+						attachment[] =
+                        {
+							"PylonMissile_1Rnd_AAA_missiles," // AA missle
+                            "PylonRack_12Rnd_missiles," // DAR rockets
+							"PylonRack_4Rnd_LG_scalpel," // Skalpel
+                            "PylonRack_4Rnd_LG_scalpel," // Skalpel
+                            "PylonRack_12Rnd_missiles," //DAR rockets
+							"PylonMissile_1Rnd_AAA_missiles" // AA missle
+                        };
+					};
+					class AT
+					{
+						displayName = $STR_A3_cfgmagazines_titan_at_dns;
+						attachment[] =
+                        {
+							"PylonMissile_1Rnd_LG_scalpel," // Skalpel
+                            "PylonRack_12Rnd_missiles," // DAR Rockets
+							"PylonRack_12Rnd_missiles," // DAR Rockets
+							"PylonRack_12Rnd_missiles," // DAR Rockets
+                            "PylonRack_12Rnd_missiles," // DAR Rockets
+							"PylonMissile_1Rnd_LG_scalpel" // Skalpel
+                        };
 					};
 				};
 			};
