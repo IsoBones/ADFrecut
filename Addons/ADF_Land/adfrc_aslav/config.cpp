@@ -269,7 +269,7 @@ class CfgVehicles
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
-			"\ADF_Land\adfrc_aslav\data\labels\labels_03.paa"
+			"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa"
 		};
 		textureList[] =
 		{
@@ -649,103 +649,103 @@ class CfgVehicles
 				class Values 
 				{
 					class One {
-						name = "Send me to Takistan | 3-3";
+						name = "Bullryder | 7B";
 						tooltip = "Select this callsign";
 						value = 1;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_01.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_01.paa";
 					};
 					class Two: One {
-						name = "Adrenaline Rush | 11-A";
+						name = "Cerebral | 3A";
 						value = 2;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_02.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_02.paa";
 					};
 					class Three: One {
-						name = "Bullryder | 7-B";
+						name = "Circle Work | 5A";
 						value = 3;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_03.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_03.paa";
 					};
 					class Four: One {
-						name = "Achilles | 15-A";
+						name = "Bollocks | 11-A";
 						value = 4;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_04.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_04.paa";
 					};
 					class Five: One {
-						name = "Agamemnon | 1-A";
+						name = "Comalgo | 2C";
 						value = 5;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_05.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_05.paa";
 					};
 					class Six: One {
-						name = "Angry Birds | 5-A";
+						name = "Sandgroper | 15C";
 						value = 6;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_06.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_06.paa";
 					};
 					class Seven: One {
-						name = "Shebrolet | 4-S";
+						name = "Courage | 12C";
 						value = 7;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_07.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_07.paa";
 					};
 					class Eight: One {
-						name = "ANZAC Spirit | 8-A";
+						name = "Atomic | 13A";
 						value = 8;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_08.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_08.paa";
 					};
 					class Nine: One {
-						name = "DILLIGAF | 2-D";
+						name = "Cannibal | 33B";
 						value = 9;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_09.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_09.paa";
 					};
 					class Ten: One {
-						name = "Cant help ya | 5-C";
+						name = "Bourbon | 23B";
 						value = 10;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_10.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_10.paa";
 					};
 					class Eleven: One {
-						name = "Courage | 15";
+						name = "Cant Help Ya | 21A";
 						value = 11;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_11.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_11.paa";
 					};
 					class Twelve: One {
-						name = "Vandal | 11";
+						name = "ANZAC | 11A";
 						value = 12;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_12.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_12.paa";
 					};
 					class Thirteen: One {
-						name = "Tiny Teddy | 7";
+						name = "Angry Bird | 9A";
 						value = 13;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_13.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_13.paa";
 					};
 					class Fourteen: One {
-						name = "The Sandgroper | 14";
+						name = "Atlas | 13B";
 						value = 14;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_14.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_14.paa";
 					};
 					class Fifteen: One {
-						name = "Comalgo | 3";
+						name = "Achilles | 22C";
 						value = 15;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_15.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_15.paa";
 					};
 					class Sixteen: One {
-						name = "Recon Redneck | 2";
+						name = "Boomer | 31A";
 						value = 16;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_16.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_16.paa";
 					};
-					class Seventeen: One {
+					/* Seventeen: One {
 						name = "Cerebral | 1";
 						value = 17;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_17.paa";
@@ -768,7 +768,7 @@ class CfgVehicles
 						value = 20;
 						picture = "\adf_land\adfrc_aslav\data\labels\labels_20.paa";
 						pictureRight = "\adf_land\adfrc_aslav\data\labels\labels_20.paa";
-					};
+					};*/
 					class TwentyOne: One {
 						name = "NONE";
 						tooltip = "No callsign marking will be displayed.";
