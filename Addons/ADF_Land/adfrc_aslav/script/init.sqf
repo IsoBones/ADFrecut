@@ -33,7 +33,12 @@
 _markingSet = _this getVariable ["PlatoonMarkings", 0];
 if ((_markingSet isEqualTo 0) and (local _this)) then
 {
-	_baseTextures = [];
+	_baseTextures = [
+						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa",
+						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
+						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
+						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+					];
 	_addTextures =	[
 						"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa",
 						"\ADF_Land\adfrc_aslav\data\labels\labels_02.paa",
@@ -60,6 +65,6 @@ if ((_markingSet isEqualTo 0) and (local _this)) then
 	//_texture = _baseTextures call BIS_fnc_selectRandom;
 	_addTexture = _addTextures call BIS_fnc_selectRandom;
 	
-	//_this setObjectTexture[0,_texture];
-	_this setObjectTexture[2,_addTexture];
+	//_this setObjectTexture[4,_texture];
+	_this setObjectTexture[4,_addTexture];
 };

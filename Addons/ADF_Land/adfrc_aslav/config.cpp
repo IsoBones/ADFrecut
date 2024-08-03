@@ -260,14 +260,16 @@ class CfgVehicles
 			camo1,
 			camo2,
 			camo3,
-			camo4
+			camo4,
+			labels
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
-			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
+			"\ADF_Land\adfrc_aslav\data\labels\labels_03.paa"
 		};
 		textureList[] =
 		{
@@ -491,6 +493,134 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
+			class net_hull
+			{
+				DisplayName="Hull Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_turret
+			{
+				DisplayName="Turret Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_roll_hull
+			{
+				DisplayName="Stowed Hull Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tools
+			{
+				DisplayName="Tools";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_bar
+			{
+				DisplayName="Tow Bar";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class duke
+			{
+				DisplayName="AN/VLQ-12 Duke";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class hull_jerry
+			{
+				DisplayName="Hull Jerry";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class water_jerry
+			{
+				DisplayName="Water Jerry";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class stretcher
+			{
+				DisplayName="Stretcher";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_cable
+			{
+				DisplayName="Front Tow Cable";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_shackles
+			{
+				DisplayName="Recovery Shackles";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class net_roll_turret
+			{
+				DisplayName="Stowed Turret Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_right
+			{
+				DisplayName="Turret Field Gear Right";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_rear
+			{
+				DisplayName="Turret Field Gear Rear (1)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rack_gear_left
+			{
+				DisplayName="Turret Field Gear Left";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class turret_jerrys
+			{
+				DisplayName="Turret Jerry Cans";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 		};
 		class Attributes
 		{
@@ -507,14 +637,14 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [15, format ['\adf_land\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [15, format ['\adf_land\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [4, format ['\adf_land\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [4, format ['\adf_land\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
 				//Returned value is the default value
 				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
 				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
-				defaultValue = 1;
+				defaultValue = 0;
 				
 				class Values 
 				{
@@ -927,7 +1057,7 @@ class CfgVehicles
 			class extend_waterSkid
 			{
 				userActionID=50;
-				displayName="Extend Water Skid";
+				displayName="Extend Trim Vane";
 				radius=3;
 				showIn3D=17;
 				priority=3;
@@ -939,7 +1069,7 @@ class CfgVehicles
 			class collapse_waterSkid: extend_waterSkid
 			{
 				userActionID=51;
-				displayName="Retract Water Skid";
+				displayName="Retract Trim Vane";
 				condition="((this DoorPhase 'waterSkid') > 0) AND Alive (this) and driver this == player";
 				statement="this animateDoor [""waterSkid"", 0]; playSound3D [""ADF_Land\adfrc_aslav\sound\skid_extend.ogg"", this, false,(this modelToWorld (this selectionPosition ""waterBlade_axis"")), 5, 1, 25]; ";
 			};
@@ -1505,7 +1635,7 @@ class CfgVehicles
 				author = "ADFRC_Quiggs";
 				displayName = "Standard";
 				factions[] = {"ADF"};
-				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\Worn\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\Worn\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\Worn\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\Worn\texture4_co.paa"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"};
 			};
 			class Arid 
 			{
