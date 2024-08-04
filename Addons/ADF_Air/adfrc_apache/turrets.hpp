@@ -20,20 +20,18 @@ class Turrets: Turrets
 		maxVerticalRotSpeed = 1.5;
 		soundServo[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",db-5,1,30};
 		soundServoVertical[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",db-5,1,30};
-		stabilizedInAxes = StabilizedInAxesBoth;
+		stabilizedInAxes = "StabilizedInAxesBoth";
+		canLock = 2;
 
         /* Optics */
 		gunnerOpticsModel = "\A3\Weapons_F\Reticle\optics_empty.p3d";
-		gunnerOpticsEffect[] =
-        {
-            TankCommanderOptics1,
-            BWTV
-        };
+		gunnerOpticsEffect[] = {"TankCommanderOptics1, BWTV"};
 		gunnerForceOptics = false;
 		class OpticsIn
 		{
 			class Wide
 			{
+				opticsDisplayName = "WFOV";
 				initAngleX = 0;
 				minAngleX = -60;
 				maxAngleX = 15;
@@ -43,7 +41,6 @@ class Turrets: Turrets
 				initFov = 0.466;
 				minFov = 0.466;
 				maxFov = 0.466;
-				opticsDisplayName = "WFOV";
 				visionMode[] =
                 {
                     Normal,
@@ -59,18 +56,24 @@ class Turrets: Turrets
 			};
 			class Medium: Wide
 			{
+				opticsDisplayName = "MFOV";
+				directionStabilized = true;
 				initFov = 0.093;
 				minFov = 0.093;
 				maxFov = 0.093;
-				opticsDisplayName = "MFOV";
+				initAngleX = 0;
+				initAngleY = 0;
 				gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F.p3d";
 			};
 			class Narrow: Wide
 			{
+				opticsDisplayName = "NFOV";
+				directionStabilized = true;
 				initFov = 0.029;
 				minFov = 0.029;
 				maxFov = 0.029;
-				opticsDisplayName = "NFOV";
+				initAngleX = 0;
+				initAngleY = 0;
 				gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F.p3d";
 			};
 		};
@@ -104,7 +107,7 @@ class Turrets: Turrets
 		};
 		
         /* Sensors & Components */
-		showAllTargets = LockLaser;
+		showAllTargets = 2;
         class Components
 		{
 			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
