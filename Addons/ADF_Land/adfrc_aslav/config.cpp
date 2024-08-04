@@ -18,21 +18,21 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"ADFRC_land_aslav_coax",
-			"ADFRC_land_aslav_mag58",
-			"ADFRC_land_aslav_M242"
+			"ADFRC_aslav_coax",
+			"ADFRC_aslav_mag58",
+			"ADFRC_aslav_M242"
 		};
 		magazines[]=
 		{
-			"ADFRC_land_aslav_1000Rnd_762x51_Tracer",
-			"ADFRC_land_aslav_200rnd_762x51_Tracer",
-			"ADFRC_land_aslav_360RND_25MM_HE",
-			"ADFRC_land_aslav_360RND_25MM_AP"
+			"ADFRC_aslav_1000Rnd_762x51_Tracer",
+			"ADFRC_aslav_200rnd_762x51_Tracer",
+			"ADFRC_aslav_360RND_25MM_HE",
+			"ADFRC_aslav_360RND_25MM_AP"
 		};
 		ammo[]=
 		{
-			"ADFRC_land_aslav_25mm_HE",
-			"ADFRC_land_aslav_25mm_AP"
+			"ADFRC_aslav_25mm_HE",
+			"ADFRC_aslav_25mm_AP"
 		};
 	};
 };
@@ -425,17 +425,17 @@ class CfgVehicles
 			class 20mm_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_aslav_M242";
+				weapon="ADFRC_aslav_M242";
 			};
 			class 20mm_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M242";
+				weapon="ADFRC_aslav_M242";
 			};
 			class 20mm_recoil
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M242";
+				weapon="ADFRC_aslav_M242";
 			};
 			class coax_muzzle_rot
 			{
@@ -792,7 +792,7 @@ class CfgVehicles
 		};
 		class EventHandlers: EventHandlers
 		{
-			init="(_this select 0) execVM ""\ADF_Land\adfrc_aslav\script\init.sqf""";
+			init = "(_this select 0) execVM ""\ADF_Land\adfrc_aslav\script\init.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 		class Exhausts
 		{
@@ -1174,7 +1174,7 @@ class CfgVehicles
 		{
 			class MAG58_Turret: MainTurret
 			{ 
-				weapons[] = {"ADFRC_land_aslav_mag58"};
+				weapons[] = {"ADFRC_aslav_mag58"};
 				magazines[] = {"200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_Tracer_Red_F"};
 				gunnerLeftHandAnimName = "MAG58_handleL";//MAG58_handleL
 				gunnerRightHandAnimName = "MAG58_handleR";//MAG58_handleR
@@ -1658,6 +1658,13 @@ class CfgVehicles
 				factions[] = {"ADF"};
 				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\desert\texture4_co.paa"};
 			};
+			class UN 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "UN Peacekeeping";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\worn\texture4_co.paa"};
+			};
 		};
 	};	
 	class ADFRC_ASLAV: ADFRC_ASLAV_base_F
@@ -1681,6 +1688,65 @@ class CfgVehicles
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
 			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+		};
+		animationList[]=
+		{
+			"net_roll_hull", 0.5,
+			"tools", 1,
+			"tow_bar", 0.15,
+			"hull_jerry", 1,
+			"water_jerry", 0.1,
+			"stretcher", 0.1,
+			"tow_cable", 0.3,
+			"tow_shackles", 0.8,
+			"net_roll_turret", 0.5,
+			"rack_gear_right", 0.5,
+			"rack_gear_rear", 0.5,
+			"rack_gear_left", 0.5,
+			"turret_jerrys", 0.3
+		};	
+	};
+	class ADFRC_ASLAV_UN: ADFRC_ASLAV_base_F
+	{
+		scope= 2;
+		scopeCurator= 2;
+		side= 1;
+		displayName ="ASLAV-25 (UN Peacekeeping)";
+		vehicleClass="Armoured";
+		author="$STR_ADF_AUTHOR";
+		faction ="ADF";
+		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
+		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
+		crew = "ADFRC_crewman_dpcu";
+		textureList[] = {UN,1};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\UN\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+		};
+		animationList[]=
+		{
+			"net_roll_hull", 0,
+			"tools", 1,
+			"tow_bar", 0.5,
+			"hull_jerry", 1,
+			"water_jerry", 1,
+			"stretcher", 1,
+			"tow_cable", 0.3,
+			"tow_shackles", 1,
+			"net_roll_turret", 0,
+			"rack_gear_right", 0.5,
+			"rack_gear_rear", 0.5,
+			"rack_gear_left", 0.5,
+			"turret_jerrys", 0.8
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 	};
 };
