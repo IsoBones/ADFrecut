@@ -116,7 +116,7 @@ class Stage4
 	};
 
 };
-class Stage4
+class Stage5
 
 {
 
@@ -140,7 +140,7 @@ class Stage4
 
 };
 
-class Stage5
+class Stage6
 
 {
 
@@ -164,7 +164,7 @@ class Stage5
 
 };
 
-class Stage6
+class Stage7
 
 {
 
