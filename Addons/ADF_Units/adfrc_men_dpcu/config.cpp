@@ -6,7 +6,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"ADFRC_HelmetC_dpcu",
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_booniehat_dpcu",
 			"ADFRC_carrierLite_dpcu",
 			"ADFRC_plateCarrier_dpcu",
@@ -110,7 +110,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -119,7 +119,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -164,7 +164,7 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -173,7 +173,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -391,7 +391,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -478,7 +478,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -487,7 +487,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -726,7 +726,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_plateCarrier_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -735,7 +735,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_plateCarrier_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -812,7 +812,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_plateCarrier_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -821,7 +821,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_plateCarrier_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -949,7 +949,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1013,7 +1013,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1022,7 +1022,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1043,7 +1043,7 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1052,7 +1052,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1131,7 +1131,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
@@ -1140,7 +1140,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"adfrc_ECH_DPCU",
+			"adfrc_Helmet_dpcu_canv",
 			"ADFRC_carrierLite_dpcu",
 			"ItemMap",
 			"ItemCompass",
