@@ -1,5 +1,6 @@
 class CfgPatches
 {
+	addonRootClass = "ADF_Static";
 	class adfrc_m2
 	{
 		units[]=
