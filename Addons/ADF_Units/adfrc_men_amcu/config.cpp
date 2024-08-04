@@ -532,7 +532,7 @@ class cfgVehicles
 		icon="iconManAT";
 		backpack="adfrc_CarryAll_amcu_at";
 	};
-	/*class ADFRC_crewman_amcu: ADFRC_rifleman_amcu
+	class ADFRC_crewman_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
@@ -549,7 +549,7 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"ADFRC_F88SA1_eotech_laser",
+			"arifle_AUG_C_black_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -557,7 +557,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_F88SA1_eotech_laser",
+			"arifle_AUG_C_black_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -598,8 +598,8 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"H_HelmetCrew_I",
-			"ADFRC_carrierLite_amcu",
-			"g_combat",
+			"ADFRC_LPC_Tan_1",
+			"adfrc_facewear_Shemagh_cbr_gatorz_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -608,8 +608,8 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"H_HelmetCrew_I",
-			"ADFRC_carrierLite_amcu",
-			"g_combat",
+			"ADFRC_LPC_Tan_1",
+			"adfrc_facewear_Shemagh_cbr_gatorz_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -617,7 +617,7 @@ class cfgVehicles
 		};
 		backpack="";
 	};
-	class ADFRC_cavalryman_amcu: ADFRC_rifleman_amcu
+	/*class ADFRC_cavalryman_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
@@ -791,7 +791,7 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		weapons[]=
 		{
-			"ADFRC_F88SA1_ta648_laser",
+			"arifle_AUG_black_arco_flash_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -799,7 +799,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_F88SA1_ta648_laser",
+			"arifle_AUG_black_arco_flash_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -866,23 +866,13 @@ class cfgVehicles
 		icon="iconManOfficer";
 		backpack="";
 	};
-	/*class ADFRC_pilot_amcu: ADFRC_rifleman_amcu
+	class ADFRC_pilot_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_amcu_Pilot";
 		displayName="Helicopter Pilot";
 		//editorPreview = "ADF_Units\ADFRC_men_amcu\preview\ADFRC_pilot_amcu.jpg";
-		model="\A3\Characters_F\Common\coveralls.p3d";
-		uniformClass="ADFRC_coveralls_amcu";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"ADF_Units\ADFRC_men_amcu\data\pilotoveralls_amcu_co.paa"
-		};
 		weapons[]=
 		{
 			"ADFRC_hpII",
@@ -919,8 +909,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"H_PilotHelmetHeli_B",
-			"ADFRC_tacticalVest_amcu",
+			"H_PilotHelmetHeli_O",
+			"V_TacVest_khk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -928,15 +918,75 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"H_PilotHelmetHeli_B",
-			"ADFRC_tacticalVest_amcu",
+			"H_PilotHelmetHeli_O",
+			"V_TacVest_khk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
 		backpack="";
-	};*/
+	};
+	class ADFRC_helicrew_amcu: ADFRC_rifleman_amcu
+	{
+		scope=2;
+		author="$STR_ADF_AUTHOR";
+		displayName="Helicopter Crew";
+		//editorPreview = "ADF_Units\ADFRC_men_amcu\preview\ADFRC_pilot_amcu.jpg";
+		weapons[]=
+		{
+			"ADFRC_hpII",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		respawnWeapons[]=
+		{
+			"ADFRC_hpII",
+			"Throw",
+			"Put",
+			"Binocular"
+		};
+		magazines[]=
+		{
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"ADFRC_F1_GRENADE",
+			"ADFRC_F1_GRENADE",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellPurple"
+		};
+		respawnMagazines[]=
+		{
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"ADFRC_F1_GRENADE",
+			"ADFRC_F1_GRENADE",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellPurple"
+		};
+		linkedItems[]=
+		{
+			"H_CrewHelmetHeli_O",
+			"V_TacVest_khk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"H_CrewHelmetHeli_O",
+			"V_TacVest_khk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		backpack="";
+	};
 	class ADFRC_lightGunner_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
