@@ -51,14 +51,7 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				scope = 0;
 			};
-			class MuzzleSlot: asdg_MuzzleSlot_762
-			{
-				class compatibleItems
-				{
-					ADFRC_m4a5_muzzle_snds_wdl = 1;
-				};
-				
-			};
+			class MuzzleSlot: asdg_MuzzleSlot_762{};
 		};
 	};
 	class ADFRC_hk417_sand_army: ADFRC_hk417_sand
