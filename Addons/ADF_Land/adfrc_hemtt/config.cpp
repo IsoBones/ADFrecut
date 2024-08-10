@@ -29,7 +29,7 @@ class CfgVehicles
 		editorPreview = "\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\B_Truck_01_cargo_F.jpg";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = " HEMTT Cargo";
+		displayName = "HEMTT Cargo";
 		crew = "ADFRC_cavalryman_dpcu";
 		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
 		side = 1;
@@ -77,7 +77,7 @@ class CfgVehicles
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Truck_01_covered_F.jpg";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = " HEMTT Transport";
+		displayName = "HEMTT Transport";
 		crew = "ADFRC_cavalryman_dpcu";
 		typicalCargo[] = {"ADFRC_cavalryman_dpcu"};
 		side = 1;

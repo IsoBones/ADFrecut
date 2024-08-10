@@ -30,7 +30,7 @@ class CfgPatches
 			"ADFRC_uniform_dpdu_medic",
 			"ADFRC_uniform_dpdu_recon",
 			"ADFRC_uniform_dpdu_pilot",
-			"ADFRC_carrierlite_Sand",
+			"ADFRC_carrierlite_dpdu",
 			"ADFRC_tacticalvest_dpdu"
 		};
 		requiredVersion=0.1;
@@ -68,7 +68,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"ADFRC_hk416_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -76,7 +76,7 @@ class cfgVehicles
 		respawnWeapons[]=
 		{
 			"ADFRC_hk416_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -123,8 +123,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -133,8 +133,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_carrierlite_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -183,7 +183,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"ADFRC_hk416_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -191,7 +191,7 @@ class cfgVehicles
 		respawnWeapons[]=
 		{
 			"ADFRC_hk416_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -230,8 +230,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -240,8 +240,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -267,16 +267,16 @@ class cfgVehicles
 		editorPreview = "\ADF_Units\ADFRC_men_dpdu\preview\ADFRC_marksman_dpdu.jpg";
 		weapons[]=
 		{
-			"ADFRC_sr25_KHS",
-			"ADFRC_weapon_usp",
+			"ADFRC_hk417_sand",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_sr25_KHS",
-			"ADFRC_weapon_usp",
+			"ADFRC_hk417_sand",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -315,8 +315,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_carrierlite_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -325,8 +325,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_carrierlite_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -354,8 +354,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_helmetB_dpdu",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_MEDIC_Snake",
+			"ADFRC_PC_Tan_6",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -364,8 +364,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_helmetB_dpdu",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_MEDIC_Snake",
+			"ADFRC_PC_Tan_6",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -439,8 +439,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -449,8 +449,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -471,8 +471,8 @@ class cfgVehicles
 		detectSkill=80;
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_6",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -481,8 +481,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_platecarrier_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_6",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -539,8 +539,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_carrierlite_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -549,8 +549,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_carrierlite_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -581,14 +581,14 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -658,7 +658,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"ADFRC_hk416_GL_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -666,7 +666,7 @@ class cfgVehicles
 		respawnWeapons[]=
 		{
 			"ADFRC_hk416_GL_sand",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -705,8 +705,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Snake",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -715,8 +715,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Snake",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -787,8 +787,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_helmet_Snake",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -797,8 +797,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_helmet_Snake",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -825,7 +825,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"ADFRC_minimi_para_elcan",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -833,7 +833,7 @@ class cfgVehicles
 		respawnWeapons[]=
 		{
 			"ADFRC_minimi_para_elcan",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -864,8 +864,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -874,8 +874,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -903,7 +903,7 @@ class cfgVehicles
 		weapons[]=
 		{
 			"ADFRC_maximi_eotech",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -911,7 +911,7 @@ class cfgVehicles
 		respawnWeapons[]=
 		{
 			"ADFRC_maximi_eotech",
-			"ADFRC_weapon_usp",
+			"adfrc_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -938,8 +938,8 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -948,8 +948,8 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_Helmet_Desert",
-			"ADFRC_carrierlite_Sand",
+			"adfrc_ECH_DPDU",
+			"ADFRC_PC_Tan_7",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
