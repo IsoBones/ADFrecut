@@ -1316,5 +1316,15 @@ class CfgWeapons
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\helmet_dpcu_canv_co.paa"};
-	};	
+	};
+	class adfrc_Helmet_dpdu_canv: H_HelmetIA
+	{
+		scope=2;
+		author="$STR_ADFU_AUTHOR";
+		displayName="ADF Helmet Canvas (DPDU)";
+		weaponPoolAvailable=1;
+		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\helmet_dpdu_canv_co.paa"};
+	};
 };
