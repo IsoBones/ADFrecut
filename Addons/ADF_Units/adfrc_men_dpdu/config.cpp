@@ -560,8 +560,6 @@ class cfgVehicles
 		backpack="ADFRC_kitbag_tan_exp";
 		icon="iconManExplosive";
 	};
-	/*
-	THIS NEEDS TO BE FIXED LATER
 	class ADFRC_helicopterPilot_dpdu: ADFRC_rifleman_dpdu
 	{
 		author=$STR_ADF_AUTHOR;
@@ -581,14 +579,14 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"adfrc_usp",
+			"ADFRC_usp",
 			"Throw",
 			"Put",
 			"Binocular"
 		};
 		respawnWeapons[]=
 		{
-			"adfrc_usp",
+			"ADFRC_usp",
 			"Throw",
 			"Put",
 			"Binocular"
@@ -622,7 +620,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"H_PilotHelmetHeli_O",
-			"V_TacVest_khk",
+			"ADFRC_tacticalvest_dpdu",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -639,7 +637,6 @@ class cfgVehicles
 			"ItemRadio",
 			"NVGoggles"
 		};
-	};*/
 	class ADFRC_teamleader_dpdu: ADFRC_rifleman_dpdu
 	{
 		author=$STR_ADF_AUTHOR;
@@ -959,6 +956,26 @@ class cfgVehicles
 		icon="iconManLeader";
 		backpack="ADFRC_kitbag_tan_hmg";
 	};
+	class ADFRC_teeshirt_dpdu: ADFRC_rifleman_dpdu
+	{
+		scope=1;
+		author="$STR_ADF_AUTHOR";
+		_generalMacro="ADFRC_marksman_dpcu";
+		displayName="Designated Marksman";
+		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_marksman_dpcu.jpg";
+		uniformClass="ADFRC_uniform_dpdu_tee";
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]=
+		{
+			"Camo",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Units\ADFRC_men_dpdu\data\uniform_DPDU_co.paa",
+			"ADF_Units\ADFRC_men_dpcu\data\basicbody_army_co.paa"
+		};
+	};
 };
 class cfgWeapons
 {
@@ -1041,6 +1058,21 @@ class cfgWeapons
 			uniformClass="ADFRC_helicopterPilot_dpdu";
 			containerClass="Supply20";
 			mass=20;
+		};
+	};
+	class ADFRC_uniform_dpdu_tee: ADFRC_uniform_dpdu
+	{
+		scope=2;
+		author="$STR_ADF_AUTHOR";
+		displayName="Disruptive Pattern Desert Uniform (Tee)";
+		picture="";
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="ADFRC_teeshirt_dpdu";
+			containerClass="Supply20";
+			mass=80;
 		};
 	};
 };
