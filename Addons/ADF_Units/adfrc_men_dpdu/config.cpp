@@ -267,7 +267,7 @@ class cfgVehicles
 		editorPreview = "\ADF_Units\ADFRC_men_dpdu\preview\ADFRC_marksman_dpdu.jpg";
 		weapons[]=
 		{
-			"ADFRC_hk417_sand",
+			"ADFRC_hk417_sand_army",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -275,7 +275,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk417_sand",
+			"ADFRC_hk417_sand_army",
 			"adfrc_usp",
 			"Throw",
 			"Put",
@@ -1083,17 +1083,18 @@ class CfgGroups
 	{
 		name="BLUFOR";
 		side=1;
-		class ADF
+		class ADF_Commandos
 		{
-			name="ADF Commandos";
+			name="ADF 2nd Commandos";
 			class Infantry
 			{
 				name="Infantry";
 				class ADFRC_InfSquad_DPDU
 				{
 					faction="ADF";
-					name="Rifle Squad (DPDU)";
+					name="Rifle Squad";
 					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
@@ -1155,7 +1156,8 @@ class CfgGroups
 				{
 					faction="ADF";
 					side=1;
-					name="Fire Team (DPDU)";
+					name="Fire Team";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
@@ -1189,7 +1191,8 @@ class CfgGroups
 				{
 					faction="ADF";
 					side=1;
-					name="Sentry Team (DPDU)";
+					name="Sentry Team";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 					class Unit0
 					{
 						position[]={0,0,0};
