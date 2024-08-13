@@ -104,8 +104,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -113,8 +114,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -203,8 +205,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -212,8 +215,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -295,28 +299,16 @@ class cfgVehicles
 		};
 		backpack="ADFRC_Carryall_gl_amcu";
 	};
-	/*class ADFRC_marksman_amcu: ADFRC_rifleman_amcu
+	class ADFRC_marksman_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_marksman_amcu";
 		displayName="Designated Marksman";
 		//editorPreview = "ADF_Units\ADFRC_men_amcu\preview\ADFRC_marksman_amcu.jpg";
-		uniformClass="ADFRC_uniform_amcu_tee";
-		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
-		hiddenSelections[]=
-		{
-			"Camo",
-			"Camo2"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"ADF_Units\ADFRC_men_amcu\data\uniform_amcu_co.paa",
-			"ADF_Units\ADFRC_men_amcu\data\basicbody_army_co.paa"
-		};
 		weapons[]=
 		{
-			"ADFRC_hk417_sand_army",
+			"arifle_AUG_Elcan_Pointer_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -324,7 +316,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_hk417_sand_army",
+			"arifle_AUG_Elcan_Pointer_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -332,13 +324,13 @@ class cfgVehicles
 		};
 		magazines[]=
 		{
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
 			"16Rnd_9x21_Mag",
 			"ADFRC_F1_GRENADE",
 			"ADFRC_F1_GRENADE",
@@ -347,13 +339,13 @@ class cfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
-			"20Rnd_762x51_Mag",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
+			"30Rnd_556x45_AUG_Mag_F",
 			"16Rnd_9x21_Mag",
 			"ADFRC_F1_GRENADE",
 			"ADFRC_F1_GRENADE",
@@ -361,7 +353,7 @@ class cfgVehicles
 			"SmokeShell"
 		};
 		backpack="";
-	};*/
+	};
 	class ADFRC_medic_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
@@ -426,8 +418,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -435,8 +428,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -513,8 +507,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -522,8 +517,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -617,7 +613,7 @@ class cfgVehicles
 		};
 		backpack="";
 	};
-	/*class ADFRC_cavalryman_amcu: ADFRC_rifleman_amcu
+	class ADFRC_cavalryman_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
@@ -634,7 +630,7 @@ class cfgVehicles
 		};
 		weapons[]=
 		{
-			"ADFRC_F88SA1_eotech_laser",
+			"arifle_AUG_C_black_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -642,7 +638,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"ADFRC_F88SA1_eotech_laser",
+			"arifle_AUG_C_black_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -683,7 +679,7 @@ class cfgVehicles
 		linkedItems[]=
 		{
 			"H_Cap_headphones",
-			"ADFRC_carrierLite_amcu",
+			"ADFRC_LPC_Tan_2",
 			"adfrc_facewear_kondor_blk_blk",
 			"ItemMap",
 			"ItemCompass",
@@ -693,7 +689,7 @@ class cfgVehicles
 		respawnLinkedItems[]=
 		{
 			"H_Cap_headphones",
-			"ADFRC_carrierLite_amcu",
+			"ADFRC_LPC_Tan_2",
 			"adfrc_facewear_kondor_blk_blk",
 			"ItemMap",
 			"ItemCompass",
@@ -701,7 +697,7 @@ class cfgVehicles
 			"ItemRadio"
 		};
 		backpack="";
-	};*/
+	};
 	class ADFRC_teamleader_amcu: ADFRC_rifleman_amcu
 	{
 		scope=2;
@@ -713,7 +709,7 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		weapons[]=
 		{
-			"arifle_AUG_GL_black_arco_flash_F",
+			"arifle_AUG_black_arco_flash_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -721,7 +717,7 @@ class cfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"arifle_AUG_GL_black_arco_flash_F",
+			"arifle_AUG_black_arco_flash_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put",
@@ -761,8 +757,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -770,14 +767,15 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		backpack="ADFRC_AssaultPack_TL_amcu";
+		backpack="ADFRC_AssaultPack_amc";
 		icon="iconManLeader";
 	};
 	class ADFRC_squadleader_amcu: ADFRC_rifleman_amcu
@@ -847,8 +845,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -856,8 +855,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1034,8 +1034,9 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1043,8 +1044,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1098,7 +1100,7 @@ class cfgVehicles
 		};
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
 			"ItemMap",
 			"ItemCompass",
@@ -1107,7 +1109,7 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
 			"ItemMap",
 			"ItemCompass",
@@ -1128,8 +1130,9 @@ class cfgVehicles
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		linkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1137,8 +1140,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"ADFRC_teamwendy_exfil_amcu_ct_2_Aus",
+			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
 			"ADFRC_PC_Tan_1",
+			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -1261,24 +1265,6 @@ class cfgWeapons
 	class UniformItem;
 	class U_B_CombatUniform_mcam;
 	class U_B_CombatUniform_mcam_vest;
-	class HeadGearItem;
-	class H_HelmetB;
-	class ADFRC_HelmetC_amcu: H_HelmetB
-	{
-		scope=2;
-		author="$STR_ADFRC_AUTHOR";
-		displayName="ADF ECH [AMCU]";
-		weaponPoolAvailable=1;
-		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\ADF_Units\adfrc_men_amcu\data\amcu_helmet_co.paa"
-		};
-	};
 	class ADFRC_uniform_amcu: U_B_CombatUniform_mcam
 	{
 		scope=2;
@@ -1305,6 +1291,473 @@ class cfgWeapons
 			uniformClass="ADFRC_rifleman_amcu_ss";
 			containerClass="Supply20";
 			mass=80;
+		};
+	};
+};
+class CfgGroups
+{
+	class West
+	{
+		name="BLUFOR";
+		side=1;
+		class ADF_Present
+		{
+			name="Australian Army (Present)";
+			class Infantry
+			{
+				name="Infantry";
+				class ADFRC_InfSquad_amcu
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Infantry Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFRC_squadleader_amcu";
+						rank="CORPORAL";
+						position[]={10,0,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_lightGunner_amcu";
+						rank="PRIVATE";
+						position[]={15,-5,0};
+					};
+					class Unit2
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
+					};
+					class Unit3
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={10,-6.5,0};
+					};
+					class Unit4
+					{
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+						rank="CORPORAL";
+						position[]={-10,0,0};
+					};
+					class Unit5
+					{
+						side=1;
+						vehicle="ADFRC_lightGunner_amcu";
+						rank="PRIVATE";
+						position[]={-15,-5,0};
+					};
+					class Unit6
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={-5,-5,0};
+					};
+					class Unit7
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={-10,-6.5,0};
+					};
+				};
+				class ADFRC_InfTeam_amcu
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Fireteam";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+						rank="CORPORAL";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_lightGunner_amcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
+					};
+					class Unit2
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={-5,-5,0};
+					};
+					class Unit3
+					{
+						side=1;
+						vehicle="ADFRC_marksman_amcu";
+						rank="PRIVATE";
+						position[]={10,-10,0};
+					};
+				};
+				class ADFRC_ReconSquad_amcu
+				{
+					faction="ADF";
+					side=1;
+					author="$STR_ADF_AUTHOR";
+					name="Cavalry Foot Patrol";
+					icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+					class Unit0
+					{
+						position[]={0,0,0};
+						rank="SERGEANT";
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+					};
+					class Unit1
+					{
+						position[]={5,-5,0};
+						rank="PRIVATE";
+						side=1;
+						vehicle="ADFRC_cavalryman_amcu";
+					};
+					class Unit2
+					{
+						position[]={-5,-5,0};
+						rank="PRIVATE";
+						side=1;
+						vehicle="ADFRC_cavalryman_amcu";
+					};
+					class Unit3
+					{
+						position[]={10,-10,0};
+						rank="CORPORAL";
+						side=1;
+						vehicle="ADFRC_marksman_amcu";
+					};
+				};
+				class ADFRC_InfAssault_amcu
+				{
+					faction="ADF";
+					side=1;
+					author="$STR_ADF_AUTHOR";
+					name="Manoeuvre Support Section";
+					icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFRC_squadleader_amcu";
+						rank="LIEUTENANT";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_amcu";
+						rank="CORPORAL";
+						position[]={5,-5,0};
+					};
+					class Unit2
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_ass_amcu";
+						rank="PRIVATE";
+						position[]={0,-5,0};
+					};
+					class Unit3
+					{
+						side=1;
+						vehicle="ADFRC_medic_amcu";
+						rank="PRIVATE";
+						position[]={-5,-5,0};
+					};
+					class Unit4
+					{
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+						rank="SERGEANT";
+						position[]={-15,-10,0};
+					};
+					class Unit5
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_amcu";
+						rank="PRIVATE";
+						position[]={-10,-15,0};
+					};
+					class Unit6
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_ass_amcu";
+						rank="PRIVATE";
+						position[]={-15,-15,0};
+					};
+					class Unit7
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={-20,-15,0};
+					};
+					class Unit8
+					{
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+						rank="SERGEANT";
+						position[]={15,-10,0};
+					};
+					class Unit9
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_amcu";
+						rank="PRIVATE";
+						position[]={10,-15,0};
+					};
+					class Unit10
+					{
+						side=1;
+						vehicle="ADFRC_heavyGunner_ass_amcu";
+						rank="PRIVATE";
+						position[]={15,-15,0};
+					};
+					class Unit11
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={20,-15,0};
+					};
+				};
+				class ADFRC_InfSentry_amcu
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Sentry";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_support.paa";
+					class Unit0
+					{
+						side=1;
+						vehicle="ADFRC_marksman_amcu";
+						rank="PRIVATE";
+						position[]={0,0,0};
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
+					};
+				};					
+			};
+			class Motorized
+			{
+				name="Motorized";
+				class ADFRC_MotInf_Team_amcu_Bush
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="Bushmaster Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={0,-5,0};
+						rank="LIEUTENANT";
+						side=1;
+						Vehicle="ADFRC_squadleader_amcu";
+					};
+					class Unit1
+					{
+						position[]={5,-10,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFRC_teamleader_amcu";
+					};
+					class Unit2
+					{
+						position[]={-5,-10,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFRC_medic_amcu";
+					};
+					class Unit3
+					{
+						position[]={10,-15,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_grenadier_amcu";
+					};
+					class Unit4
+					{
+						position[]={-10,-15,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_lightGunner_amcu";
+					};
+					class Unit5
+					{
+						position[]={15,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_riflemanAT_amcu";
+					};
+					class Unit6
+					{
+						position[]={0,0,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_bushmaster_pws127mm_F";
+					};
+				};
+				/*class ADFRC_MotInf_Team_amcu_MATV
+				{
+					faction="ADFU";
+					author="$STR_ADF_AUTHOR";
+					name="M-ATV Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					class Unit0
+					{
+						position[]={5,0,0};
+						rank="LIEUTENANT";
+						side=1;
+						Vehicle="ADFRC_squadleader_amcu";
+					};
+					class Unit1
+					{
+						position[]={-5,0,0};
+						rank="SERGEANT";
+						side=1;
+						Vehicle="ADFRC_teamleader_amcu";
+					};
+					class Unit2
+					{
+						position[]={10,-5,0};
+						rank="CORPORAL";
+						side=1;
+						Vehicle="ADFRC_medic_amcu";
+					};
+					class Unit3
+					{
+						position[]={-10,-5,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_grenadier_amcu";
+					};
+					class Unit4
+					{
+						position[]={-10,-10,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_riflemanAT_amcu";
+					};
+					class Unit5
+					{
+						position[]={20,-20,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_hunter_amcu";
+					};
+					class Unit6
+					{
+						position[]={0,0,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_hunterHMG_amcu";
+					};
+				};*/
+			};
+			class Mechanized
+			{
+				name="Mechanized (ASLAV)";
+				class ADFRC_MechInfSquad_amcu_ASLAV
+				{
+					faction="ADF";
+					author="$STR_ADF_AUTHOR";
+					name="ASLAV Infantry Section";
+					side=1;
+					icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+					class Unit0
+					{
+						position[]={0,10,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_aslav";
+					};
+					class Unit1
+					{
+						side=1;
+						vehicle="ADFRC_squadleader_amcu";
+						rank="CORPORAL";
+						position[]={0,0,0};
+					};
+					class Unit2
+					{
+						side=1;
+						vehicle="ADFRC_lightGunner_amcu";
+						rank="PRIVATE";
+						position[]={5,-5,0};
+					};
+					class Unit3
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={-5,-5,0};
+					};
+					class Unit4
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={-5,0,0};
+					};
+					class Unit5
+					{
+						side=1;
+						vehicle="ADFRC_teamleader_amcu";
+						rank="CORPORAL";
+						position[]={0,-10,0};
+					};
+					class Unit6
+					{
+						side=1;
+						vehicle="ADFRC_lightGunner_amcu";
+						rank="PRIVATE";
+						position[]={5,-10,0};
+					};
+					class Unit7
+					{
+						side=1;
+						vehicle="ADFRC_grenadier_amcu";
+						rank="PRIVATE";
+						position[]={-5,-10,0};
+					};
+					class Unit8
+					{
+						side=1;
+						vehicle="ADFRC_riflemanAT_amcu";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit9
+					{
+						position[]={0,-15,0};
+						rank="PRIVATE";
+						side=1;
+						Vehicle="ADFRC_aslav";
+					};
+					
+				};
+			};
 		};
 	};
 };
