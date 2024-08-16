@@ -37,6 +37,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
+			"A3_Characters_F",
 			"A3_Characters_F_BLUFOR",
 			"ADF_Weapons",
 			"ADF_Gear",
@@ -54,6 +55,7 @@ class CfgEditorSubcategories
 class cfgVehicles
 {
 	class ADFRC_Soldier_base_F;
+	class I_Soldier_base_F;
 	class ADFRC_soldier_base_dpdu: ADFRC_Soldier_base_F
 	{
 		scope=1;
@@ -977,6 +979,20 @@ class cfgVehicles
 			"ADF_Units\ADFRC_men_dpcu\data\basicbody_army_co.paa"
 		};
 	};
+	class Z_officer_F: I_Soldier_base_F
+	{
+		model = "\A3\Characters_F_Beta\INDEP\ia_officer.p3d";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"A3\Characters_F_Beta\INDEP\Data\officer.rvmat","A3\Characters_F_Beta\INDEP\Data\officer_injury.rvmat","A3\Characters_F_Beta\INDEP\Data\officer_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","a3\characters_f\heads\data\hl_white.rvmat","a3\characters_f\heads\data\hl_white_injury.rvmat","a3\characters_f\heads\data\hl_white_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat","A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+		};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\ADF_Units\adfrc_men_dpdu\data\uniform_field_DPDU_CO.paa","\ADF_Units\adfrc_men_dpdu\data\uniform_field2_DPDU_CO.paa"};
+		uniformClass = "ADFRC_uniform_field_DPDU";
+		scope = 2;
+		displayName = "field";
+	};
 };
 class cfgWeapons
 {
@@ -988,6 +1004,7 @@ class cfgWeapons
 	class Vest_Camo_Base;
 	class VestItem;
 	class U_B_CombatUniform_mcam;
+	class U_I_OfficerUniform;
 	class ADFRC_uniform_dpdu: U_B_CombatUniform_mcam
 	{
 		scope=2;
@@ -1045,6 +1062,22 @@ class cfgWeapons
 			uniformClass="ADFRC_teamLeader_dpdu";
 			containerClass="Supply20";
 			mass=80;
+		};
+	};
+	class ADFRC_uniform_field_DPDU: Uniform_Base
+	{
+		author=$STR_ADF_AUTHOR;
+		scope = 2;
+		displayName = "Disruptive Pattern Desert Field Dress";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\ADF_Units\adfrc_men_dpdu\data\uniform_field_DPDU_CO.paa","\ADF_Units\adfrc_men_dpdu\data\uniform_field2_DPDU_CO.paa"};
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "Z_officer_F";
+			containerClass = "Supply40";
+			mass = 40;
 		};
 	};
 	class U_B_PilotCoveralls;
