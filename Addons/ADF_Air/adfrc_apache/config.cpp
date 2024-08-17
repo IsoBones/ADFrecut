@@ -89,23 +89,23 @@ class CfgVehicles
 		};
 
         /* Handling */
-		fuelCapacity = 1400;
+		fuelCapacity = 1420;
 		fuelConsumptionRate = 0.0366;
-        altFullForce = 4000;
+        altFullForce = 3000;
 		altNoForce = 6000;
 		maxSpeed = 293;
 		mainBladeCenter = rotor_center;
-		mainBladeRadius = 7.3;
+		mainBladeRadius = 7.315;
 		tailBladeCenter = rotor_02_center;
-		tailBladeRadius = 1;
-		liftForceCoef = 1.2;
+		tailBladeRadius = 1.395;
+		liftForceCoef = 1.0;
 		bodyFrictionCoef = 1.1;
 		cyclicAsideForceCoef = 1.2;
 		cyclicForwardForceCoef = 1.0;
 		backRotorForceCoef = 1.0;
-		mainRotorSpeed = -1;
+		mainRotorSpeed = 1;
 		backRotorSpeed = 3;
-        maxFordingDepth = 0.5;
+        maxFordingDepth = 0.6;
 		numberPhysicalWheels = 3;
 
         /* Crew */
@@ -318,7 +318,7 @@ class CfgVehicles
 		lockDetectionSystem = CM_Lock_Radar + CM_Lock_Laser;
 		incomingMissileDetectionSystem = CM_Radar_Missiles + CM_All_Missiles;
 		laserScanner = true;
-		showAllTargets = LockLaser;
+		showAllTargets = 2;
 		radarTargetSize = 1.1;
 		irTargetSize = 1.2;
 		class Components: Components
@@ -520,8 +520,8 @@ class CfgVehicles
                             DAGR,
                             B_SHIEKER,
                             UNI_SCALPEL,
-                            20MM_TWIN_CANNON,
-                            B_ASRRAM_EJECTOR
+                            gatling_30mm_base,
+							B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -539,8 +539,8 @@ class CfgVehicles
                             DAGR,
                             B_SHIEKER,
                             UNI_SCALPEL,
-                            20MM_TWIN_CANNON,
-                            B_ASRRAM_EJECTOR
+                            gatling_30mm_base,
+							B_ASRRAM_EJECTOR
                         };
 						UIposition[] =
                         {
@@ -588,25 +588,12 @@ class CfgVehicles
 						displayName = $STR_vehicle_default;
 						attachment[] =
                         {
-                            PylonMissile_1Rnd_AAA_missiles,
+							PylonMissile_1Rnd_AAA_missiles,
                             PylonRack_12Rnd_missiles,
-                            PylonRack_4Rnd_LG_scalpel,
+							PylonRack_4Rnd_LG_scalpel,
                             PylonRack_4Rnd_LG_scalpel,
                             PylonRack_12Rnd_missiles,
-                            PylonMissile_1Rnd_AAA_missiles
-                        };
-					};
-					class AT
-					{
-						displayName = $STR_A3_cfgmagazines_titan_at_dns;
-						attachment[] =
-                        {
-                            PylonMissile_1Rnd_AAA_missiles,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonMissile_1Rnd_AAA_missiles
+							PylonMissile_1Rnd_AAA_missiles
                         };
 					};
 					class CAS
@@ -614,12 +601,25 @@ class CfgVehicles
 						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
 						attachment[] =
                         {
-                            PylonMissile_1Rnd_AAA_missiles,
+							PylonMissile_1Rnd_AAA_missiles,
                             PylonRack_12Rnd_missiles,
-                            PylonRack_12Rnd_PG_missiles,
-                            PylonRack_12Rnd_PG_missiles,
+							PylonRack_4Rnd_LG_scalpel,
+                            PylonRack_4Rnd_LG_scalpel,
                             PylonRack_12Rnd_missiles,
-                            PylonMissile_1Rnd_AAA_missiles
+							PylonMissile_1Rnd_AAA_missiles
+                        };
+					};
+					class AT
+					{
+						displayName = $STR_A3_cfgmagazines_titan_at_dns;
+						attachment[] =
+                        {
+							PylonMissile_1Rnd_LG_scalpel,
+                            PylonRack_12Rnd_missiles,
+							PylonRack_12Rnd_missiles,
+							PylonRack_12Rnd_missiles,
+                            PylonRack_12Rnd_missiles,
+							PylonMissile_1Rnd_LG_scalpel
                         };
 					};
 				};
@@ -635,6 +635,7 @@ class CfgVehicles
 				class Wide
 				{
 					opticsDisplayName = "WFOV";
+					directionStabilized = true;
 					initAngleX = 0;
 					minAngleX = 0;
 					maxAngleX = 0;
@@ -644,7 +645,6 @@ class CfgVehicles
 					initFov = (30 / 120);
 					minFov = (30 / 120);
 					maxFov = (30 / 120);
-					directionStabilized = true;
 					visionMode[] =
                     {
                         Normal,
@@ -728,19 +728,17 @@ class CfgVehicles
 				soundServo[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",db-5,1,30};
 				soundServoVertical[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",db-5,1,30};
 				stabilizedInAxes = StabilizedInAxesBoth;
+				canLock = 2;
 		
 				/* Optics */
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\optics_empty.p3d";
-				gunnerOpticsEffect[] =
-				{
-					TankCommanderOptics1,
-					BWTV
-				};
+				gunnerOpticsEffect[] = {"TankCommanderOptics1, BWTV"};
 				gunnerForceOptics = false;
 				class OpticsIn
 				{
 					class Wide
 					{
+						opticsDisplayName = "WFOV";
 						initAngleX = 0;
 						minAngleX = -60;
 						maxAngleX = 15;
@@ -750,7 +748,6 @@ class CfgVehicles
 						initFov = 0.466;
 						minFov = 0.466;
 						maxFov = 0.466;
-						opticsDisplayName = "WFOV";
 						visionMode[] =
 						{
 							Normal,
@@ -766,18 +763,24 @@ class CfgVehicles
 					};
 					class Medium: Wide
 					{
+						opticsDisplayName = "MFOV";
+						directionStabilized = true;
 						initFov = 0.093;
 						minFov = 0.093;
 						maxFov = 0.093;
-						opticsDisplayName = "MFOV";
+						initAngleX = 0;
+						initAngleY = 0;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F.p3d";
 					};
 					class Narrow: Wide
 					{
+						opticsDisplayName = "NFOV";
+						directionStabilized = true;
 						initFov = 0.029;
 						minFov = 0.029;
 						maxFov = 0.029;
-						opticsDisplayName = "NFOV";
+						initAngleX = 0;
+						initAngleY = 0;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F.p3d";
 					};
 				};
@@ -811,7 +814,7 @@ class CfgVehicles
 				};
 				
 				/* Sensors & Components */
-				showAllTargets = LockLaser;
+				showAllTargets = 2;
 				class Components
 				{
 					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
@@ -922,7 +925,7 @@ class CfgVehicles
 				};
 				magazines[] =
 				{
-					1200Rnd_Chaingun_30mm,
+					ADFRC_1200Rnd_Chaingun_30mm,
 					Laserbatteries
 				};
 		

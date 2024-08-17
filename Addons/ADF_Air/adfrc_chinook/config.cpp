@@ -4509,7 +4509,7 @@ class CfgVehicles
 		faction = "ADF";
 		model="ADF_Air\adfrc_chinook\CH_47F";
 		displayname="CH-47F Chinook";
-		EditorPreview="ADF_Air\adfrc_chinook\data\adfrc_chinook.jpg";
+		editorPreview="\ADF_Air\adfrc_chinook\preview\adfrc_chinook.jpg";
 		accuracy=1000;
 		hiddenSelections[]=
 		{

@@ -965,7 +965,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_marksman_dpcu";
 		displayName="Designated Marksman";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_marksman_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_marksman_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpdu_tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		hiddenSelections[]=

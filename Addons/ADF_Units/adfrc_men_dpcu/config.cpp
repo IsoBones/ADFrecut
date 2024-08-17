@@ -134,7 +134,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_rifleman_dpcu";
 		displayName="Rifleman";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_rifleman_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_rifleman_dpcu.jpg";
 		editorSubcategory= "ADFRC_MEN_DPCU";
 		vehicleClass=$STR_ADF_MEN_DPCU;
 		uniformAccessories[]={};
@@ -156,7 +156,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_engineer_dpcu";
 		displayName="Combat Engineer";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_engineer_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_engineer_dpcu.jpg";
 		engineer=1;
 		saboteur=1;
 		canDeactivateMines=1;
@@ -191,7 +191,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_grenadier_dpcu";
 		displayName="Grenadier";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_grenadier_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_grenadier_dpcu.jpg";
 		weapons[]=
 		{
 			"ADFRC_F88SA1_gl_eotech_laser",
@@ -262,7 +262,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_marksman_dpcu";
 		displayName="Designated Marksman";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_marksman_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_marksman_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu_tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		hiddenSelections[]=
@@ -329,7 +329,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_DPCU_Medic";
 		displayName="Medical Technician";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_medic_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_medic_dpcu.jpg";
 		attendant=1;
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		uniformClass="ADFRC_uniform_dpcu_medic";
@@ -416,7 +416,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_DPCU_RiflemanAT";
 		displayName="AT Gunner";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_riflemanAT_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_riflemanAT_dpcu.jpg";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
 		{
@@ -503,7 +503,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_DPCU_Crewman";
 		displayName="Crewman";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_crewman_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_crewman_dpcu.jpg";
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -588,7 +588,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_DPCU_Crewman";
 		displayName="Cavalryman";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_cavalryman_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_cavalryman_dpcu.jpg";
 		hiddenSelections[]=
 		{
 			"Camo"
@@ -673,7 +673,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="B_Soldier_F";
 		displayName="Brick Leader";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_teamleader_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_teamleader_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		weapons[]=
@@ -759,7 +759,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="B_Soldier_F";
 		displayName="Section Leader";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_squadleader_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_squadleader_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		weapons[]=
@@ -845,7 +845,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="ADFRC_DPCU_Pilot";
 		displayName="Helicopter Pilot";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_pilot_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_pilot_dpcu.jpg";
 		model="\A3\Characters_F\Common\coveralls.p3d";
 		uniformClass="ADFRC_coveralls_dpcu";
 		hiddenSelections[]=
@@ -916,7 +916,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="B_Soldier_F";
 		displayName="LSW Gunner";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_lightGunner_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_lightGunner_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		weapons[]=
@@ -982,7 +982,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="B_Soldier_F";
 		displayName="General Support Machine Gunner";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_heavyGunner_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_heavyGunner_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		weapons[]=
@@ -1046,7 +1046,7 @@ class cfgVehicles
 		author="$STR_ADF_AUTHOR";
 		_generalMacro="B_Soldier_F";
 		displayName="General Support Gunner Ass.";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_heavyGunner_ass_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_heavyGunner_ass_dpcu.jpg";
 		uniformClass="ADFRC_uniform_dpcu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		linkedItems[]=
@@ -1171,7 +1171,7 @@ class cfgVehicles
 		faction="ADF";
 		vehicleClass="AIR";
 		displayName="AH-9 (DPCU)";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_ah9_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_ah9_dpcu.jpg";
 		crew="ADFRC_pilot_dpcu";
 		typicalCargo[]=
 		{
@@ -1195,7 +1195,7 @@ class cfgVehicles
 		faction="ADF";
 		vehicleClass="AIR";
 		displayName="MH-9 (DPCU)";
-		editorPreview = "ADF_Units\ADFRC_men_dpcu\preview\ADFRC_mh9_dpcu.jpg";
+		editorPreview = "\ADF_Units\ADFRC_men_dpcu\preview\ADFRC_mh9_dpcu.jpg";
 		crew="ADFRC_pilot_dpcu";
 		typicalCargo[]=
 		{

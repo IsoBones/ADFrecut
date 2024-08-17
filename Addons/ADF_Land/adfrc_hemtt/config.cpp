@@ -26,7 +26,7 @@ class CfgVehicles
 	class ADFRC_hemtt_cargo: B_Truck_01_cargo_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F_Enoch\Data\CfgVehicles\B_Truck_01_cargo_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_cargo.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Cargo";
@@ -42,7 +42,7 @@ class CfgVehicles
 	class ADFRC_hemtt_ammo: B_Truck_01_ammo_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Truck_01_ammo_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_ammo.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Ammo";
@@ -58,7 +58,7 @@ class CfgVehicles
 	class ADFRC_hemtt_fuel: B_Truck_01_fuel_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Truck_01_fuel_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_fuel.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Fuel";
@@ -74,7 +74,7 @@ class CfgVehicles
 	class ADFRC_hemtt_transport: B_Truck_01_covered_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Truck_01_covered_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_transport.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Transport";
@@ -90,7 +90,7 @@ class CfgVehicles
 	class ADFRC_hemtt_mover: B_Truck_01_mover_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Truck_01_mover_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_mover.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Prime Mover";
@@ -106,7 +106,7 @@ class CfgVehicles
 	class ADFRC_hemtt_flatbed: B_Truck_01_flatbed_F
 	{
 		author = "ADFRC Quiggs";
-		editorPreview = "\A3\EditorPreviews_F_enoch\Data\CfgVehicles\B_Truck_01_flatbed_F.jpg";
+		editorPreview = "\ADF_Land\adfrc_hemtt\preview\ADFRC_hemtt_flatbed.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "HEMTT Flatbed";

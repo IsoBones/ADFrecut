@@ -26,7 +26,7 @@ class adfrc_apache: Heli_Attack_03_base_F
             /* Weapons & Ammunition */
             magazines[] =
             {
-                "ADFU_1200Rnd_Chaingun_30mm",
+                "ADFRC_1200Rnd_Chaingun_30mm",
                 "Laserbatteries"
             };
         };

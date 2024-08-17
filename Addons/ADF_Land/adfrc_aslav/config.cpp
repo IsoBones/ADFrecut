@@ -1718,7 +1718,7 @@ class CfgVehicles
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
 		faction ="ADF";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_ASLAV.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
@@ -1753,11 +1753,11 @@ class CfgVehicles
 		scope= 2;
 		scopeCurator= 2;
 		side= 1;
-		displayName ="ASLAV-25 (UN Peacekeeping)";
+		displayName ="ASLAV-25 (UN)";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
 		faction ="ADF";
-		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_ASLAV_UN.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";

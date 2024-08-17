@@ -105,7 +105,7 @@ class CfgVehicles
 		scope=0;
 		model="ADF_Air\adfrc_blackhawk\S70A";
 		displayName="S70A-9 Black Hawk";
-		editorPreview = "ADF_Air\adfrc_blackhawk\data\ADFRC_blackhawk.jpg";
+		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE";
 		side=1;
@@ -5507,7 +5507,7 @@ class CfgVehicles
 		scope=0;
 		model="ADF_Air\adfrc_blackhawk\S70A_MAG58";
 		displayName="S70A-9 Black Hawk";
-		editorPreview = "\adf_air\adfrc_blackhawk\data\ADFRC_blackhawk_mag58.jpg";
+		editorPreview = "\adf_air\adfrc_blackhawk\preview\ADFRC_blackhawk_mag58.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_MAG58";
 		cargoProxyIndexes[]={2,3,6,7,9,10,11,12};
@@ -5739,7 +5739,7 @@ class CfgVehicles
 		scope=2;
 		model="ADF_Air\adfrc_blackhawk\S70A";
 		displayName="S70 Blackhawk";
-		editorPreview = "ADF_Air\adfrc_blackhawk\data\ADFRC_blackhawk.jpg";
+		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
@@ -6266,7 +6266,7 @@ class CfgVehicles
 		scope=2;
 		model="ADF_Air\adfrc_blackhawk\S70A_CARGO";
 		displayName="S70 Blackhawk Cargo";
-		editorPreview = "ADF_Air\adfrc_blackhawk\data\ADFRC_blackhawk_cargo.jpg";
+		editorPreview = "ADF_Air\adfrc_blackhawk\preview\ADFRC_blackhawk_cargo.jpg";
 		author="$STR_ADFRC_AUTHOR";
 		_generalMacro="ADFRC_blackhawk_BASE_F";
 		mapSize=16.82;
