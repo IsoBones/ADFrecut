@@ -82,20 +82,31 @@ class cfgAmmo
 		explosive = 0.6;
 		caliber = 1.15;
 		tracerScale = 2.25;
+			class CamShakePlayerFire
+		{
+			power = 5;
+			duration = 0.1;
+			frequency = 100;
+		};	
 	};
-
 	class B_30mm_APFSDS;
 	class ADFRC_aslav_25mm_AP: B_30mm_APFSDS
 	{
-		hit = 75;
+		hit = 100;
 		indirectHit = 1;
 		indirectHitRange = 1;
-		caliber = 3.8;
+		caliber = 5;
 		visibleFire = 32;
 		audibleFire = 32;
 		visibleFireTime = 3;
 		cost = 50;
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		class CamShakePlayerFire
+		{
+		power = 5;
+		duration = 0.1;
+		frequency = 100;
+		};
 	};
 	class B_762x54_Tracer_Green;
 	class ADFRC_ASLAV_762x51_Tracer: B_762x54_Tracer_Green
@@ -105,7 +116,6 @@ class cfgAmmo
 		tracerColorR[] = {0.7,0.7,0.5,0.04};
 	};
 };
-
 class cfgMagazines
 {
 	class 150Rnd_762x51_Box;
@@ -159,6 +169,7 @@ class cfgWeapons
 {
 	class LMG_RCWS;
 	class MGun;
+	class HMG_M2_Mounted;
 	class ADFRC_aslav_coax: LMG_RCWS {
 		displayName = "MG 7.62mm Mag 58 Coax";
 		scope = 1;
@@ -167,8 +178,6 @@ class cfgWeapons
 			"ADFRC_aslav_1000Rnd_762x51_Tracer",
 			"ADFRC_aslav_1000Rnd_762x51_Tracer"
 		};
-		ballisticsComputer = 2;
-
 		class GunParticles {
 
 			class effect1 {
@@ -187,14 +196,13 @@ class cfgWeapons
 				directionName = "nabojniceend2";
 			};
 		};
-
 		class manual: MGun {
 			displayName = "7.62 mm";
 			reloadTime = 0.0857;
 			dispersion = 0.001010;
 			sounds[] = {"StandardSound"};
 			class StandardSound
- 			{
+			{
 				weaponSoundEffect = "DefaultRifle";
 
 				closure1[] = {"A3\sounds_f\weapons\closure\sfx7", 0.15, 1, 10};
@@ -240,17 +248,16 @@ class cfgWeapons
 					"begin4",
 					0.25
 				};
- 			};
-			soundContinuous = 0;
-			soundBurst = 0;
-			minRange = 0;
-			minRangeProbab = 0.010000;
-			midRange = 1;
-			midRangeProbab = 0.010000;
-			maxRange = 2;
-			maxRangeProbab = 0.010000;
+				soundContinuous = 0;
+				soundBurst = 0;
+				minRange = 0;
+				minRangeProbab = 0.010000;
+				midRange = 1;
+				midRangeProbab = 0.010000;
+				maxRange = 2;
+				maxRangeProbab = 0.010000;
+			};	
 		};
-
 		class close: manual {
 			burst = 7;
 			aiRateOfFire = 1;
@@ -263,7 +270,6 @@ class cfgWeapons
 			maxRangeProbab = 0.100000;
 			showToPlayer = 0;
 		};
-
 		class short: close {
 			burst = 6;
 			aiRateOfFire = 2;
@@ -275,7 +281,6 @@ class cfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.100000;
 		};
-
 		class medium: close {
 			burst = 5;
 			aiRateOfFire = 4;
@@ -287,7 +292,6 @@ class cfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.100000;
 		};
-
 		class far: close {
 			burst = 4;
 			aiRateOfFire = 5;
@@ -304,7 +308,6 @@ class cfgWeapons
 	{
 		displayName = "MG 7.62mm Mag 58 Flex";
 		magazines[] = {"ADFRC_aslav_200Rnd_762x51_Tracer"};
-		ballisticsComputer = 0;
 
 		class GunParticles {
 			class effect1
@@ -381,7 +384,7 @@ class cfgWeapons
 			textureType = "semi";
 		};
 		FCSMaxLeadSpeed = 0;
-		minZeroing = 200;
+		minZeroing = 0;
 		class SoundTails
         {
 			class TailTrees
@@ -460,5 +463,18 @@ class cfgWeapons
 			reloadTime=__EVAL(60/100);
 		};
 	};
+	};
+	class ADFRC_land_aslav_M2HBQCB: HMG_M2_Mounted 
+	{
+		displayName="MG 12.7mm M2HB QCB";
+		class GunParticles 
+{
+			class effect1
+			{
+				positionName = "m2_muzzle_end";
+				directionName = "m2_muzzle";
+				effectName = "MachineGunCloud";
+			};
+		};
 	};
 };
