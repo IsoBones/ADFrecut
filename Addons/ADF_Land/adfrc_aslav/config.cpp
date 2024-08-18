@@ -2247,8 +2247,8 @@ class CfgVehicles
 				hitpoint = "HitRMWheel";
 			};
 		};
-	};/*
-	class ADFRC_ASLAV_PC_RWS: ADFRC_ASLAV_PC
+	};
+	/*class ADFRC_ASLAV_PC_RWS: ADFRC_ASLAV_PC
 	{
 		scope= 2;
 		scopeCurator= 2;
