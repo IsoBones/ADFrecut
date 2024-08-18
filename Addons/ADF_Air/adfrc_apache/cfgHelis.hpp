@@ -17,7 +17,8 @@ class Helicopter_Base_F: Helicopter
         class HitFuel;
         class HitAvionics;
         class HitMissiles;
-        class HitEngine;
+        class HitEngine1;
+        class HitEngine2;
         class HitHRotor;
         class HitVRotor;
         class HitGlass1;
@@ -50,7 +51,8 @@ class Helicopter_Base_H: Helicopter_Base_F
     {
         class HitHull;
         class HitFuel;
-        class HitEngine;
+        class HitEngine1;
+        class HitEngine2;
         class HitAvionics;
         class HitVRotor;
         class HitHRotor;

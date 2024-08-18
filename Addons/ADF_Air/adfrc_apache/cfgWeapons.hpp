@@ -19,8 +19,8 @@ class CfgWeapons
         FCSZeroingDelay = 1;
         reloadMagazineSound[] = {"", 1, 1};
         
-        weaponLockSystem = 2; // weapon locking using the T keybind
-        lockAcquire = 1; // the ability to lock onto targets
+        weaponLockSystem = 2;
+        lockAcquire = 1;
 
         class GunParticles
         {
