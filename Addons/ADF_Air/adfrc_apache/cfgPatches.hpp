@@ -5,8 +5,8 @@ class CfgPatches
 		requiredAddons[] = 
 		{
 			"A3_Weapons_F",
-			"adfu_air_c130",
-			"adfu_faction"
+			"adfrc_air_c130",
+			"adfrc_faction"
 		};
 		requiredVersion = 0.1;
 		units[] =

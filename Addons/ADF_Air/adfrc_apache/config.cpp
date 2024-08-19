@@ -45,7 +45,7 @@ class CfgVehicles
 		textPlural = $STR_A3_nameSound_veh_air_gunship_p;
 		nameSound = veh_air_gunship_s;
 		scope = private;
-		displayName = "AH-64D Apache Longbow";
+		displayName = "AH-64D Apache Guardian";
 		model = "\ADF_Air\adfrc_apache\Heli_Attack_03_F.p3d";
 		icon = "\ADF_Air\adfrc_apache\data\ui\Map_Heli_Attack_03_CA.paa";
 		picture = "\ADF_Air\adfrc_apache\data\ui\Heli_Attack_03_CA.paa";
@@ -145,144 +145,121 @@ class CfgVehicles
 		};
 
         /* Damage */
-		armor = 60;
-		damageResistance = 0.00593;
-        destrType = DestructWreck;
-		class HitPoints: HitPoints
-        {
-			class HitHull: HitHull
-			{
-				armor = 999;
-				visual = zbytek;
-				depends = Total;
+		armor = 100; 
+		damageResistance = 0.002; 
+		destrType = DestructWreck;
+
+		class HitPoints: HitPoints {
+			class HitHull: HitHull {
+				armor = 999;  
+				visual = "zbytek";
+				depends = "Total";
 				radius = 0.01;
 			};
-			class HitFuel: HitFuel
-			{
-				armor = 1;
+			class HitFuel: HitFuel {
+				armor = 5;  
 				radius = 0.25;
-				minimalHit = 0.05;
+				minimalHit = 0.2; 
 			};
-			class HitAvionics: HitAvionics
-			{
-				armor = 2;
-				radius = 0.4;
-				minimalHit = 0.05;
-				visual = elektronika;
+			class HitAvionics: HitAvionics {
+				armor = 8;  
+				radius = 0.3;
+				minimalHit = 0.1;  
+				visual = "elektronika";
 			};
-			class HitMissiles: HitMissiles
-			{
-				armor = 1;
+			class HitMissiles: HitMissiles {
+				armor = 2;  
 				radius = 0.15;
-				minimalHit = 0.05;
-			};
-			class HitEngine1
-			{
-				armor = 2.5;
-				radius = 0.4;
-				name = engine_1_hit;
-				explosionShielding = 3;
 				minimalHit = 0.1;
-				visual = motor;
-				passThrough = 1;
-				convexComponent = engine_1_hit;
+			};
+			class HitEngine1 {
+				armor = 15; 
+				radius = 0.3;
+				name = "engine_1_hit";
+				explosionShielding = 5; 
+				minimalHit = 0.2;
+				visual = "motor";
+				passThrough = 0.5;
+				convexComponent = "engine_1_hit";
 				material = 51;
 			};
-			class HitEngine2: HitEngine1
-			{
-				name = engine_2_hit;
-				convexComponent = engine_2_hit;
+			class HitEngine2: HitEngine1 {
+				name = "engine_2_hit";
+				convexComponent = "engine_2_hit";
 			};
-			class HitEngine: HitEngine
-			{
-				armor = 999;
-				radius = 0.05;
-				minimalHit = 1;
-				depends = 0.5 * (HitEngine1 + HitEngine2);
-			};
-			class HitHRotor: HitHRotor
-			{
-				armor = 4;
+			class HitHRotor: HitHRotor {
+				armor = 10;  
 				radius = 0.3;
-				minimalHit = 0.1;
-				explosionShielding = 4;
+				minimalHit = 0.2;
+				explosionShielding = 5;
 			};
-			class HitVRotor: HitVRotor
-			{
-				armor = 3;
+			class HitVRotor: HitVRotor {
+				armor = 8;  
 				radius = 0.2;
-				minimalHit = 0.1;
-				explosionShielding = 4;
+				minimalHit = 0.2;
+				explosionShielding = 5;
 			};
-			class HitGlass1: HitGlass1
-			{
-				name = glass1;
-				visual = glass1;
-				armor = 4.5;
+			class HitGlass1: HitGlass1 {
+				name = "glass1";
+				visual = "glass1";
+				armor = 3;  
 				radius = 0.4;
-				explosionShielding = 1.5;
+				explosionShielding = 1;
 				minimalHit = 0.05;
 				passThrough = false;
 			};
-			class HitGlass2: HitGlass1
-			{
-				name = glass2;
-				visual = glass2;
-				armor = 4.5;
-				radius = 0.4;
-				explosionShielding = 1.5;
-				minimalHit = 0.05;
-			};
-			class HitGlass3: HitGlass1
-			{
-				name = glass3;
-				visual = glass3;
-				armor = 4.5;
-				radius = 0.4;
-				explosionShielding = 1.5;
-				minimalHit = 0.05;
-			};
-			class HitGlass4: HitGlass1
-			{
-				name = glass4;
-				visual = glass4;
-				armor = 4.5;
-				radius = 0.4;
-				explosionShielding = 1.5;
-				minimalHit = 0.05;
-			};
-			class HitGlass5: HitGlass1
-			{
-				name = glass5;
-				visual = glass5;
-				armor = 4.5;
-				radius = 0.4;
-				explosionShielding = 2;
-				minimalHit = 0.05;
-			};
-			class HitGlass6: HitGlass1
-			{
-				name = glass6;
-				visual = glass6;
-				armor = 4.5;
+			class HitGlass2: HitGlass1 {
+				name = "glass2";
+				visual = "glass2";
+				armor = 3;
 				radius = 0.4;
 				explosionShielding = 1;
 				minimalHit = 0.05;
 			};
-			class HitGlass7: HitGlass1
-			{
-				name = glass7;
-				visual = glass7;
-				armor = 4.5;
+			class HitGlass3: HitGlass1 {
+				name = "glass3";
+				visual = "glass3";
+				armor = 3;
 				radius = 0.4;
 				explosionShielding = 1;
 				minimalHit = 0.05;
 			};
-			class HitWinch: HitWinch
-			{
+			class HitGlass4: HitGlass1 {
+				name = "glass4";
+				visual = "glass4";
+				armor = 3;
+				radius = 0.4;
+				explosionShielding = 1;
+				minimalHit = 0.05;
+			};
+			class HitGlass5: HitGlass1 {
+				name = "glass5";
+				visual = "glass5";
+				armor = 3;
+				radius = 0.4;
+				explosionShielding = 1;
+				minimalHit = 0.05;
+			};
+			class HitGlass6: HitGlass1 {
+				name = "glass6";
+				visual = "glass6";
+				armor = 3;
+				radius = 0.4;
+				explosionShielding = 1;
+				minimalHit = 0.05;
+			};
+			class HitGlass7: HitGlass1 {
+				name = "glass7";
+				visual = "glass7";
+				armor = 3;
+				radius = 0.4;
+				explosionShielding = 1;
+				minimalHit = 0.05;
+			};
+			class HitWinch: HitWinch {
 				class DestructionEffects{};
 			};
-        };
+		};
         class Damage
 		{
 			tex[] = {};
@@ -321,308 +298,192 @@ class CfgVehicles
 		showAllTargets = 2;
 		radarTargetSize = 1.1;
 		irTargetSize = 1.2;
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
-							minRange = 500;
-							maxRange = 4000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = 1;
-						};
-						class GroundTarget
-						{
-							minRange = 500;
-							maxRange = 3000;
-							objectDistanceLimitCoef = 1;
-							viewDistanceLimitCoef = 1;
-						};
-						maxTrackableSpeed = 70;
-						animDirection = mainGun;
-						angleRangeHorizontal = 34;
-						angleRangeVertical = 34;
-                        aimDown = 27;
-					};
-					class VisualSensorComponent: SensorTemplateVisual
-					{
-						class AirTarget
-						{
-							minRange = 500;
-							maxRange = 3000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = 1;
-						};
-						class GroundTarget
-						{
-							minRange = 500;
-							maxRange = 2000;
-							objectDistanceLimitCoef = 1;
-							viewDistanceLimitCoef = 1;
-						};
-						maxTrackableSpeed = 70;
-						animDirection = mainGun;
-						angleRangeHorizontal = 34;
-						angleRangeVertical = 34;
-                        aimDown = 27;
-					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange = 7000;
-							maxRange = 7000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						class GroundTarget
-						{
-							minRange = 6000;
-							maxRange = 6000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						maxTrackableSpeed = 125;
-						angleRangeHorizontal = 360;
-						angleRangeVertical = 90;
-						groundNoiseDistanceCoef = -1;
-						maxGroundNoiseDistance = -1;
-						minSpeedThreshold = 0;
-						maxSpeedThreshold = 0;
-					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar{};
-					class LaserSensorComponent: SensorTemplateLaser{};
-					class NVSensorComponent: SensorTemplateNV{};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
-			{
-				class Components: components
-				{
-					class EmptyDisplay
-					{
-						componentType = EmptyDisplayComponent;
-					};
-					class MinimapDisplay
-					{
-						componentType = MinimapDisplayComponent;
-						resource = RscCustomInfoAirborneMiniMap;
-					};
-					class CrewDisplay
-					{
-						componentType = CrewDisplayComponent;
-						resource = RscCustomInfoCrew;
-					};
-					class UAVDisplay
-					{
-						componentType = UAVFeedDisplayComponent;
-					};
-					class VehiclePrimaryGunnerDisplay
-					{
-						componentType = TransportFeedDisplayComponent;
-						source = PrimaryGunner;
-					};
-					class VehicleMissileDisplay
-					{
-						componentType = TransportFeedDisplayComponent;
-						source = Missile;
-					};
-					class SensorDisplay
-					{
-						componentType = SensorsDisplayComponent;
-						range[] =
-                        {
-                            4000,
-                            2000,
-                            16000,
-                            8000
+		canLock = 1
+		class Components : Components {
+            class SensorsManagerComponent {
+                class Components {
+                    class IRSensorComponent: SensorTemplateIR {
+                        class AirTarget {
+                            minRange = 0;
+                            maxRange = 4000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
                         };
-						resource = RscCustomInfoSensors;
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
-			{
-				defaultDisplay = SensorDisplay;
-				class Components: components
-				{
-					class EmptyDisplay
-					{
-						componentType = EmptyDisplayComponent;
-					};
-					class MinimapDisplay
-					{
-						componentType = MinimapDisplayComponent;
-						resource = RscCustomInfoAirborneMiniMap;
-					};
-					class CrewDisplay
-					{
-						componentType = CrewDisplayComponent;
-						resource = RscCustomInfoCrew;
-					};
-					class UAVDisplay
-					{
-						componentType = UAVFeedDisplayComponent;
-					};
-					class VehiclePrimaryGunnerDisplay
-					{
-						componentType = TransportFeedDisplayComponent;
-						source = PrimaryGunner;
-					};
-					class VehicleMissileDisplay
-					{
-						componentType = TransportFeedDisplayComponent;
-						source = Missile;
-					};
-					class SensorDisplay
-					{
-						componentType = SensorsDisplayComponent;
-						range[] =
-                        {
-                            4000,
-                            2000,
-                            16000,
-                            8000
+                        class GroundTarget {
+                            minRange = 0;
+                            maxRange = 3000;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
                         };
-						resource = RscCustomInfoSensors;
-					};
-				};
-			};
-			class TransportPylonsComponent
-			{
-				uiPicture = "\ADF_Air\adfrc_apache\data\ui\Heli_Attack_03_EDEN_CA.paa";
-				class Pylons
-				{
-					class PylonLeft1
-					{
-						attachment = PylonMissile_1Rnd_AAA_missiles;
-						priority = 5;
-						hardpoints[] = {B_ASRAAM};
+                        maxTrackableSpeed = 70;
+                        animDirection = "mainGun";
+                        angleRangeHorizontal = 34;
+                        angleRangeVertical = 34;
+                        aimDown = 27;
+                    };
+                    class VisualSensorComponent: SensorTemplateVisual {
+                        class AirTarget {
+                            minRange = 0;
+                            maxRange = 3000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        class GroundTarget {
+                            minRange = 0;
+                            maxRange = 3000;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        maxTrackableSpeed = 70;
+                        animDirection = "mainGun";
+                        angleRangeHorizontal = 34;
+                        angleRangeVertical = 34;
+                        aimDown = 27;
+                    };
+                    class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
+                        class AirTarget {
+                            minRange = 0;
+                            maxRange = 7000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        class GroundTarget {
+                            minRange = 0;
+                            maxRange = 6000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        maxTrackableSpeed = 125;
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 90;
+                        groundNoiseDistanceCoef = -1;
+                        maxGroundNoiseDistance = -1;
+                        minSpeedThreshold = 0;
+                        maxSpeedThreshold = 0;
+                    };
+                    class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {};
+                    class LaserSensorComponent: SensorTemplateLaser {};
+                    class NVSensorComponent: SensorTemplateNV {};
+                };
+            };
+            class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft {
+                class Components : components {
+                    class EmptyDisplay {
+                        componentType = "EmptyDisplayComponent";
+                    };
+                    class MinimapDisplay {
+                        componentType = "MinimapDisplayComponent";
+                        resource = "RscCustomInfoAirborneMiniMap";
+                    };
+                    class CrewDisplay {
+                        componentType = "CrewDisplayComponent";
+                        resource = "RscCustomInfoCrew";
+                    };
+                    class UAVDisplay {
+                        componentType = "UAVFeedDisplayComponent";
+                    };
+                    class VehiclePrimaryGunnerDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "PrimaryGunner";
+                    };
+                    class VehicleMissileDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "Missile";
+                    };
+                    class SensorDisplay {
+                        componentType = "SensorsDisplayComponent";
+                        range[] = {4000, 2000, 16000, 8000};
+                        resource = "RscCustomInfoSensors";
+                    };
+                };
+            };
+            class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight {
+                defaultDisplay = "SensorDisplay";
+                class Components : components {
+                    class EmptyDisplay {
+                        componentType = "EmptyDisplayComponent";
+                    };
+                    class MinimapDisplay {
+                        componentType = "MinimapDisplayComponent";
+                        resource = "RscCustomInfoAirborneMiniMap";
+                    };
+                    class CrewDisplay {
+                        componentType = "CrewDisplayComponent";
+                        resource = "RscCustomInfoCrew";
+                    };
+                    class UAVDisplay {
+                        componentType = "UAVFeedDisplayComponent";
+                    };
+                    class VehiclePrimaryGunnerDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "PrimaryGunner";
+                    };
+                    class VehicleMissileDisplay {
+                        componentType = "TransportFeedDisplayComponent";
+                        source = "Missile";
+                    };
+                    class SensorDisplay {
+                        componentType = "SensorsDisplayComponent";
+                        range[] = {4000, 2000, 16000, 8000};
+                        resource = "RscCustomInfoSensors";
+                    };
+                };
+            };
+            class TransportPylonsComponent {
+                uiPicture = "\ADF_Air\adfrc_apache\data\ui\Heli_Attack_03_EDEN_CA.paa";
+                class Pylons {
+                    class PylonLeft1 {
+                        attachment = "PylonMissile_1Rnd_LG_scalpel";
+                        priority = 5;
+                        hardpoints[] = {"B_ASRAAM", "UNI_SCALPEL"};
+                        turret[] = {};
+                        UIposition[] = {0.06, 0.4}; // X, Y
+                    };
+                    class PylonLeft2: PylonLeft1 {
+                        attachment = "PylonRack_12Rnd_missiles";
+                        priority = 4;
+                        hardpoints[] = {"DAR", "UNI_SCALPEL", "gatling_30mm_base", "B_ASRRAM_EJECTOR"};
+						turret[] = {};
+                        UIposition[] = {0.08, 0.35}; // X, Y
+                    };
+                    class PylonLeft3: PylonLeft1 {
+                        attachment = "PylonRack_4Rnd_LG_scalpel";
+                        priority = 3;
+                        hardpoints[] = {"DAR", "UNI_SCALPEL", "gatling_30mm_base", "B_ASRRAM_EJECTOR"};
 						turret[] = {0};
-						UIposition[] =
-                        {
-                            0.06,   // X
-                            0.4     // Y
-                        };
-					};
-					class PylonLeft2: PylonLeft1
-					{
-						attachment = PylonRack_12Rnd_missiles;
-						priority = 4;
-						hardpoints[] =
-                        {
-                            DAR,
-                            DAGR,
-                            B_SHIEKER,
-                            UNI_SCALPEL,
-                            gatling_30mm_base,
-							B_ASRRAM_EJECTOR
-                        };
-						UIposition[] =
-                        {
-                            0.08,   // X
-                            0.35    // Y
-                        };
-					};
-					class PylonLeft3: PylonLeft1
-					{
-						attachment = PylonRack_4Rnd_LG_scalpel;
-						priority = 3;
-						hardpoints[] =
-                        {
-                            DAR,
-                            DAGR,
-                            B_SHIEKER,
-                            UNI_SCALPEL,
-                            gatling_30mm_base,
-							B_ASRRAM_EJECTOR
-                        };
-						UIposition[] =
-                        {
-                            0.1,    // X
-                            0.3     // Y
-                        };
-					};
-					class PylonRight3: PylonLeft3
-					{
-						mirroredMissilePos = 3;
-						UIposition[] =
-                        {
-                            0.59,   // X
-                            0.3     // Y
-                        };
-					};
-					class PylonRight2: PylonLeft2
-					{
-						mirroredMissilePos = 2;
-						UIposition[] =
-                        {
-                            0.62,   // X
-                            0.35    // Y
-                        };
-					};
-					class PylonRight1: PylonLeft1
-					{
-						mirroredMissilePos = 1;
-						UIposition[] =
-                        {
-                            0.64,   // X
-                            0.4     // Y
-                        };
-					};
-				};
-				class Presets
-				{
-					class Empty
-					{
-						displayName = $STR_empty;
-						attachment[] = {};
-					};
-					class Default
-					{
-						displayName = $STR_vehicle_default;
-						attachment[] =
-                        {
-							PylonMissile_1Rnd_AAA_missiles,
-                            PylonRack_12Rnd_missiles,
-							PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_12Rnd_missiles,
-							PylonMissile_1Rnd_AAA_missiles
-                        };
-					};
-					class CAS
-					{
-						displayName = $STR_A3_CAS_PRESET_DISPLAYNAME;
-						attachment[] =
-                        {
-							PylonMissile_1Rnd_AAA_missiles,
-                            PylonRack_12Rnd_missiles,
-							PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_4Rnd_LG_scalpel,
-                            PylonRack_12Rnd_missiles,
-							PylonMissile_1Rnd_AAA_missiles
-                        };
-					};
-					class AT
-					{
-						displayName = $STR_A3_cfgmagazines_titan_at_dns;
-						attachment[] =
-                        {
-							PylonMissile_1Rnd_LG_scalpel,
-                            PylonRack_12Rnd_missiles,
-							PylonRack_12Rnd_missiles,
-							PylonRack_12Rnd_missiles,
-                            PylonRack_12Rnd_missiles,
-							PylonMissile_1Rnd_LG_scalpel
-                        };
-					};
-				};
+                        UIposition[] = {0.1, 0.3}; // X, Y
+                    };
+                    class PylonRight3: PylonLeft3 {
+                        mirroredMissilePos = 3;
+                        UIposition[] = {0.59, 0.3}; // X, Y
+                    };
+                    class PylonRight2: PylonLeft2 {
+                        mirroredMissilePos = 2;
+						UIposition[] = {0.62, 0.35}; // X, Y
+                    };
+                    class PylonRight1: PylonLeft1 {
+                        mirroredMissilePos = 1;
+                        UIposition[] = {0.64, 0.4}; // X, Y
+                    };
+                };
+                class Presets {
+                    class Empty {
+                        displayName = "$STR_empty";
+                        attachment[] = {};
+                    };
+                    class Default {
+                        displayName = "$STR_vehicle_default";
+                        attachment[] = {"PylonMissile_1Rnd_LG_scalpel", "PylonRack_12Rnd_missiles", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_12Rnd_missiles", "PylonMissile_1Rnd_LG_scalpel"};
+                    };
+                    class CAS {
+                        displayName = "$STR_A3_CAS_PRESET_DISPLAYNAME";
+                        attachment[] = {"PylonMissile_1Rnd_AAA_missiles", "PylonRack_12Rnd_missiles", "PylonRack_4Rnd_LG_scalpel", "PylonRack_4Rnd_LG_scalpel", "PylonRack_12Rnd_missiles", "PylonMissile_1Rnd_AAA_missiles"};
+                    };
+                    class AT {
+                        displayName = "$STR_A3_cfgmagazines_titan_at_dns";
+                        attachment[] = {"PylonMissile_1Rnd_LG_scalpel", "PylonRack_12Rnd_missiles", "PylonRack_12Rnd_missiles", "PylonRack_12Rnd_missiles", "PylonRack_12Rnd_missiles", "PylonMissile_1Rnd_LG_scalpel"};
+                    };
+                };
 			};
 		};
 
@@ -700,8 +561,8 @@ class CfgVehicles
         #include "mfd_driver.hpp"
 
         /* Weapons & Ammunition */
-		weapons[] = {CMFlareLauncher};
-		magazines[] = {192Rnd_CMFlare_Chaff_Magazine};
+		weapons[] = {"CMFlareLauncher", "missiles_SCALPEL", "missiles_DAR"};
+		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine", "PylonMissile_1Rnd_LG_scalpel", "PylonRack_12Rnd_missiles"};
 
         /* Turrets */
 		enableManualFire = true;
@@ -715,7 +576,7 @@ class CfgVehicles
 				CanEject = false;
 				startEngine = false;
 				primaryGunner = true;
-		
+
 				/* Servos */
 				minElev = -60;
 				maxElev = 10;
@@ -725,62 +586,53 @@ class CfgVehicles
 				initTurn = 0;
 				maxHorizontalRotSpeed = 1.8;
 				maxVerticalRotSpeed = 1.5;
-				soundServo[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",db-5,1,30};
-				soundServoVertical[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",db-5,1,30};
-				stabilizedInAxes = StabilizedInAxesBoth;
-				canLock = 2;
-		
+				stabilizedInAxes = "StabilizedInAxesBoth";
+				canLock = 1;
+
+				/* Sounds */
+				soundServo[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner", db-5, 1, 30};
+				soundServoVertical[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical", db-5, 1, 30};
+				soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", db+10, 1};
+				soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", db+10, 1};
+				soundEngine[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_turret", db-5, 1, 30};
+
 				/* Optics */
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\optics_empty.p3d";
-				gunnerOpticsEffect[] = {"TankCommanderOptics1, BWTV"};
+				gunnerOpticsEffect[] = {"TankCommanderOptics1", "BWTV"};
 				gunnerForceOptics = false;
 				class OpticsIn
 				{
 					class Wide
 					{
 						opticsDisplayName = "WFOV";
+						directionStabilized = true;
 						initAngleX = 0;
+						initAngleY = 0;
 						minAngleX = -60;
 						maxAngleX = 15;
-						initAngleY = 10;
 						minAngleY = -90;
 						maxAngleY = 90;
 						initFov = 0.466;
 						minFov = 0.466;
 						maxFov = 0.466;
-						visionMode[] =
-						{
-							Normal,
-							NVG,
-							Ti
-						};
-						thermalMode[] =
-						{
-							TiGWHot,
-							TiGBHot
-						};
+						visionMode[] = {"Normal", "NVG", "Ti"};
+						thermalMode[] = {0, 1};
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F.p3d";
 					};
 					class Medium: Wide
 					{
 						opticsDisplayName = "MFOV";
-						directionStabilized = true;
 						initFov = 0.093;
 						minFov = 0.093;
 						maxFov = 0.093;
-						initAngleX = 0;
-						initAngleY = 0;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F.p3d";
 					};
 					class Narrow: Wide
 					{
 						opticsDisplayName = "NFOV";
-						directionStabilized = true;
 						initFov = 0.029;
 						minFov = 0.029;
 						maxFov = 0.029;
-						initAngleX = 0;
-						initAngleY = 0;
 						gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F.p3d";
 					};
 				};
@@ -791,8 +643,6 @@ class CfgVehicles
 						initFov = 0.9;
 						minFov = 0.25;
 						maxFov = 1.25;
-						initAngleX = 0;
-						initAngleY = 0;
 						minAngleX = -65;
 						maxAngleX = 85;
 						minAngleY = -150;
@@ -803,16 +653,14 @@ class CfgVehicles
 						maxMoveY = 0.1;
 						minMoveZ = -0.1;
 						maxMoveZ = 0.2;
-						visionMode[] =
-						{
-							Normal,
-							NVG
-						};
+						initAngleX = 0;
+						initAngleY = 0;
+						visionMode[] = {"Normal", "NVG"};
 						gunnerOpticsModel = "";
 						gunnerOpticsEffect[] = {};
 					};
 				};
-				
+
 				/* Sensors & Components */
 				showAllTargets = 2;
 				class Components
@@ -823,149 +671,113 @@ class CfgVehicles
 						{
 							class EmptyDisplay
 							{
-								componentType = EmptyDisplayComponent;
+								componentType = "EmptyDisplayComponent";
 							};
 							class MinimapDisplay
 							{
-								componentType = MinimapDisplayComponent;
-								resource = RscCustomInfoAirborneMiniMap;
+								componentType = "MinimapDisplayComponent";
+								resource = "RscCustomInfoAirborneMiniMap";
 							};
 							class CrewDisplay
 							{
-								componentType = CrewDisplayComponent;
-								resource = RscCustomInfoCrew;
+								componentType = "CrewDisplayComponent";
+								resource = "RscCustomInfoCrew";
 							};
 							class UAVDisplay
 							{
-								componentType = UAVFeedDisplayComponent;
+								componentType = "UAVFeedDisplayComponent";
 							};
 							class VehiclePrimaryGunnerDisplay
 							{
-								componentType = TransportFeedDisplayComponent;
-								source = PrimaryGunner;
+								componentType = "TransportFeedDisplayComponent";
+								source = "PrimaryGunner";
 							};
 							class VehicleMissileDisplay
 							{
-								componentType = TransportFeedDisplayComponent;
-								source = Missile;
+								componentType = "TransportFeedDisplayComponent";
+								source = "Missile";
 							};
 							class SensorDisplay
 							{
-								componentType = SensorsDisplayComponent;
-								range[] =
-								{
-									4000,
-									2000,
-									16000,
-									8000
-								};
-								resource = RscCustomInfoSensors;
+								componentType = "SensorsDisplayComponent";
+								range[] = {4000, 2000, 16000, 8000};
+								resource = "RscCustomInfoSensors";
 							};
 						};
 					};
 					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
 					{
-						defaultDisplay = SensorDisplay;
+						defaultDisplay = "SensorDisplay";
 						class Components: components
 						{
 							class EmptyDisplay
 							{
-								componentType = EmptyDisplayComponent;
+								componentType = "EmptyDisplayComponent";
 							};
 							class MinimapDisplay
 							{
-								componentType = MinimapDisplayComponent;
-								resource = RscCustomInfoAirborneMiniMap;
+								componentType = "MinimapDisplayComponent";
+								resource = "RscCustomInfoAirborneMiniMap";
 							};
 							class CrewDisplay
 							{
-								componentType = CrewDisplayComponent;
-								resource = RscCustomInfoCrew;
+								componentType = "CrewDisplayComponent";
+								resource = "RscCustomInfoCrew";
 							};
 							class UAVDisplay
 							{
-								componentType = UAVFeedDisplayComponent;
+								componentType = "UAVFeedDisplayComponent";
 							};
 							class VehiclePrimaryGunnerDisplay
 							{
-								componentType = TransportFeedDisplayComponent;
-								source = PrimaryGunner;
+								componentType = "TransportFeedDisplayComponent";
+								source = "PrimaryGunner";
 							};
 							class VehicleMissileDisplay
 							{
-								componentType = TransportFeedDisplayComponent;
-								source = Missile;
+								componentType = "TransportFeedDisplayComponent";
+								source = "Missile";
 							};
 							class SensorDisplay
 							{
-								componentType = SensorsDisplayComponent;
-								range[] =
-								{
-									4000,
-									2000,
-									16000,
-									8000
-								};
-								resource = RscCustomInfoSensors;
+								componentType = "SensorsDisplayComponent";
+								range[] = {4000, 2000, 16000, 8000};
+								resource = "RscCustomInfoSensors";
 							};
 						};
 					};
 				};
-				
+
 				/* MFD */
 				#include "mfd_gunner.hpp"
-		
+
 				/* Weapons & Ammunition */
 				gunBeg = "usti hlavne";
 				gunEnd = "konec hlavne";
-				weapons[] =
-				{
-					ADFRC_Chaingun_30mm,
-					Laserdesignator_mounted
-				};
-				magazines[] =
-				{
-					ADFRC_1200Rnd_Chaingun_30mm,
-					Laserbatteries
-				};
-		
+				weapons[] = {"ADFRC_Chaingun_30mm", "Laserdesignator_mounted"};
+				magazines[] = {"ADFRC_1200Rnd_Chaingun_30mm", "Laserbatteries"};
+
 				/* FCS */
-				discreteDistance[] =
-				{
-					100,
-					200,
-					300,
-					400,
-					500,
-					600,
-					700,
-					800,
-					1000,
-					1200,
-					1500,
-					1800,
-					2100,
-					2500
-				};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100, 2500};
 				discreteDistanceInitIndex = 5;
-		
+
 				/* Crew */
 				castGunnerShadow = true;
 				viewGunnerShadow = true;
 				outGunnerMayFire = true;
-				gunnerAction = Heli_Attack_03_Gunner;
-				gunnerInAction = Heli_Attack_03_Gunner;
+				gunnerAction = "Heli_Attack_03_Gunner";
+				gunnerInAction = "Heli_Attack_03_Gunner";
 				gunnerLeftHandAnimName = "";
 				gunnerRightHandAnimName = "";
 				gunnerLeftLegAnimName = "";
 				gunnerRightLegAnimName = "";
-		
+
 				/* Enter & Exit Animations */
 				preciseGetInOut = false;
 				getInRadius = 1.5;
-				gunnerGetInAction = GetInHigh;
-				gunnerGetOutAction = GetOutHigh;
-		
+				gunnerGetInAction = "GetInHigh";
+				gunnerGetOutAction = "GetOutHigh";
+
 				/* Damage */
 				class HitPoints
 				{
@@ -973,8 +785,8 @@ class CfgVehicles
 					{
 						armor = 1;
 						material = -1;
-						name = main_turret_hit;
-						visual = main_trav;
+						name = "main_turret_hit";
+						visual = "main_trav";
 						passThrough = 0.3;
 						radius = 0.2;
 					};
@@ -982,17 +794,17 @@ class CfgVehicles
 					{
 						armor = 1;
 						material = -1;
-						name = main_gun_hit;
-						visual = main_elev;
+						name = "main_gun_hit";
+						visual = "main_elev";
 						passThrough = 0.3;
 						radius = 0.2;
 					};
 				};
-		
+
 				/* Selections & Memory Points */
-				selectionFireAnim = zasleh;
-				memoryPointGunnerOptics = gunnerview;
-				memoryPointGun = machinegun;
+				selectionFireAnim = "zasleh";
+				memoryPointGunnerOptics = "gunnerview";
+				memoryPointGun = "machinegun";
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 			};
