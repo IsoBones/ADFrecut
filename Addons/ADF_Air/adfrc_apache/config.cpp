@@ -298,7 +298,7 @@ class CfgVehicles
 		showAllTargets = 2;
 		radarTargetSize = 1.1;
 		irTargetSize = 1.2;
-		canLock = 1
+		canLock = 1;
 		class Components : Components {
             class SensorsManagerComponent {
                 class Components {
@@ -594,7 +594,7 @@ class CfgVehicles
 				soundServoVertical[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical", db-5, 1, 30};
 				soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", db+10, 1};
 				soundIncommingMissile[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", db+10, 1};
-				soundEngine[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_turret", db-5, 1, 30};
+				soundEngine[] = {"\A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner", db-5, 1, 30};
 
 				/* Optics */
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\optics_empty.p3d";
