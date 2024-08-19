@@ -462,11 +462,11 @@ class cfgWeapons
 			showToPlayer=0;
 			reloadTime=__EVAL(60/100);
 		};
+		};
 	};
-	};
-	class ADFRC_land_aslav_M2HBQCB: HMG_M2_Mounted 
+	class ADFRC_aslav_M2HBQCB: HMG_M2_Mounted 
 	{
-		displayName="MG 12.7mm M2HB QCB";
+		displayName="12.7mm M2HB QCB MG";
 		class GunParticles 
 {
 			class effect1
@@ -474,6 +474,44 @@ class cfgWeapons
 				positionName = "m2_muzzle_end";
 				directionName = "m2_muzzle";
 				effectName = "MachineGunCloud";
+			};
+			class effect2 
+			{
+				directionName = "nabojniceend";
+				effectName = "MachineGunEject";
+				positionName = "nabojnicestart";
+			};
+			class effect3 
+			{
+				directionName = "case_eject_dir";
+				effectName = "MachineGunCartridge2";
+				positionName = "case_eject_pos";
+			};
+		};
+	};
+	class ADFRC_aslav_M2HBQCB_RWS: ADFRC_aslav_M2HBQCB 
+	{
+		displayName="Kongsberg RWS - M2HB QCB";
+		ballisticsComputer = "2 + 16";
+		class GunParticles 
+{
+			class effect1
+			{
+				positionName = "m2_muzzle_end";
+				directionName = "m2_muzzle";
+				effectName = "MachineGunCloud";
+			};
+			class effect2 
+			{
+				directionName = "nabojniceend";
+				effectName = "MachineGunEject";
+				positionName = "nabojnicestart";
+			};
+			class effect3 
+			{
+				directionName = "case_eject_dir";
+				effectName = "MachineGunCartridge2";
+				positionName = "case_eject_pos";
 			};
 		};
 	};

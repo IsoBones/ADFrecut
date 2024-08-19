@@ -15,14 +15,16 @@ class CfgPatches
 		{
 			"ADFRC_ASLAV_base_F",
 			"ADFRC_ASLAV",
-			"ADFRC_ASLAV_PC"
+			"ADFRC_ASLAV_PC",
+			"ADFRC_ASLAV_PC_RWS"
 		};
 		weapons[]=
 		{
 			"ADFRC_aslav_coax",
 			"ADFRC_aslav_mag58",
 			"ADFRC_aslav_M242",
-			"ADFRC_aslav_M2HBQCB"
+			"ADFRC_aslav_M2HBQCB",
+			"ADFRC_aslav_M2HBQCB_RWS"
 		};
 		magazines[]=
 		{
@@ -169,7 +171,6 @@ class CfgVehicles
 						};
 					};
 				};
-				class ViewOptics: RCWSOptics {};
 				class ViewGunner: ViewGunner {};
 				class OpticsIn: Optics_Gunner_MBT_03
 				{
@@ -1764,7 +1765,7 @@ class CfgVehicles
 			};
 		};
 	};	
-	class ADFRC_ASLAV: ADFRC_ASLAV_base_F
+	class ADFRC_ASLAV: ADFRC_ASLAV_base_F//---------------------------------------------------------------------------------------------------------------- ASLAV 25
 	{
 		scope= 2;
 		scopeCurator= 2;
@@ -1846,7 +1847,7 @@ class CfgVehicles
 			init = "if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 	};
-	class ADFRC_ASLAV_PC: ADFRC_ASLAV_base_F
+	class ADFRC_ASLAV_PC: ADFRC_ASLAV_base_F//---------------------------------------------------------------------------------------------------------------- ASLAV PC
 	{
 		scope= 2;
 		scopeCurator= 2;
@@ -1889,11 +1890,12 @@ class CfgVehicles
 				gunEnd = "m2_chamber";
 				gunnerName="Commander";
 				proxyType="CPGunner";
+				animationSourceHatch="HatchGunner";
 				proxyIndex=1;
 				turretFollowFreeLook = 0;
 				weapons[]=
 				{
-					"ADFRC_land_aslav_M2HBQCB",
+					"ADFRC_aslav_M2HBQCB",
 					"SmokeLauncher"
 				};
 				magazines[]=
@@ -2187,30 +2189,63 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};*/
+			class p3parts
+			{
+				DisplayName="Phase III Sensor Suite";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 			class muzzle_source
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M2HBQCB";
+				weapon="ADFRC_aslav_M2HBQCB";
 			};
 			class muzzle_source_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_land_aslav_M2HBQCB";
+				weapon="ADFRC_aslav_M2HBQCB";
 			};
 			class ReloadAnim
 			{
 				source="reload";
-				weapon="ADFRC_land_aslav_M2HBQCB";
+				weapon="ADFRC_aslav_M2HBQCB";
 			};
 			class ReloadMagazine
 			{
 				source="reloadmagazine";
-				weapon="ADFRC_land_aslav_M2HBQCB";
+				weapon="ADFRC_aslav_M2HBQCB";
 			};
 			class Revolving
 			{
 				source="revolving";
-				weapon="ADFRC_land_aslav_M2HBQCB";
+				weapon="ADFRC_aslav_M2HBQCB";
+			};
+			class muzzle_source_RWS
+			{
+				source="reload";
+				weapon="ADFRC_aslav_M2HBQCB_RWS";
+			};
+			class muzzle_source_rot_RWS
+			{
+				source="ammorandom";
+				weapon="ADFRC_aslav_M2HBQCB_RWS";
+			};
+			class ReloadAnim_RWS
+			{
+				source="reload";
+				weapon="ADFRC_aslav_M2HBQCB_RWS";
+			};
+			class ReloadMagazine_RWS
+			{
+				source="reloadmagazine";
+				weapon="ADFRC_aslav_M2HBQCB_RWS";
+			};
+			class Revolving_RWS
+			{
+				source="revolving";
+				weapon="ADFRC_aslav_M2HBQCB_RWS";
 			};
 			class HitLFWheel
 			{
@@ -2248,7 +2283,7 @@ class CfgVehicles
 			};
 		};
 	};
-	/*class ADFRC_ASLAV_PC_RWS: ADFRC_ASLAV_PC
+	class ADFRC_ASLAV_PC_RWS: ADFRC_ASLAV_PC//---------------------------------------------------------------------------------------------------------------- ASLAV PC RWS
 	{
 		scope= 2;
 		scopeCurator= 2;
@@ -2265,10 +2300,11 @@ class CfgVehicles
 		driverLeftHandAnimName="wheel_l";
 		driverRightHandAnimName="wheel_r";
 		//editorPreview = "\ADF_Land\adfrc_aslav\data\ADFRC_aslav.jpg"; FIX THIS LATER
-		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC";
+		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_RWS";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\Picture_aslav_CA.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
 		crew = "ADFRC_crewman_dpcu";
+		viewGunnerInExternal = 0;
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
 		smokeLauncherVelocity=14;
@@ -2296,10 +2332,10 @@ class CfgVehicles
 				gunnerName="Commander";
 				proxyType="CPGunner";
 				proxyIndex=1;
-				turretFollowFreeLook = 0;
+				turretFollowFreeLook = 1;
 				weapons[]=
 				{
-					"ADFRC_land_aslav_M2HBQCB",
+					"ADFRC_aslav_M2HBQCB_RWS",
 					"SmokeLauncher"
 				};
 				magazines[]=
@@ -2319,70 +2355,45 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
-				soundServo[]=
-				{
-					"A3\sounds_f\dummysound",
-					0.0099999998,
-					1,
-					10
-				};
 				commanding=2;
-				minElev=-25;
+				minElev=-20;
 				initElev=0;
-				maxElev=30;
-				gunnerRightHandAnimName="handle_l";
-				gunnerLeftHandAnimName="handle_r";
-				gunnerLeftLegAnimName="OtocVez";
-				gunnerRightLegAnimName="OtocVez";
-				gunnerAction = "gunner_lsv_02";
+				maxElev=45;
+				gunnerAction = "vehicle_turnout_1";
 				lockWhenDriverOut = 0;
-				isPersonTurret = 0;
+				isPersonTurret = 1;
 				gunnerInAction = "Commander_APC_tracked_01_crv_in";
 				gunnerGetInAction="GetInMRAP_01Rfl";
 				gunnerGetOutAction="GetOuthigh";
-				viewGunnerInExternal=1;
 				castGunnerShadow=1;
 				forceHideGunner=0;
 				gunnerForceOptics=-0;
-				inGunnerMayFire=0;
-				outGunnerMayFire=1;
+				inGunnerMayFire=1;
+				outGunnerMayFire=0;
 				discreteDistance[]={0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 				discreteDistanceInitIndex=0;
-				turretInfoType="RscWeaponZeroing";
+				turretInfoType="RscOptics_crows";
 				memoryPointGunnerOptics="gunnerviewout";
-				gunnerOpticsModel="\ADF_Land\adfrc_aslav\Optics_Driver";
-				memoryPointGunnerOutOptics="eye";
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
 				gunnerOutOpticsModel = "\A3\weapons_f\reticle\optics_empty";
 				gunnerCompartments="Compartment1";
 				selectionFireAnim="zasleh";
-				enabledByAnimationSource="gunner_lsv_02";
-				stabilizedInAxes=0;
+				stabilizedInAxes=3;
 				primaryGunner=1;
 				primaryObserver=0;
-				usePip=0;
+				usePip=1;
 				LODTurnedIn = 1100;
 				LODTurnedOut = 1000;
-				LODOpticsIn = 1000;
-				LODOpticsOut = 1000;
+				LODOpticsIn = -1;
+				LODOpticsOut = 1;
 				startEngine=0;
 				disableSoundAttenuation=1;
-				class ViewOptics
-				{
-					initAngleX = 0;
-					minAngleX = -30;
-					maxAngleX = 30;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.9;
+				soundElevation = ["",0.00316228,1];
+				soundServo = ["A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10];
+				soundServoVertical = ["A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10];
+				class ViewOptics: RCWSOptics 
+				{	
 				};
-				class TurnIn
-                {
-                    limitsArrayTop[] = {{-0, 0}};
-                    limitsArrayBottom[] = {{-0, 0}};
-                };
 				class HitPoints
 				{
 					class HitTurret
@@ -2409,8 +2420,90 @@ class CfgVehicles
 					};
 				};
 			};
+			class CargoTurret_01: CargoTurret
+			{
+				showAsCargo=1;
+				gunnerAction="vehicle_turnout_1";
+				gunnerInAction="passenger_generic01_leanright";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				gunnerName="Hatch Gunner (Left Side)";
+				animationSourceHatch="Hatchleft";
+				viewGunnerInExternal=0;
+				proxyType="CPGunner";
+				proxyIndex=2;
+				isPersonTurret=1;
+				maxElev=150;
+				minElev=-80;
+				maxTurn=180;
+				minTurn=-180;
+				ejectDeadGunner=0;
+				enabledByAnimationSource="";
+				usepip=0;
+				startEngine=0;
+				commanding=-0;
+				outGunnerMayFire=1;
+				inGunnerMayFire=0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -90;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 1;
+					minFov = 0.5;
+					maxFov = 1;
+				};
+			};
+			class CargoTurret_02: CargoTurret
+			{
+				showAsCargo=1;
+				gunnerAction="vehicle_turnout_1";
+				gunnerInAction="passenger_generic01_leanleft";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				gunnerName="Hatch Gunner (Right Side)";
+				animationSourceHatch="Hatchright";
+				viewGunnerInExternal=0;
+				proxyType="CPGunner";
+				proxyIndex=3;
+				isPersonTurret=1;
+				maxElev=150;
+				minElev=-80;
+				maxTurn=180;
+				minTurn=-180;
+				ejectDeadGunner=0;
+				enabledByAnimationSource="";
+				usepip=0;
+				startEngine=0;
+				commanding=-0;
+				outGunnerMayFire=1;
+				inGunnerMayFire=0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -90;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 1;
+					minFov = 0.5;
+					maxFov = 1;
+				};
+			};
 		};
-	};*/
+	};
 };
 class CfgSoundShaders
 {
@@ -2586,7 +2679,6 @@ class CfgSoundSets
 		posOffset[] = {0, 0, 0};
 	};
 };
-
 class CfgMovesBasic
 {
 	class DefaultDie;
