@@ -12,6 +12,9 @@ ADFRC_Specter_RAR = 1;
 ADFRC_Specter_RAR_KF = 1;
 ADFRC_Specter_CDO = 1;
 ADFRC_Specter_CDO_KF = 1;
+ADFRC_EXPS3 = 1;
+ADFRC_EXPS3_Up = 1;
+ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -36,6 +39,9 @@ ADFRC_Specter_RAR = 1;
 ADFRC_Specter_RAR_KF = 1;
 ADFRC_Specter_CDO = 1;
 ADFRC_Specter_CDO_KF = 1;
+ADFRC_EXPS3 = 1;
+ADFRC_EXPS3_Up = 1;
+ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -60,6 +66,9 @@ ADFRC_Specter_RAR = 1;
 ADFRC_Specter_RAR_KF = 1;
 ADFRC_Specter_CDO = 1;
 ADFRC_Specter_CDO_KF = 1;
+ADFRC_EXPS3 = 1;
+ADFRC_EXPS3_Up = 1;
+ADFRC_EXPS3_Down = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;

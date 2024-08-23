@@ -174,6 +174,7 @@ class cfgWeapons
 	class muzzle_snds_M;
 	
 	#include "T2\T2.hpp"
+	#include "EXPS3\EXPS3.hpp"
 	#include "DPP\DPP.hpp"
 	#include "Spectr\Spectr.hpp"
 	class ADFRC_swarovski_optic: ItemCore
