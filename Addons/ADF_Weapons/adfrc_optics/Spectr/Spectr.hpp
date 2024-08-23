@@ -5,7 +5,7 @@ class ADFRC_Specter_RAR : ItemCore
 		picture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_ca.paa";
 		uipicture="ADF_Weapons\adfrc_optics\Spectr\UI\Spectr_RAR_ca.paa";
 		model = "ADF_Weapons\adfrc_optics\Spectr\ADFRC_Spectr_RAR.p3d";
-		scope =1;
+		scope =2;
 		descriptionShort = "Spectr DR 1x/4x";
 		
 		class ItemInfo: InventoryOpticsItem_Base_F
