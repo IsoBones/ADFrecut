@@ -16,10 +16,10 @@ class ADFRC_WMLx_BLK_R_WL: ItemCore
 			{
 				color[] = {180,160,130};
 				ambient[] = {0.9,0.81,0.7};
-				intensity = 250;
+				intensity = 150;
 				size = 1;
-				innerAngle = 7;
-				outerAngle = 120;
+				innerAngle = 5;
+				outerAngle = 60;
 				coneFadeCoef = 6;
 				position = "flashdir";
 				direction = "flashpos";
@@ -45,7 +45,7 @@ class ADFRC_WMLx_BLK_R_WL: ItemCore
 		
 		MRT_SwitchItemNextClass = "ADFRC_WMLx_BLK_R_IR";
         MRT_SwitchItemPrevClass = "ADFRC_WMLx_BLK_R_IR";
-        MRT_switchItemHintText = "Light";
+        MRT_switchItemHintText = "White Light";
 	};
 	
 class ADFRC_WMLx_BLK_R_IR: ADFRC_WMLx_BLK_R_WL
@@ -59,10 +59,10 @@ class ADFRC_WMLx_BLK_R_IR: ADFRC_WMLx_BLK_R_WL
 			{
 				color[] = {180,160,130};
 				ambient[] = {0.9,0.81,0.7};
-				intensity = 250;
+				intensity = 35;
 				size = 1;
-				innerAngle = 7;
-				outerAngle = 120;
+				innerAngle = 5;
+				outerAngle = 60;
 				coneFadeCoef = 6;
 				position = "flashdir";
 				direction = "flashpos";
@@ -87,5 +87,5 @@ class ADFRC_WMLx_BLK_R_IR: ADFRC_WMLx_BLK_R_WL
 		};
 		MRT_SwitchItemNextClass = "ADFRC_WMLx_BLK_R_WL";
         MRT_SwitchItemPrevClass = "ADFRC_WMLx_BLK_R_WL";
-        MRT_switchItemHintText = "Light";
+        MRT_switchItemHintText = "iR";
 	};
