@@ -44,7 +44,7 @@ class CfgGesturesMale
 		class GestureReloadBase;
 		class MSS_GestureRechamberM2010_Prone : Default
 		{
-			file = "\MSS\MSS_LRAP\Anims\Gestures\rechamber_m2010_prone.rtm";
+			file = "\ADF_Weapons\core\Anims\Gestures\rechamber_m2010_prone.rtm";
 			looped = 0;
 			speed = 0.6;
 			mask = "handsWeapon";
@@ -63,7 +63,7 @@ class CfgGesturesMale
 		class MSS_GestureRechamberM2010 : Default
 		{
 			enableOptics = 1;
-			file = "\MSS\MSS_LRAP\Anims\Gestures\rechamber_m2010_standing.rtm";
+			file = "\ADF_Weapons\core\Anims\Gestures\rechamber_m2010_standing.rtm";
 			looped = 0;
 			speed = 0.6;
 			mask = "handsWeapon";
