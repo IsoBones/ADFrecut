@@ -39,7 +39,6 @@ class CfgPatches
 			"ADFRC_150Rnd_762_Belt_TR",
 			"ADFRC_150Rnd_762_Belt_TR5",
 			"ADFRC_10Rnd_9x19_Mag",
-			"ADFRC_13Rnd_9x19_Mag",
 			"ADFRC_15rnd_9MM_BALL_G19",
 			"ADFRC_15rnd_9MM_FRANGE_G19"
 		};
@@ -660,18 +659,12 @@ class CfgMagazineWells
 			"ADFRC_30Rnd_aug_TG",
 			"ADFRC_30Rnd_aug_IR",
 			"ADFRC_30Rnd_aug_mixed",
-			"ADFRC_30Rnd_ef88",
-			"ADFRC_30Rnd_ef88_TR",
-			"ADFRC_30Rnd_ef88_TY",
-			"ADFRC_30Rnd_ef88_TG",
-			"ADFRC_30Rnd_ef88_IR",
-			"ADFRC_30Rnd_ef88_mixed"
-		ADFRC_EF88[] =
-		{
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_Tracer_F",
-			"30Rnd_556x45_AUG_Mag_Green_F",
-			"30Rnd_556x45_AUG_Mag_Tracer_Green_F"
+			"ADFRC_30Rnd_aug_ef88",
+			"ADFRC_30Rnd_aug_TR_ef88",
+			"ADFRC_30Rnd_aug_TY_ef88",
+			"ADFRC_30Rnd_aug_TG_ef88",
+			"ADFRC_30Rnd_aug_IR_ef88",
+			"ADFRC_30Rnd_aug_Mixed_ef88"
 		};
 	};
 };
