@@ -214,7 +214,7 @@ class ADFRC_WP_M4A5_KAC_ACOG: ADFRC_M4A5_KAC_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_ACOG_RD_WMLx: ADFRC_M4A5_KAC_556
+class ADFRC_WP_M4A5_KAC_ACOG_RD: ADFRC_M4A5_KAC_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -303,7 +303,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_RD_PEQ: ADFRC_M4A5_KAC_556
 // M4A5 KAC Handguard NO Front Sight (2000s era) 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Eotech WL
-class ADFRC_WP_M4A5_KAC_EXPS3_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_EXPS3_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -321,7 +321,7 @@ class ADFRC_WP_M4A5_KAC_EXPS3_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_EXPS3M_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_EXPS3M_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -339,7 +339,7 @@ class ADFRC_WP_M4A5_KAC_EXPS3M_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 //Eotech Peq
-class ADFRC_WP_M4A5_KAC_EXPS3_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_EXPS3_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -357,7 +357,7 @@ class ADFRC_WP_M4A5_KAC_EXPS3_PEQ: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_EXPS3M_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_EXPS3M_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -376,7 +376,7 @@ class ADFRC_WP_M4A5_KAC_EXPS3M_PEQ: ADFRC_M4A5_KAC_NOFS_556
 };
 ///////////////////////////////////////////////////////
 //Elcan WL
-class ADFRC_WP_M4A5_KAC_Specter_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_Specter_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -394,7 +394,7 @@ class ADFRC_WP_M4A5_KAC_Specter_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_SpecterKF_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_SpecterKF_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -412,7 +412,7 @@ class ADFRC_WP_M4A5_KAC_SpecterKF_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 //Elcan Peq
-class ADFRC_WP_M4A5_KAC_Specter_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_Specter_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -430,7 +430,7 @@ class ADFRC_WP_M4A5_KAC_Specter_PEQ: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_SpecterKF_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_SpecterKF_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -450,7 +450,7 @@ class ADFRC_WP_M4A5_KAC_SpecterKF_PEQ: ADFRC_M4A5_KAC_NOFS_556
 
 ///////////////////////////////////////////////////////
 //ACOG WL
-class ADFRC_WP_M4A5_KAC_ACOG_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_ACOG_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -468,7 +468,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_ACOG_RD_WMLx: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_ACOG_RD_WMLx: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -486,7 +486,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_RD_WMLx: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 //Elcan Peq
-class ADFRC_WP_M4A5_KAC_ACOG_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_ACOG_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -504,7 +504,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_PEQ: ADFRC_M4A5_KAC_NOFS_556
 	};
 };
 
-class ADFRC_WP_M4A5_KAC_ACOG_RD_PEQ: ADFRC_M4A5_KAC_NOFS_556
+class ADFRC_WP_M4A5_KAC_NFS_ACOG_RD_PEQ: ADFRC_M4A5_KAC_NOFS_556
 {
 	author = "Brucey";
 	class LinkedItems
@@ -810,100 +810,6 @@ class ADFRC_WP_M4A5_Troy_14_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_14
 		};
 	};
 };
-///////////////////////////////////////////////////////
-//Aimpoint WL
-class ADFRC_WP_M4A5_Troy_14_T2_WMLx: ADFRC_M4A5_Troy_556_14
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_MicroT2;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = ADFRC_WMLx_BLK_R_WL;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
-		};
-	};
-};
-
-class ADFRC_WP_M4A5_Troy_14_T2M_WMLx: ADFRC_M4A5_Troy_556_14
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_MicroT2_Down;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = ADFRC_WMLx_BLK_R_WL;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
-		};
-	};
-};
-//Aimpoint Peq
-class ADFRC_WP_M4A5_Troy_14_T2_PEQ: ADFRC_M4A5_Troy_556_14
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_MicroT2;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = acc_pointer_IR;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
-		};
-	};
-};
-
-class ADFRC_WP_M4A5_Troy_14_T2M_PEQ: ADFRC_M4A5_Troy_556_14
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_MicroT2_Down;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = acc_pointer_IR;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
-		};
-	};
-};
-
 ///////////////////////////////////////////////////////
 //Aimpoint WL
 class ADFRC_WP_M4A5_Troy_14_T2_WMLx: ADFRC_M4A5_Troy_556_14
