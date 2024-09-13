@@ -106,59 +106,8 @@ class Optics_Gunner_MBT_02: Optics_Armored
 };
 class CfgVehicles
 {
-	class Car;
-	class Car_F: Car
-	{
-		class Sounds;
-		class HitPoints
-		{
-			class HitBody;
-			class HitEngine;
-			class HitFuel;
-			class HitHull;
-			class HitLFWheel;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitRF2Wheel;
-			class HitGlass1;
-			class HitGlass2;
-			class HitGlass3;
-			class HitGlass4;
-			class HitGlass5;
-			class HitGlass6;
-		};
-	};
-	class Wheeled_APC_F: Car_F
-	{
-		class ViewPilot;
-		class ViewOptics;
-		class ViewCargo;
-		class Sounds: Sounds
-		{
-			class Engine;
-			class Movement;
-		};
-		class NewTurret;
-		class Turrets
-		{
-			class MainTurret: NewTurret
-			{
-				class ViewOptics;
-				class ViewGunner;
-				class Turrets
-				{
-					class CommanderOptics;
-				};
-			};
-		};
-		class AnimationSources;
-		class EventHandlers;
-	};
-	class APC_Wheeled_03_base_F: Wheeled_APC_F
+	class APC_Wheeled_03_base_F;
+	class adfrc_boxer_base: APC_Wheeled_03_base_F
 	{
 		class complexGearbox;
 		class MFD;
@@ -173,44 +122,32 @@ class CfgVehicles
 		class compartmentsLights;
 		class VehicleTransport;
 		class EventHandlers;
-
-		class HitPoints
-		{
-			class HitHull;
-			class HitEngine;
-			class HitFuel;
-			class HitLFWheel;
-			class HitLF2Wheel;
-			class HitLMWheel;
-			class HitLBWheel;
-			class HitRFWheel;
-			class HitRF2Wheel;
-			class HitRMWheel;
-			class HitRBWheel;
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
+		class AnimationSources;
+		class HitPoints;
+		class HitHull;
+		class HitEngine;
+		class HitFuel;
+		class HitLFWheel;
+		class HitLF2Wheel;
+		class HitLMWheel;
+		class HitLBWheel;
+		class HitRFWheel;
+		class HitRF2Wheel;
+		class HitRMWheel;
+		class HitRBWheel;
+		class NewTurret;
+		class CommanderOptics;
+		class Turrets
+		{	
+			class MainTurret: NewTurret
 			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics: CommanderOptics
-					{
-						class ViewGunner: ViewGunner {};
-						class ViewOptics: ViewOptics {};
-						class OpticsIn: Optics_Gunner_MBT_03
-						{
-							class Wide: Wide{};
-							class Medium: Medium{};
-							class Narrow: Narrow{};
-						};
-						class HitPoints
-						{
-							class HitComTurret;
-						};
-					};
-				};
-				class ViewGunner: ViewGunner {};
+				class ViewOptics;
+				class ViewGunner;
+			};
+			class CommanderOptics: CommanderOptics
+			{
+				class ViewOptics;
+				class ViewGunner;
 				class OpticsIn: Optics_Gunner_MBT_03
 				{
 					class Wide: Wide{};
@@ -219,8 +156,7 @@ class CfgVehicles
 				};
 				class HitPoints
 				{
-					class HitTurret;
-					class HitGun;
+					class HitComTurret;
 				};
 			};
 		};
@@ -236,12 +172,11 @@ class CfgVehicles
 			class R4;
 		};
 	};
-	class adfrc_boxer: APC_Wheeled_03_base_F
+	class adfrc_boxer: adfrc_boxer_base
 	{
-		author="$STR_ADF_AUTHOR";
+		
 		mapSize=10.25;
 		accuracy=0.25;
-		displayName="$STR_A3_CFGVEHICLES_APC_WHEELED_03_WAPC0";
 		thrustDelay=0.34999999;
 		brakeIdleSpeed=1.78;
 		maxSpeed=110;
@@ -1355,7 +1290,7 @@ class CfgVehicles
 				animationSourceHatch = "hatchGunner";
 				gunnerCompartments = "Compartment1";
 				gunnerHasFlares=1;
-				lockWhenDriverOut = 1;
+				lockWhenDriverOut = 0;
 				minElev = -9;
 				maxElev = 45;
 				minOutElev=-20;
