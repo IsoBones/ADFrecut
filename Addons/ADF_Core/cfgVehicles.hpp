@@ -1,32 +1,4 @@
-class CfgVehicles
-{	
-	//class SoldierWB;
-    class B_Soldier_base_F;
-	class ADFRC_Soldier_base_F: B_Soldier_base_F{
-		displayName="Soldier Base";
-		//_generalMacro="ADFRC_Soldier_base_F";
-		author="$STR_ADF_AUTHOR";
-		scope=1;
-		scopeCurator=0;
-		nakedUniform="U_BasicBody";
-		side=1;
-		faction="ADF";
-		vehicleClass="Men";
-		genericNames="NATOMen";
-		identityTypes[]={
-            "LanguageENG_F",
-            "Head_NATO",
-            "NoGlasses"
-        };
-    };
-	class adfrc_OPFOR_Soldier_base_F: B_Soldier_base_F
-	{
-		scope=2;
-		author="$STR_ADF_AUTHOR";
-		_generalMacro="ADFOPFOR_Soldier_base_F";
-		side=0;
-		faction="ADF_OPFOR";
-	};
+class CfgVehicles{	
 	class FLAG_NATO_F;
 	class FLAG_UNCUT_F: FLAG_NATO_F
 	{

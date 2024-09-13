@@ -13,110 +13,162 @@ class CfgPatches
 		weapons[]={};
 	};
 };
-class CfgVehicles
-{
-	class B_assaultpack_Base;
-	class B_CarryAll_Base;
-	class B_Kitbag_Base;
-	class B_AssaultPack_blk;
-	class B_AssaultPack_rgr_Medic;
+class CfgVehicles{
 	class ReammoBox;
-
-// ASSAULTPACKS
-	class adfrc_assaultpack_black: B_assaultpack_Base
-	{
-		scope = public;
-		displayName = "ADF Assault Pack [Black]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Black_co.paa"};
-		maximumLoad = 220;
-		class TransportItems{};
-		class TransportMagazines{};
-	};
-	class adfrc_assaultpack_green: adfrc_assaultpack_black
-	{
-		scope = public;
-		displayName = "ADF Assault Pack [Green]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Green_co.paa"};
-	};
-	class adfrc_assaultpack_tan: adfrc_assaultpack_black
-	{
-		scope = public;
-		displayName = "ADF Assault Pack [Tan]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Tan_co.paa"};
-	};
-	class adfrc_assaultpack_amp: adfrc_assaultpack_black
-	{
-		scope = public;
-		displayName = "ADF Assault Pack [AMP]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Cam_co.paa"};
-	};
-	class adfrc_assaultpack_dpcu: adfrc_assaultpack_black
-	{
-		scope = public;
+// ASSAULTPACK BASE
+	class B_assaultpack_Base;
+	class ADFRC_AssaultPack_Black: B_assaultpack_Base{ // Rather pointless addition - B_AssaultPack_blk <- Does the same thing
+		displayName = "Assault Pack (Black)";
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Assault Pack [DPCU]";
+		scope=1;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[]={
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Black_co.paa"
+		};
+	};
+	class ADFRC_AssaultPack_Green: B_assaultpack_Base{ // Rather pointless addition - B_AssaultPack_sgg <- Does the same thing
+		displayName = "Assault Pack (Green)";
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Green_co.paa"
+		};
+	};
+	class ADFRC_AssaultPack_Tan: B_assaultpack_Base{
+		displayName = "Assault Pack (Tan)";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Tan_co.paa"
+		};
+	};
+	class ADFRC_AssaultPack_AMP: B_assaultpack_Base{
+		displayName = "Assault Pack (AMP)";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Cam_co.paa"
+		};
+	};
+	class ADFRC_AssaultPack_DPCU: B_assaultpack_Base{
+		displayName = "Assault Pack (DPCU)";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_co.paa"};
 	};
-	class adfrc_assaultpack_dpdu: adfrc_assaultpack_black
-	{
-		scope = public;
+	class ADFRC_AssaultPack_DPDU: B_assaultpack_Base{
+		displayName = "Assault Pack (DPDU)";
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Assault Pack [DPDU]";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_co.paa"};
 	};
-	class adfrc_assaultpack_amc: adfrc_assaultpack_black
-	{
-		scope = public;
+	class ADFRC_AssaultPack_AMC: B_assaultpack_Base{
+		displayName = "Assault Pack (AMCU)";
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Assault Pack [AMC]";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_AMC_co.paa"};
 	};
-	class adfrc_assaultpack_black_medic: B_assaultpack_Base
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [Black]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Black_M_co.paa"};
-		class TransportItems
-		{
-			class _xx_FirstAidKit { name = "FirstAidKit"; count = 15; };
-			class _xx_Medikit { name = "Medikit"; count = 1; };
+	class ADFRC_AssaultPack_Black_MED: B_assaultpack_Base{
+		displayName = "Assault Pack (Black)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
 		};
-		class TransportMagazines{};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Black_M_co.paa"
+		};
 	};
-	class adfrc_assaultpack_green_medic: adfrc_assaultpack_black_medic
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [Green]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Green_M_co.paa"};
+	class ADFRC_AssaultPack_Green_MED: B_assaultpack_Base{
+		displayName = "Assault Pack (Green)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Green_M_co.paa"
+		};
 	};
-	class adfrc_assaultpack_tan_medic: adfrc_assaultpack_black_medic
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [Tan]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Tan_M_co.paa"};
+	class ADFRC_AssaultPack_Tan_Medic: B_assaultpack_Base{
+		displayName = "Assault Pack (Tan)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Tan_M_co.paa"
+		};
 	};
-	class adfrc_assaultpack_amp_medic: adfrc_assaultpack_black_medic
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [AMP]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Cam_M_co.paa"};
+	class ADFRC_AssaultPack_AMP_Medic: B_assaultpack_Base{
+		displayName = "Assault Pack (AMP)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_Cam_M_co.paa"
+		};
 	};
-	class adfrc_assaultpack_dpcu_medic: adfrc_assaultpack_black_medic
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [DPCU]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_M_co.paa"};
+	class ADFRC_AssaultPack_DPCU_Medic: B_assaultpack_Base{
+		displayName = "Assault Pack (DPCU)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPCU_M_co.paa"
+		};
 	};
-	class adfrc_assaultpack_dpdu_medic: adfrc_assaultpack_black_medic
-	{
-		scope = public;
-		displayName = "ADF Assault Pack Medic [DPDU]";
-		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_M_co.paa"};
+	class ADFRC_AssaultPack_DPDU_Medic: B_assaultpack_Base{
+		displayName = "Assault Pack (DPDU)[Medic]";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		picture="\A3\Weapons_F\Ammoboxes\Bags\data\UI\icon_B_AssaultPack_khk_ca.paa";
+		hiddenSelections[]={
+			"Camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_backpacks\data\AssaultPack_DPDU_M_co.paa"
+		};
 	};
-	
-
-
-// KITBAGS
+// KITBAG BASE
+	class B_Kitbag_Base;
 	class adfrc_kitbag_black: B_Kitbag_Base
 	{
 		scope = public;
@@ -125,31 +177,31 @@ class CfgVehicles
 		class TransportItems{};
 		class TransportMagazines{};
 	};
-	class adfrc_kitbag_green: adfrc_kitbag_black
+	class adfrc_kitbag_green: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag [Green]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Green_co.paa"};
 	};
-	class adfrc_kitbag_tan: adfrc_kitbag_black
+	class adfrc_kitbag_tan: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag [Tan]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Tan_co.paa"};
 	};
-	class adfrc_kitbag_amp: adfrc_kitbag_black
+	class adfrc_kitbag_amp: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag [AMP]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Cam_co.paa"};
 	};
-	class adfrc_kitbag_amc: adfrc_kitbag_black
+	class adfrc_kitbag_amc: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag [AMC]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_AMC_co.paa"};
 	};
-	class adfrc_kitbag_black_medic: adfrc_kitbag_black
+	class adfrc_kitbag_black_medic: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag Medic [Black]";
@@ -161,26 +213,26 @@ class CfgVehicles
 		};
 		class TransportMagazines{};
 	};
-	class adfrc_kitbag_green_medic: adfrc_kitbag_black_medic
+	class adfrc_kitbag_green_medic: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag Medic [Green]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Green_M_co.paa"};
 	};
-	class adfrc_kitbag_tan_medic: adfrc_kitbag_black_medic
+	class adfrc_kitbag_tan_medic: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag Medic [Tan]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Tan_M_co.paa"};
 	};
-	class adfrc_kitbag_amp_medic: adfrc_kitbag_black_medic
+	class adfrc_kitbag_amp_medic: B_Kitbag_Base
 	{
 		scope = public;
 		displayName = "ADF Kitbag Medic [AMP]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\KitBag_Cam_M_co.paa"};
 	};
-
-// CARRYALL BACKAPCKS
+// CARRYALL BACKAPCK BASE
+	class B_CarryAll_Base;
 	class adfrc_CarryAll_black: B_CarryAll_Base
 	{
 		scope = public;
@@ -189,25 +241,25 @@ class CfgVehicles
 		class TransportItems{};
 		class TransportMagazines{};
 	};
-	class adfrc_CarryAll_green: adfrc_CarryAll_black
+	class adfrc_CarryAll_green: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall [Green]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Green_co.paa"};
 	};
-	class adfrc_CarryAll_tan: adfrc_CarryAll_black
+	class adfrc_CarryAll_tan: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall [Tan]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Tan_co.paa"};
 	};
-	class adfrc_CarryAll_amp: adfrc_CarryAll_black
+	class adfrc_CarryAll_amp: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall [AMP]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Cam_co.paa"};
 	};
-	class adfrc_CarryAll_dpcu: adfrc_CarryAll_black
+	class adfrc_CarryAll_dpcu: B_CarryAll_Base
 	{
 		scope = public;
 		author="$STR_ADF_AUTHOR";
@@ -245,7 +297,7 @@ class CfgVehicles
 			};
 		}; */
 	};
-	class adfrc_CarryAll_amc: adfrc_CarryAll_black
+	class adfrc_CarryAll_amc: B_CarryAll_Base
 	{
 		scope = public;
 		author="$STR_ADF_AUTHOR";
@@ -283,14 +335,14 @@ class CfgVehicles
 			};
 		}; */
 	};
-	class adfrc_CarryAll_dpdu: adfrc_CarryAll_black
+	class adfrc_CarryAll_dpdu: B_CarryAll_Base
 	{
 		scope = public;
 		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall [DPDU]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_DPDU_co.paa"};
 	};
-	class adfrc_CarryAll_black_medic: adfrc_CarryAll_black
+	class adfrc_CarryAll_black_medic: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall Medic [Black]";
@@ -302,25 +354,25 @@ class CfgVehicles
 		};
 		class TransportMagazines{};
 	};
-	class adfrc_CarryAll_green_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_green_medic: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall Medic [Green]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Green_M_co.paa"};
 	};
-	class adfrc_CarryAll_tan_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_tan_medic: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall Medic [Tan]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Tan_M_co.paa"};
 	};
-	class adfrc_CarryAll_amp_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_amp_medic: B_CarryAll_Base
 	{
 		scope = public;
 		displayName = "ADF Carryall Medic [AMP]";
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_backpacks\data\CarryAll_Cam_M_co.paa"};
 	};
-	class adfrc_CarryAll_dpdu_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_dpdu_medic: B_CarryAll_Base
 	{
 		scope = public;
 		author="$STR_ADF_AUTHOR";
@@ -345,7 +397,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class adfrc_CarryAll_dpcu_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_dpcu_medic: B_CarryAll_Base
 	{
 		scope = public;
 		author="$STR_ADF_AUTHOR";
@@ -370,7 +422,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class adfrc_CarryAll_amcu_medic: adfrc_CarryAll_black_medic
+	class adfrc_CarryAll_amcu_medic: B_CarryAll_Base
 	{
 		scope = private;
 		author="$STR_ADF_AUTHOR";
@@ -391,6 +443,97 @@ class CfgVehicles
 		};
 	};
 
+
+
+
+
+	class ADFRC_AssaultPack_Black_MED_CFA: ADFRC_AssaultPack_Black_MED{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+	class ADFRC_AssaultPack_Green_MED_CFA: ADFRC_AssaultPack_Green_MED{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+	class ADFRC_AssaultPack_Tan_Medic_CFA: ADFRC_AssaultPack_Tan_Medic{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+	class ADFRC_AssaultPack_AMP_Medic_CFA: ADFRC_AssaultPack_AMP_Medic{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+	class ADFRC_AssaultPack_DPCU_Medic_CFA: ADFRC_AssaultPack_DPCU_Medic{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+	class ADFRC_AssaultPack_DPDU_Medic_CFA: ADFRC_AssaultPack_DPDU_Medic{
+		author="$STR_ADF_AUTHOR";
+		scope=1;
+		class TransportItems{
+			class _xx_Medikit{
+				name="Medikit";
+				count=1;
+			};
+			class _xx_FirstAidKit{
+				name="FirstAidKit";
+				count=10;
+			};
+		};
+	};
+
+
+	class B_AssaultPack_blk;
 // CUSTOM DPCU BACKPACKS
 	class ADFRC_AssaultPack_TL_dpcu: B_AssaultPack_blk
 	{
