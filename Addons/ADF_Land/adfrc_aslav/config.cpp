@@ -16,7 +16,8 @@ class CfgPatches
 			"ADFRC_ASLAV_base_F",
 			"ADFRC_ASLAV",
 			"ADFRC_ASLAV_PC",
-			"ADFRC_ASLAV_PC_RWS"
+			"ADFRC_ASLAV_PC_RWS",
+			"ADFRC_ASLAV_PC_MAG58"
 		};
 		weapons[]=
 		{
@@ -214,6 +215,9 @@ class CfgVehicles
 		driverCanSee="4+8+2+32+16";
 		gunnerCanSee="4+2+8+32+16";
 		commanderCanSee="4+2+8+32+16";
+		crewVulnerable=0;
+		crewCrashProtection=1.35;
+		incomingMissileDetectionSystem = 0;
 		//enableManualFire=0;
 		//enableManualFire = 1;
 		LODTurnedIn = -1;
@@ -497,43 +501,13 @@ class CfgVehicles
 			class coax_muzzle_rot
 			{
 				source="ammorandom";
-				weapon="ADFRC_aslav_coax";
+				weapon="adfrc_aslav_coax";
 			};
 			class coax_muzzle_hide
 			{
 				source="reload";
-				weapon="ADFRC_aslav_coax";
-			};/*
-			class MAG58_reloadMagazine
-			{
-				source="reloadMagazine";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
+				weapon="adfrc_aslav_coax";
 			};
-			class MAG58_isEmpty
-			{
-				source="isEmpty";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
-			};
-			class MAG58_reload
-			{
-				source="reload";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
-			};
-			class MAG58_revolving
-			{
-				source="revolving";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
-			};
-			class MAG58_muzzle_rot
-			{
-				source="ammorandom";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
-			};
-			class MAG58_muzzle_hide
-			{
-				source="reload";
-				weapon="ADFRC_aslav_coax_mounted";//ADFRC_mag58_vehicle
-			};*/
 			class slat_armor
 			{
 				DisplayName="Slat Armour";
@@ -1463,7 +1437,7 @@ class CfgVehicles
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				turretInfoType="RscOptics_APC_Wheeled_03_gunner";
 				hideWeaponsGunner = 1;
-				lockWhenDriverOut = 1;
+				lockWhenDriverOut = 0;
 				discreteDistance[] = {0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,};
 				discreteDistanceInitIndex = 0;
 				ace_fcs_enabled = 0;
@@ -2433,7 +2407,7 @@ class CfgVehicles
 				gunnerName="Commander";
 				proxyType="CPGunner";
 				proxyIndex=1;
-				animationSourceHatch="hatchfront";
+				animationSourceHatch="HatchFront";
 				turretFollowFreeLook = 1;
 				weapons[]=
 				{
@@ -2620,6 +2594,497 @@ class CfgVehicles
 					minFov = 0.5;
 					maxFov = 1;
 				};
+			};
+		};
+	};
+	class ADFRC_ASLAV_PC_MAG58: ADFRC_ASLAV_PC//---------------------------------------------------------------------------------------------------------------- ASLAV PC MAG58
+	{
+		scope= 2;
+		scopeCurator= 2;
+		side= 1;
+		canFloat = 1;
+		displayName ="ASLAV-PC MAG58";
+		vehicleClass="Armoured";
+		author="$STR_ADF_AUTHOR";
+		faction ="ADF";
+		LODDriverTurnedOut=1000;
+		LODDriverTurnedin=1100;
+		driverAction="driver_apcwheeled2_out";
+		driverInAction="driver_APC_Wheeled_01_in";
+		driverLeftHandAnimName="wheel_l";
+		driverRightHandAnimName="wheel_r";
+		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_aslav_pc.jpg";
+		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_MAG58";
+		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
+		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
+		crew = "ADFRC_crewman_dpcu";
+		transportSoldier=7;
+		smokeLauncherGrenadeCount=4;
+		smokeLauncherVelocity=14;
+		smokeLauncherOnTurret=0;
+		smokeLauncherAngle=60;
+		textureList[] = {Worn,1};
+		hiddenSelections[]=
+		{
+			camo1,
+			camo2,
+			camo3,
+			camo4,
+			labels
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture1_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture2_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-pc\texture3_co.paa",
+			"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa",
+			"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa"
+		};
+		class textureSources
+		{
+			class Worn
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Standard";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"};
+			};
+			/*class Arid 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Arid";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\arid\texture4_co.paa"};
+			};
+			class Jungle 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Jungle";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\jungle\texture4_co.paa"};
+			};
+			class Desert 
+			{
+				author = "ADFRC_Quiggs";
+				displayName = "Desert";
+				factions[] = {"ADF"};
+				textures[] = {"ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture1_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture2_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture3_co.paa","\ADF_Land\adfrc_aslav\data\ASLAV-PC\desert\texture4_co.paa"};
+			};*/
+		};
+		class Turrets: Turrets
+		{
+			class mainTurret: NewTurret
+			{
+				class Turrets
+				{
+				};
+				body="mainturret";
+				gun="maingun";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				gunnerName="Commander";
+				proxyType="CPGunner";
+				animationSourceHatch="hatchgunner";
+				proxyIndex=1;
+				turretFollowFreeLook = 0;
+				weapons[]=
+				{
+					"ADFRC_aslav_mag58",
+					"SmokeLauncher"
+				};
+				magazines[]=
+				{
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"ADFRC_aslav_200Rnd_762x51_Tracer",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+				soundServo[]=
+				{
+					"A3\sounds_f\dummysound",
+					0.0099999998,
+					1,
+					10
+				};
+				commanding=3;
+				minElev=-30;
+				initElev=0;
+				maxElev=30;
+				minTurn=-105;
+				initTurn=0;
+				maxTurn=125;
+				gunnerRightHandAnimName="handle_l";
+				gunnerLeftHandAnimName="handle_r";
+				gunnerLeftLegAnimName="OtocVez";
+				gunnerRightLegAnimName="OtocVez";
+				gunnerAction = "Gunner_Offroad_02_LMG_F";
+				lockWhenDriverOut = 0;
+				isPersonTurret = 0;
+				gunnerInAction = "Commander_APC_tracked_01_crv_in";
+				gunnerGetInAction="GetInMRAP_01Rfl";
+				gunnerGetOutAction="GetOuthigh";
+				viewGunnerInExternal=0;
+				castGunnerShadow=1;
+				forceHideGunner=0;
+				gunnerForceOptics=-0;
+				inGunnerMayFire=0;
+				outGunnerMayFire=1;
+				discreteDistance[]={0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+				discreteDistanceInitIndex=0;
+				turretInfoType="RscWeaponZeroing";
+				memoryPointGunnerOptics="gunnerviewout";
+				gunnerOpticsModel="\ADF_Land\adfrc_aslav\Optics_Driver";
+				memoryPointGunnerOutOptics="eye";
+				gunnerOutOpticsModel = "\A3\weapons_f\reticle\optics_empty";
+				gunnerCompartments="Compartment1";
+				selectionFireAnim="zasleh";
+				stabilizedInAxes=0;
+				primaryGunner=1;
+				primaryObserver=0;
+				usePip=0;
+				LODTurnedIn = 1100;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				startEngine=0;
+				disableSoundAttenuation=1;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.8;
+					minFov = 0.5;
+					maxFov = 0.8;
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=0.60000002;
+						material=-1;
+						name="vez";
+						visual="vez";
+						passThrough=1;
+						minimalHit=0.2;
+						explosionShielding=1;
+						radius=0.20;
+					};
+					class HitGun
+					{
+						armor=0.60000002;
+						material=-1;
+						name="zbran";
+						visual="";
+						passThrough=0;
+						minimalHit=0.2;
+						explosionShielding=1;
+						radius=0.20;
+					};
+				};
+			};
+			class CargoTurret_01: CargoTurret
+			{
+				showAsCargo=1;
+				gunnerAction="vehicle_turnout_1";
+				gunnerInAction="passenger_generic01_leanright";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				gunnerName="Hatch Gunner (Left Side)";
+				animationSourceHatch="Hatchleft";
+				viewGunnerInExternal=0;
+				proxyType="CPGunner";
+				proxyIndex=2;
+				isPersonTurret=1;
+				allowLauncherOut=1;
+				maxElev=150;
+				minElev=-80;
+				maxTurn=180;
+				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
+				ejectDeadGunner=0;
+				enabledByAnimationSource="";
+				usepip=0;
+				startEngine=0;
+				commanding=-0;
+				outGunnerMayFire=1;
+				inGunnerMayFire=0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -90;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 1;
+					minFov = 0.5;
+					maxFov = 1;
+				};
+			};
+			class CargoTurret_02: CargoTurret
+			{
+				showAsCargo=1;
+				gunnerAction="vehicle_turnout_1";
+				gunnerInAction="passenger_generic01_leanleft";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				gunnerName="Hatch Gunner (Right Side)";
+				animationSourceHatch="Hatchright";
+				viewGunnerInExternal=0;
+				proxyType="CPGunner";
+				proxyIndex=3;
+				isPersonTurret=1;
+				allowLauncherOut=1;
+				maxElev=150;
+				minElev=-80;
+				maxTurn=180;
+				minTurn=-180;
+				minOutElev=-30;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-135;
+				maxOutTurn=135;
+				ejectDeadGunner=0;
+				enabledByAnimationSource="";
+				usepip=0;
+				startEngine=0;
+				commanding=-0;
+				outGunnerMayFire=1;
+				inGunnerMayFire=0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -90;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 1;
+					minFov = 0.5;
+					maxFov = 1;
+				};
+			};
+		};
+		class AnimationSources
+		{
+			class proxy
+			{
+				source="user";
+				animPeriod=0.1;
+				initPhase=0;
+			};
+			class waterSkid
+			{
+				source="door";
+				initPhase=0;
+				animPeriod=3;
+			};
+			class rearramp
+			{
+				source="door";
+				initPhase=0;
+				animPeriod=3;
+			};
+			class HideTurret
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.001;
+			};
+			class slat_armor
+			{
+				DisplayName="Slat Armour";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tools
+			{
+				DisplayName="Tools";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_bar
+			{
+				DisplayName="Tow Bar";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class duke
+			{
+				DisplayName="AN/VLQ-12 Duke";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class hull_jerry
+			{
+				DisplayName="Rear Jerrys";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_cable
+			{
+				DisplayName="Front Tow Cable";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tow_shackles
+			{
+				DisplayName="Recovery Shackles";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class roof_box
+			{
+				DisplayName="Roof Storage Box";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class spare_wheels
+			{
+				DisplayName="Spare Wheels";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class storageright
+			{
+				DisplayName="Right Storage Rack";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class storageleft
+			{
+				DisplayName="Left Storage Rack";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class camonet
+			{
+				DisplayName="Hull Camouflage (Shaggy Dog)";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class p3parts
+			{
+				DisplayName="Phase III Sensor Suite";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class muzzle_source
+			{
+				source="reload";
+				weapon="ADFRC_aslav_mag58";
+			};
+			class muzzle_source_rot
+			{
+				source="ammorandom";
+				weapon="ADFRC_aslav_mag58";
+			};
+			class ReloadAnim
+			{
+				source="reload";
+				weapon="ADFRC_aslav_mag58";
+			};
+			class ReloadMagazine
+			{
+				source="reloadmagazine";
+				weapon="ADFRC_aslav_mag58";
+			};
+			class Revolving
+			{
+				source="revolving";
+				weapon="ADFRC_aslav_mag58";
+			};
+			class HitLFWheel
+			{
+				source = "Hit";
+				hitpoint = "HitLFWheel";
+				raw = 1;
+			};
+			class HitLF2Wheel: HitLFWheel
+			{
+				hitpoint = "HitLF2Wheel";
+			};
+			class HitRFWheel: HitLFWheel
+			{
+				hitpoint = "HitRFWheel";
+			};
+			class HitRF2Wheel: HitLFWheel
+			{
+				hitpoint = "HitRF2Wheel";
+			};
+			class HitLBWheel: HitLFWheel
+			{
+				hitpoint = "HitLBWheel";
+			};
+			class HitLMWheel: HitLFWheel
+			{
+				hitpoint = "HitLMWheel";
+			};
+			class HitRBWheel: HitLFWheel
+			{
+				hitpoint = "HitRBWheel";
+			};
+			class HitRMWheel: HitLFWheel
+			{
+				hitpoint = "HitRMWheel";
 			};
 		};
 	};

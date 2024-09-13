@@ -177,7 +177,7 @@ class cfgWeapons
 		magazines[]=
 		{
 			"ADFRC_aslav_1000Rnd_762x51_Tracer",
-			"ADFRC_aslav_1000Rnd_762x51_Tracer"
+			"ADFRC_aslav_200Rnd_762x51_Tracer"
 		};
 		class GunParticles 
 		{
@@ -209,11 +209,29 @@ class cfgWeapons
 
 		class GunParticles 
 		{
-			class effect1
+			class effect1 
 			{
-				positionName = "gun_muzzle";
-				directionName = "gun_chamber";
 				effectName = "MachineGunCloud";
+				positionName = "Usti hlavne";
+				directionName = "Konec hlavne";
+			};
+			class effect2 
+			{
+				effectName = "ADFRC_mag58_casingeject";
+				positionName = "nabojnicestart";
+				directionName = "nabojniceend";
+			};
+			class effect3 
+			{
+				effectName = "ADFRC_mag58_linkeject";
+				positionName = "link_eject_start";
+				directionName = "link_eject_end";
+			};
+			class effect4
+			{
+				effectName="CaselessAmmoCloud";
+				positionName="link_eject_start";
+				directionName="link_eject_end";
 			};
 		};
 		class manual: MGun {

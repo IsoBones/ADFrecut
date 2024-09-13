@@ -6,17 +6,17 @@ class StageTI
 
 };
 
-ambient[] = {1.2,1.0,0.8,1.0};
+ambient[] = {0.8,0.8,0.8,1.0};
 
-diffuse[] = {0.8,1.0,1.5,0.8};
+diffuse[] = {1.0,1.0,0.8,0.8};
 
 forcedDiffuse[] = {0.0,0.0,0.0,1.0};
 
 emmisive[] = {0.0,0.0,0.0,0.0};
 
-specular[] = {0.3,0.3,0.6,1.0};
+specular[] = {0.3,0.3,0.6,0.2};
 
-specularPower = 80;
+specularPower = 40;
 
 PixelShaderID = "Super";
 
