@@ -19,7 +19,6 @@ class CfgVehicles{
 	class B_Soldier_diver_base_F;
 	class ADFRC_Soldier_base_F: B_Soldier_base_F{
 		displayName="Soldier Base";
-		//_generalMacro="ADFRC_Soldier_base_F";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
 		scopeCurator=1;
@@ -42,7 +41,6 @@ class CfgVehicles{
     };
 	class ADFRC_Soldier_diver_base_F: B_Soldier_diver_base_F{
 		displayName="Diver Base";
-		//_generalMacro="ADFRC_Soldier_diver_base_F";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
 		scopeCurator=0;
@@ -162,7 +160,7 @@ class CfgVehicles{
 		author="$STR_ADFRC_AUTHOR";
 		scope=1;
 		scopeCurator=0;
-		uniformClass="ADFRC_BasicBody_TAN";
+		uniformClass="ADFRC_BasicBody_Tan";
 		model = "\A3\Characters_F\Common\basicbody";
 		hiddenSelections[] = {
 			"camo"
@@ -522,6 +520,27 @@ class CfgVehicles{
 			"\a3\characters_f\common\data\ghillie_1_ca.paa"
 		};
 	};
+	class ADFRC_MD_AMCU_Officer_Base: ADFRC_Soldier_Base_F {
+		displayName = "Officer Base";
+		author="$STR_ADFRC_AUTHOR";
+		scope = 1;
+		scopeCurator = 1;
+		faction="ADFRC_F_MD";
+		editorSubcategory="ADFRC_MD_Infantry_RAR_AMCU";
+		modelSides[] = {3,2,1,0};
+		nakedUniform="ADFRC_BasicBody_RAR";
+		uniformClass = "ADFRC_Uniform_Field_AMCU";
+		model="\A3\Characters_F_Beta\indep\ia_officer.p3d";
+		hiddenSelections[] = {
+			"Camo1",
+			"Camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[] = {	
+			"\ADF_Gear\adfrc_uniforms\data\uniform_field_amcu_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\uniform_field2_amcu_co.paa"
+		};
+	};
 	// Commandos
 	class ADFRC_MD_AMCU_CDO_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Base";
@@ -609,6 +628,15 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_CDO";
 		uniformClass="ADFRC_Uniform_AMCU_CDO_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]={
+			"Camo",
+			"Camo2",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]={
+			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\basicbody_cdo_co.paa"
+		};
 	};
 	// Clearance Divers
 	class ADFRC_MD_MTS_CD_Base: ADFRC_Soldier_Base_F{
@@ -798,7 +826,7 @@ class CfgVehicles{
 			"insignia"
 		};
 		hiddenSelectionsTextures[]={
-			"\ADF_Gear\adfrc_uniforms\data\uniform_amcu_co.paa"
+			"\ADF_Gear\adfrc_uniforms\data\uniform_mc_flagless_co.paa"
 		};
 	};
 	class ADFRC_MD_MC_SASR_Tee_Base: ADFRC_Soldier_Base_F{
@@ -950,7 +978,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Soldier_Base";
+			uniformClass="ADFRC_Underwear_CDO_Base";
 			containerClass="Supply0";
 			mass=5;
 		};
@@ -970,7 +998,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_Underwear_RAR_Base";
+			uniformClass="ADFRC_Underwear_TAN_Base";
 			containerClass="Supply0";
 			mass=5;
 		};
@@ -990,7 +1018,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Soldier_Base";
+			uniformClass="ADFRC_Underwear_CDT_Base";
 			containerClass="Supply0";
 			mass=5;
 		};
@@ -1010,7 +1038,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Soldier_Base";
+			uniformClass="ADFRC_Underwear_Blue_Base";
 			containerClass="Supply0";
 			mass=5;
 		};
@@ -1030,14 +1058,14 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Soldier_Base";
+			uniformClass="ADFRC_Underwear_SASR_Base";
 			containerClass="Supply0";
 			mass=5;
 		};
 	};
 	// AMCU
 	class ADFRC_Uniform_AMCU: Uniform_Base{
-		displayName="Combat Uniform (AMCU)";
+		displayName="Combat Dress (AMCU)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1057,7 +1085,7 @@ class CfgWeapons{
 		};
 	};
 	class ADFRC_Uniform_AMCU_Rolled: Uniform_Base{
-		displayName="Combat Uniform (AMCU)(Rolled Sleeves)";
+		displayName="Combat Dress (AMCU)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1077,7 +1105,7 @@ class CfgWeapons{
 		};
 	};
 	class ADFRC_Uniform_AMCU_RAR_Tee: Uniform_Base{
-		displayName="Combat Uniform (AMCU)(Tee-RAR)";
+		displayName="Combat Dress (AMCU)(Tee-RAR)";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1097,7 +1125,7 @@ class CfgWeapons{
 		};
 	};
 	class ADFRC_Uniform_AMCU_Flagless: Uniform_Base{
-		displayName="Combat Uniform (AMCU)";
+		displayName="Combat Dress (AMCU)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1117,7 +1145,7 @@ class CfgWeapons{
 		};
 	};
 	class ADFRC_Uniform_AMCU_Flagless_Rolled: Uniform_Base{
-		displayName="Combat Uniform (AMCU)(Rolled Sleeves)";
+		displayName="Combat Dress (AMCU)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1137,7 +1165,7 @@ class CfgWeapons{
 		};
 	};
 	class ADFRC_Uniform_AMCU_CDO_Tee: Uniform_Base{
-		displayName="Combat Uniform (AMCU)(Tee-CDO)";
+		displayName="Combat Dress (AMCU)(Tee-CDO)";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1167,7 +1195,7 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
@@ -1187,7 +1215,7 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
@@ -1207,7 +1235,7 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
@@ -1216,9 +1244,29 @@ class CfgWeapons{
 			mass=60;
 		};
 	};
+	class ADFRC_Uniform_Field_AMCU: Uniform_Base{
+		displayName="Field Dress (AMCU)";
+		author="$STR_ADFRC_AUTHOR";
+		scope=2;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_MD_AMCU_Officer_Base";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 	// Green/Sage (TAG Uniform)
 	class ADFRC_Uniform_Green: Uniform_Base{
-		displayName="Combat Uniform (Green)";
+		displayName="Combat Dress (Green)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1232,13 +1280,13 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Base";
+			uniformClass="ADFRC_MD_Green_TAG_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	class ADFRC_Uniform_Green_Rolled: Uniform_Base{
-		displayName="Combat Uniform (Green)(Rolled Sleeves)";
+		displayName="Combat Dress (Green)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1252,14 +1300,14 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Rolled_Base";
+			uniformClass="ADFRC_MD_Green_TAG_Rolled_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	// Multicam
 	class ADFRC_Uniform_MC: Uniform_Base{
-		displayName="Combat Uniform (Multicam)";
+		displayName="Combat Dress (Multicam)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1273,13 +1321,13 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Base";
+			uniformClass="ADFRC_MD_MC_SASR_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	class ADFRC_Uniform_MC_Rolled: Uniform_Base{
-		displayName="Combat Uniform (Multicam)(Rolled Sleeves)";
+		displayName="Combat Dress (Multicam)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1293,13 +1341,13 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Rolled_Base";
+			uniformClass="ADFRC_MD_MC_SASR_Rolled_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	class ADFRC_Uniform_MC_SASR_Tee: Uniform_Base{
-		displayName="Combat Uniform (Multicam)(Tee-SASR)";
+		displayName="Combat Dress (Multicam)(Tee-SASR)";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1313,7 +1361,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_CDO_Tee_Base";
+			uniformClass="ADFRC_MD_MC_SASR_Tee_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -1329,11 +1377,11 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Sniper_Temperate_Base";
+			uniformClass="ADFRC_MD_SASR_Sniper_Temperate_Base";
 			containerClass="Supply60";
 			mass=60;
 		};
@@ -1349,11 +1397,11 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Sniper_Tropical_Base";
+			uniformClass="ADFRC_MD_SASR_Sniper_Tropical_Base";
 			containerClass="Supply60";
 			mass=60;
 		};
@@ -1369,18 +1417,18 @@ class CfgWeapons{
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"\NOTG\notg_f_den\data\suitpacks\suitpack_soldier_den_w_co.paa"
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Sniper_Arid_Base";
+			uniformClass="ADFRC_MD_SASR_Sniper_Arid_Base";
 			containerClass="Supply60";
 			mass=60;
 		};
 	};
 	// Maritime Tiger Stripe
 	class ADFRC_Uniform_MTS: Uniform_Base{
-		displayName="Combat Uniform (MTS)";
+		displayName="Combat Dress (MTS)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1394,13 +1442,13 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Base";
+			uniformClass="ADFRC_MD_MTS_CD_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	class ADFRC_Uniform_MTS_Rolled: Uniform_Base{
-		displayName="Combat Uniform (MTS)(Rolled Sleeves)";
+		displayName="Combat Dress (MTS)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1414,13 +1462,13 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Recon_Rolled_Base";
+			uniformClass="ADFRC_MD_MTS_CD_Rolled_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
 	class ADFRC_Uniform_MTS_CDT_Tee: Uniform_Base{
-		displayName="Combat Uniform (MTS)(Tee-CDT)";
+		displayName="Combat Dress (MTS)(Tee-CDT)";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -1434,7 +1482,7 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_CDO_Tee_Base";
+			uniformClass="ADFRC_MD_MTS_CD_Tee_Base";
 			containerClass="Supply40";
 			mass=40;
 		};
