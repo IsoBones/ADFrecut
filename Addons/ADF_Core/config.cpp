@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class ADF_Core
 	{
-		requiredAddons[] = {"A3_Data_F"};
+		requiredAddons[] = {"A3_Data_F","cba_jr"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
