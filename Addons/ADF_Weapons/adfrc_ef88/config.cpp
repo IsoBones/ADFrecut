@@ -122,6 +122,7 @@ class CfgWeapons
 					0.38    // Y
 				};
 				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{
@@ -131,6 +132,7 @@ class CfgWeapons
 					0.194   // Y
 				};
 				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 			};
 			class PointerSlot: asdg_FrontSideRail
 			{
@@ -140,6 +142,7 @@ class CfgWeapons
 					0.344   // Y
 				};
 				iconScale = 0.2;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 			};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
