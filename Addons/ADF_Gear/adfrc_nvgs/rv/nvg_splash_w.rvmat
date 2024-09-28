@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: rv\nvg_splash_w.rvmat
+//Produced from mikero's Dos Tools Dll version 9.36
+//https://mikero.bytex.digital/Downloads
+//'now' is Fri Sep 27 13:36:14 2024 : 'file' last modified on Sat Jul 15 02:41:05 2023
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {5,5,5,0.1};
+diffuse[] = {0.1019608,0.1,0.1019608,0.1};
+forcedDiffuse[] = {0.1019608,0.1,0.1019608,0};
+emmisive[] = {2,40,36,0.1};
+specular[] = {0,0,0,0};
+specularPower = 50;
+renderFlags[] = {"AlwaysInShadow","NoZWrite","NoAlphaWrite","AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
