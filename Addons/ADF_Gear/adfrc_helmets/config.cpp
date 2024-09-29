@@ -1043,11 +1043,33 @@ class CfgWeapons
 	// BASEGAME RESKINS //
 
 	// BOONIE HATS AND CAPS
+	class adfrc_boonie: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 1;
+		ace_hearing_lowerVolume = 0.4;
+		displayName = "Boonie & Peltors [AMCU]";
+		picture = "ADF_Gear\adfrc_helmets\icons\boonie.paa";
+		model = "ADF_Gear\adfrc_helmets\boonie.p3d";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		author = "Louetta";
+		class ItemInfo: HeadgearItem
+		{
+			mass = 60;
+			uniformModel = "ADF_Gear\adfrc_helmets\boonie.p3d";
+			modelSides[] = {3,1};
+			armor = "3000";
+			passThrough = 0.01;
+			hiddenSelections[] = {};
+		};
+	};
 	class adfrc_booniehat_amc: H_Booniehat_tan
 	{
 		scope = 2;
 		author=$STR_ADF_AUTHOR;
-		displayName = "ADF Boonie [AMC]";
+		displayName = "ADF Boonie [AMC](OLD)";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_Cam_co.paa"};
 	};
