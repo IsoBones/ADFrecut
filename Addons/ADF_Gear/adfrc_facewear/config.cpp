@@ -1,10 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.36
-//https://mikero.bytex.digital/Downloads
-//'now' is Sat May 20 15:53:13 2023 : 'file' last modified on Sat May 20 15:53:13 2023
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 class CfgPatches
@@ -82,10 +75,10 @@ class CfgGlasses
 	class adfrc_facewear_Balaclava_blk_1: None
 	{
 		scope = 2;
-		author = "Exer | ADF Re-Cut";
+		author = "ADF Re-Cut";
 		displayname = "Balaclava (Black)";
 		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
-		picture = "";
+		picture = "ADF_Gear\adfrc_facewear\icons\BLACK.paa";
 		identityTypes[] = {};
 		mass = 1;
 		hiddenSelections[] = {"camo"};
@@ -94,10 +87,10 @@ class CfgGlasses
 	class adfrc_facewear_Balaclava_amc_1: None
 	{
 		scope = 2;
-		author = "Exer | ADF Re-Cut";
+		author = "ADF Re-Cut";
 		displayname = "Balaclava (AMC)";
 		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
-		picture = "";
+		picture = "ADF_Gear\adfrc_facewear\icons\AMCU.paa";
 		identityTypes[] = {};
 		mass = 1;
 		hiddenSelections[] = {"camo"};
@@ -106,10 +99,10 @@ class CfgGlasses
 	class adfrc_facewear_Balaclava_tan_1: None
 	{
 		scope = 2;
-		author = "Exer | ADF Re-Cut";
+		author = "ADF Re-Cut";
 		displayname = "Balaclava (Tan)";
 		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
-		picture = "";
+		picture = "ADF_Gear\adfrc_facewear\icons\TAN.paa";
 		identityTypes[] = {};
 		mass = 1;
 		hiddenSelections[] = {"camo"};
@@ -118,16 +111,65 @@ class CfgGlasses
 	class adfrc_facewear_Balaclava_olv_1: None
 	{
 		scope = 2;
-		author = "Exer | ADF Re-Cut";
+		author = "ADF Re-Cut";
 		displayname = "Balaclava (Olive)";
 		model = "ADF_Gear\adfrc_facewear\balaclava_1.p3d";
-		picture = "";
+		picture = "ADF_Gear\adfrc_facewear\icons\OLIVE.paa";
 		identityTypes[] = {};
 		mass = 1;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_olive_co.paa"};
 	};
 	
+	//Half balaclava
+	class adfrc_facewear_Balaclava_blk_2: None
+	{
+		scope = 2;
+		author = "ADF Re-Cut";
+		displayname = "Half Balaclava (Black)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_Half.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\BLACK-Half.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_amc_2: None
+	{
+		scope = 2;
+		author = "ADF Re-Cut";
+		displayname = "Half Balaclava (AMC)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_Half.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\AMCU-Half.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_amcu_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_tan_2: None
+	{
+		scope = 2;
+		author = "ADF Re-Cut";
+		displayname = "Half Balaclava (Tan)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_Half.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\TAN-Half.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_tan_co.paa"};
+	};
+	class adfrc_facewear_Balaclava_olv_2: None
+	{
+		scope = 2;
+		author = "ADF Re-Cut";
+		displayname = "Half Balaclava (Olive)";
+		model = "ADF_Gear\adfrc_facewear\balaclava_Half.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\OLIVE-Half.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_olive_co.paa"};
+	};
 	//Shemaghs
 	class adfrc_facewear_Shemagh_rgr_1: None
 	{
