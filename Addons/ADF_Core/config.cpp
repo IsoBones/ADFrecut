@@ -11,6 +11,7 @@ class CfgPatches
 /* Definitions & Inheritance */
 #include "basicDefines_A3.hpp"
 #include "cfgFactionClasses.hpp"
+#include "cfgEditorSubcategories.hpp"
 #include "cfgMarkers.hpp"
 #include "cfgMovesBasic.hpp"
 #include "cfgMovesMaleSdr.hpp"
