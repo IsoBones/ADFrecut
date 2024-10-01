@@ -452,6 +452,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",
@@ -481,6 +483,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",
@@ -510,6 +514,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",
@@ -570,6 +576,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Tan";
 		uniformClass="ADFRC_Uniform_AMCU_Flagless";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 	};
 	class ADFRC_MD_AMCU_CDO_Rolled_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Rolled Base";
@@ -599,6 +607,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Tan";
 		uniformClass="ADFRC_Uniform_AMCU_Flagless_Rolled";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 	};
 	class ADFRC_MD_AMCU_CDO_Tee_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Tee Base";
@@ -628,6 +638,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_CDO";
 		uniformClass="ADFRC_Uniform_AMCU_CDO_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo2",
@@ -654,6 +666,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Blue";
 		uniformClass="ADFRC_Uniform_MTS";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"insignia"
@@ -677,6 +691,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Blue";
 		uniformClass="ADFRC_Uniform_MTS_Rolled";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"insignia"
@@ -700,6 +716,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_CDT";
 		uniformClass="ADFRC_Uniform_MTS_CDT_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo2",
@@ -725,6 +743,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Blue";
 		uniformClass="ADFRC_Wetsuit_MTS";
 		model="\A3\characters_F\Common\diver_slotable";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo1",
 			"Camo2",
@@ -742,7 +762,7 @@ class CfgVehicles{
 		scope=1;
 		scopeCurator=1;
 		faction="ADFRC_F_MD";
-		editorSubcategory= "EdSubcat_Personnel";
+		editorSubcategory= "ADFRC_MD_SpecialForces_TAG_MC";
 		accuracy=3;
 		threat[]={0.80000001,0.1,0.1};
 		camouflage=1;
@@ -758,6 +778,7 @@ class CfgVehicles{
 		hiddenSelectionsTextures[]={
 			"\ADF_Gear\adfrc_uniforms\data\uniform_green_flagless_co.paa"
 		};
+		vehicleClass="MenRecon";
 	};
 	class ADFRC_MD_Green_TAG_Rolled_Base: ADFRC_Soldier_Base_F{
 		displayName="MC Operator Rolled Base";
@@ -765,7 +786,7 @@ class CfgVehicles{
 		scope=1;
 		scopeCurator=1;
 		faction="ADFRC_F_MD";
-		editorSubcategory= "EdSubcat_Personnel";
+		editorSubcategory= "ADFRC_MD_SpecialForces_TAG_MC";
 		accuracy=3;
 		threat[]={0.80000001,0.1,0.1};
 		camouflage=1;
@@ -781,6 +802,7 @@ class CfgVehicles{
 		hiddenSelectionsTextures[]={
 			"\ADF_Gear\adfrc_uniforms\data\uniform_green_flagless_co.paa"
 		};
+		vehicleClass="MenRecon";
 	};
 	// SASR
 	class ADFRC_MD_MC_SASR_Base: ADFRC_Soldier_Base_F{
@@ -798,6 +820,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Tan";
 		uniformClass="ADFRC_Uniform_MC";
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"insignia"
@@ -821,6 +845,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_Tan";
 		uniformClass="ADFRC_Uniform_MC_Rolled";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"insignia"
@@ -844,6 +870,8 @@ class CfgVehicles{
 		nakedUniform="ADFRC_BasicBody_SASR";
 		uniformClass="ADFRC_Uniform_MC_SASR_Tee";
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		vehicleClass="MenRecon";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo2",
@@ -872,6 +900,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",
@@ -900,6 +930,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",
@@ -928,6 +960,8 @@ class CfgVehicles{
 		primaryAmmoCoef=0.2;
 		secondaryAmmoCoef=0.050000001;
 		handgunAmmoCoef=0.1;
+		vehicleClass="MenSniper";
+		canHideBodies = true;
 		hiddenSelections[]={
 			"Camo",
 			"Camo3",

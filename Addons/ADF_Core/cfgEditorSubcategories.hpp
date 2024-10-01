@@ -9,6 +9,9 @@ class CfgEditorSubcategories{
 		displayName = "Special Forces (CD - MTS)";
 	};
 	class ADFRC_MD_SpecialForces_SASR_MC{
-		displayName = "Infantry (SASR- MC)";
+		displayName = "Special Forces (SASR- MC)";
+	};
+	class ADFRC_MD_SpecialForces_TAG_MC{
+		displayName = "Special Forces (TAG-E/W)";
 	};
 };
