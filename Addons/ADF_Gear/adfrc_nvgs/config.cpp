@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 class adfrc_l3h_psq36: NVGoggles
 	{
-		author = "yamum";
+		author = "ADF Recut";
 		scope = 2;
 		scopeArsenal = 2;
 		eden = 2;
@@ -48,6 +48,32 @@ class adfrc_l3h_psq36: NVGoggles
 			hmdType = 0;
 			uniformModel = "ADF_Gear\adfrc_nvgs\psq36_down.p3d";
 			modelOff = "ADF_Gear\adfrc_nvgs\psq36_up.p3d";
+			hiddenSelections[] = {""};
+			hiddenSelectionsTextures[] = {""};
+			mass = 1;
+		};
+		scopeCurator = 2;
+		weaponPoolAvailable = 1;
+		visionMode[] = {"Normal","NVG","TI"};
+	};
+	class adfrc_l3h_psq36_recce: adfrc_l3h_psq36
+	{
+		displayName = "L3Harris PSQ36 (No Mount)";
+		model = "";
+		picture = "ADF_Gear\adfrc_nvgs\nodprev.paa";
+		ace_nightvision_generation = 4;
+		ace_nightvision_bluRadius = 0.35000002;
+		modelOptics = "ADF_Gear\adfrc_nvgs\optic\pvs_optic.p3d";
+		nameSound = "nvgoggles";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		descriptionShort = "";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "ADF_Gear\adfrc_nvgs\psq36_down.p3d";
+			modelOff = "";
 			hiddenSelections[] = {""};
 			hiddenSelectionsTextures[] = {""};
 			mass = 1;
