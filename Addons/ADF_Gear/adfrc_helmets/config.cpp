@@ -32,6 +32,7 @@ class CfgWeapons
 	class H_HelmetIA;
 	class H_Cap_headphones;
 	
+	// OPSCORE MARITIME
 	class adfrc_opscore_marine_Snakeskin_Tan_Ct_1_Aus: ItemCore
 	{
 		author="Exer";
@@ -900,6 +901,8 @@ class CfgWeapons
 			};
 		};
 	};
+	
+	// TEAM WENDY EXFIL
 	class adfrc_teamwendy_exfil_grn_mcw_Aus: ItemCore
 	{
 		author = "Bones | ADF Re-Cut";
@@ -1040,7 +1043,6 @@ class CfgWeapons
 			};
 		};
 	};
-	// BASEGAME RESKINS //
 
 	// BOONIE HATS AND CAPS
 	class adfrc_boonie: ItemCore
@@ -1356,6 +1358,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_dpcu_M_co.paa"};
 	};
+	
 	// CANVAS HELMETS
 	class adfrc_Helmet_dpcu_canv: H_HelmetIA
 	{
@@ -1376,5 +1379,97 @@ class CfgWeapons
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\helmet_dpdu_canv_co.paa"};
+	};
+	
+	// OPSCORE AIRFRAME
+	class adfrc_opscore_airframe_1: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 1;
+		ace_hearing_lowerVolume = 0.4;
+		displayName = "ADF Opscore AirFrame [OD]";
+		picture = "";
+		model = "ADF_Gear\adfrc_helmets\Opscore_af.p3d";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 60;
+			uniformModel = "ADF_Gear\adfrc_helmets\Opscore_af.p3d";
+			modelSides[] = {3,1};
+			armor = "3000";
+			passThrough = 0.01;
+			hiddenSelections[] = {};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 50;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
+	class adfrc_opscore_airframe_2: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 1;
+		ace_hearing_lowerVolume = 0.4;
+		displayName = "ADF Opscore AirFrame (Cover) [MCAM]";
+		picture = "";
+		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 60;
+			uniformModel = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
+			modelSides[] = {3,1};
+			armor = "3000";
+			passThrough = 0.01;
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 50;
+					passThrough = 0.5;
+				};
+			};
+		};
+	};
+	class adfrc_opscore_airframe_3: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 1;
+		ace_hearing_lowerVolume = 0.4;
+		displayName = "ADF Opscore AirFrame (Cover) [AMCU]";
+		picture = "";
+		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
+		hiddenSelections[] = {"cover"};
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\airframe\pd_af_cover_amcu_co.paa"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 60;
+			uniformModel = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
+			modelSides[] = {3,1};
+			armor = "3000";
+			passThrough = 0.01;
+			hiddenSelections[] = {"cover"};
+			hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\airframe\pd_af_cover_amcu_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 50;
+					passThrough = 0.5;
+				};
+			};
+		};
 	};
 };
