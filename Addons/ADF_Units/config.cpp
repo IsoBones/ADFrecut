@@ -13,5 +13,13 @@ class CfgPatches{
 	};
 };
 class CfgVehicles{
-	#include "ADF_Modern.hpp"
+	#include "Modern/RAR/Infantry.hpp"
+	#include "Modern/RAR/Recce.hpp"
+	#include "Modern/CDO/Infantry.hpp"
+	#include "Modern/CDO/TAG.hpp"
+	#include "Modern/CD/Infantry.hpp"
+	#include "Modern/CD/Divers.hpp"
+	#include "Modern/SASR/Infantry.hpp"
+	#include "Modern/SASR/TAG.hpp"
+	#include "Modern/Backpacks.hpp"
 };

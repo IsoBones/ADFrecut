@@ -1,1 +1,1 @@
-[[[],[],[],["ADFRC_Uniform_AMCU_RAR_Tee",[["FirstAidKit",3]]],["ADFRC_TBAS_3",[]],[],"adfrc_cap_amc","adfrc_facewear_ESS_1",[],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]],[]]
+[[[],[],[],["ADFRC_Uniform_AMCU_RAR_Tee",[["FirstAidKit",3]]],["ADFRC_TBAS_T2_LMG",[]],[],"adfrc_cap_amc","adfrc_facewear_ESS_1",[],["ItemMap","","ItemRadio","ItemCompass","ItemWatch",""]],[]]
