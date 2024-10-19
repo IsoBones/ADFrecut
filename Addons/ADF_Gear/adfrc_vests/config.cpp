@@ -634,6 +634,103 @@ class cfgWeapons
 		};
 	};
 	
+class ADFRC_TBAS_T2_Officer: Vest_Camo_Base
+	{
+		scope=2;
+		author="Exer";
+		weaponPoolAvailable=1;
+		allowedSlots[]={901};
+		displayName = "TBAS T2 - Officer";
+		picture = "";
+		model="\ADF_Gear\adfrc_vests\tbas_11.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_11.p3d";
+			containerClass="Supply180";
+			mass=60;
+			hiddenSelections[]={};
+			hiddenSelectionsTextures[]={};
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Abdomen
+				{
+					HitpointName="HitAbdomen";
+					armor=60;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor=260;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+	
+class ADFRC_TBAS_T2_SECO: Vest_Camo_Base
+	{
+		scope=2;
+		author="Exer";
+		weaponPoolAvailable=1;
+		allowedSlots[]={901};
+		displayName = "TBAS T2 - Section Commander";
+		picture = "";
+		model="\ADF_Gear\adfrc_vests\tbas_12.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\ADF_Gear\adfrc_vests\tbas_12.p3d";
+			containerClass="Supply180";
+			mass=60;
+			hiddenSelections[]={};
+			hiddenSelectionsTextures[]={};
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Diaphragm
+				{
+					HitpointName="HitDiaphragm";
+					armor=60;
+					PassThrough=0.1;
+				};
+				class Abdomen
+				{
+					HitpointName="HitAbdomen";
+					armor=60;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					armor=260;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+
+	
 	
 	
 	
