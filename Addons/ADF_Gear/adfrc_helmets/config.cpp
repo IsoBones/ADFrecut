@@ -38,7 +38,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 1 (Comtac III)";
+		displayName = "Opscore Maritime Tan 1 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","battery2","amp","light","strobe"};
@@ -66,7 +66,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 1 (Comtac III)";
+		displayName = "Opscore Maritime Black 1 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","amp","light","strobe"};
@@ -94,7 +94,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 1 (Amp)";
+		displayName = "Opscore Maritime Tan 1 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","battery2","comtac","light","strobe"};
@@ -122,7 +122,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 1 (Amp)";
+		displayName = "Opscore Maritime Black 1 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
@@ -150,7 +150,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 2 (Comtac III)";
+		displayName = "Opscore Maritime Tan 2 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","amp","light"};
@@ -178,7 +178,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 2 (Comtac III)";
+		displayName = "Opscore Maritime Black 2 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp","light"};
@@ -206,7 +206,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 2 (Amp)";
+		displayName = "Opscore Maritime Tan 2 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","comtac","light"};
@@ -234,7 +234,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 2 (Amp)";
+		displayName = "Opscore Maritime Black 2 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
@@ -262,7 +262,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 3 (Comtac III)";
+		displayName = "Opscore Maritime Tan 3 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","amp","strobe"};
@@ -290,7 +290,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 3 (Comtac III)";
+		displayName = "Opscore Maritime Black 3 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
@@ -318,7 +318,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 3 (Amp)";
+		displayName = "Opscore Maritime Tan 3 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","comtac","strobe"};
@@ -346,7 +346,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 3 (Amp)";
+		displayName = "Opscore Maritime Black 3 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
@@ -374,7 +374,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 4 (Comtac III)";
+		displayName = "Opscore Maritime Tan 4 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","amp"};
@@ -402,7 +402,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 4 (Comtac III)";
+		displayName = "Opscore Maritime Black 4 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp"};
@@ -430,7 +430,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 4 (Amp)";
+		displayName = "Opscore Maritime Tan 4 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","comtac"};
@@ -458,7 +458,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 4 (Amp)";
+		displayName = "Opscore Maritime Black 4 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac"};
@@ -486,7 +486,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 5 (Comtac III)";
+		displayName = "Opscore Maritime Tan 5 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","amp"};
@@ -514,7 +514,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 5 (Comtac III)";
+		displayName = "Opscore Maritime Black 5 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp"};
@@ -542,7 +542,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Tan 5 (Amp)";
+		displayName = "Opscore Maritime Tan 5 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","comtac"};
@@ -570,7 +570,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime Black 5 (Amp)";
+		displayName = "Opscore Maritime Black 5 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac"};
@@ -598,7 +598,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 1 (Comtac III)";
+		displayName = "Opscore Maritime AMCU 1 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","amp","light","strobe"};
@@ -626,7 +626,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 1 (Amp)";
+		displayName = "Opscore Maritime AMCU 1 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
@@ -654,7 +654,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 2 (Comtac III)";
+		displayName = "Opscore Maritime AMCU 2 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp","light"};
@@ -682,7 +682,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 2 (Amp)";
+		displayName = "Opscore Maritime AMCU 2 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
@@ -710,7 +710,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 3 (Comtac III)";
+		displayName = "Opscore Maritime AMCU 3 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
@@ -738,7 +738,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 3 (Amp)";
+		displayName = "Opscore Maritime AMCU 3 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
@@ -766,7 +766,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 4 (Comtac III)";
+		displayName = "Opscore Maritime AMCU 4 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp"};
@@ -794,7 +794,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 4 (Amp)";
+		displayName = "Opscore Maritime AMCU 4 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac"};
@@ -822,7 +822,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 5 (Comtac III)";
+		displayName = "Opscore Maritime AMCU 5 (Comtac III)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp"};
@@ -850,7 +850,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU 5 (Amp)";
+		displayName = "Opscore Maritime AMCU 5 (Amp)";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac"};
@@ -878,7 +878,7 @@ class CfgWeapons
 		author="Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Opscore Maritime AMCU";
+		displayName = "Opscore Maritime AMCU";
 		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","amp","light","strobe"};
@@ -903,135 +903,23 @@ class CfgWeapons
 	};
 	
 	// TEAM WENDY EXFIL
-	class adfrc_teamwendy_exfil_grn_mcw_Aus: ItemCore
+	class adfrc_teamwendy_exfil_cover: ItemCore
 	{
-		author = "Bones | ADF Re-Cut";
+		author = "Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "ADF Team Wendy Exfil (Cover) [MCW]";
+		displayName = "Team Wendy Exfil (Cover) [AMC]";
 		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\exfil.p3d";
 		hiddenSelections[] = {"cover"};
-		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_mcw_co.paa"};
+		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\textures\cover_amcu_co.paa"};
 		class ItemInfo: HeadgearItem
 		{
 			mass = 10;
 			uniformModel = "ADF_Gear\adfrc_helmets\exfil.p3d";
 			modelSides[] = {"TCivilian","TWest"};
 			hiddenSelections[] = {"cover"};
-			hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_mcw_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName = "HitHead";
-					armor = 15;
-					passThrough = 0.75;
-				};
-			};
-		};
-	};
-	class adfrc_teamwendy_exfil_grn_amcu_Aus: ItemCore
-	{
-		author = "Bones | ADF Re-Cut";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "ADF Team Wendy Exfil (Cover) [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
-		model = "ADF_Gear\adfrc_helmets\exfil.p3d";
-		hiddenSelections[] = {"cover"};
-		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_amcu_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			mass = 10;
-			uniformModel = "ADF_Gear\adfrc_helmets\exfil.p3d";
-			modelSides[] = {"TCivilian","TWest"};
-			hiddenSelections[] = {"cover"};
-			hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_amcu_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName = "HitHead";
-					armor = 15;
-					passThrough = 0.75;
-				};
-			};
-		};
-	};
-	class adfrc_teamwendy_exfil_amcu_Aus: ItemCore
-	{
-		author = "Bones | ADF Re-Cut";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "ADF Team Wendy Exfil [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
-		model = "ADF_Gear\adfrc_helmets\exfil_amcu.p3d";
-		hiddenSelections[] = {""};
-		hiddenSelectionsTextures[] = {""};
-		class ItemInfo: HeadgearItem
-		{
-			mass = 10;
-			uniformModel = "ADF_Gear\adfrc_helmets\exfil_amcu.p3d";
-			modelSides[] = {"TCivilian","TWest"};
-			hiddenSelections[] = {""};
-			hiddenSelectionsTextures[] = {""};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName = "HitHead";
-					armor = 15;
-					passThrough = 0.75;
-				};
-			};
-		};
-	};
-	class adfrc_teamwendy_exfil_amcu_ct_Aus: ItemCore
-	{
-		author = "Bones | ADF Re-Cut";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "ADF Team Wendy Exfil II (Cover) [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_2.paa";
-		model = "ADF_Gear\adfrc_helmets\exfil_comtac.p3d";
-		hiddenSelections[] = {"cover"};
-		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_amcu_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			mass = 10;
-			uniformModel = "ADF_Gear\adfrc_helmets\exfil_comtac.p3d";
-			modelSides[] = {"TCivilian","TWest"};
-			hiddenSelections[] = {"cover"};
-			hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_amcu_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitPointName = "HitHead";
-					armor = 15;
-					passThrough = 0.75;
-				};
-			};
-		};
-	};
-	class adfrc_teamwendy_exfil_amcu_ct_2_Aus: ItemCore
-	{
-		author = "Bones | ADF Re-Cut";
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "ADF Team Wendy Exfil II [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_2.paa";
-		model = "ADF_Gear\adfrc_helmets\exfil_comtac_2.p3d";
-		hiddenSelections[] = {};
-		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\exfil_cover_amcu_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			mass = 10;
-			uniformModel = "ADF_Gear\adfrc_helmets\exfil_comtac_2.p3d";
-			modelSides[] = {"TCivilian","TWest"};
-			hiddenSelections[] = {};
-			hiddenSelectionsTextures[] = {};
+			hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\textures\cover_amcu_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -1069,9 +957,9 @@ class CfgWeapons
 	};
 	class adfrc_booniehat_amc: H_Booniehat_tan
 	{
-		scope = 2;
+		scope = 1;
 		author=$STR_ADF_AUTHOR;
-		displayName = "ADF Boonie [AMC](OLD)";
+		displayName = "Boonie [AMC] DEPRECATED";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_Cam_co.paa"};
 	};
@@ -1094,7 +982,7 @@ class CfgWeapons
 	};
 	class adfrc_cap_tan: H_Cap_red
 	{
-		displayName = "ADF Cap [Sand]";
+		displayName = "Cap [Sand]";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_red_CA.paa";
 		model = "\A3\Characters_F\common\capb";
 		hiddenSelections[] = {"camo"};
@@ -1102,7 +990,7 @@ class CfgWeapons
 	};
 	class adfrc_cap_green: H_Cap_red
 	{
-		displayName = "ADF Cap [Green]";
+		displayName = "Cap [Green]";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_red_CA.paa";
 		model = "\A3\Characters_F\common\capb";
 		hiddenSelections[] = {"camo"};
@@ -1110,7 +998,7 @@ class CfgWeapons
 	};
 	class adfrc_cap_black: H_Cap_red
 	{
-		displayName = "ADF Cap [Black]";
+		displayName = "Cap [Black]";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_red_CA.paa";
 		model = "\A3\Characters_F\common\capb";
 		hiddenSelections[] = {"camo"};
@@ -1118,7 +1006,7 @@ class CfgWeapons
 	};
 	class adfrc_cap_amc: H_Cap_red
 	{
-		displayName = "ADF Cap [AMC]";
+		displayName = "Cap [AMC]";
 		picture = "\A3\characters_f\Data\UI\icon_H_Cap_red_CA.paa";
 		model = "\A3\Characters_F\common\capb";
 		hiddenSelections[] = {"camo"};
@@ -1126,104 +1014,104 @@ class CfgWeapons
 	};
 
 
-	// ADVANCED COMBAT HELMETS
+	// ADVANCED COMBAT HELMETS -- DEPRECATED
 	class adfrc_Helmet_Black: H_HelmetB_light
 	{
-		scope = 2;
-		displayName = "ADF ACH [Black]";
+		scope = 1;
+		displayName = "ACH [Black]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Black_co.paa"};
 	};
 	class adfrc_Helmet_Desert: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Desert]";
+		scope = 1;
+		displayName = "ACH [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_co.paa"};
 	};
 	class adfrc_Helmet_Grass: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Grass]";
+		scope = 1;
+		displayName = "ACH [Grass]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Grass_co.paa"};
 	};
 	class adfrc_Helmet_Sand: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Sand]";
+		scope = 1;
+		displayName = "ACH [Sand]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Sand_co.paa"};
 	};
 	class adfrc_Helmet_Snake: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Snake]";
+		scope = 1;
+		displayName = "ACH [Snake]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Snake_co.paa"};
 	};
 	class adfrc_Helmet_CamInk: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Dipped]";
+		scope = 1;
+		displayName = "ACH [Dipped]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_CamInk_co.paa"};
 	};
 	class adfrc_Helmet_Cam: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH [Camo]";
+		scope = 1;
+		displayName = "ACH [Camo]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Cam_co.paa"};
 	};
 
-	// ADVANCED COMBAT HELMET MEDIC
+	// ADVANCED COMBAT HELMET MEDIC -- DEPRECATED
 	class adfrc_Helmet_Medic_Black: adfrc_Helmet_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Black]";
+		scope = 1;
+		displayName = "ACH Medic [Black]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Black_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_Desert: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Desert]";
+		scope = 1;
+		displayName = "ACH Medic [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_Grass: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Grass]";
+		scope = 1;
+		displayName = "ACH Medic [Grass]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Grass_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_Sand: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Sand]";
+		scope = 1;
+		displayName = "ACH Medic [Sand]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Sand_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_Snake: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Snake]";
+		scope = 1;
+		displayName = "ACH Medic [Snake]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Snake_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_CamInk: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Dipped]";
+		scope = 1;
+		displayName = "ACH Medic [Dipped]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_CamInk_M_co.paa"};
 	};
 	class adfrc_Helmet_Medic_Cam: adfrc_Helmet_Medic_Black
 	{
-		scope = 2;
-		displayName = "ADF ACH Medic [Paint]";
+		scope = 1;
+		displayName = "ACH Medic [Paint]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Cam_M_co.paa"};
 	};
@@ -1233,42 +1121,42 @@ class CfgWeapons
 	class adfrc_ECH_Desert: H_HelmetB
 	{
 		scope = 2;
-		displayName = "ADF ECH [Desert]";
+		displayName = "ECH [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_co.paa"};
 	};
 	class adfrc_ECH_Grass: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH [Grass]";
+		displayName = "ECH [Grass]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Grass_co.paa"};
 	};
 	class adfrc_ECH_Sand: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH [Sand]";
+		displayName = "ECH [Sand]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Sand_co.paa"};
 	};
 	class adfrc_ECH_Snake: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH [Snake]";
+		displayName = "ECH [Snake]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Snake_co.paa"};
 	};
 	class adfrc_ECH_CamInk: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH [Dipped]";
+		displayName = "ECH [Dipped]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_CamInk_co.paa"};
 	};
 	class adfrc_ECH_Cam: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH [Paint]";
+		displayName = "ECH [Paint]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Cam_co.paa"};
 	};
@@ -1304,7 +1192,7 @@ class CfgWeapons
 	class adfrc_ECH_MEDIC_Desert: adfrc_ECH_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Desert]";
+		displayName = "ECH Medic [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_M_co.paa"};
 		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
@@ -1319,42 +1207,42 @@ class CfgWeapons
 	class adfrc_ECH_MEDIC_Grass: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Grass]";
+		displayName = "ECH Medic [Grass]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Grass_M_co.paa"};
 	};
 	class adfrc_ECH_MEDIC_Sand: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Sand]";
+		displayName = "ECH Medic [Sand]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Sand_M_co.paa"};
 	};
 	class adfrc_ECH_MEDIC_Snake: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Snake]";
+		displayName = "ECH Medic [Snake]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Snake_M_co.paa"};
 	};
 	class adfrc_ECH_MEDIC_CamInk: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Dipped]";
+		displayName = "ECH Medic [Dipped]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_CamInk_M_co.paa"};
 	};
 	class adfrc_ECH_MEDIC_Cam: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [Paint]";
+		displayName = "ECH Medic [Paint]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Cam_M_co.paa"};
 	};
 	class adfrc_ECH_MEDIC_dpcu: adfrc_ECH_MEDIC_Desert
 	{
 		scope = 2;
-		displayName = "ADF ECH Medic [DPCU]";
+		displayName = "ECH Medic [DPCU]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_dpcu_M_co.paa"};
 	};
@@ -1388,7 +1276,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
-		displayName = "ADF Opscore AirFrame [OD]";
+		displayName = "Opscore AirFrame [OD]";
 		picture = "";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af.p3d";
 		hiddenSelections[] = {};
@@ -1418,7 +1306,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
-		displayName = "ADF Opscore AirFrame (Cover) [MCAM]";
+		displayName = "Opscore AirFrame (Cover) [MCAM]";
 		picture = "";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
 		hiddenSelections[] = {};
@@ -1447,7 +1335,7 @@ class CfgWeapons
 		weaponPoolAvailable = 1;
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
-		displayName = "ADF Opscore AirFrame (Cover) [AMCU]";
+		displayName = "Opscore AirFrame (Cover) [AMC]";
 		picture = "";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
 		hiddenSelections[] = {"cover"};
@@ -1471,5 +1359,35 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+	
+	// OPSCORE FAST XP
+	class adfrc_opscore_fast_xp: ItemCore
+	{
+		author="Exer";
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "Opscore Fast XP (Cover) [AMC]";
+		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		model = "ADF_Gear\adfrc_helmets\opscore.p3d";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[] = {};
+			class ItemInfo: HeadgearItem
+			{
+				mass = 10;
+				uniformModel = "ADF_Gear\adfrc_helmets\opscore.p3d";
+				modelSides[] = {"TCivilian","TWest"};
+				hiddenSelections[] = {};
+				hiddenSelectionsTextures[] = {};
+				class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitPointName = "HitHead";
+						armor = 15;
+						passThrough = 0.75;
+					};
+				};
+			};
 	};
 };
