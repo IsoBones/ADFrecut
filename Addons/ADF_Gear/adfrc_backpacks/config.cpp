@@ -1100,5 +1100,62 @@ class CfgVehicles{
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "rt1523g_radio_dialog";
 		tf_subtype = "digital_lr";
-    };  
+    };
+// MOLLE BACKPACKS
+	class Backpack_Base;
+	class adfrc_molle_bag_117g: ReammoBox
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		class TransportMagazines {};
+		class TransportWeapons{};
+		reversed = 1;
+		displayName = "ADF Molle Backpack [117g]";
+		vehicleClass = Backpacks;
+		mapSize = 2;
+		isbackpack = 1;
+		allowedSlots[] = {901};
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_117g.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class adfrc_molle_bag_117g_slingshot: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "ADF Molle Backpack [117g Slingshot]";
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_117g_slingshot.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
+	class adfrc_molle_bag_ASIP: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "ADF Molle Backpack [ASIP]";
+		picture = "";
+		model = "ADF_Gear\adfrc_backpacks\molle_asip.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+	};
 };
