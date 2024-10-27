@@ -59,6 +59,8 @@ class CfgWeapons
 	
 	////Bipods/Grips
 	#include "Grip_pod\Grippod.HPP"
+	#include "ATLAS\atlas.HPP"
+	#include "AI_Bipod\AI.HPP"
 	
 	
 };
