@@ -177,6 +177,7 @@ class cfgWeapons
 	#include "EXPS3\EXPS3.hpp"
 	#include "DPP\DPP.hpp"
 	#include "Spectr\Spectr.hpp"
+	#include "TA31\TA31.hpp"
 	class ADFRC_swarovski_optic: ItemCore
 	{
 		scope=2;
@@ -304,7 +305,7 @@ class cfgWeapons
 	};
 	class ADFRC_acog_ta648: ItemCore
 	{
-		scope=2;
+		scope=1;
 		displayName="ACOG TA648 (Black)";
 		author="$STR_ADF_AUTHOR";
 		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_ca.paa";
@@ -423,83 +424,22 @@ class cfgWeapons
 		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_rds_tan_ca.paa";
 		model="\ADF_Weapons\adfrc_optics\optic_acog_ta648_rds_tan.p3d";
 	};
-	class ADFRC_acog_ta31: ItemCore
+	/// Original ACOGs
+	class ADFRC_acog_ta31 : ADFRC_TA31_BLK
 	{
-		scope=2;
-		displayName="ACOG TA31 (Black)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta31_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta31.p3d";
-		descriptionShort="4x Combat Optic &lt;br /&gt; Trijicon Advanced Combat Optical Gunsight";
-		weaponInfoType="RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass=4;
-			RMBhint="Adjustable Range Optics";
-			opticType=1;
-			optics=1;
-			modelOptics="\A3\Weapons_f_beta\acc\reticle_MRCO_F";
-			memoryPointCamera="opticView";
-			class OpticsModes
-			{
-				class ACOG4x
-				{
-					opticsID=1;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera5",
-						"OpticsBlur5"
-					};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					opticsZoomMin=0.2175;
-					opticsZoomMax=0.16500001;
-					opticsZoomInit=0.1825;
-					memoryPointCamera="opticView";
-					discretedistance[]={100,200,300,400,500,600};
-					discreteDistanceInitIndex=2;
-					visionMode[]={};
-					distanceZoomMin=100;
-					distanceZoomMax=100;
-				};
-				class IronSight
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsPPEffects[]=
-					{
-						""
-					};
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					distanceZoomMin=100;
-					distanceZoomMax=100;
-				};
-			};
-		};
+		scope=1;
 	};
 	
-	class ADFRC_acog_ta31_RDS: ADFRC_acog_ta31
+	class ADFRC_acog_ta31_RDS: ADFRC_TA31_RMR_BLK
 	{
-		scope=2;
-		displayName="ACOG TA31 (RMR)";
+		scope=1;
 	};
 	
-	class ADFRC_acog_ta31_t: ADFRC_acog_ta31
+	class ADFRC_acog_ta31_t: ADFRC_TA31_FDE
 	{
-		scope=2;
-		displayName="ACOG TA31 (TAN)";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta31_tan_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta31_tan.p3d";
+		scope=1;
 	};
-	class ADFRC_eotech552: ADFRC_acog_ta31
+	class ADFRC_eotech552: ADFRC_acog_ta648
 	{
 		scope=2;
 		displayName="EOTech 552";

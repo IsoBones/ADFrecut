@@ -37,6 +37,16 @@ class CowsSlot;
 class PointerSlot;
 class asdg_OpticRail1913;
 class CowsSlot_ADFRC_Styer;
+//////////////////////////////////class asdg_SlotInfo;
+class asdg_FrontSideRail;
+class asdg_OpticRail;
+class asdg_OpticRail1913;
+class asdg_OpticRail1913_short;
+class asdg_OpticRail1913_long;
+class asdg_MuzzleSlot;
+class asdg_MuzzleSlot_762: asdg_MuzzleSlot {};
+class asdg_MuzzleSlot_556: asdg_MuzzleSlot {};
+class asdg_UnderSlot;
 class CfgWeapons
 {
 	class Rifle;
@@ -254,7 +264,7 @@ class CfgWeapons
 		{
 			mass=60;
 			allowedSlots[]={901};
-			class MuzzleSlot: SlotInfo
+			class MuzzleSlot: asdg_MuzzleSlot_556
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]=
@@ -264,7 +274,7 @@ class CfgWeapons
 					"ADFRC_f88_muzzle_snds_tan"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot: asdg_FrontSideRail
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
@@ -273,7 +283,7 @@ class CfgWeapons
 					"ADFRC_F88SA1_light"
 				};
 			};
-			class CowsSlot: CowsSlot_ADFRC_Styer
+			class CowsSlot: asdg_OpticRail1913
 			{
 			};
 		};

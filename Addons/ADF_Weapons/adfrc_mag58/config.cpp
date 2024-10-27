@@ -31,6 +31,16 @@ class CowsSlot;
 class PointerSlot;
 class MuzzleSlot;
 class CowsSlot_ADFRC_MG;
+//////////////////////////////////class asdg_SlotInfo;
+class asdg_FrontSideRail;
+class asdg_OpticRail;
+class asdg_OpticRail1913;
+class asdg_OpticRail1913_short;
+class asdg_OpticRail1913_long;
+class asdg_MuzzleSlot;
+class asdg_MuzzleSlot_762: asdg_MuzzleSlot {};
+class asdg_MuzzleSlot_556: asdg_MuzzleSlot {};
+class asdg_UnderSlot;
 class CfgWeapons
 {
 	class SlotInfo;
@@ -73,7 +83,7 @@ class CfgWeapons
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
-			"\ADF_Weapons\adfrc_mag58\anim\mag58_1.rtm"
+			"\ADF_Weapons\ADFRC_minimi\anim\f89.rtm"
 		};
 		reloadAction="GestureReloadM200";
 		soundBipodDeploy[]=
@@ -108,17 +118,17 @@ class CfgWeapons
 		{
 			mass=60;
 			allowedSlots[]={901};
-			class MuzzleSlot: SlotInfo
+			class MuzzleSlot: asdg_MuzzleSlot_762
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]={};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot: asdg_FrontSideRail 
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]={};
 			};
-			class CowsSlot: CowsSlot_ADFRC_MG
+			class CowsSlot: asdg_OpticRail1913
 			{
 			};
 		};

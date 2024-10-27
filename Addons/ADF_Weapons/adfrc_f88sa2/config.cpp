@@ -44,6 +44,16 @@ class SlotInfo;
 class CowsSlot;
 class PointerSlot;
 class CowsSlot_ADFRC_Styer;
+//////////////////////////////////class asdg_SlotInfo;
+class asdg_FrontSideRail;
+class asdg_OpticRail;
+class asdg_OpticRail1913;
+class asdg_OpticRail1913_short;
+class asdg_OpticRail1913_long;
+class asdg_MuzzleSlot;
+class asdg_MuzzleSlot_762: asdg_MuzzleSlot {};
+class asdg_MuzzleSlot_556: asdg_MuzzleSlot {};
+class asdg_UnderSlot;
 class CfgWeapons
 {
 	class UGL_F;
@@ -72,7 +82,7 @@ class CfgWeapons
 		descriptionShort="5.56mm Bull-pup Assault Rifle";
 		class WeaponSlotsInfo
 		{
-			class MuzzleSlot: SlotInfo
+			class MuzzleSlot: asdg_MuzzleSlot_556
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]=
@@ -81,7 +91,7 @@ class CfgWeapons
 					"ADFRC_f88_muzzle_snds_tan"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot: asdg_FrontSideRail
 			{
 				scope=2;
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
@@ -93,7 +103,7 @@ class CfgWeapons
 					"ADFRC_f88sa2_laser_tan"
 				};
 			};
-			class CowsSlot: CowsSlot_ADFRC_Styer
+			class CowsSlot: asdg_OpticRail1913
 			{
 			};
 		};

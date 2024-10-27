@@ -38,7 +38,7 @@ class CfgPatches
 			"ADFRC_150Rnd_762_Belt",
 			"ADFRC_150Rnd_762_Belt_TR",
 			"ADFRC_150Rnd_762_Belt_TR5",
-			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_10Rnd_9x19_Mag",
 			"ADFRC_15rnd_9MM_BALL_G19",
 			"ADFRC_15rnd_9MM_FRANGE_G19"
 		};
