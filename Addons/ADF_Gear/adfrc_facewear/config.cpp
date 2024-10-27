@@ -260,6 +260,44 @@ class CfgGlasses
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_facewear\data\shemagh_cbr_co.paa",""};
 	};
 	
+	//ESS and Balacalvas
+	class adfrc_facewear_Bala_rgr_ess_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "ESS/Balaclava (AMCU)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo3","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_amcu_co.paa"};
+	};
+	class adfrc_facewear_Bala_BLK_ess_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "ESS/Balaclava (Black)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo3","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_co.paa",""};
+	};
+	class adfrc_facewear_Bala_cbr_ess_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "ESS/Balaclava (Tan)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo3","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_tan_co.paa",""};
+	};
+	
 	//Gatorz Magnum
 	class adfrc_facewear_gatorz_1: None
 	{
@@ -310,5 +348,43 @@ class CfgGlasses
 		mass = 1;
 		hiddenSelections[] = {"camo1","camo2","camo4"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_facewear\data\shemagh_cbr_co.paa",""};
+	};
+	
+	//Gatorz and Balacalvas
+	class adfrc_facewear_Bala_rgr_gatorz_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Gatorz/Balaclava (AMCU)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo2","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_amcu_co.paa"};
+	};
+	class adfrc_facewear_Bala_BLK_gatorz_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Gatorz/Balaclava (Black)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo2","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_co.paa",""};
+	};
+	class adfrc_facewear_Bala_cbr_gatorz_1: None
+	{
+		scope = 2;
+		author = "Exer | ADF Re-Cut";
+		displayname = "Gatorz/Balaclava (Tan)";
+		model = "ADF_Gear\adfrc_facewear\facewear2.p3d";
+		picture = "ADF_Gear\adfrc_facewear\icons\ess_crossbow_CA.paa";
+		identityTypes[] = {};
+		mass = 1;
+		hiddenSelections[] = {"camo1","camo2","camo4"};
+		hiddenSelectionsTextures[] = {"adf_gear\adfrc_facewear\data\balaclava_1_tan_co.paa",""};
 	};
 };//cfgGlasses

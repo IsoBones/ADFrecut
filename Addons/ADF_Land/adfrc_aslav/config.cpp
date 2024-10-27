@@ -128,6 +128,7 @@ class CfgVehicles
 		class HitPoints
 		{
 			class HitHull;
+			class HitBody;
 			class HitEngine;
 			class HitFuel;
 			class HitSLAT_Left_1;
