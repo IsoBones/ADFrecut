@@ -11,7 +11,7 @@ class CfgVehicles
             "NoGlasses"
         };
 		side=1;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		vehicleClass="";
     };
 	class adfrc_OPFOR_Soldier_base_F: B_Soldier_base_F
