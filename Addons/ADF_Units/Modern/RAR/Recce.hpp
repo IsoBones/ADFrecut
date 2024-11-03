@@ -14,14 +14,14 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		backpack = "ADFRC_BP_Hydration_AMCU_1";
 		weapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Rangefinder",
 			"Throw",
@@ -102,14 +102,14 @@
 		cost=250000;
 		backpack = "adfrc_molle_bag_ASIP";
 		weapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Laserdesignator",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Laserdesignator",
 			"Throw",
@@ -199,13 +199,13 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack = "ADFRC_BP_TacBag_AMCU_1";
 		weapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_EF88_Recce_Base",
+			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -286,13 +286,13 @@
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack = "ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"ADFRC_minimi",
+			"ADFRC_minimi_elcan",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_minimi",
+			"ADFRC_minimi_elcan",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -426,8 +426,8 @@
 	class ADFRC_MD_AMCU_Recon_Sniper: ADFRC_MD_AMCU_Sniper_Temperate_Base{
 		displayName="Sniper (SR-98)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_Recon_Sniper.jpg";
 		role="Marksman";
 		cost=250000;

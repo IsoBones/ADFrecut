@@ -83,12 +83,12 @@ class ADFRC_MD_AMCU_Soldier_Light: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		//backpack="ADFRC_AssaultPack_AMCU";
 		weapons[]={
-			"arifle_AUG_Specter_F",
+			"arifle_AUG_black_arco_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_Specter_F",
+			"arifle_AUG_black_arco_F",
 			"Throw",
 			"Put"
 		};
@@ -566,13 +566,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
-			"arifle_AUG_Specter_F",
+			"arifle_AUG_black_arco_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_Specter_F",
+			"arifle_AUG_black_arco_F",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -1855,7 +1855,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		role="Rifleman";
 		threat[]={0.70000001,0.1,0.1};
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
-		backpack="ADFRC_BP_Assault_AMCU_1";
+		///backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"arifle_AUG_C_Specter_black_flash_F", 
 			"ADFRC_hpII", 

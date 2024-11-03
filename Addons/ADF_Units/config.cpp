@@ -24,3 +24,12 @@ class CfgVehicles{
 	#include "Modern/SASR/TAG.hpp"
 	#include "Modern/Backpacks.hpp"
 };
+
+class cfgGroups
+{  
+  class WEST
+  {
+    name="BLUFOR";
+	#include "Modern/RAR/Groups.hpp"
+};
+};
