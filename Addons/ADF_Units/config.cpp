@@ -1,7 +1,7 @@
 class CfgPatches{
 	class ADF_Units{
 		name="ADF_Units";
-		author=$STR_ADF_AUTHOR;
+		author="ADFRC Team";
 		requiredAddons[]={
 			"A3_Data_F",
 			"ADF_Core",
@@ -12,6 +12,7 @@ class CfgPatches{
 		//fileName = "ADF_Units.pbo";
 	};
 };
+
 class CfgVehicles{
 	#include "Modern/RAR/Infantry.hpp"
 	#include "Modern/RAR/Recce.hpp"

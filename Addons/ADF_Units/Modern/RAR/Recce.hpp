@@ -70,7 +70,7 @@
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_Scout",
+			"ADFRC_TBAS_T0_AMCU_Rifleman",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -81,7 +81,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_Scout",
+			"ADFRC_TBAS_T0_AMCU_Rifleman",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -135,7 +135,7 @@
 			"Chemlight_blue", 
 			"Chemlight_blue",
 			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+			"ADFRC_F1_GRENADE",
 			"Laserbatteries"
 		};
 		respawnMagazines[]={
@@ -158,13 +158,13 @@
 			"Chemlight_blue", 
 			"Chemlight_blue",
 			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+			"ADFRC_F1_GRENADE",
 			"Laserbatteries"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_TL",
+			"ADFRC_TBAS_T0_AMCU_TL",
 			"adfrc_facewear_Balaclava_olv_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -175,7 +175,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_TL",
+			"ADFRC_TBAS_T0_AMCU_TL",
 			"adfrc_facewear_Balaclava_olv_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -253,7 +253,7 @@
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "Medikit"};
 		linkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_Medic",
+			"ADFRC_TBAS_T0_AMCU_CFA",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -264,7 +264,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_Scout",
+			"ADFRC_TBAS_T0_AMCU_CFA",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce",
 			"ItemMap",
@@ -326,7 +326,7 @@
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_LMG",
+			"ADFRC_TBAS_T0_AMCU_LMG",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce_recce",
 			"ItemMap",
@@ -336,7 +336,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_boonie",
-			"ADFRC_TBAS_T2_Scout",
+			"ADFRC_TBAS_T0_AMCU_LMG",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36_recce_recce",
 			"ItemMap",
@@ -406,7 +406,7 @@
 		};
 		linkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_SR25",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -415,7 +415,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_SR25",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -481,7 +481,7 @@
 		};
 		linkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_SR98",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -490,7 +490,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_SR98",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -556,7 +556,7 @@
 		};
 		linkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_Tac2",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -565,7 +565,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_Tac2",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -632,7 +632,7 @@
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_AW50F",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
@@ -641,7 +641,7 @@
 		};
 		respawnLinkedItems[]={
 			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
+			"ADFRC_TBAS_T0_AMCU_S_AW50F",
 			"adfrc_facewear_ESS_1",
 			"ItemMap",
 			"ItemCompass",
