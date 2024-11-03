@@ -35,8 +35,6 @@ class Mode_FullAuto;
 class SlotInfo;
 class CowsSlot;
 class PointerSlot;
-class asdg_OpticRail1913;
-class CowsSlot_ADFRC_Styer;
 //////////////////////////////////class asdg_SlotInfo;
 class asdg_FrontSideRail;
 class asdg_OpticRail;

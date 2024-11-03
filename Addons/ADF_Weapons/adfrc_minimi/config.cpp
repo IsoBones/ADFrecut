@@ -25,7 +25,6 @@ class ItemCore;
 class SlotInfo;
 class CowsSlot;
 class PointerSlot;
-class CowsSlot_ADFRC;
 //////////////////////////////////class asdg_SlotInfo;
 class asdg_FrontSideRail;
 class asdg_OpticRail;
