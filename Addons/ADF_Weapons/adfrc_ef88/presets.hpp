@@ -342,6 +342,11 @@ class arifle_AUG_C_Specter_black_flash_F: arifle_AUG_C_black_F
 			slot = PointerSlot;
 			item = ADFRC_WMLx_BLK_R_WL;
 		};
+		class LinkItemsUnder
+		{
+			slot = "UnderBarrelSlot";
+			item = "ADFRC_Grippod";
+		};
 	};
 };
 
