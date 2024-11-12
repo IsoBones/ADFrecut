@@ -2062,9 +2062,17 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
 		side=1;
 		scope=2;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		vehicleClass="Armored";
 		crew="adfrc_crewman_amcu";
 		typicalCargo[]={};
+	};
+	class adfrc_m1a1aim_GWOT: adfrc_m1a1aim
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_m1a1aim_PCW: adfrc_m1a1aim
+	{
+		faction = "ADFRC_F_PCW";
 	};
 };
