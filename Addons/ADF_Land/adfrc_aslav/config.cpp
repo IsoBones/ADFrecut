@@ -207,7 +207,7 @@ class CfgVehicles
 		side= 1;
 		displayName ="ASLAV";
 		author ="ADF Re-Cut";
-		faction ="ADF";
+		faction ="ADFRC_F_MD";
 		vehicleClass ="Armoured";
 		armor = 225;
 		_generalMacro ="ADFRC_ASLAV_base_F";
@@ -1759,12 +1759,12 @@ class CfgVehicles
 		displayName ="ASLAV-25";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
-		faction ="ADF";
+		faction ="ADFRC_F_MD";
 		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_aslav.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_crewman_dpcu";
+		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
 		textureList[] = {Worn,1};
 		hiddenSelectionsTextures[]=
 		{
@@ -1790,7 +1790,7 @@ class CfgVehicles
 			"turret_jerrys", 0.3
 		};	
 	};
-	class ADFRC_ASLAV_UN: ADFRC_ASLAV_base_F
+	class ADFRC_ASLAV_UN: ADFRC_ASLAV_base_F//---------------------------------------------------------------------------------------------------------------- ASLAV 25 UN VERSION
 	{
 		scope= 2;
 		scopeCurator= 2;
@@ -1798,12 +1798,12 @@ class CfgVehicles
 		displayName ="ASLAV-25 (UN Peacekeeping)";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
-		faction ="ADF";
+		faction ="ADFRC_F_PCW";
 		editorPreview = "\ADF_Land\adfrc_aslav\preview\ADFRC_ASLAV_UN.jpg";
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_crewman_dpcu";
+		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
 		textureList[] = {UN,1};
 		hiddenSelectionsTextures[]=
 		{
@@ -1842,7 +1842,7 @@ class CfgVehicles
 		displayName ="ASLAV-PC";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
-		faction ="ADF";
+		faction ="ADFRC_F_MD";
 		LODDriverTurnedOut=1000;
 		LODDriverTurnedin=1100;
 		driverAction="driver_apcwheeled2_out";
@@ -1853,7 +1853,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_crewman_dpcu";
+		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
 		smokeLauncherVelocity=14;
@@ -2360,7 +2360,7 @@ class CfgVehicles
 		displayName ="ASLAV-PC RWS";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
-		faction ="ADF";
+		faction ="ADFRC_F_MD";
 		LODDriverTurnedOut=1000;
 		LODDriverTurnedin=1100;
 		driverAction="driver_apcwheeled2_out";
@@ -2371,7 +2371,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_RWS";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpcrws.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_crewman_dpcu";
+		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
 		viewGunnerInExternal = 0;
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
@@ -2607,7 +2607,7 @@ class CfgVehicles
 		displayName ="ASLAV-PC MAG58";
 		vehicleClass="Armoured";
 		author="$STR_ADF_AUTHOR";
-		faction ="ADF";
+		faction ="ADFRC_F_MD";
 		LODDriverTurnedOut=1000;
 		LODDriverTurnedin=1100;
 		driverAction="driver_apcwheeled2_out";
@@ -2618,7 +2618,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_MAG58";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_crewman_dpcu";
+		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
 		smokeLauncherVelocity=14;
@@ -3088,6 +3088,23 @@ class CfgVehicles
 				hitpoint = "HitRMWheel";
 			};
 		};
+	};
+//////////////////////////// GWOT FACTION VERSIONS ONLY ////////////////////////////  PLEASE CHANGE CREWMAN TO BE DPDU/DPCU WHEN WE INTEGRATE
+	class ADFRC_ASLAV_GWOT: ADFRC_ASLAV
+	{
+		faction ="ADFRC_F_GWOT";
+	};
+	class ADFRC_ASLAV_PC_GWOT: ADFRC_ASLAV_PC
+	{
+		faction ="ADFRC_F_GWOT";
+	};
+	class ADFRC_ASLAV_PC_RWS_GWOT: ADFRC_ASLAV_PC_RWS
+	{
+		faction ="ADFRC_F_GWOT";
+	};
+	class ADFRC_ASLAV_PC_MAG58_GWOT: ADFRC_ASLAV_PC_MAG58
+	{
+		faction ="ADFRC_F_GWOT";
 	};
 };
 class CfgSoundShaders
