@@ -1764,7 +1764,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
+		crew = "ADFRC_crewman_dpcu";
 		textureList[] = {Worn,1};
 		hiddenSelectionsTextures[]=
 		{
@@ -1803,7 +1803,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_25";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslav25.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
+		crew = "ADFRC_crewman_dpcu";
 		textureList[] = {UN,1};
 		hiddenSelectionsTextures[]=
 		{
@@ -1853,7 +1853,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
+		crew = "ADFRC_crewman_dpcu";
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
 		smokeLauncherVelocity=14;
@@ -2371,7 +2371,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_RWS";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpcrws.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
+		crew = "ADFRC_crewman_dpcu";
 		viewGunnerInExternal = 0;
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
@@ -2618,7 +2618,7 @@ class CfgVehicles
 		model = "\ADF_Land\adfrc_aslav\ADFRC_ASLAV_PC_MAG58";
 		picture = "\ADF_Land\adfrc_aslav\data\UI\aslavpc.paa";
 		Icon = "\ADF_Land\adfrc_aslav\data\UI\Icon_aslav_CA.paa";
-		crew = "ADFRC_MD_AMCU_Soldier_Crewman";
+		crew = "ADFRC_crewman_dpcu";
 		transportSoldier=7;
 		smokeLauncherGrenadeCount=4;
 		smokeLauncherVelocity=14;
@@ -3089,7 +3089,7 @@ class CfgVehicles
 			};
 		};
 	};
-//////////////////////////// GWOT FACTION VERSIONS ONLY ////////////////////////////  PLEASE CHANGE CREWMAN TO BE DPDU/DPCU WHEN WE INTEGRATE
+//////////////////////////// GWOT  VERSIONS ////////////////////////////
 	class ADFRC_ASLAV_GWOT: ADFRC_ASLAV
 	{
 		faction ="ADFRC_F_GWOT";
@@ -3105,6 +3105,19 @@ class CfgVehicles
 	class ADFRC_ASLAV_PC_MAG58_GWOT: ADFRC_ASLAV_PC_MAG58
 	{
 		faction ="ADFRC_F_GWOT";
+	};
+//////////////////////////// PCW   VERSIONS ////////////////////////////
+	class ADFRC_ASLAV_PCW: ADFRC_ASLAV
+	{
+		faction ="ADFRC_F_PCW";
+	};
+	class ADFRC_ASLAV_PC_PCW: ADFRC_ASLAV_PC
+	{
+		faction ="ADFRC_F_PCW";
+	};
+	class ADFRC_ASLAV_PC_MAG58_PCW: ADFRC_ASLAV_PC_MAG58
+	{
+		faction ="ADFRC_F_PCW";
 	};
 };
 class CfgSoundShaders
