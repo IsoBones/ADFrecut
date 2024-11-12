@@ -76,7 +76,7 @@ class CfgVehicles
 		vehicleClass="Car";
 		picture="\bma3\bma3_bushmaster_data\ui\bushmaster_picture_ca.paa";
 		author="P1NGA | ADF Re-Cut";
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		side=1;
 		size=10;
 		accuracy=0.25;
@@ -2420,6 +2420,57 @@ class CfgVehicles
 			0.5
 		};
 	};
+	//////////////////////// GLOBAL WAR ON TERROR ////////////////////////
+	class adfrc_bushmaster_unarmed_F_GWOT: adfrc_bushmaster_unarmed_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_bushmaster_unarmed_ecm_F_GWOT: adfrc_bushmaster_unarmed_ecm_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_bushmaster_unarmed_command_F_GWOT: adfrc_bushmaster_unarmed_command_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_bushmaster_pws127mm_F_GWOT: adfrc_bushmaster_pws127mm_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_bushmaster_pws127mm_ecm_F_GWOT: adfrc_bushmaster_pws127mm_ecm_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class adfrc_bushmaster_unarmed_mev_F_GWOT: adfrc_bushmaster_unarmed_mev_F
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	//////////////////////// POST COLD-WAR ////////////////////////
+	class adfrc_bushmaster_unarmed_F_PCW: adfrc_bushmaster_unarmed_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_bushmaster_unarmed_ecm_F_PCW: adfrc_bushmaster_unarmed_ecm_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_bushmaster_unarmed_command_F_PCW: adfrc_bushmaster_unarmed_command_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_bushmaster_pws127mm_F_PCW: adfrc_bushmaster_pws127mm_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_bushmaster_pws127mm_ecm_F_PCW: adfrc_bushmaster_pws127mm_ecm_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class adfrc_bushmaster_unarmed_mev_F_PCW: adfrc_bushmaster_unarmed_mev_F
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	///////////////////////////////////////////////////////////////
 };
 class cfgMagazines
 {
