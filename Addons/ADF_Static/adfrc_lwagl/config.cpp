@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class adfrc_lwagl
 	{
+		addonRootClass = "ADF_Static";
 		units[]=
 		{
 			"ADFRC_lwagl"

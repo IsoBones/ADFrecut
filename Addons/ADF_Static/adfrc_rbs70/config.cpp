@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class adfrc_rbs70
 	{
+		addonRootClass = "ADF_Static";
 		units[]=
 		{
 			"ADFRC_rbs70"
