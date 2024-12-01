@@ -1,0 +1,24 @@
+class rhs_ammo_flechettes_m1028: rhs_ammo_flechettes
+	{
+		hit = 7;
+		indirectHit = 4.2;
+		indirectHitRange = 1.75;
+		typicalSpeed = 1000;
+		airFriction = -0.00045;
+	};
+	
+	class rhs_ammo_M1028: rhs_ammo_M1069
+	{
+		simulation = "shotSubmunitions";
+		submunitionAmmo="rhs_ammo_flechettes_m1028";
+		//real life round has 1150 tungusten balls
+		submunitionConeType[]=
+		{
+			"randomcenter",
+			143
+		};
+		submunitionConeAngle="0.009 * 120";
+		triggerTime=0.01;
+	};
+	class rhs_ammo_M829: Sh_120mm_APFSDS //1985
+	{
