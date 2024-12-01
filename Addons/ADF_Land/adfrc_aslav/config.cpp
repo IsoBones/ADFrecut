@@ -3106,7 +3106,7 @@ class CfgVehicles
 	{
 		faction ="ADFRC_F_GWOT";
 	};
-//////////////////////////// GWOT  VERSIONS ////////////////////////////
+//////////////////////////// PCW  VERSIONS ////////////////////////////
 	class ADFRC_ASLAV_PCW: ADFRC_ASLAV
 	{
 		faction ="ADFRC_F_PCW";

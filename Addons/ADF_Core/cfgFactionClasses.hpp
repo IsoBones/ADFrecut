@@ -8,7 +8,7 @@ class cfgFactionClasses
 		priority=1;
 		side=1;
 	};
-	class ADFRC_F_GWOT
+		class ADFRC_F_GWOT
 	{
 		displayName="ADF (Global War on Terror)";
 		flag="\ADF_Core\data\ADF_flag_co.paa";

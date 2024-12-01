@@ -25,7 +25,7 @@ class CfgVehicles
 	class FLAG_NATO_F;
 	class FLAG_UNCUT_F: FLAG_NATO_F
 	{
-		scope=2;
+		scope=1;
 		displayName="$STR_adfrc_MARKER_UNCUT";
 		class eventHandlers
 		{
