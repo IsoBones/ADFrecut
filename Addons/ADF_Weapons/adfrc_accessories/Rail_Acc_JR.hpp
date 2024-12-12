@@ -11,6 +11,7 @@ class asdg_PistolUnderRail: asdg_SlotInfo {
 class compatibleItems {
 ADFRC_X400_Laser = 1;
 ADFRC_X400_Light = 1;
+ADFRC_F9_FOXTROT2 = 1;
 };
 };
 
