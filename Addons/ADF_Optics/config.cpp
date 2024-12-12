@@ -176,6 +176,7 @@ class cfgWeapons
 	#include "T2\T2.hpp"
 	#include "EXPS3\EXPS3.hpp"
 	#include "DPP\DPP.hpp"
+	#include "Romeo2\Romeo2.hpp"
 	#include "Spectr\Spectr.hpp"
 	#include "TA31\TA31.hpp"
 	class ADFRC_swarovski_optic: ItemCore

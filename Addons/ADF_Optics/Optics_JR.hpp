@@ -121,5 +121,6 @@ class compatibleItems {
 class asdg_PistolOpticMount: asdg_OpticRail {
 class compatibleItems {
 ADFRC_DPP = 1;
+ADFRC_F9_Romeo2 = 1;
 };
 };
