@@ -75,7 +75,7 @@
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
             {};
-            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
             {};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
