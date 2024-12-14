@@ -15,14 +15,14 @@
 		backpack = "ADFRC_BP_Hydration_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Rangefinder",
 			"Throw",
 			"Put"
@@ -103,14 +103,14 @@
 		backpack = "adfrc_molle_bag_ASIP";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Laserdesignator",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Laserdesignator",
 			"Throw",
 			"Put"
@@ -200,13 +200,13 @@
 		backpack = "ADFRC_BP_TacBag_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -287,13 +287,13 @@
 		backpack = "ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"ADFRC_minimi_elcan",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"ADFRC_minimi_elcan",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -360,13 +360,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -435,13 +435,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -510,13 +510,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -585,13 +585,13 @@
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};

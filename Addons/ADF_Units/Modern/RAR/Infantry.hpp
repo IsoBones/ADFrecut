@@ -142,13 +142,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_BP_Placeholder_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -224,13 +224,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"arifle_AUG_GL_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_GL_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -567,13 +567,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
 			"arifle_AUG_black_arco_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -643,13 +643,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="adfrc_molle_bag_117g_slingshot";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -719,13 +719,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -819,13 +819,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -925,14 +925,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_BP_Placeholder_AMCU_1";
 		weapons[]={
 			"ADFRC_hk417_DMR",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Binocular",
 			"Put"
 		};
 		respawnWeapons[]={
 			"ADFRC_hk417_DMR",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Binocular",
 			"Put"
@@ -1108,7 +1108,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		weapons[]={
 			"arifle_AUG_C_Specter_black_flash_F",
 			"ADFRC_carlgustav_m3",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -1116,7 +1116,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		{
 			"arifle_AUG_C_Specter_black_flash_F",
 			"ADFRC_carlgustav_m3",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -1204,14 +1204,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
 			"launch_NLAW_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
 			"launch_NLAW_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -1858,14 +1858,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		///backpack="ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
 			"arifle_AUG_C_Specter_black_flash_F", 
-			"ADFRC_hpII", 
+			"ADFRC_HP_MK3", 
 			"Throw", 
 			"Put",
 			"Rangefinder"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_C_Specter_black_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put",
 			"Rangefinder"
@@ -2204,13 +2204,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="ADFRC_CarryAll_AMCU";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -2363,13 +2363,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//backpack="";
 		weapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
@@ -2822,13 +2822,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		backpack="B_UAV_01_backpack_F";
 		weapons[]={
 			"arifle_AUG_C_Specter_black_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_C_Specter_black_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_HP_MK3",
 			"Throw",
 			"Put"
 		};
