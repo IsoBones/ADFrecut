@@ -183,18 +183,17 @@ class cfgWeapons
 	{
 		scope=2;
 		displayName="Swarovski CQB Optic";
-		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_swarovski_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_swarovski.p3d";
+		author="Quiggs & Brucey";
+		picture="\ADF_Optics\Swaro\ui\SMAV_CA.paa";
+		model="\ADF_Optics\Swaro\ADFRC_SWAV.p3d";
 		descriptionShort="1.5x Swarovski Rifle Optic &lt;br/&gt; Rail Mounted AUG A1 Optics";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
-			opticType=2;
 			mass=10;
 			weaponInfoType="RscWeaponRangeZeroingFOV";
+			modelOptics = "\A3\Weapons_F\empty";
 			optics=1;
-			modelOptics="\ADF_Weapons\adfrc_optics\optic_swarovski_2d.p3d";
 			class OpticsModes
 			{
 				class Snip
@@ -248,8 +247,8 @@ class cfgWeapons
 		scope=2;
 		displayName="Elcan C79";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_elcan_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_elcan_c79.p3d";
+		picture="\ADF_Optics\ui\optic_elcan_ca.paa";
+		model="\ADF_Optics\optic_elcan_c79.p3d";
 		descriptionShort="3.4x Battle Sight &lt;br/&gt; SpecterOS3.4x";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -309,8 +308,8 @@ class cfgWeapons
 		scope=1;
 		displayName="ACOG TA648 (Black)";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta648.p3d";
+		picture="\ADF_Optics\ui\optic_ta648_ca.paa";
+		model="\ADF_Optics\optic_acog_ta648.p3d";
 		descriptionShort="6x Marksman Optic &lt;br /&gt; Trijicon Advanced Combat Optical Gunsight";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -352,8 +351,8 @@ class cfgWeapons
 		scope=2;
 		displayName="ACOG TA648 + RDS (Black)";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_rds_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta648_rds.p3d";
+		picture="\ADF_Optics\ui\optic_ta648_rds_ca.paa";
+		model="\ADF_Optics\optic_acog_ta648_rds.p3d";
 		descriptionShort="6x Marksman Optic + Red Dot Sight &lt;br /&gt; Trijicon Advanced Combat Optical Gunsight";
 		weaponInfoType="RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -414,16 +413,16 @@ class cfgWeapons
 		scope=2;
 		displayName="ACOG TA648 (Tan)";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_tan_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta648_tan.p3d";
+		picture="\ADF_Optics\ui\optic_ta648_tan_ca.paa";
+		model="\ADF_Optics\optic_acog_ta648_tan.p3d";
 	};
 	class ADFRC_acog_ta648_rds_t: ADFRC_acog_ta648_rds
 	{
 		scope=2;
 		displayName="ACOG TA648 + RDS (Tan)";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_ta648_rds_tan_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_acog_ta648_rds_tan.p3d";
+		picture="\ADF_Optics\ui\optic_ta648_rds_tan_ca.paa";
+		model="\ADF_Optics\optic_acog_ta648_rds_tan.p3d";
 	};
 	/// Original ACOGs
 	class ADFRC_acog_ta31 : ADFRC_TA31_BLK
@@ -445,8 +444,8 @@ class cfgWeapons
 		scope=2;
 		displayName="EOTech 552";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_eotech552_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_eotech_552.p3d";
+		picture="\ADF_Optics\ui\optic_eotech552_ca.paa";
+		model="\ADF_Optics\optic_eotech_552.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br/&gt; No Magnification CQB Optic";
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
@@ -484,8 +483,8 @@ class cfgWeapons
 		scope=2;
 		displayName="EOTech 552 + 3x Magnifier";
 		author="$STR_ADF_AUTHOR";
-		picture="\ADF_Weapons\adfrc_optics\ui\optic_eotech552_3x_ca.paa";
-		model="\ADF_Weapons\adfrc_optics\optic_eotech_552_3XDown.p3d";
+		picture="\ADF_Optics\ui\optic_eotech552_3x_ca.paa";
+		model="\ADF_Optics\optic_eotech_552_3XDown.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br /&gt; Flip Down Magnifier";
 		
         MRT_SwitchItemNextClass = "ADFRC_eotech552_3XUP";
@@ -527,7 +526,7 @@ class cfgWeapons
 		scope=2;
 		displayName="EOTech 552 + 3x Magnifier";
 		author="$STR_ADF_AUTHOR";
-		model="\ADF_Weapons\adfrc_optics\optic_eotech_552_3XUp.p3d";
+		model="\ADF_Optics\optic_eotech_552_3XUp.p3d";
 		descriptionShort="Holographic Weapon Sight &lt;br /&gt; Flip Down Magnifier";
 		
         MRT_SwitchItemNextClass = "ADFRC_eotech552_3XDOWN";
