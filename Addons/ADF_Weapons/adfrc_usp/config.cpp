@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class ADFRC_USP
+	class ADF_USP
 	{
 		units[] = {};
 		weapons[] = {"ADFRC_USP"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ADF_Core","ADF_G19","ADFRC_Weapons_Tags"};
+		requiredAddons[] = {"ADF_Core","ADFRC_Weapons_Tags"};
 		fileName = "ADF_USP.pbo";
 	};
 };
@@ -28,6 +28,7 @@ class asdg_PistolUnderRail;
 class recoil_default;
 class Mode_SemiAuto;
 class compatibleItems;
+
 class cfgweapons{
 #include "USP.hpp"
 };

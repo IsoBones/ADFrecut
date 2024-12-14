@@ -1,4 +1,4 @@
-class Pistol_Base_F;
+	class Pistol_Base_F;
 	class ADFRC_USP_Base : Pistol_Base_F
     {
 		author = "Brucey";
@@ -84,7 +84,7 @@ class Pistol_Base_F;
 };
 };
 
-class ADFRC_USP : ADFRC_USP_Base
+class ADFRC_USP_9MM : ADFRC_USP_Base
 	{
 		author = "Brucey";
 		ACE_barrelTwist = 254;
@@ -101,7 +101,7 @@ class ADFRC_USP : ADFRC_USP_Base
 		scopeArsenal = 2;
 		picture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
 		UiPicture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
-		displayName = "HK USP 9mm";
+		displayName = "HK USP TAC 9mm";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;
 		opticszoominit = 0.75;
