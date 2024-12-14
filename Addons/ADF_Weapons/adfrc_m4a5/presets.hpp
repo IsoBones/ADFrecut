@@ -525,7 +525,7 @@ class ADFRC_WP_M4A5_KAC_NFS_ACOG_RD_PEQ: ADFRC_M4A5_KAC_NOFS_556
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// M4A5 TROY Alpha 10.5 (2010/2020s era) 
+// M4A5 TROY Alpha 10.5 (2010/2020s era) TAN RAIL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Eotech WL
 class ADFRC_WP_M4A5_Troy_10_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10
@@ -716,7 +716,7 @@ class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Troy_556_10
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// M4A5 TROY Alpha 14.5 (2010/2020s era) 
+// M4A5 TROY Alpha 14.5 (2010/2020s era)  TAN RAIL
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Eotech WL
 class ADFRC_WP_M4A5_Troy_14_EXPS3_WMLx: ADFRC_M4A5_Troy_556_14
@@ -976,6 +976,483 @@ class ADFRC_WP_M4A5_Troy_14_Specter_PEQ: ADFRC_M4A5_Troy_556_14
 };
 
 class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ: ADFRC_M4A5_Troy_556_14
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_CDO_KF;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// M4A5 TROY Alpha 10.5 (2010/2020s era) BLACK RAIL
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Eotech WL
+class ADFRC_M4A5_Troy_556_10_BLK_EXPS3_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_M4A5_Troy_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+//Eotech Peq
+class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+///////////////////////////////////////////////////////
+//Aimpoint WL
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_10_BLK_T2M_WMLx: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+//Aimpoint Peq
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_10_BLK_T2M_PEQ: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// M4A5 TROY Alpha 14.5 (2010/2020s era)  BLACK RAIL
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Eotech WL
+class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3M_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+//Eotech Peq
+class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3_PEQ: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_EXPS3_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+///////////////////////////////////////////////////////
+//Aimpoint WL
+class ADFRC_WP_M4A5_Troy_14_BLK_T2_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_T2M_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+//Aimpoint Peq
+class ADFRC_WP_M4A5_Troy_14_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_T2M_PEQ: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2_Down;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+///////////////////////////////////////////////////////
+//Elcan WL
+class ADFRC_WP_M4A5_Troy_14_BLK_Specter_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_CDO;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_SpecterKF_WMLx: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_CDO_KF;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+//Elcan Peq
+class ADFRC_WP_M4A5_Troy_14_BLK_Specter_PEQ: ADFRC_M4A5_Troy_556_14_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_CDO;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Troy_14_BLK_SpecterKF_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 {
 	author = "Brucey";
 	class LinkedItems
