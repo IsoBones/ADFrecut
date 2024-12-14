@@ -10,10 +10,9 @@ class Pistol_Base_F;
 		recoilProne = "recoil_pistol_p07";
 		magazineReloadSwitchPhase = 0.4;
 		selectionFireAnim = "zasleh";
-		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\reload_ACPC2",1.0,1,30};
         swayDecaySpeed = 1.25;
 		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.330957, 1, 80};
-		ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+		ace_overheating_mrbs = 5500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
         ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
         ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
         ace_overheating_dispersion = 0.25; 
@@ -106,6 +105,10 @@ class Pistol_Base_F;
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
+		
+		reloadAction = "MPP_Fast_Reload";
+		reloadSound[] = {"ADF_Weapons\core\animsounds\MPP_Fast_Reload.ogg",2,1,30};
+		reloadMagazineSound[] = {"ADF_Weapons\core\animsounds\MPP_Fast_Reload.ogg",2,1,30};
 		
 		class WeaponSlotsInfo {
 			mass = 13.125;
