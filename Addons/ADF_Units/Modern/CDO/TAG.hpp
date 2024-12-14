@@ -4,8 +4,8 @@
 	class ADFRC_MD_TAG_CDO_F: ADFRC_MD_Green_TAGE_Rolled_Base{
 		displayName="Operator";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\Green_TAG_F.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
@@ -78,8 +78,8 @@
 	class ADFRC_MD_TAG_CDO_CQB: ADFRC_MD_Green_TAGE_Rolled_Base{
 		displayName="Operator (CQB)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\Green_TAG_CQB.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
@@ -152,8 +152,8 @@
 	class ADFRC_MD_TAG_CDO_TL: ADFRC_MD_Green_TAGE_Rolled_Base{
 		displayName="Team Leader";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\Green_TAG_TL.jpg";
 		icon="iconManLeader";
 		role="Rifleman";
@@ -228,8 +228,8 @@
 	class ADFRC_MD_TAG_CDO_CFA: ADFRC_MD_Green_TAGE_Rolled_Base{
 		displayName="Combat First Aider";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\Green_TAG_CFA.jpg";
 		icon="iconManMedic";
 		role="CombatLifeSaver";
@@ -306,8 +306,8 @@
 	class ADFRC_MD_TAG_CDO_EOD: ADFRC_MD_Green_TAGE_Rolled_Base{
 		displayName="Operator (EOD)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\Green_TAG_EOD.jpg";
 		icon="iconManExplosive";
 		role="Sapper";

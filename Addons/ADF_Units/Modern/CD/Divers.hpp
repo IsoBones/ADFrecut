@@ -3,8 +3,8 @@
 	class ADFRC_MD_MTS_CD_Diver_F: ADFRC_MD_MTS_CD_Diver_Base{
 		displayName="Diver";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MTS_CD_Diver_F.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
@@ -77,8 +77,8 @@
 	class ADFRC_MD_MTS_CD_Diver_CQB: ADFRC_MD_MTS_CD_Diver_Base{
 		displayName="Diver (CQB)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MTS_CD_Diver_CQB.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
@@ -151,8 +151,8 @@
 	class ADFRC_MD_MTS_CD_Diver_TL: ADFRC_MD_MTS_CD_Diver_Base{
 		displayName="Dive Team Leader";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MTS_CD_Diver_TL.jpg";
 		icon="iconManLeader";
 		role="Rifleman";
@@ -227,8 +227,8 @@
 	class ADFRC_MD_MTS_CD_Diver_CFA: ADFRC_MD_MTS_CD_Diver_Base{
 		displayName="Diver (CFA)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MTS_CD_Diver_CFA.jpg";
 		icon="iconManMedic";
 		role="CombatLifeSaver";
@@ -305,8 +305,8 @@
 	class ADFRC_MD_MTS_CD_Diver_EOD: ADFRC_MD_MTS_CD_Diver_Base{
 		displayName="Diver (EOD)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MTS_CD_Diver_EOD.jpg";
 		icon="iconManExplosive";
 		role="Sapper";
