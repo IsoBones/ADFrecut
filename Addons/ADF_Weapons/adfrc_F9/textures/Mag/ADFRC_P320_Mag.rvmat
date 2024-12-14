@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-	texture = "ADF_Weapons\adfrc_F9\textures\Mag\ADFRC_P320_Mag_BLK_CO.paa";
+	texture = "ADF_Weapons\adfrc_F9\textures\Mag\ADFRC_P320_Mag_FDE_CO.paa";
 	useWorldEnvMap = "true";
 	uvSource = "tex";
 	class uvTransform

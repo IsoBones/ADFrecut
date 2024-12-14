@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class ADF_F9
+	class ADFRC_F9
 	{
 		units[] = {};
 		weapons[] = {"ADFRC_F9","ADFRC_F9_SWS"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ADF_Core","ADF_G19"};
+		requiredAddons[] = {"ADF_Core","ADF_G19","ADFRC_Weapons_Tags"};
 		fileName = "ADF_F9_SWS.pbo";
 	};
 };
@@ -28,6 +28,8 @@ class asdg_PistolUnderRail;
 class recoil_default;
 class Mode_SemiAuto;
 class compatibleItems;
+
 class cfgweapons{
+class ADFRC_G19_Base;
 #include "F9.hpp"
 };
