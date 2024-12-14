@@ -6,7 +6,7 @@ class ADFRC_17rnd_9MM_BALL_F9 : 16Rnd_9x21_Mag {
 			modelSpecialIsProxy = 1;
 			displayname = "Sig F9 17rd 9mm NATO Ball";
 			lastroundstracer = 0;
-			picture = "ADF_Weapons\adfrc_F9\data\ui\Gear_ADFRC_P320_Mag_FDE.paa";
+			picture = "ADF_Weapons\adfrc_F9\data\ui\Gear_ADFRC_P320_Mag_FDE_ca.paa";
 			scope = 2;
 			tracersevery = 0;
 			mass = 4.15;

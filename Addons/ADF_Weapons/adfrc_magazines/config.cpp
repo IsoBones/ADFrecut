@@ -588,19 +588,10 @@ class CfgMagazines
 		type= 256;
 	};
 	
-	class ADFRC_13Rnd_9x19_Mag: 16Rnd_9x21_Mag
-	{
-		scope= 2;
-		scopeArsenal= 2;
-		displayName= "13 Round 9x19 Browning";
-		displayNameShort= "13 Rnd 9mm";
-		descriptionShort="Calibre: 9x19 mm<br/>Rounds: 13<br/>Used in: Browning High Power MKII";
-		count= 13;
-		type= 256;
-	};
-	
 #include "G19_Magazines.hpp"
 #include "F9_Magazines.hpp"
+#include "BHP_Magazines.hpp"
+#include "USP_Magazines.hpp"
 };
 
 class CfgMagazineWells
@@ -627,6 +618,17 @@ class CfgMagazineWells
 		};
 	};
 	
+	class CBA_9x19_USP
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+			"ADFRC_15rnd_9MM_BALL_USP",
+			"ADFRC_15rnd_9MM_FRANGE_USP"
+		};
+	};
+	
 	class CBA_9x19_HiPower
 	{
 		// Magazines listed by mod
@@ -634,6 +636,7 @@ class CfgMagazineWells
 		ADFRC_Magazines[] =
 		{
 			"ADFRC_13Rnd_9x19_Mag",
+			"ADFRC_13Rnd_9x19_FRANGE_Mag",
 			"ADFRC_10Rnd_9x19_Mag"
 		};
 	};
