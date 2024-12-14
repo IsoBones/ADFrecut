@@ -1,16 +1,15 @@
 class Pistol_Base_F;
-	class ADFRC_G19_Base : Pistol_Base_F
+	class ADFRC_USP_Base : Pistol_Base_F
     {
 		author = "Brucey";
         scope = protected;
 		muzzleend = "konec hlavne"; //Muzzle end
 		muzzlepos = "usti hlavne";
-        maxRecoilSway = 0.0125;
+        maxRecoilSway = 0.0115;
 		recoil = "recoil_pistol_p07";
 		recoilProne = "recoil_pistol_p07";
 		magazineReloadSwitchPhase = 0.4;
 		selectionFireAnim = "zasleh";
-		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Acpc2\reload_ACPC2",1.0,1,30};
         swayDecaySpeed = 1.25;
 		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.330957, 1, 80};
 		ace_overheating_mrbs = 3000; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
@@ -48,7 +47,11 @@ class Pistol_Base_F;
                soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
 			   
 			   modes[] = {"single"};
-			   inertia = 0.15;
+			   inertia = 0.75;	
+		
+		reloadAction = "MPP_Fast_Reload";
+		reloadSound[] = {"ADF_Weapons\core\animsounds\MPP_Fast_Reload.ogg",2,1,30};
+		reloadMagazineSound[] = {"ADF_Weapons\core\animsounds\MPP_Fast_Reload.ogg",2,1,30};
 			   
 			class Single : Mode_SemiAuto
 		{
@@ -59,46 +62,46 @@ class Pistol_Base_F;
             };
 			class StandardSound : BaseSoundModeType
 			{
-				soundSetShot[] = {"P07_Shot_SoundSet","P07_Tail_SoundSet","P07_InteriorTail_SoundSet"};
+				soundSetShot[] = {"4Five_Shot_SoundSet","P07_Tail_SoundSet","P07_InteriorTail_SoundSet"};
 			};
 			class SilencedSound : BaseSoundModeType
 			{
-				SoundSetShot[] = {"P07_silencerShot_SoundSet","P07_silencerTail_SoundSet","P07_silencerInteriorTail_SoundSet"};
+				SoundSetShot[] = {"4Five_silencerShot_SoundSet","P07_silencerTail_SoundSet","P07_silencerInteriorTail_SoundSet"};
 			};
 						
 			canshootinwater = 1;
 			aiDispersionCoefY = 10;
 			aiDispersionCoefX = 8;
-			reloadTime = 0.1;
-			dispersion = 0.0025;
+			reloadTime = 0.12;
+			dispersion = 0.0029;
 			maxrange = 100;
 			maxrangeprobab = 0.05;
 			midrange = 50;
 			midrangeprobab = 0.7;
 			minrange = 1;
 			minrangeprobab = 0.3;
-            airateoffire = 50;
+            airateoffire = 40;
 };
 };
 
-	class ADFRC_G19_G5_MOS_9 : ADFRC_G19_Base
+class ADFRC_USP : ADFRC_USP_Base
 	{
 		author = "Brucey";
-		ACE_barrelTwist = 250;
-		ACE_barrelLength = 102;
+		ACE_barrelTwist = 254;
+		ACE_barrelLength = 124;
 		magazines[] = {
-			"ADFRC_15rnd_9MM_BALL_G19"
+			"ADFRC_15rnd_9MM_BALL_USP"
 		};
-		magazineWell[] = {"CBA_9x19_Glock_Cpct","CBA_9x19_Glock_Full"};
-		model = "ADF_Weapons\adfrc_g19\G19";
-		descriptionShort = "Glock 19 <br/> Gen5 MOS<br/>Caliber: 9MM";
-		inertia = 0.75;
+		magazineWell[] = {"CBA_9x19_USP"};
+		model = "ADF_Weapons\ADFRC_USP\ADFRC_USP";
+		descriptionShort = "HK <br/> USP <br/>Caliber: 9MM";
+		inertia = 0.9;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19";
-		UiPicture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_PreviewUI";
-		displayName = "Glock 19 Gen 5 MOS";
+		picture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
+		UiPicture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
+		displayName = "HK USP 9mm";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;
 		opticszoominit = 0.75;
@@ -108,80 +111,11 @@ class Pistol_Base_F;
 		aiDispersionCoefX = 8;
 		
 		class WeaponSlotsInfo {
-			mass = 13.125;
+			mass = 16.875;
 			allowedSlots[] = {901};
-            class MuzzleSlot : asdg_MuzzleSlot_9MM
-           {
-	iconPinpoint="center";
-	iconPosition[] = {0.148,0.328};
-	iconScale  = 0.34;
-	iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-};
-            class CowsSlot : asdg_PistolOpticMount //Top / optic slot
-            {
-	iconPinpoint="center";
-	iconPosition[] = {0.65,0.25};
-	iconScale  = 0.07;
-	iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-};
-            class PointerSlot : asdg_PistolUnderRail //side slot
-          {
-	iconPinpoint="center";
-	iconPosition[] = {0.396,0.516};
-	iconScale  = 0.25;
-	iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
-};
-        };
-		 
 		class Library
 		{
-			libTextDesc = "G19 9mm";
-		};
-	};
-	
-
-class ADFRC_WP_G19_FK_Comp: ADFRC_G19_G5_MOS_9
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_DPP;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = ADFRC_X400_Light;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_Zev;
-		};
-	};
-};
-
-class ADFRC_WP_G19_FK_SUP: ADFRC_G19_G5_MOS_9
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_DPP;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = ADFRC_X400_Light;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_Ryder9;
+			libTextDesc = "HK USP";
 		};
 	};
 };
