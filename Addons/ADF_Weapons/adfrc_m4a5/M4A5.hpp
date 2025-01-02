@@ -182,6 +182,16 @@ class ADFRC_M4A5_Troy_556_14_BLK: ADFRC_M4A5_Troy_556_14
 		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
 		};
 	};
+
+class ADFRC_M4A5_Combo_556_14_BLK: ADFRC_M4A5_Troy_556_14
+	{
+		displayName = "M4A5 5.56MM Troy Rail 14.5 'Combo' (Black)";
+		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
+		hiddenSelections[] = { "CamoTroy" };
+		hiddenSelectionsTextures[] = { 
+		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
+		};
+	};
 	
 class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 	{
@@ -233,6 +243,16 @@ class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 class ADFRC_M4A5_Troy_556_10_BLK: ADFRC_M4A5_Troy_556_10
 	{
 		displayName = "M4A5 5.56MM Troy Rail 10.5 (Black)";
+		hiddenSelections[] = { "CamoTroy" };
+		hiddenSelectionsTextures[] = { 
+		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
+		};
+	};
+	
+class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_Troy_556_10
+	{
+		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (Black)";
+		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
