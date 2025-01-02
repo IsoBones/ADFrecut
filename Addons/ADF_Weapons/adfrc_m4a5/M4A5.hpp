@@ -75,7 +75,7 @@
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
             {};
-            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            class CowsSlot : asdg_OpticRail1913_Long //Top / optic slot
             {};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
@@ -154,19 +154,6 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		opticszoommin = 0.375;
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
-		
-		   class WeaponSlotsInfo {
-			mass = 65;
-			allowedSlots[] = {901};
-            class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
-            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
-			 class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
-            class PointerSlot : asdg_FrontSideRail //side slot
-            {};
-        };
 		 
 		class Library
 		{
@@ -221,18 +208,6 @@ class ADFRC_M4A5_Troy_556_10: ADFRC_M4A5_556_Base
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 8;
 		
-		   class WeaponSlotsInfo {
-			mass = 55;
-			allowedSlots[] = {901};
-            class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
-            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
-			 class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
-            class PointerSlot : asdg_FrontSideRail //side slot
-            {};
-        };
 		 
 		class Library
 		{
@@ -289,19 +264,6 @@ class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
 			"ADFRC_30Rnd_STANAG"
 		};
 		
-		   class WeaponSlotsInfo {
-			mass = 55;
-			allowedSlots[] = {901};
-            class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
-            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
-			 class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
-            class PointerSlot : asdg_FrontSideRail //side slot
-            {};
-        };
-		 
 		class Library
 		{
 			libTextDesc = "M4A5 5.56MM 14.5";
@@ -338,18 +300,6 @@ class ADFRC_M4A5_KAC_NOFS_556: ADFRC_M4A5_556_Base
 			"ADFRC_30Rnd_STANAG"
 		};
 		
-		   class WeaponSlotsInfo {
-			mass = 55;
-			allowedSlots[] = {901};
-            class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
-            class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
-			 class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
-            class PointerSlot : asdg_FrontSideRail //side slot
-            {};
-        };
 		 
 		class Library
 		{
