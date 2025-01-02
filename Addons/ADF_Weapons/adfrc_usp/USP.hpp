@@ -32,7 +32,7 @@
         descriptionShort = "Handgun <br/>Caliber: 9mm";
 
 
-        bullet1[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_01", 0.501187, 1, 15};
+				bullet1[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_01", 0.501187, 1, 15};
                bullet2[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_02", 0.501187, 1, 15};
                bullet3[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_03", 0.501187, 1, 15};
                bullet4[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_04", 0.501187, 1, 15};
@@ -127,7 +127,7 @@ class ADFRC_USP_9MM : ADFRC_USP_Base
 	iconScale  = 0.25;
 	iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 };
-        };
+
 		class Library
 		{
 			libTextDesc = "HK USP";
