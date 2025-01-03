@@ -9,71 +9,84 @@
 		scopeCurator=2;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_F.jpg";
 		role="Rifleman";
-		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		//backpack="ADFRC_Kitbag_AMCU";
+		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat	
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_WMLx_NOSUP",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_WMLx_NOSUP",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
-		magazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+	    magazines[] = {
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"Chemlight_Blue", 
+		"Chemlight_Blue", 
+		"ADFRC_F1_Grenade", 
+		"SmokeShellYellow", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG_IR", 
+		"ADFRC_30Rnd_PMAG_IR", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_TR", 
+		"ADFRC_30Rnd_PMAG_TR", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade" 
 		};
+
 		respawnMagazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+			"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"Chemlight_Blue", 
+		"Chemlight_Blue", 
+		"ADFRC_F1_Grenade", 
+		"SmokeShellYellow", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG_IR", 
+		"ADFRC_30Rnd_PMAG_IR", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_mixed", 
+		"ADFRC_30Rnd_PMAG_TR", 
+		"ADFRC_30Rnd_PMAG_TR", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade" 
 		};
+		items[] = {"FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Operator",
+			"adfrc_facewear_Balaclava_tan_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Operator",
+			"adfrc_facewear_Balaclava_tan_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 	};
 	class ADFRC_MD_AMCU_CDO_CQB: ADFRC_MD_AMCU_CDO_Base{
@@ -84,72 +97,158 @@
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_CQB.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		//backpack="ADFRC_Kitbag_AMCU";
+		backpack = "ADFRC_BP_Assault_AMCU_1";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_Combo_10_BLK_T2_PEQ",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_Combo_10_BLK_T2_PEQ",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
-		magazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+	    magazines[] = {
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"Chemlight_Blue", 
+		"Chemlight_Blue", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",   
+		"ADFRC_F1_Grenade",  
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade" 
 		};
+
 		respawnMagazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"Chemlight_Blue", 
+		"Chemlight_Blue", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",   
+		"ADFRC_F1_Grenade",  
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_F1_Grenade"  
 		};
+		items[] = {"FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Commando_CQB",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Commando_CQB",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 	};
+	
+class ADFRC_MD_AMCU_CDO_Light: ADFRC_MD_AMCU_CDO_Tee_Base{
+		displayName="Commando (Light)";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		scopeCurator=2;
+		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_CQB.jpg";
+		role="Rifleman";
+		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
+		weapons[]={
+			"ADFRC_WP_M4A5_Troy_14_EXPS3M",
+			"ADFRC_WP_USP_WL",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]={
+			"ADFRC_WP_M4A5_Troy_14_EXPS3M",
+			"ADFRC_WP_USP_WL",
+			"Throw",
+			"Put"
+		};
+	    magazines[] = {
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG"  
+		};
+
+		respawnMagazines[]={
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG" 
+		};
+		items[] = {"FirstAidKit", "FirstAidKit"};
+		linkedItems[]={
+			"adfrc_cap_tan",
+			"ADFRC_TBAS_T5_PatrolCom",
+			"adfrc_facewear_Balaclava_tan_2",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS"
+		};
+		respawnLinkedItems[]={
+			"adfrc_cap_tan",
+			"ADFRC_TBAS_T5_PatrolCom",
+			"adfrc_facewear_Balaclava_tan_2",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS"
+		};
+	};
+	
+	//////GRENADIER TO BE REVISITED
 	class ADFRC_MD_AMCU_CDO_Grenadier: ADFRC_MD_AMCU_CDO_Base{
 		displayName="Grenadier";
 		author="$STR_ADF_AUTHOR";
