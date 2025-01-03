@@ -713,6 +713,24 @@ class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Troy_556_10
 	};
 };
 
+class ADFRC_WP_M4A5_Troy_10_T2_PEQ_CQB: ADFRC_M4A5_Troy_556_10
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+	};
+};
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1012,6 +1030,34 @@ class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ: ADFRC_M4A5_Troy_556_14
 	};
 };
 
+class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ_Atlas: ADFRC_M4A5_Troy_556_14
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Specter_CDO_KF;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_SOCOM_556;
+		};
+		class LinkedItemsUnder
+		{
+			slot = UnderBarrelSlot;
+			item = ADFRC_Atlas_BT10;
+		};
+	};
+};
+
 
 
 
@@ -1177,6 +1223,25 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_10_BLK
 		{
 			slot = MuzzleSlot;
 			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+//Aimpoint Peq
+class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ_CQB: ADFRC_M4A5_Troy_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = acc_pointer_IR;
 		};
 	};
 };
@@ -1606,6 +1671,24 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		{
 			slot = MuzzleSlot;
 			item = ADFRC_SOCOM_556;
+		};
+	};
+};
+
+class ADFRC_WP_M4A5_Combo_10_BLK_T2_WMLx_NoSup: ADFRC_M4A5_Combo_556_10_BLK
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_MicroT2;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_WMLx_BLK_R_WL;
 		};
 	};
 };
