@@ -134,3 +134,35 @@ class ADFRC_USP_9MM : ADFRC_USP_Base
 		};
 	};
 };
+
+
+class ADFRC_WP_USP_WL: ADFRC_USP_9MM
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_X400_Light;
+		};
+	};
+};
+
+class ADFRC_WP_USP_WL_SUP: ADFRC_USP_9MM
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_X400_Light;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = muzzle_snds_l;
+		};
+	};
+};
