@@ -661,12 +661,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - CFA";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_1.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_1.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -708,12 +708,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Team Leader";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_2.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_2.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -755,12 +755,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Machine Gunner";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_3.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_3.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -802,12 +802,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - DMR";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_5.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_5.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -849,12 +849,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Engineer";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_6.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_6.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -896,12 +896,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Grenadier";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_7.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_7.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -943,12 +943,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Breacher";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_8.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_8.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -990,12 +990,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Operator";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_9.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_9.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1037,12 +1037,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - CQB";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_10.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_10.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1084,12 +1084,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - Patrol Commander";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_11.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_11.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1131,12 +1131,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - TAG Operator";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1178,12 +1178,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - TAG Team Leader";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1225,12 +1225,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - TAG CFA";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_1.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
@@ -1272,12 +1272,12 @@ class cfgWeapons
 		allowedSlots[] = {901};
 		displayName = "TBAS T5 - TAG Breacher";
 		picture = "";
-		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+		model = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
 		class ItemInfo: VestItem
 		{
-			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_4.p3d";
+			uniformModel = "\ADF_Gear_2\adfrc_vests\TBAS_T5\TBAS_T5_Base.p3d";
 			containerClass = "Supply180";
 			mass = 60;
 			hiddenSelections[] = {};
