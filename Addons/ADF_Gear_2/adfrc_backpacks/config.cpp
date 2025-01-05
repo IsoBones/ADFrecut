@@ -1242,7 +1242,7 @@ class CfgVehicles{
 	
 	
 	/////TBAS T5 Backpanels
-	class adfrc_T5_Backpanels: adfrc_molle_bag_117g
+	class adfrc_T5_Backpanel: adfrc_molle_bag_117g
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -1257,5 +1257,19 @@ class CfgVehicles{
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "rt1523g_radio_dialog";
 		tf_subtype = "digital_lr";
+	};
+	
+	
+	/////JPC Backpanels
+	class adfrc_JPC_Backpanel: adfrc_molle_bag_117g
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		eden = 2;
+		displayName = "JPC Backpanel Base";
+		picture = "";
+		model = "ADF_Gear_2\adfrc_backpacks\JPC_Backpannel.p3d";
+		hiddenSelections[] = {""};
+		hiddenSelectionsTextures[] = {""};
 	};
 };
