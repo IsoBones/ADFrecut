@@ -25,7 +25,7 @@ class ADFRC_EXPS3 : ItemCore
 					opticsZoomInit = 0.75;
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
+					opticsDisablePeripherialVision = 1;
 					discreteDistance[] = {25,50,100,200,300,400};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
@@ -69,7 +69,7 @@ class ADFRC_EXPS3_Down : ADFRC_EXPS3
 					opticsZoomInit = 0.75;
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
+					opticsDisablePeripherialVision = 1;
 					discreteDistance[] = {25,50,100,200,300,400};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
@@ -113,7 +113,7 @@ class ADFRC_EXPS3_Up : ADFRC_EXPS3
 					opticsZoomInit = "0.25/3";
 					memoryPointCamera = "eye";
 					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
+					opticsDisablePeripherialVision = 1;
 					discreteDistance[] = {25,50,100,200,300,400};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
