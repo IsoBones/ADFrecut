@@ -24,6 +24,10 @@ ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
 ADFRC_swarovski_optic = 1;
+ADFRC_Aimpoint_Pro_S = 1;
+ADFRC_Aimpoint_Pro_T = 1;
+ADFRC_Aimpoint_Pro_S_FC = 1;
+ADFRC_Aimpoint_Pro_T_FC = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -61,6 +65,10 @@ ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
 ADFRC_swarovski_optic = 1;
+ADFRC_Aimpoint_Pro_S = 1;
+ADFRC_Aimpoint_Pro_T = 1;
+ADFRC_Aimpoint_Pro_S_FC = 1;
+ADFRC_Aimpoint_Pro_T_FC = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
@@ -98,6 +106,10 @@ ADFRC_TA31_KF_BLK = 1;
 ADFRC_TA31_KF_RMR_BLK = 1;
 ADFRC_TA31_KF_RMR_FDE = 1;
 ADFRC_swarovski_optic = 1;
+ADFRC_Aimpoint_Pro_S = 1;
+ADFRC_Aimpoint_Pro_T = 1;
+ADFRC_Aimpoint_Pro_S_FC = 1;
+ADFRC_Aimpoint_Pro_T_FC = 1;
 
 //Legacy
 ADFRC_acog_ta31 = 1;
