@@ -2,11 +2,10 @@ class CfgPatches
 {
 	class adfrc_redback
 	{
-		addonRootClass="ADF_Tracked";
+		addonRootClass="A3_Armor_F_EPB";
 		requiredAddons[]=
 		{
-			"A3_Armor_F_EPB",
-			"ADF_Core"
+			"A3_Armor_F_EPB"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -136,7 +135,7 @@ class CfgVehicles
 		simulation="tankX";
 		engineMOI=10;
 		enginePower=650;
-		peakTorque=3000;
+		peakTorque=3750;
 		torqueCurve[]=
 		{
 			{0.234615,0},
@@ -145,27 +144,25 @@ class CfgVehicles
 			{0.884615,0.72796899},
 			{1.26923,0}
 		};
-		thrustDelay=0.25;
+		thrustDelay=1;
 		dampingRateFullThrottle=0.30000001;
 		dampingRateZeroThrottleClutchEngaged=3;
 		dampingRateZeroThrottleClutchDisengaged=0.25;
 		fuelCapacity=24;
-		brakeIdleSpeed=0.3;
+		brakeIdleSpeed=0.2;
 		maxSpeed=70;
 		slowSpeedForwardCoef=0.40000001;
-		normalSpeedForwardCoef=0.70000002;
-		minOmega=100;
-		maxOmega=350;
+		normalSpeedForwardCoef=0.80000002;
+		maxOmega=450;
+		minOmega=150;
 		idleRpm=800;
-		redRpm=4000;
-		engineLosses=15;
-		transmissionLosses=15;
+		redRpm=5000;
 		antiRollbarForceCoef=15;
 		antiRollbarForceLimit=12;
 		antiRollbarSpeedMin=30;
 		antiRollbarSpeedMax=55;
-		clutchStrength=40;
-		latency=1.5;
+		clutchStrength=20;
+		latency=1;
 		switchTime=0;
 		changeGearType="rpmratio";
 		changeGearOmegaRatios[]={1,0.42424199,0.45454499,0.33333299,0.939394,0.42424199,0.909091,0.63636398,0.909091,0.66666698,1,0.66666698};
@@ -191,7 +188,7 @@ class CfgVehicles
 			TransmissionRatios[]=
 			{
 				"High",
-				8
+				7
 			};
 			gearBoxMode="auto";
 			moveOffGear=1;
@@ -200,12 +197,12 @@ class CfgVehicles
 			reverseString="R";
 			transmissionDelay=0;
 		};
-		tankTurnForce=600000;
-		tankTurnForceAngMinSpd=0.60000002;
-		tankTurnForceAngSpd=0.91000003;
-		accelAidForceCoef=3;
-		accelAidForceYOffset=-3.5;
-		accelAidForceSpd=3;
+		tankTurnForce=800000;
+		tankTurnForceAngMinSpd=0.1;
+		tankTurnForceAngSpd=0.8;
+		accelAidForceCoef=2;
+		accelAidForceYOffset=-1;
+		accelAidForceSpd=0.1;
 		class Wheels
 		{
 			class L2
@@ -218,19 +215,19 @@ class CfgVehicles
 				steering=0;
 				width=0.5;
 				mass=150;
-				MOI=10;
-				dampingRate=2150;
-				dampingRateInAir=2150;
+				MOI=8;
+				dampingRate=1800;
+				dampingRateInAir=2250;
 				dampingdamaged=10;
 				dampingRateDestroyed=3400;
 				maxDroop=0.18;
 				maxCompression=0.18;
 				sprungMass=4000;
-				springStrength=400000;
-				springDamperRate=60000;
-				maxBrakeTorque=10000;
+				springStrength=300000;
+				springDamperRate=25000;
+				maxBrakeTorque=6000;
 				latStiffX=2;
-				latStiffY=33;
+				latStiffY=35;
 				longitudinalStiffnessPerUnitGravity=10000;
 				frictionVsSlipGraph[]=
 				{
@@ -380,7 +377,7 @@ class CfgVehicles
 		waterResistance=3;
 		waterDamageEngine=0.1;
 		maxFordingDepth=-1.25;
-		wheelCircumference=1.95;
+		wheelCircumference=1.88;
 		tracksSpeed=-1.27;
 		driverAction="Driver_APC_tracked_03_cannon_F_out";
 		driverInAction="Driver_APC_tracked_03_cannon_F_in";
@@ -395,18 +392,21 @@ class CfgVehicles
 		LODDriverTurnedIn=1201;
 		LODDriverOpticsIn=1202;
 		driverForceOptics=1;
-		driverOpticsModel="\A3\weapons_f\reticle\optics_empty";
-		driverInfoPanelCameraPos="driverview_old";
+		driverOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
+		driverOpticsEffect[]={"TankGunnerOptics1","OpticsCHAbera1"};
+		unitInfoType="RscOptics_AV_driver";
 		class ViewOptics: ViewOptics
 		{
 			visionMode[]=
 			{
 				"Normal",
-				"NVG"
+				"NVG",
+				"Ti"
 			};
-			initFov=0.44999999;
-			minFov=0.23;
-			maxFov=0.44999999;
+			initFov=1;
+			minFov=0.15;
+			maxFov=1;
+			thermalMode[]={0,1,6};
 		};
 		class ViewPilot: ViewPilot
 		{
@@ -433,7 +433,7 @@ class CfgVehicles
 		armorLights=0.075000003;
 		crewExplosionProtection=0.99949998;
 		damageResistance=0.0054700002;
-		crewVulnerable=1;
+		crewVulnerable=0;
 		model="\ADF_Tracked\adfrc_redback\adfrc_redback.p3d";
 		picture="\A3\Armor_F_EPB\APC_Tracked_03\Data\UI\APC_Tracked_03_Base_ca.paa";
 		icon="\A3\Armor_F_EPB\APC_Tracked_03\Data\UI\map_APC_Tracked_03_CA.paa";
@@ -775,7 +775,7 @@ class CfgVehicles
 						gunnerGetInAction="GetInLow";
 						gunnerGetOutAction="GetOutLow";
 						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
-						gunnerOutOpticsModel="\A3\weapons_f\reticle\optics_empty";
+						gunnerOutOpticsModel="";
 						gunnerOpticsEffect[]={};
 						isPersonTurret=1;
 						personTurretAction="vehicle_turnout_1";
@@ -1049,12 +1049,12 @@ class CfgVehicles
 			class muzzle_rot
 			{
 				source="ammorandom";
-				weapon="autocannon_30mm";
+				weapon="ADFRC_redback_Mk44";
 			};
 			class muzzle_hide
 			{
 				source="reload";
-				weapon="autocannon_30mm";
+				weapon="ADFRC_redback_Mk44";
 			};
 			class HideTurret
 			{
@@ -1065,7 +1065,7 @@ class CfgVehicles
 			class autocannon_30mm_revolving
 			{
 				source="revolving";
-				weapon="autocannon_30mm";
+				weapon="ADFRC_redback_Mk44";
 			};
 			class Smoke_source
 			{
@@ -1217,124 +1217,6 @@ class CfgVehicles
 				};
 			};
 		};
-		class Library
-		{
-			libTextDesc="$STR_A3_CfgVehicles_APC_Tracked_03_base_F_Library0";
-		};
-		class TransportMagazines
-		{
-			class _xx_30Rnd_556x45_Stanag
-			{
-				magazine="30Rnd_556x45_Stanag";
-				count=24;
-			};
-			class _xx_200Rnd_65x39_cased_Box
-			{
-				magazine="200Rnd_65x39_cased_Box";
-				count=6;
-			};
-			class _xx_HandGrenade
-			{
-				magazine="HandGrenade";
-				count=6;
-			};
-			class _xx_MiniGrenade
-			{
-				magazine="MiniGrenade";
-				count=6;
-			};
-			class _xx_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=6;
-			};
-			class _xx_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _xx_1Rnd_SmokeGreen_Grenade_shell
-			{
-				magazine="1Rnd_SmokeGreen_Grenade_0shell";
-				count=3;
-			};
-			class _xx_1Rnd_SmokeOrange_Grenade_shell
-			{
-				magazine="1Rnd_SmokeOrange_Grenade_shell";
-				count=3;
-			};
-			class _xx_1Rnd_SmokePurple_Grenade_shell
-			{
-				magazine="1Rnd_SmokePurple_Grenade_shell";
-				count=3;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=8;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine="SmokeShellGreen";
-				count=8;
-			};
-			class _xx_SmokeShellOrange
-			{
-				magazine="SmokeShellOrange";
-				count=8;
-			};
-			class _xx_SmokeShellPurple
-			{
-				magazine="SmokeShellPurple";
-				count=8;
-			};
-			class _xx_NLAW_F
-			{
-				magazine="NLAW_F";
-				count=5;
-			};
-			class _xx_Titan_AT
-			{
-				magazine="Titan_AT";
-				count=2;
-			};
-			class _xx_Titan_AP
-			{
-				magazine="Titan_AP";
-				count=2;
-			};
-			class _xx_Titan_AA
-			{
-				magazine="Titan_AA";
-				count=2;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_FirstAidKit
-			{
-				name="FirstAidKit";
-				count=10;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_arifle_Mk20_F
-			{
-				weapon="arifle_Mk20_F";
-				count=2;
-			};
-			class _xx_LMG_Mk200_F
-			{
-				weapon="LMG_Mk200_F";
-				count=1;
-			};
-			class _xx_launch_NLAW_F
-			{
-				weapon="launch_NLAW_F";
-				count=1;
-			};
-		};
 	};
 	class adfrc_redback: adfrc_redback_base
 	{
@@ -1346,9 +1228,9 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
 		side=1;
 		scope=2;
-		faction="ADFRC_F_MD";
+		faction="ADF";
 		vehicleClass="Armored";
-		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		crew="adfrc_crewman_amcu";
 		typicalCargo[]=
 		{
 			"ADFRC_rifleman_amcu"

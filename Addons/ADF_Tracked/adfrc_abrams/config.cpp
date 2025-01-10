@@ -33,6 +33,32 @@ class CfgPatches
 		};
 	};
 };
+class CfgFunctions 
+{
+    class ADFRC
+    {
+        class Core 
+        {
+            class handleSmokeFired 
+            {
+				file = "ADF_Tracked\adfrc_abrams\Functions\fnc_handleSmokeFired.sqf";
+            };
+        };
+    };
+};
+class CfgSounds 
+{
+    class ADFRC_SmokeLauncher_Fire 
+	{
+        sound[] = {"ADF_Tracked\adfrc_abrams\sounds\ADFRC_smokelauncher_fire",5,1,200};
+        titles[] = {};
+    };
+    class ADFRC_SmokeLauncher_Explosion 
+	{
+        sound[] = {"ADF_Tracked\adfrc_abrams\sounds\ADFRC_smokelauncher_explosion",5,1,200};
+        titles[] = {};
+    };
+};
 #include "c_ammo.hpp"
 class DefaultEventHandlers;
 class WeaponFireGun;
@@ -104,7 +130,10 @@ class CfgVehicles
 			class Engine;
 			class Movement;
 		};
-		class EventHandlers;
+		class EventHandlers
+		{
+			fired = "if(local (_this select 0) && (toLower (_this select 2)) == ""adfrc_smokelauncher"") then { [_this select 0] call adfrc_fnc_handleSmokeFired; }"; 
+		};
 	};
 	class MBT_03_base_F: Tank_F {};
 	class I_MBT_03_base_F: MBT_03_base_F {};
@@ -178,8 +207,8 @@ class CfgVehicles
 			reverseString="R";
 		};
 		tankTurnForce=800000;
-		tankTurnForceAngMinSpd=0.25;
-		tankTurnForceAngSpd=0.8;
+		tankTurnForceAngMinSpd=0.1;
+		tankTurnForceAngSpd=1;
 		accelAidForceCoef=1;
 		accelAidForceYOffset=-1;
 		accelAidForceSpd=1;
@@ -203,7 +232,7 @@ class CfgVehicles
 				maxCompression=0.15;
 				sprungMass=4729;
 				springStrength=300000;
-				springDamperRate=20000;
+				springDamperRate=100000;
 				maxBrakeTorque=10000;
 				latStiffX=2;
 				latStiffY=33;
@@ -256,16 +285,12 @@ class CfgVehicles
 				boneName="wheel_podkolol9";
 				center="wheel_1_9_axis";
 				boundary="wheel_1_9_bound";
-				maxDroop=0.0099999998;
-				maxCompression=0.0099999998;
 			};
 			class L1: L2
 			{
 				boneName="";
 				center="wheel_1_1_axis";
 				boundary="wheel_1_1_bound";
-				maxDroop=0.0099999998;
-				maxCompression=0.0099999998;
 			};
 			class R2: L2
 			{
@@ -316,16 +341,12 @@ class CfgVehicles
 				boneName="wheel_podkolop9";
 				center="wheel_2_9_axis";
 				boundary="wheel_2_9_bound";
-				maxDroop=0.0099999998;
-				maxCompression=0.0099999998;
 			};
 			class R1: R2
 			{
 				boneName="";
 				center="wheel_2_1_axis";
 				boundary="wheel_2_1_bound";
-				maxDroop=0.0099999998;
-				maxCompression=0.0099999998;
 			};
 		};
 		editorSubcategory="EdSubcat_Tanks";
@@ -360,9 +381,9 @@ class CfgVehicles
 		waterResistance=3;
 		waterDamageEngine=0.1;
 		wheelCircumference=2.513;
-		tracksSpeed=1;
+		tracksSpeed=1.4;
 		forceHideDriver=0;
-		driverForceOptics=1;
+		driverForceOptics=0;
 		LODDriverOpticsIn=1202;
 		driverOpticsModel="ADF_Tracked\adfrc_abrams\Optics_Driver";
 		viewDriverInExternal=0;
@@ -480,10 +501,6 @@ class CfgVehicles
 				explosionShielding=0.80000001;
 				passThrough=0;
 			};
-		};
-		class EventHandlers: EventHandlers
-		{
-			init="";
 		};
 		class Exhausts
 		{
@@ -623,10 +640,9 @@ class CfgVehicles
 				};
 			};
 		};
-		smokeLauncherGrenadeCount=12;
+		smokeLauncherGrenadeCount=6;
 		smokeLauncherVelocity=14;
 		smokeLauncherOnTurret=1;
-		smokeLauncherAngle=120;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -657,7 +673,7 @@ class CfgVehicles
 						weapons[]=
 						{
 							"ADFRC_abrams_M2HBQCB",
-							"SmokeLauncher"
+							"ADFRC_SmokeLauncher"
 						};
 						magazines[]=
 						{
@@ -671,7 +687,7 @@ class CfgVehicles
 							"100Rnd_127x99_mag_Tracer_Red",
 							"100Rnd_127x99_mag_Tracer_Red",
 							"100Rnd_127x99_mag_Tracer_Red",
-							"SmokeLauncherMag"
+							"ADFRC_SmokeLauncherMag"
 						};
 						soundServo[]=
 						{
@@ -699,7 +715,7 @@ class CfgVehicles
 						gunnerOutOpticsColor[]={1,0,0,1};
 						gunnerOutOpticsModel="";
 						gunnerOpticsEffect[]={"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
-						gunnerForceOptics=1;
+						gunnerForceOptics=0;
 						usePip=2;
 						LODOpticsIn=0;
 						isPersonTurret=1;
@@ -833,7 +849,7 @@ class CfgVehicles
 				gunBeg="maingun_muzzle";
 				gunEnd="maingun_chamber";
 				selectionFireAnim="zasleh";
-				gunnerInAction="Gunner_MBT_03_cannon_F_in";
+				gunnerInAction="Commander_MBT_02_arty_F_in";
 				gunnerAction="Gunner_MBT_03_cannon_F_out";
 				gunnerGetInAction="GetInLow";
 				gunnerGetOutAction="GetOutLow";
@@ -901,7 +917,7 @@ class CfgVehicles
 				gunnerOutOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
 				gunnerOutOpticsEffect[]={};
 				gunnerOpticsEffect[]={"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
-				gunnerForceOptics=1;
+				gunnerForceOptics=0;
 				startEngine=1;
 				inGunnerMayFire=1;
 				viewGunnerInExternal=0;
@@ -1090,13 +1106,13 @@ class CfgVehicles
 				gunnerAction = "gunner_lsv_02";
 				lockWhenDriverOut = 0;
 				isPersonTurret = 0;
-				gunnerInAction = "Commander_APC_tracked_01_crv_in";
+				gunnerInAction = "passenger_generic01_leanright";
 				gunnerGetInAction="GetInhigh";
 				gunnerGetOutAction="GetOuthigh";
 				viewGunnerInExternal=0;
 				castGunnerShadow=1;
 				forceHideGunner=0;
-				gunnerForceOptics=1;
+				gunnerForceOptics=0;
 				inGunnerMayFire=0;
 				outGunnerMayFire=1;
 				playerPosition = 0;
@@ -2054,7 +2070,7 @@ class CfgVehicles
 		numberPhysicalWheels=18;
 		destrType="DestructWreck";
 	};
-	class adfrc_m1a1aim: adfrc_abrams // MODERN
+	class adfrc_m1a1aim: adfrc_abrams
 	{
 		displayName="M1A1AIM";
 		author="ADFRC - Quiggs";
@@ -2064,13 +2080,9 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
 		side=1;
 		scope=2;
-		faction="ADFRC_F_MD";
+		faction="ADF";
 		vehicleClass="Armored";
-		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		crew="adfrc_crewman_amcu";
 		typicalCargo[]={};
-	};
-	class adfrc_m1a1aim_GWOT: adfrc_m1a1aim // GWOT
-	{
-		faction="ADFRC_F_GWOT";
 	};
 };

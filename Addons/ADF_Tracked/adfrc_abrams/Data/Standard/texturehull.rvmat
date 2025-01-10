@@ -14,7 +14,7 @@ forcedDiffuse[] = {0.0,0.0,0.0,1.0};
 
 emmisive[] = {0.0,0.0,0.0,0.0};
 
-specular[] = {0.3,0.3,0.3,1.0};
+specular[] = {0.1,0.1,0.1,1.0};
 
 specularPower = 80;
 

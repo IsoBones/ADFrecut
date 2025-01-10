@@ -59,6 +59,32 @@ class cfgAmmo
 		tracerColor[] = {0.7,0.7,0.5,0.04};
 		tracerColorR[] = {0.7,0.7,0.5,0.04};
 	};
+	class SmokeLauncherAmmo;
+    class ADFRC_SmokeLauncherAmmo : SmokeLauncherAmmo 
+	{
+        muzzleEffect = "ADFRC_fnc_handleSmokeFired";
+    };
+    class SmokeShellVehicle;
+    class ADFRC_SmokeShellVehicle: SmokeShellVehicle 
+	{
+        model = "ADF_Tracked\adfrc_abrams\ADFRC_smokes.p3d";
+    };
+    class FlareCore;
+    class ADFRC_SmokeShellSubVehicle: FlareCore 
+	{
+        model = "\A3\weapons_f\ammo\flare_white";
+        deflecting = 5;
+        lightColor[] = {1.0,0.5,0.0,0.2};
+        useFlare = 1;
+        flareSize = 0.5;
+        smokeColor[] = {1,1,1,0.5};
+        muzzleEffect = "BIS_fnc_effectFiredRifle";
+        effectFlare = "CounterMeasureFlare";
+        brightness = 0.2;
+        size = 0.2;
+        triggerTime = 0;
+        triggerSpeedCoef = 1;
+    };
 };
 class cfgMagazines
 {
@@ -93,6 +119,12 @@ class cfgMagazines
 		type = "2*		256";
 		tracersEvery = 4;
 	};
+	class SmokeLauncherMag;
+    class ADFRC_SmokeLauncherMag: SmokeLauncherMag 
+	{
+        ammo = "ADFRC_SmokeLauncherAmmo";
+		count = 2;
+    };
 };
 class Mode_SemiAuto;
 class Mode_Burst;
@@ -100,7 +132,16 @@ class Mode_FullAuto;
 
 class cfgWeapons
 {
-	class MGun;
+	class Default;
+	class SmokeLauncher;
+    class ADFRC_SmokeLauncher: SmokeLauncher 
+	{
+        magazines[] = {"ADFRC_SmokeLauncherMag"};
+        begin1[] = {"",1,1,100};
+        sound[] = {"",1,1,200};
+        soundbegin[] = {"sound",1};
+        sounds[] = {};
+    };class MGun;
 	class HMG_M2_Mounted;
 	class LMG_coax_ext;
 	class ADFRC_abrams_coax: LMG_coax_ext
