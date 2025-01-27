@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"ADFRC_SR98"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"ADF_Core", "adfrc_magazines", "ADFRC_Weapons_Tags", "adfrc_accessories"};
+		requiredAddons[] = {"ADF_Core", "adfrc_magazines", "adfrc_accessories"};
 		fileName = "ADF_SR98.pbo";
 	};
 };

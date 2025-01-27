@@ -148,9 +148,9 @@ class Eventhandlers: Eventhandlers {
 		model = "ADF_Weapons\adfrc_SR98\ADFRC_SR98";
 		descriptionShort = "Accuracy International SR98 <br/>Caliber: 7.62x51";
 		inertia = 0.6;
-		scope=2;
-		scopeWeapon=2;
-		scopeArsenal = 2;
+		scope=1;
+		scopeWeapon=1;
+		scopeArsenal = 1;
 		picture = "\A3\Weapons_F\LongRangeRifles\M320\Data\UI\gear_M320_LRR_X_CA.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_sniper_CA.paa";
 		displayName = "AI SR98 7.62x51";

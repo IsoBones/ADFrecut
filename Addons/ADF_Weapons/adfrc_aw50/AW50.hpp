@@ -142,9 +142,9 @@ class Eventhandlers: Eventhandlers {
 		model = "ADF_Weapons\adfrc_aw50\ADFRC_AW50";
 		descriptionShort = "Accuracy International AW50F <br/>AMR<br/>Caliber: .50BMG";
 		inertia = 0.9;
-		scope=2;
-		scopeWeapon=2;
-		scopeArsenal = 2;
+		scope=1;
+		scopeWeapon=1;
+		scopeArsenal = 1;
 		picture = "\A3\Weapons_F\LongRangeRifles\M320\Data\UI\gear_M320_LRR_X_CA.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_sniper_CA.paa";
 		displayName = "AI AW50F AMR .50BMG";
