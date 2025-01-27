@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 
 		requiredAddons[] = { "ADF_Core" };
-		units[]          = { };
+		units[]          = { "ADFRC_Hawkei_Unarmed_F" };
 		weapons[]        = { };
 	};
 };

@@ -44,7 +44,7 @@ class CfgVehicles {
 
     class ADFRC_Hawkei_Base_F : MRAP_01_base_F {
 		author                                  = "ADF Re-Cut";
-		crew                                    = "adfrc_rifleman_dpcu";
+		crew                                    = "ADFRC_MD_AMCU_Soldier_Crewman";
 		destrType                               = "DestructWreck";
 		differentialType                        = "all_limited";
 		dustBackLeftPos                         = "wheel_1_2_bound";

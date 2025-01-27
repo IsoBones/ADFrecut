@@ -27,6 +27,8 @@ class CfgVehicles {
 			class HitRF2Wheel;
 			class HitRFWheel;
 		};
+
+		class ACE_SelfActions;
 	};
 
     //?
@@ -35,7 +37,7 @@ class CfgVehicles {
 
     class ADFRC_Bushmaster_Base_F : MRAP_01_base_F {
 		attenuationEffectType                   = "CarAttenuation";
-		author                                  = "ADFRC - Quiggs & Index";
+		author                                  = "ADF Re-Cut";
 		crew                                    = "ADFRC_MD_AMCU_Soldier_Crewman";
 		destrType                               = "DestructWreck";
 		differentialType                        = "all_limited";
@@ -48,7 +50,7 @@ class CfgVehicles {
 		dustBackRightPos                        = "wheel_2_2_bound";
 		dustFrontLeftPos                        = "wheel_1_1_bound";
 		dustFrontRightPos                       = "wheel_2_1_bound";
-		faction                                 = "BLU_F";
+		faction                                 = "ADFRC_F_GWOT";
 		getInAction                             = "GetInLow";
 		getOutAction                            = "GetOutLow";
 		memoryPointDriverOptics                 = "driverview";
@@ -342,7 +344,7 @@ class CfgVehicles {
 				maxDroop                            = 0.15;
 				MOI                                 = 40;
 				springDamperRate                    = 11073.3;
-				springStrength                      = 553665;
+				springStrength                      = 830497.5;
 				sprungMass                          = 2768.325;
 				steering                            = 1;
 				width                               = 0.2;
@@ -472,29 +474,62 @@ class CfgVehicles {
         #include <AnimationSources.hpp>
         #include <Sounds.hpp>
 
-		// tf_RadioType  =  "TFAR_rt1523g_big";
-		// tf_hasLRradio  =  1;  // 1  =  true, 0  =  false
-		// tf_isolatedAmount  =  0.2;
-		// tfar_additionalLR_cargo[]  =  {0, 1};
-		// tfar_hasIntercom  =  1;
-		// class ACE_SelfActions : ACE_SelfActions {
-		// 	class TFAR_IntercomChannel {
-		// 		displayName  =  "Intercom";
-		// 		condition  =  "true";
-		// 		statement  =  "";
-		// 		icon  =  "";
-		// 		class TFAR_IntercomChannel_disabled {
-		// 			displayName  =  "Disable";
-		// 			condition  =  "((vehicle ACE_Player) getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0]) ! =  -1";
-		// 			statement  =  "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -1, true];";
-		// 		};
-		// 		class TFAR_IntercomChannel_1 {
-		// 			displayName  =  "Crew";
-		// 			condition  =  "((vehicle ACE_Player) getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0]) ! =  0";
-		// 			statement  =  "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], 0, true];";
-		// 		};
-		// 	};
-		// };
+		//?
+		//? Task Force Radio Compat
+		//?
+
+		tf_RadioType              = "TFAR_rt1523g_big";
+
+		tf_hasLRradio             = 1;
+		tf_isolatedAmount         = 0.2;
+		tfar_hasIntercom          = 1;
+
+		tfar_additionalLR_cargo[] = { 0, 1 };
+
+		class ACE_SelfActions : ACE_SelfActions {
+			class TFAR_IntercomChannel {
+				condition   = "true";
+				displayName = "$STR_TFAR_Core_Intercom_ACESelfAction_Name";
+				icon        = "";
+				statement   = "";
+
+				class TFAR_IntercomChannel_disabled {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != -1";
+					displayName = "Disabled";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true];";
+				};
+
+				class TFAR_IntercomChannel_1 {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != 0";
+					displayName = "$STR_TFAR_Core_Intercom_ACESelfAction_Channel1";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+				};
+
+				class TFAR_IntercomChannel_2 {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != 1";
+					displayName = "$STR_TFAR_Core_Intercom_ACESelfAction_Channel2";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true];";
+				};
+
+				class TFAR_IntercomChannel_Misc_1 {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != 2";
+					displayName = "Misc channel 1";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],2,true];";
+				};
+
+				class TFAR_IntercomChannel_Misc_2 {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != 3";
+					displayName = "Misc channel 2";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],3,true];";
+				};
+
+				class TFAR_IntercomChannel_Misc_3 {
+					condition   = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)], -2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot', TFAR_defaultIntercomSlot]}; _intercom != 4";
+					displayName = "Misc channel 3";
+					statement   = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],4,true];";
+				};
+			};
+		};
     };
 
     //?
@@ -502,7 +537,6 @@ class CfgVehicles {
     //?
 
     class ADFRC_F_GWOT_Bushmaster_Unarmed_F : ADFRC_Bushmaster_Base_F {
-		author        = "ADFRC - Quiggs & Index";
 		displayName   = "Bushmaster";
 		editorPreview = "\adf_mrap\adfrc_bushmaster\data\previews\adfrc_bushmaster_unarmed_f.jpg";
 		icon          = "\adf_mrap\adfrc_bushmaster\data\ui\bushmaster_map_unarmed.paa";
@@ -519,28 +553,7 @@ class CfgVehicles {
 			"show_extension", 0.5,
 			"show_winch", 1,
 			"show_cover", 0.5,
-			"show_spare", 1,
-			"show_ant_powered", 0,
-			"show_ant_low_3_1", 1,
-			"show_ant_low_3_2", 1,
-			"show_ant_high_3_1", 0.5,
-			"show_ant_high_3_2", 0.5,
-			"show_ant_low_2_1", 1,
-			"show_ant_low_2_2", 1,
-			"show_ant_high_2_1", 0.5,
-			"show_ant_high_2_2", 0.5,
-			"show_ant_low_1_1", 1,
-			"show_ant_low_1_2", 1,
-			"show_ant_high_1_1", 0.5,
-			"show_ant_high_1_2", 0.5,
-			"show_ammobox_01", 0.5,
-			"show_ammobox_02", 0.5,
-			"show_ammobox_03", 0.5,
-			"show_ammobox_04", 0.5,
-			"show_jerrycan_01", 0.5,
-			"show_jerrycan_02", 0.5,
-			"show_jerrycan_03", 0.5,
-			"show_jerrycan_04", 0.5
+			"show_spare", 1
 		};
 
 		textureList[] = {
@@ -607,7 +620,6 @@ class CfgVehicles {
 	};
 
 	class ADFRC_F_GWOT_Bushmaster_RWS_M2_F : ADFRC_Bushmaster_Base_F {
-		author        = "ADFRC - Quiggs & Index";
 		displayName   = "Bushmaster (RWS M2)";
 		editorPreview = "\adf_mrap\adfrc_bushmaster\data\previews\adfrc_bushmaster_unarmed_f.jpg";
 		icon          = "\adf_mrap\adfrc_bushmaster\data\ui\bushmaster_map_unarmed.paa";
@@ -624,28 +636,7 @@ class CfgVehicles {
 			"show_extension", 0.5,
 			"show_winch", 1,
 			"show_cover", 0.5,
-			"show_spare", 1,
-			"show_ant_powered", 0,
-			"show_ant_low_3_1", 1,
-			"show_ant_low_3_2", 1,
-			"show_ant_high_3_1", 0.5,
-			"show_ant_high_3_2", 0.5,
-			"show_ant_low_2_1", 1,
-			"show_ant_low_2_2", 1,
-			"show_ant_high_2_1", 0.5,
-			"show_ant_high_2_2", 0.5,
-			"show_ant_low_1_1", 1,
-			"show_ant_low_1_2", 1,
-			"show_ant_high_1_1", 0.5,
-			"show_ant_high_1_2", 0.5,
-			"show_ammobox_01", 0.5,
-			"show_ammobox_02", 0.5,
-			"show_ammobox_03", 0.5,
-			"show_ammobox_04", 0.5,
-			"show_jerrycan_01", 0.5,
-			"show_jerrycan_02", 0.5,
-			"show_jerrycan_03", 0.5,
-			"show_jerrycan_04", 0.5
+			"show_spare", 1
 		};
 
 		textureList[] = {
