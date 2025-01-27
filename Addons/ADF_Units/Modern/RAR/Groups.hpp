@@ -8,7 +8,7 @@ class ADFRC_G_MD_RAR
 
 		
 		///Standard Section
-        class ADFRC_G_Section
+        class ADFRC_G_MD_RAR_Section
         {
           name="Section";
           faction="ADFRC_F_MD";
@@ -72,7 +72,7 @@ class ADFRC_G_MD_RAR
         };
 		
 		///Standard Combat First Aider
-        class ADFRC_G_Section_CFA
+        class ADFRC_G_MD_RAR_Section_CFA
         {
           name="Section (CFA)";
           faction="ADFRC_F_MD";
@@ -137,7 +137,7 @@ class ADFRC_G_MD_RAR
 		
 		
 ///Standard Marksman
-        class ADFRC_G_Section_DMR
+        class ADFRC_G_MD_RAR_Section_DMR
         {
           name="Section (DMR)";
           faction="ADFRC_F_MD";
@@ -202,7 +202,7 @@ class ADFRC_G_MD_RAR
 		
 		
 ///Standard GSMG
-        class ADFRC_G_Section_GSMG
+        class ADFRC_G_MD_RAR_Section_GSMG
         {
           name="Section (GSMG)";
           faction="ADFRC_F_MD";
@@ -274,7 +274,7 @@ class ADFRC_G_MD_RAR
 		
 		
 ///Standard GSMG
-        class ADFRC_G_Section_MMG
+        class ADFRC_G_MD_RAR_Section_MMG
         {
           name="Section (MMG)";
           faction="ADFRC_F_MD";
@@ -346,7 +346,7 @@ class ADFRC_G_MD_RAR
 		
 		
 	///Bricks
-        class ADFRC_G_Brick_GG
+        class ADFRC_G_MD_RAR_Brick_GG
         {
           name="Brick (Gun Group)";
           faction="ADFRC_F_MD";
@@ -381,7 +381,7 @@ class ADFRC_G_MD_RAR
           };
         };	
 		
-      class ADFRC_G_Brick_AG
+      class ADFRC_G_MD_RAR_Brick_AG
         {
           name="Brick (Assault Group)";
           faction="ADFRC_F_MD";
@@ -418,7 +418,7 @@ class ADFRC_G_MD_RAR
 		
 		
 		///Specialist Teams
-        class ADFRC_G_Team_Engineer
+        class ADFRC_G_MD_RAR_Team_Engineer
         {
           name="Engineer Team";
           faction="ADFRC_F_MD";
@@ -455,7 +455,7 @@ class ADFRC_G_MD_RAR
 				
 		
 		
-        class ADFRC_G_Team_GSMG
+        class ADFRC_G_MD_RAR_Team_GSMG
         {
           name="GSMG Team";
           faction="ADFRC_F_MD";
@@ -493,7 +493,7 @@ class ADFRC_G_MD_RAR
 		
 		
 		///Specialist Teams
-        class ADFRC_G_Team_HAT
+        class ADFRC_G_MD_RAR_Team_HAT
         {
           name="HAT Team";
           faction="ADFRC_F_MD";
@@ -522,7 +522,7 @@ class ADFRC_G_MD_RAR
         };	
 		
 		///Specialist Teams
-        class ADFRC_G_Team_MAT
+        class ADFRC_G_MD_RAR_Team_MAT
         {
           name="MAT Team";
           faction="ADFRC_F_MD";
@@ -566,7 +566,7 @@ class ADFRC_G_MD_RAR
 		
 		
 		///Specialist Teams
-        class ADFRC_G_Team_CFA
+        class ADFRC_G_MD_RAR_Team_CFA
         {
           name="CFA Team";
           faction="ADFRC_F_MD";
@@ -602,7 +602,7 @@ class ADFRC_G_MD_RAR
         };	
 		
 		///Specialist Teams
-        class ADFRC_G_Team_PlatoonHQ
+        class ADFRC_G_MD_RAR_Team_PlatoonHQ
         {
           name="Platoon HQ";
           faction="ADFRC_F_MD";
@@ -638,7 +638,7 @@ class ADFRC_G_MD_RAR
         };	
 		
 		///Sentry Teams
-        class ADFRC_G_Sentry
+        class ADFRC_G_MD_RAR_Sentry
         {
           name="Sentries";
           faction="ADFRC_F_MD";
@@ -661,7 +661,7 @@ class ADFRC_G_MD_RAR
 		
 		
 		///RECON Section
-        class ADFRC_G_Recon_Section
+        class ADFRC_G_MD_RAR_Recon_Section
         {
           name="Recon Section";
           faction="ADFRC_F_MD";
@@ -725,7 +725,7 @@ class ADFRC_G_MD_RAR
         };
 		
 ///RECON Team
-        class ADFRC_G_Recon_Team
+        class ADFRC_G_MD_RAR_Recon_Team
         {
           name="Recon Team";
           faction="ADFRC_F_MD";
@@ -762,7 +762,7 @@ class ADFRC_G_MD_RAR
 	
 	
 ///RECON Sentry
-        class ADFRC_G_Recon_Sentry
+        class ADFRC_G_MD_RAR_Recon_Sentry
         {
           name="Recon Sentries";
           faction="ADFRC_F_MD";

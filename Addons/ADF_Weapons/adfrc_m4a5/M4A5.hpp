@@ -226,7 +226,7 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 		};
 	};
 	
-class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Troy_556_10
+class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Combo_556_10_BLK
 	{
 		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (FDE)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";

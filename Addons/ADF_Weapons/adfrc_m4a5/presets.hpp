@@ -1087,29 +1087,6 @@ class ADFRC_M4A5_Combo_556_10_FDE_BLK_EXPS3_WMLx: ADFRC_M4A5_Combo_556_10_BLK
 		};
 	};
 };
-
-class ADFRC_M4A5_Combo_556_10_BLK_EXPS3M_WMLx: ADFRC_M4A5_Combo_556_10_BLK
-{
-	author = "Brucey";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = CowsSlot;
-			item = ADFRC_EXPS3_Down;
-		};
-		class LinkedItemsAcc
-		{
-			slot = PointerSlot;
-			item = ADFRC_WMLx_BLK_R_WL;
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = MuzzleSlot;
-			item = ADFRC_SOCOM_556;
-		};
-	};
-};
 //Eotech Peq
 class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 {

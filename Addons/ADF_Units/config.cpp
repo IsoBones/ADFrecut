@@ -18,8 +18,6 @@ class CfgVehicles{
 	#include "Modern/RAR/Recce.hpp"
 	#include "Modern/CDO/Infantry.hpp"
 	#include "Modern/CDO/TAG.hpp"
-	#include "Modern/CD/Infantry.hpp"
-	#include "Modern/CD/Divers.hpp"
 	#include "Modern/SASR/Infantry.hpp"
 	#include "Modern/SASR/TAG.hpp"
 	#include "Modern/Backpacks.hpp"
@@ -31,5 +29,7 @@ class cfgGroups
   {
     name="BLUFOR";
 	#include "Modern/RAR/Groups.hpp"
+	#include "Modern/CDO/Groups.hpp"
+	#include "Modern/SASR/Groups.hpp"
 };
 };
