@@ -542,11 +542,21 @@ class CfgVehicles{
 			"Camo2",
 			"insignia"
 		};
-		hiddenSelectionsTextures[] = {	
+		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_uniforms\data\uniform_field_amcu_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\uniform_field2_amcu_co.paa"
 		};
 	};
+
+	class ADFRC_Uniform_Field_AMCU : ADFRC_MD_AMCU_Officer_Base {
+		author                     = "$STR_ADFRC_AUTHOR";
+		model                      = "\adf_gear\adfrc_uniforms\adfrc_field_dress.p3d";
+		uniformClass               = "ADFRC_Uniform_Field_AMCU";
+
+		hiddenSelections[]         = {  };
+		hiddenSelectionsTextures[] = {  };
+	};
+
 	// Commandos
 	class ADFRC_MD_AMCU_CDO_Base: ADFRC_Soldier_Base_F{
 		displayName="AMCU Commando Base";
@@ -1278,7 +1288,9 @@ class CfgWeapons{
 			mass=60;
 		};
 	};
-	class ADFRC_Uniform_Field_AMCU: Uniform_Base{
+
+
+	class ADFRC_Uniform_Field_AMCU : Uniform_Base {
 		displayName="Field Dress (AMCU)";
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
@@ -1293,11 +1305,12 @@ class CfgWeapons{
 		};
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ADFRC_MD_AMCU_Officer_Base";
+			uniformClass="ADFRC_Uniform_Field_AMCU";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
+
 	// Green/Sage (TAG Uniform)
 	class ADFRC_Uniform_Green: Uniform_Base{
 		displayName="Combat Dress (Green)";
