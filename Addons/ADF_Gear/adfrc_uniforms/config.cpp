@@ -1171,8 +1171,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_AMCU_Flagless: Uniform_Base{
 		displayName="Combat Dress (AMCU)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -1191,8 +1191,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_AMCU_Flagless_Rolled: Uniform_Base{
 		displayName="Combat Dress (AMCU)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
