@@ -2070,7 +2070,7 @@ class CfgVehicles
 		numberPhysicalWheels=18;
 		destrType="DestructWreck";
 	};
-	class adfrc_m1a1aim: adfrc_abrams
+	class adfrc_m1a1aim_md: adfrc_abrams
 	{
 		displayName="M1A1AIM";
 		author="ADFRC - Quiggs";
@@ -2080,9 +2080,14 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
 		side=1;
 		scope=2;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		vehicleClass="Armored";
-		crew="adfrc_crewman_amcu";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		typicalCargo[]={};
+	};
+	class adfrc_m1a1aim_gwot: adfrc_m1a1aim_md
+	{
+		faction="ADFRC_F_GWOT";
+		crew="ADFRC_crewman_dpcu";
 	};
 };
