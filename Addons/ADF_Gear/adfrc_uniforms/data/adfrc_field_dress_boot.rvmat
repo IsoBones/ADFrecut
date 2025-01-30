@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "ADFrecut\Addons\ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_NOHQ.paa";
+	texture = "ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "ADFrecut\Addons\ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_AS.paa";
+	texture = "ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "ADFrecut\Addons\ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_SMDI.paa";
+	texture = "ADF_Gear\adfrc_uniforms\data\adfrc_field_dress_boot_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
