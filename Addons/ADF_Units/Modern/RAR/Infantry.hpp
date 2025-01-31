@@ -566,13 +566,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="adfrc_molle_bag_ASIP";
 		weapons[]={
-			"arifle_AUG_black_arco_F",
+			"arifle_AUG_C_Specter_black_flash_F",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_F",
+			"arifle_AUG_C_Specter_black_flash_F",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Put"
@@ -607,7 +607,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Officer",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -618,7 +618,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Officer",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -685,7 +685,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Scout",
 			"adfrc_facewear_kondor_tan_clr",
 			"adfrc_l3h_psq36",
@@ -695,7 +695,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_amcu_Aus",
+			"adfrc_teamwendy_exfil_cover",
 			"ADFRC_TBAS_T2_Scout",
 			"adfrc_facewear_kondor_tan_clr",
 			"adfrc_l3h_psq36",
@@ -2056,13 +2056,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"arifle_AUG_black_arco_flash_F",
 			"Throw",
 			"Put",
-			"Binoculars"
+			"Binocular"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
 			"Throw",
 			"Put",
-			"Binoculars"
+			"Binocular"
 		};
 		magazines[]={
 			"ADFRC_F1_Grenade",
@@ -2288,13 +2288,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"arifle_AUG_black_arco_flash_F",
 			"Throw",
 			"Put",
-			"Binoculars"
+			"Binocular"
 		};
 		respawnWeapons[]={
 			"arifle_AUG_black_arco_flash_F",
 			"Throw",
 			"Put",
-			"Binoculars"
+			"Binocular"
 		};
 		magazines[]={
 			"ADFRC_F1_Grenade",
@@ -2335,16 +2335,16 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_30Rnd_aug_ef88"
 		};
 		linkedItems[]={
-			"adfrc_ECH_amcu",
-			"ADFRC_carrierLite_amcu",
+			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_TBAS_T2_Rifleman_Light",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_ECH_amcu",
-			"ADFRC_carrierLite_amcu",
+			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_TBAS_T2_Rifleman_Light",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
