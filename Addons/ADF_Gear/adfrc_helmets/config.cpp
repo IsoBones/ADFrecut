@@ -967,7 +967,7 @@ class CfgWeapons
 	{
 		scope=2;
 		author=$STR_ADF_AUTHOR;
-		displayName="ADF Boonie [DPCU]";
+		displayName="Boonie [DPCU]";
 		model="\A3\Characters_F\common\booniehat";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_DPCU_co.paa"};
@@ -976,7 +976,7 @@ class CfgWeapons
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Boonie [DPDU]";
+		displayName="Boonie [DPDU]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_DPDU_co.paa"};
 	};
@@ -1164,12 +1164,12 @@ class CfgWeapons
 	{
 		scope = 2;
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF ECH [DPCU]";
+		displayName="ECH [DPCU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_dpcu_co.paa"};
 	};
-	class adfrc_ECH_AMCU: adfrc_ECH_Desert
+	class adfrc_ECH_AMCU: adfrc_ECH_Desert // SCOPE=1, DELETE EVENTUALLY
 	{
 		scope = 1;
 		author="$STR_ADF_AUTHOR";
@@ -1182,7 +1182,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF ECH [DPDU]";
+		displayName="ECH [DPDU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_dpdu_co.paa"};
@@ -1252,7 +1252,7 @@ class CfgWeapons
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Helmet Canvas (DPCU)";
+		displayName="Canvas Helmet (DPCU)";
 		weaponPoolAvailable=1;
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};
@@ -1262,7 +1262,7 @@ class CfgWeapons
 	{
 		scope=2;
 		author="$STR_ADF_AUTHOR";
-		displayName="ADF Helmet Canvas (DPDU)";
+		displayName="Canvas Helmet (DPDU)";
 		weaponPoolAvailable=1;
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
 		hiddenSelections[] = {"camo"};

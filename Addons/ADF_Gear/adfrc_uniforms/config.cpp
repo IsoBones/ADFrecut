@@ -1528,12 +1528,12 @@ class CfgWeapons{
 			mass=60;
 		};
 	};
-	// Maritime Tiger Stripe
+	// Maritime Tiger Stripe ## MOVE TO NAVAL ADD-ON ##
 	class ADFRC_Uniform_MTS: Uniform_Base{
 		displayName="Combat Dress (MTS)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -1552,8 +1552,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MTS_Rolled: Uniform_Base{
 		displayName="Combat Dress (MTS)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -1572,8 +1572,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MTS_CDT_Tee: Uniform_Base{
 		displayName="Combat Dress (MTS)(Tee-CDT)";
 		author="$STR_ADF_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -1592,8 +1592,8 @@ class CfgWeapons{
 	class ADFRC_Wetsuit_MTS: Uniform_Base{
 		displayName="Wetsuit (MTS)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		hiddenSelections[]={
