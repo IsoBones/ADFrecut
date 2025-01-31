@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class ADFRC_optics
+	class adfrc_optics
 	{
 		units[]={};
 		weapons[]=

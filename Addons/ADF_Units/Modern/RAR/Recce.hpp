@@ -12,7 +12,7 @@
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_Recon_F.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		backpack = "ADFRC_BP_Hydration_AMCU_1";
+		backpack = "adfrc_patrol_bullock_amcu";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_WP_F9_SWS",
@@ -100,7 +100,7 @@
 		icon="iconManLeader";
 		role="Rifleman";
 		cost=250000;
-		backpack = "adfrc_molle_bag_ASIP";
+		backpack = "adfrc_patrol_bullock_amcu_177";
 		weapons[]={
 			"arifle_AUG_black_Spectr_flash_Sup_F",
 			"ADFRC_WP_F9_SWS",

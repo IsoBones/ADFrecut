@@ -15,7 +15,16 @@ class cfgCloudlets
 		moveVelocity[] = { "-directionX * 4", "- directionY * 4", "- directionZ * 4" };
 		moveVelocityVar[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
 		lifeTime = 20;
-		size[] = {3.5};
+		size[] = {4};
+		bounceOnSurface = 0.3;
+	};
+	class MachineGunEject;
+	class ADFRC_boxer_link: MachineGunEject 
+	{
+		moveVelocity[] = { "-directionX * 2", "- directionY * 2", "- directionZ * 2" };
+		moveVelocityVar[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
+		lifeTime = 20;
+		size[] = {5.5};
 		bounceOnSurface = 0.3;
 	};
 };
@@ -23,6 +32,16 @@ class ADFRC_mk30_casingeject {
 	class MachineGunEject {
 		simulation = "particles";
 		type = "ADFRC_boxer_cartridge";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.05;
+	};
+};
+class ADFRC_mk30_linkeject {
+	class MachineGunEject {
+		simulation = "particles";
+		type = "ADFRC_boxer_link";
 		position[] = {0,0,0};
 		intensity = 1;
 		interval = 1;
@@ -384,9 +403,21 @@ class cfgWeapons
 			};
 			class Effect2 
 			{
-					effectName = "ADFRC_mk30_casingeject";
-					positionName = "nabojnicestart";
-					directionName = "nabojniceend";
+				effectName = "ADFRC_mk30_casingeject";
+				positionName = "nabojnicestart";
+				directionName = "nabojniceend";
+			};
+			class Effect3 
+			{
+				effectName = "MachineGunCloud";
+				positionName = "nabojnicestart";
+				directionName = "nabojniceend";
+			};
+			class Effect4 
+			{
+				effectName = "ADFRC_mk30_linkeject";
+				positionName = "nabojnicestart";
+				directionName = "nabojniceend";
 			};
 		};
 		displayName = "MK 30-2/ABM 30mm Autocannon";

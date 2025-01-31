@@ -556,6 +556,22 @@ class CfgVehicles{
 		hiddenSelections[]         = {  };
 		hiddenSelectionsTextures[] = {  };
 	};
+	class ADFRC_Uniform_G3_Jacket_AMCU : ADFRC_Soldier_Base_F {
+		author                     = "$STR_ADFRC_AUTHOR";
+		model                      = "\adf_gear\adfrc_uniforms\cryeG3jacket.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_Jacket_AMCU";
+
+		hiddenSelections[]         = {  };
+		hiddenSelectionsTextures[] = {  };
+	};
+	class ADFRC_Uniform_G3_AMCU : ADFRC_Soldier_Base_F {
+		author                     = "$STR_ADFRC_AUTHOR";
+		model                      = "\adf_gear\adfrc_uniforms\cryeG3.p3d";
+		uniformClass               = "ADFRC_Uniform_G3_AMCU";
+
+		hiddenSelections[]         = {  };
+		hiddenSelectionsTextures[] = {  };
+	};
 
 	// Commandos
 	class ADFRC_MD_AMCU_CDO_Base: ADFRC_Soldier_Base_F{
@@ -1310,7 +1326,46 @@ class CfgWeapons{
 			mass=40;
 		};
 	};
-
+	class ADFRC_Uniform_G3_Jacket_AMCU: Uniform_Base {
+		displayName="Crye G3 Combat Dress [Jacket] (AMCU)";
+		author="$STR_ADFRC_AUTHOR";
+		scope=2;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_Jacket_AMCU";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class ADFRC_Uniform_G3_AMCU: Uniform_Base {
+		displayName="Crye G3 Combat Dress (AMCU)";
+		author="$STR_ADFRC_AUTHOR";
+		scope=2;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_AMCU";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 	// Green/Sage (TAG Uniform)
 	class ADFRC_Uniform_Green: Uniform_Base{
 		displayName="Combat Dress (Green)";

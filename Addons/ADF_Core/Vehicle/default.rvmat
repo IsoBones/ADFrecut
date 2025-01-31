@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: P:\ADF_Core\Vehicle\default.rvmat
+//Produced from mikero's Dos Tools Dll version 9.66
+//https://mikero.bytex.digital/Downloads
+//'now' is Fri Jan 31 14:10:11 2025 : 'file' last modified on Fri Jan 31 13:56:46 2025
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0,0,0,0};
+specularPower = 0;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};

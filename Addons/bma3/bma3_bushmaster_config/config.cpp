@@ -104,7 +104,7 @@ class CfgVehicles
 		driverInAction="bushmaster_driver";
 		driverLeftHandAnimName="driveWheel";
 		driverRightHandAnimName="driveWheel";
-		destrType="DestructWreck";
+		destrType="DestructDefault";
 		viewDriverInExternal=1;
 		viewGunnerInexternal=1;
 		forceHideDriver=1;
@@ -175,6 +175,22 @@ class CfgVehicles
 		viewCargoShadow=1;
 		viewCargoShadowDiff=1;
 		viewCargoShadowAmb=1;
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"bma3\bma3_bushmaster_data\camo1\camo1.rvmat",
+				"bma3\bma3_bushmaster_data\camo1\camo1_damage.rvmat",
+				"bma3\bma3_bushmaster_data\camo1\camo1_destruct.rvmat",
+				"bma3\bma3_bushmaster_data\camo2\camo2.rvmat",
+				"bma3\bma3_bushmaster_data\camo2\camo2_damage.rvmat",
+				"bma3\bma3_bushmaster_data\camo2\camo2_destruct.rvmat",
+				"bma3\bma3_bushmaster_data\camo3\camo3.rvmat",
+				"bma3\bma3_bushmaster_data\camo3\camo3_damage.rvmat",
+				"bma3\bma3_bushmaster_data\camo3\camo3_destruct.rvmat",
+			};
+		};
 		hiddenSelections[]=
 		{
 			"Camo1",

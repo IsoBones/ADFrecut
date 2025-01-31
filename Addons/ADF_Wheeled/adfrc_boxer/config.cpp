@@ -102,8 +102,7 @@ class Optics_Gunner_MBT_02: Optics_Armored
 class CfgVehicles
 {
 	class APC_Wheeled_03_base_F;
-	class B_APC_Wheeled_03_base_F: APC_Wheeled_03_base_F{};
-	class B_APC_Wheeled_03_cannon_F: B_APC_Wheeled_03_base_F
+	class adfrc_boxer_base: APC_Wheeled_03_base_F
 	{
 		class complexGearbox;
 		class MFD;
@@ -168,16 +167,10 @@ class CfgVehicles
 			class R4;
 		};
 	};
-	class adfrc_boxer_base: B_APC_Wheeled_03_cannon_F{};
 	class adfrc_boxer: adfrc_boxer_base
 	{
 		mapSize=10.25;
 		accuracy=0.25;
-		radarType = 0;
-		incomingMissileDetectionSystem = 16;
-		countermeasureActivationRadius = 2500;
-		weaponLockSystem = "2+4";
-		thrustDelay=0.5;
 		brakeIdleSpeed=1.78;
 		maxSpeed=110;
 		fuelCapacity=30;
@@ -185,12 +178,12 @@ class CfgVehicles
 		waterLeakiness=2.5;
 		normalSpeedForwardCoef=0.51999998;
 		accelAidForceYOffset=-1.5;
-		antiRollbarForceCoef=24;
-		antiRollbarForceLimit=30;
+		antiRollbarForceCoef=30;
+		antiRollbarForceLimit=10;
 		antiRollbarSpeedMin=15;
 		antiRollbarSpeedMax=65;
 		simulation="carx";
-		dampersBumpCoef=6;
+		dampersBumpCoef=3;
 		differentialType="all_limited";
 		frontRearSplit=0.5;
 		frontBias=1.3;
@@ -200,8 +193,8 @@ class CfgVehicles
 		peakTorque=5500;
 		maxOmega=220;
 		minOmega=40;
-		idleRpm=388;
-		redRpm=2500;
+		idleRpm=450;
+		redRpm=3000;
 		dampingRateFullThrottle=0.079999998;
 		dampingRateZeroThrottleClutchEngaged=2;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;
@@ -258,9 +251,9 @@ class CfgVehicles
 				"N",
 				0,
 				"D1",
-				3.4300001,
+				3.5,
 				"D2",
-				2.01,
+				2.2,
 				"D3",
 				1.42,
 				"D4",
@@ -275,36 +268,16 @@ class CfgVehicles
 				"High",
 				7.3000002
 			};
-			AmphibiousRatios[]=
-			{
-				"R1",
-				-8,
-				"N",
-				0,
-				"D1",
-				35
-			};
 			gearBoxMode="auto";
 			moveOffGear=1;
 			driveString="D";
 			neutralString="N";
 			reverseString="R";
 		};
-		switchTime=0.1;
+		switchTime=0;
 		latency=1.4;
-		clutchStrength=35;
-		class PlayerSteeringCoefficients // steering sensitivity configuration
-		{
-			turnIncreaseConst	= 0.2; // basic sensitivity value, higher value = faster steering
-			turnIncreaseLinear	= 1.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-			turnIncreaseTime	= 1.2; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-
-			turnDecreaseConst	= 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-			turnDecreaseLinear	= 5.0; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-			turnDecreaseTime	= 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-
-			maxTurnHundred		= 0.3; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-		};
+		thrustDelay=0.5;
+		clutchStrength=65;
 		class Wheels
 		{
 			class L1
@@ -318,18 +291,18 @@ class CfgVehicles
 				width="0.33";
 				mass=187.5;
 				MOI=50;
-				dampingRate=0.1;
+				dampingRate=1;
 				dampingRateDamaged=1;
 				dampingRateDestroyed=1000;
 				maxBrakeTorque=30000;
 				maxHandBrakeTorque=0;
 				suspForceAppPointOffset="wheel_1_1_center";
 				tireForceAppPointOffset="wheel_1_1_center";
-				maxCompression=0.1125;
-				maxDroop=0.15000001;
-				sprungMass=3090;
-				springStrength=110000;
-				springDamperRate=27900;
+				maxCompression=0.18;
+				maxDroop=0.18;
+				sprungMass=5000;
+				springStrength=300000;
+				springDamperRate=25000;
 				longitudinalStiffnessPerUnitGravity=10000;
 				latStiffX=10;
 				latStiffY=100;
@@ -410,7 +383,6 @@ class CfgVehicles
 			};
 		};
 		editorSubcategory="EdSubcat_APCs";
-		destrType="DestructWreck";
 		terrainCoef=1.5;
 		turnCoef=3;
 		canFloat=0;
@@ -419,8 +391,11 @@ class CfgVehicles
 		waterResistanceCoef=0.5;
 		engineShiftY=1.1;
 		wheelDestroyRadiusCoef=0.60000002;
-		armor=300;
+		armor=400;
+		armorStructural=5;
 		armorLights=0.1;
+		crewVulnerable=0;
+		crewCrashProtection=1.35;
 		crewExplosionProtection=0.99949998;
 		damageResistance=0.0071899998;
 		driverAction="Driver_APC_Wheeled_03_cannon_F_out";
@@ -440,8 +415,6 @@ class CfgVehicles
 		memoryPointDriverOptics="driverview";
 		memoryPointDriverOutOptics="driverview";
 		gunnerCompartments = "Compartment1";
-		driverGetInAction="GetInAMV_cargo";
-		driverGetOutAction="GetOutLow";
 		cargoIsCoDriver[]={0};
 		forceHideDriver=0;
 		viewDriverInExternal=0;
@@ -451,10 +424,9 @@ class CfgVehicles
 		LODDriverTurnedOut=1201;
 		LODDriverTurnedin=1100;
 		LODDriverOpticsIn=1;
-		turretInfoType="RscOptics_APC_Wheeled_03_gunner";
 		driverOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 		driverOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d";
-		driverInfoType="RscOptics_APC_Wheeled_03_gunner";
+		unitInfoType="RscUnitInfoTank";
 		driverLeftLegAnimName="pedal_brake";
 		showNVGDriver=0;
 		showNVGCommander=0;
@@ -477,13 +449,13 @@ class CfgVehicles
 			minMoveY = 0;
 			minMoveZ = 0;
 			thermalMode[] = {0,1};
-			visionMode[] = {"Normal","NVG","TI"};
+			visionMode[] = {"Normal","NVG"};
 		};
 		class ViewPilot: ViewPilot
 		{
-			initAngleX=-2.5;
+			initAngleX=5;
 			initAngleY=0;
-			initFov=0.89999998;
+			initFov=0.95;
 			minFov=0.25;
 			maxFov=1.25;
 			minAngleX=-65;
@@ -497,43 +469,42 @@ class CfgVehicles
 			minMoveZ=-0.075000003;
 			maxMoveZ=0.1;
 		};
-		extCameraPosition[]={0,3,-7.1999998};
-		unitInfoType="RscUnitInfoTank";
+		extCameraPosition[]={0,2.1,-8};
 		cargoCompartments[] = {"Compartment1"};
 		class HitPoints: HitPoints
 		{
 			class HitHull: HitHull
 			{
-				armor=2;
+				armor=1;
 				material=-1;
 				armorComponent="hit_hull";
 				name="hit_hull_point";
-				visual="zbytek";
+				visual="hit_hull";
 				passThrough=1;
-				minimalHit=0.1;
-				explosionShielding=0.2;
+				minimalHit=0.2;
+				explosionShielding=0.5;
 				radius=0.2;
 			};
 			class HitEngine: HitEngine
 			{
-				armor=1.25;
+				armor=0.8;
 				material=-1;
 				armorComponent="hit_engine";
 				name="hit_engine_point";
 				visual="-";
-				passThrough=0.1;
-				minimalHit=0.1;
+				passThrough=1;
+				minimalHit=0.2;
 				explosionShielding=0.5;
 				radius=0.2;
 			};
 			class HitFuel: HitFuel
 			{
-				armor=0.75;
+				armor=0.5;
 				material=-1;
 				armorComponent="hit_fuel";
 				name="hit_fuel_point";
 				visual="-";
-				passThrough=0.5;
+				passThrough=0.30000001;
 				minimalHit=0.1;
 				explosionShielding=0.60000002;
 				radius=0.2;
@@ -543,8 +514,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_1_1_hide";
 				armorComponent="wheel_1_1_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -553,8 +524,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_1_2_hide";
 				armorComponent="wheel_1_2_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -563,8 +534,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_1_3_hide";
 				armorComponent="wheel_1_3_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -573,8 +544,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_1_4_hide";
 				armorComponent="wheel_1_4_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -583,8 +554,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_2_1_hide";
 				armorComponent="wheel_2_1_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -593,8 +564,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_2_2_hide";
 				armorComponent="wheel_2_2_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -603,8 +574,8 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_2_3_hide";
 				armorComponent="wheel_2_3_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
@@ -613,11 +584,23 @@ class CfgVehicles
 				radius=0.33000001;
 				visual="wheel_2_4_hide";
 				armorComponent="wheel_2_4_hide";
-				armor=-250;
-				minimalHit=-0.016000001;
+				armor=0.2;
+				minimalHit=0.05;
 				explosionShielding=4;
 				passThrough=0;
 			};
+		};
+		class PlayerSteeringCoefficients // steering sensitivity configuration
+		{
+			turnIncreaseConst	= 0.2; // basic sensitivity value, higher value = faster steering
+			turnIncreaseLinear	= 1; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+			turnIncreaseTime	= 1.2; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+
+			turnDecreaseConst	= 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+			turnDecreaseLinear	= 5.0; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+			turnDecreaseTime	= 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+
+			maxTurnHundred		= 0.3; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
 		};
 		wheelDamageThreshold=0.18000001;
 		wheelDamageRadiusCoef=0.75;
@@ -668,20 +651,8 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"Laserbatteries"
 				};
-				soundServo[]=
-				{
-					"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",
-					0.56234133,
-					1,
-					30
-				};
-				soundServoVertical[]=
-				{
-					"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",
-					0.56234133,
-					1,
-					30
-				};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.39810717,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.39810717,1,30};
 				outGunnerMayFire=0;
 				inGunnerMayFire=1;
 				forceHideGunner=0;
@@ -1199,20 +1170,22 @@ class CfgVehicles
 			};
 		};
 	};
-	class adfrc_boxer_crv: adfrc_boxer
+	class adfrc_boxer_crv_early: adfrc_boxer
 	{
-		displayName="Boxer CRV Block I";
+		displayName="Boxer CRV Block I (Early)";
 		author="ADFRC - Quiggs";
 		model = "adf_wheeled\adfrc_boxer\adfrc_boxer_crv.p3d";
 		editorPreview = "adf_wheeled\adfrc_boxer\adfrc_boxer_crv.jpg";
 		picture="adf_wheeled\adfrc_boxer\data\ui\boxercrv.paa";
 		icon="adf_wheeled\adfrc_boxer\data\ui\mapboxercrv.paa";
+		driverOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+		driverOpticsModel = "ADF_Core\Vehicle\optics_driver.p3d";
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
-		crew="ADFRC_crewman_amcu";
-		transportSoldier=4;
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		transportSoldier=6;
 		accuracy = 0.3;
 		incomingMissileDetectionSystem = 16;
 		countermeasureActivationRadius = 2500;
@@ -1304,41 +1277,10 @@ class CfgVehicles
 			};
 			class earlysensors
 			{
-				DisplayName="Early Turret Layout";
 				source="user";
 				animPeriod=0.001;
-				initPhase=0;
+				initPhase=1;
 				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"earlysensors",
-					1
-				};
-				forceAnimate2[]=
-				{
-					"latesensors",
-					0
-				};
-			};
-			class latesensors
-			{
-				DisplayName="Late Turret Layout";
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"latesensors",
-					1
-				};
-				forceAnimate2[]=
-				{
-					"earlysensors",
-					0
-				};
 			};
 			class duke
 			{
@@ -1347,34 +1289,6 @@ class CfgVehicles
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};
-			class leftstorage
-			{
-				DisplayName="Left Storage Rack";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"towbar",
-					0
-				};
-			};
-			class rightstorage
-			{
-				DisplayName="Right Storage Rack";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"tools",
-					0
-				};
 			};
 			class storagebins
 			{
@@ -1428,14 +1342,9 @@ class CfgVehicles
 		animationList[]=
 		{
 			"earlysensors", 1,
-			"duke", 0.2,
-			"tools", 1.4,
-			"leftstorage", 0.5,
-			"rightstorage", 0.5,
 			"towcable", 0.6,
 			"towshackles", 0.8,
-			"towbar", 0.4,
-			"storagebins", 0.5
+			"storagebins", 0
 		};	
 		class Components
 		{
@@ -1721,6 +1630,8 @@ class CfgVehicles
 						initOutElev=0;
 						minOutTurn=-110;
 						maxOutTurn=110;
+						soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.39810717,1,30};
+						soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.39810717,1,30};
 						weapons[]=
 						{
 							"SmokeLauncher",
@@ -1792,7 +1703,7 @@ class CfgVehicles
 				displayName="Standard";
 				author="ADFRC_Quiggs";
 				factions[] = {"ADF"};
-				textures[] = {"adf_wheeled\adfrc_boxer\data\standard\texture1_co.paa","\adf_wheeled\adfrc_boxer\data\standard\texture2_co.paa","\adf_wheeled\adfrc_boxer\data\standard\texture3_co.paa","\adf_wheeled\adfrc_boxer\data\standard\texture4_co.paa","\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa"};
+				textures[] = {"adf_wheeled\adfrc_boxer\data\standard\boxerhull1_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxerturret1_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxerhull2_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxersusp_co.paa","\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa"};
 			};
 		};
 		hiddenSelections[]=
@@ -1805,10 +1716,659 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\adf_wheeled\adfrc_boxer\data\standard\texture1_co.paa",
-			"\adf_wheeled\adfrc_boxer\data\standard\texture2_co.paa",
-			"\adf_wheeled\adfrc_boxer\data\standard\texture3_co.paa",
-			"\adf_wheeled\adfrc_boxer\data\standard\texture4_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerhull1_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerturret1_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerhull2_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxersusp_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa"
+		};
+		class Attributes
+		{
+			class PlatoonMarkings
+			{
+				//--- Mandatory properties
+				displayName = "Vehicle Callsigns";
+				tooltip = "The vehicle callsign shown on the sides and back of the vehicle";
+				property = "ADFRC_PlatoonMarkings"; //Unique config property name saved in SQM
+				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
+
+				//Expression called when applying the attribute in Eden and at the scenario start
+				//The expression is called twice - first for data validation, and second for actual saving
+				//Entity is passed as _this, value is passed as _value
+				//%s is replaced by attribute config name. It can be used only once in the expression
+				//In MP scenario, the expression is called only on server.
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [4, format ['\adf_wheeled\adfrc_boxer\data\labels\labels_0%1_co.paa', _value]]} else {_this setobjecttextureGlobal [4, format ['\adf_wheeled\adfrc_boxer\data\labels\labels_%1_co.paa', _value]]};";
+
+				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
+				//Entity (unit, group, marker, comment etc.) is passed as _this
+				//Returned value is the default value
+				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
+				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
+				defaultValue = 0;
+				
+				class Values 
+				{
+					class One {
+						name = "Bullryder | 7B";
+						tooltip = "Select this callsign";
+						value = 1;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa";
+					};
+					class Two: One {
+						name = "Cerebral | 3A";
+						value = 2;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_02_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_02_co.paa";
+					};
+					class Three: One {
+						name = "Circle Work | 5A";
+						value = 3;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_03_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_03_co.paa";
+					};
+					class Four: One {
+						name = "Bollocks | 11-A";
+						value = 4;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_04_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_04_co.paa";
+					};
+					class Five: One {
+						name = "Comalgo | 2C";
+						value = 5;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_05_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_05_co.paa";
+					};
+					class Six: One {
+						name = "Sandgroper | 15C";
+						value = 6;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_06_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_06_co.paa";
+					};
+					class Seven: One {
+						name = "Courage | 12C";
+						value = 7;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_07_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_07_co.paa";
+					};
+					class Eight: One {
+						name = "Atomic | 13A";
+						value = 8;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_08_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_08_co.paa";
+					};
+					class Nine: One {
+						name = "Cannibal | 33B";
+						value = 9;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_09_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_09_co.paa";
+					};
+					class Ten: One {
+						name = "Bourbon | 23B";
+						value = 10;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_10_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_10_co.paa";
+					};
+					class Eleven: One {
+						name = "Cant Help Ya | 21A";
+						value = 11;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_11_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_11_co.paa";
+					};
+					class Twelve: One {
+						name = "ANZAC | 11A";
+						value = 12;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_12_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_12_co.paa";
+					};
+					class Thirteen: One {
+						name = "Angry Bird | 9A";
+						value = 13;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_13_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_13_co.paa";
+					};
+					class Fourteen: One {
+						name = "Atlas | 13B";
+						value = 14;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_14_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_14_co.paa";
+					};
+					class Fifteen: One {
+						name = "Achilles | 22C";
+						value = 15;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_15_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_15_co.paa";
+					};
+					class Sixteen: One {
+						name = "Boomer | 31A";
+						value = 16;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_16_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_16_co.paa";
+					};
+					/* Seventeen: One {
+						name = "Cerebral | 1";
+						value = 17;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_17.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_17.paa";
+					};
+					class Eighteen: One {
+						name = "Circle Work | 8";
+						value = 18;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_18.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_18.paa";
+					};
+					class Nineteen: One {
+						name = "Bollocks | 5";
+						value = 19;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_19.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_19.paa";
+					};
+					class Twenty: One {
+						name = "Hammer time | 31";
+						value = 20;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_20.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_20.paa";
+					};*/
+					class TwentyOne: One {
+						name = "NONE";
+						tooltip = "No callsign marking will be displayed.";
+						value = 21;
+						picture = "\adf_wheeled\adfrc_boxer\data\labels\labels_21_co.paa";
+						pictureRight = "\adf_wheeled\adfrc_boxer\data\labels\labels_21_co.paa";
+					};
+					class Zero: One {
+						name = "Random";
+						tooltip = "Choose the markings randomly.";
+						value = 0;
+					};
+				};
+
+				//--- Optional properties
+				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
+				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
+				condition = "object"; // Condition for attribute to appear (see the table below)
+				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+			};
+		};
+	};
+	class adfrc_boxer_crv_late: adfrc_boxer_crv_early
+	{
+		ace_hunterkiller[] = {{{0}, 1}, {{0,0}, 3}};
+		displayName="Boxer CRV Block I (Late)";
+		author="ADFRC - Quiggs";
+		model = "adf_wheeled\adfrc_boxer\adfrc_boxer_crv.p3d";
+		editorPreview = "adf_wheeled\adfrc_boxer\adfrc_boxer_crv.jpg";
+		picture="adf_wheeled\adfrc_boxer\data\ui\boxercrv.paa";
+		icon="adf_wheeled\adfrc_boxer\data\ui\mapboxercrv.paa";
+		memoryPointDriverOptics="driverview_late";
+		memoryPointDriverOutOptics="driverview_late";
+		driverOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+		driverOpticsModel = "\adf_wheeled\adfrc_boxer\optics_boxer_driver.p3d";//\A3\Weapons_F\Reticle\Optics_Gunner_MBT_02_n_F.p3d
+		unitInfoType="RscOptics_AV_driver";
+		side=1;
+		scope=2;
+		scopeCurator=2;
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		class ViewOptics: ViewOptics
+		{
+			initAngleX = 5;
+			minAngleX = -75;
+			maxAngleX = 85;
+			initAngleY = 0;
+			minAngleY = -150;
+			maxAngleY = 150;
+			initFov = 1;
+			minFov=0.95;
+			maxFov=1.5;
+			maxMoveX = 0.2;
+			maxMoveY = 0;
+			maxMoveZ = 0;
+			minMoveX = 0.2;
+			minMoveY = 0;
+			minMoveZ = 0;
+			thermalMode[] = {0,1};
+			visionMode[] = {"Normal","NVG","TI"};
+		};
+		class ViewPilot: ViewPilot
+		{
+			initAngleX=5;
+			initAngleY=0;
+			initFov=0.95;
+			minFov=0.25;
+			maxFov=1.25;
+			minAngleX=-65;
+			maxAngleX=85;
+			minAngleY=-150;
+			maxAngleY=150;
+			minMoveX=-0.075000003;
+			maxMoveX=0.075000003;
+			minMoveY=-0.075000003;
+			maxMoveY=0.075000003;
+			minMoveZ=-0.075000003;
+			maxMoveZ=0.1;
+		};
+		extCameraPosition[]={0,2.1,-8};
+		class Library
+		{
+			libTextDesc = "$STR_A3_CfgVehicles_APC_Wheeled_03_WAPC_Library0";
+		};
+		class AnimationSources
+		{
+			class 30mm_recoil
+			{
+				source="reload";
+				weapon="adfrc_boxer_Mk30";
+			};
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "adfrc_boxer_Mk30";
+			};
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "adfrc_boxer_Mk30";
+			};
+			class muzzle2_rot
+			{
+				source = "ammorandom";
+				weapon = "adfrc_boxer_coax";
+			};
+			class muzzle2_hide
+			{
+				source = "reload";
+				weapon = "adfrc_boxer_coax";
+			};
+			class rearramp
+			{
+				source="door";
+				initPhase=0;
+				animPeriod=3;
+			};
+			class towshackles
+			{
+				DisplayName="Tow Shackles";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class towcable
+			{
+				DisplayName="Front Tow Cable";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class tools
+			{
+				DisplayName="Tool Kit";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class towbar
+			{
+				DisplayName="Tow Bar";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class duke
+			{
+				DisplayName="AN/VLQ-12 Duke";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class latesensors
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+			};
+			class leftstorage
+			{
+				DisplayName="Left Storage Rack";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class rightstorage
+			{
+				DisplayName="Right Storage Rack";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class nethull
+			{
+				DisplayName="Hull Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class netturret
+			{
+				DisplayName="Turret Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class netgun
+			{
+				DisplayName="Gun Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class nethatch
+			{
+				DisplayName="Driver Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class netrack
+			{
+				DisplayName="Rack Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+		};
+		animationList[]=
+		{
+			"latesensors", 1,
+			"towcable", 0.6,
+			"towshackles", 0.8,
+			"leftstorage", 0,
+			"rightstorage", 0
+		};	
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"ADFRC_boxer_mk30","ADFRC_boxer_coax","HE","AP","ADFRC_laser_gunner"};
+				magazines[] = {"ADFRC_boxer_360RND_30MM_HE","ADFRC_boxer_360RND_30MM_AP","ADFRC_boxer_600Rnd_762x51_Tracer","ADFRC_boxer_600Rnd_762x51_Tracer","Laserbatteries"};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.39810717,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.39810717,1,30};
+				discreteDistance[] = {0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,3000};
+				discreteDistanceInitIndex = 0;
+				extCameraPosition[]={0,3,-7.1999998};
+				body="mainTurret";
+				gun="mainGun";
+				gunnerInAction="Commander_APC_tracked_01_crv_in";
+				animationSourceHatch = "hatchGunner";
+				gunnerCompartments = "Compartment1";
+				gunnerHasFlares=1;
+				lockWhenDriverOut = 0;
+				minElev = -9;
+				maxElev = 45;
+				minOutElev=-20;
+				maxOutElev=50;
+				initOutElev=0;
+				minOutTurn=-110;
+				maxOutTurn=110;
+				initOutTurn=0;
+				airLock = 1;
+				stabilizedInAxes=3;
+				commanding=1;
+				gunnerForceOptics=1;
+				gunnerGetInAction="GetInAMV_cargo";
+				gunnerGetOutAction="GetOutLow";
+				isPersonTurret=1;
+				personTurretAction="vehicle_turnout_1";
+				forceHideGunner=0;
+				viewGunnerInExternal=0;
+				castGunnerShadow=1;
+				startEngine=0;
+				inGunnerMayFire=1;
+				outGunnerMayFire=0;
+				allowTabLock = 1;
+				irScanGround = 1;
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				usepip=1;
+				LODTurnedIn=1200;
+				LODTurnedOut=1;
+				LODOpticsIn=1;
+				LODOpticsOut = 1;
+				maxHorizontalRotSpeed=0.8;
+				maxVerticalRotSpeed=0.5;
+				animationSourceStickX="turret_control_x";
+				animationSourceStickY="turret_control_y";
+				gunnerRightHandAnimName="turret_control";
+				viewGunnerShadowAmb=0.5;
+				viewGunnerShadowDiff=0.050000001;
+				memoryPointGunnerOptics="gunnerview";
+				selectionFireAnim="zasleh";
+				memoryPointGun[]=
+				{
+					"usti hlavne3"
+				};
+				class ViewGunner: ViewGunner
+				{
+					initAngleX=-10;
+					initAngleY=0;
+					initFov=0.89999998;
+					minFov=0.25;
+					maxFov=1.25;
+					minAngleX=-65;
+					maxAngleX=85;
+					minAngleY=-150;
+					maxAngleY=150;
+					minMoveX=-0.075000003;
+					maxMoveX=0.075000003;
+					minMoveY=-0.075000003;
+					maxMoveY=0.075000003;
+					minMoveZ=-0.075000003;
+					maxMoveZ=0.1;
+				};
+				class ViewOptics: RCWSOptics
+				{
+					visionMode[]=
+					{
+						"Normal",
+						"TI"
+					};
+				};
+				class OpticsIn: Optics_Gunner_MBT_03
+				{
+					class Wide: Wide
+					{
+						initFov=0.65;
+					};
+					class Medium: Medium
+					{
+						initFov=0.25;
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+				turretInfoType="RscOptics_APC_Wheeled_03_gunner";
+				showCrewAim=2;
+				class Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner
+					{
+						class Components: components
+						{
+							class SensorDisplay
+							{
+								componentType = "SensorsDisplayComponent";
+								range[] = {4000,3000,2000,1000};
+								showTargetTypes = 1 + 2 + 4 + 8 + 16 + 64 + 128 + 256 + 1024;
+								resource = "RscCustomInfoSensors";
+							};
+						};
+					};
+					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner
+					{
+						defaultDisplay = "SensorDisplay";
+						class Components: components
+						{
+							class SensorDisplay
+							{
+								componentType = "SensorsDisplayComponent";
+								range[] = {4000,3000,2000,1000};
+								showTargetTypes = 1 + 2 + 4 + 8 + 16 + 64 + 128 + 256 + 1024;
+								resource = "RscCustomInfoSensors";
+							};
+						};
+					};
+				};
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor=1.5;
+						material=-1;
+						armorComponent="hit_main_turret";
+						name="hit_main_turret_point";
+						visual="OtocVez";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.2;
+						radius=0.2;
+						isTurret=1;
+					};
+					class HitGun
+					{
+						armor=1.5;
+						material=-1;
+						armorComponent="hit_main_gun";
+						name="hit_main_gun_point";
+						visual="OtocHlaven";
+						passThrough=0;
+						minimalHit=0.1;
+						explosionShielding=0.40000001;
+						radius=0.2;
+						isGun=1;
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						turretInfoType="RscOptics_APC_Wheeled_03_gunner";
+						extCameraPosition[]={0,3,-7.1999998};
+						isPersonTurret=1;
+						personTurretAction="vehicle_turnout_1";
+						gunnerGetInAction="GetInAMV_cargo";
+						gunnerGetOutAction="GetOutLow";
+						stabilizedInAxes=3;
+						gunnerForceOptics=1;
+						startEngine=0;
+						viewGunnerInExternal=0;
+						minElev=-35;
+						maxElev=55;
+						minOutElev=-20;
+						maxOutElev=50;
+						initOutElev=0;
+						minOutTurn=-110;
+						maxOutTurn=110;
+						weapons[]=
+						{
+							"SmokeLauncher",
+							"ADFRC_laser_commander"
+						};
+						magazines[]=
+						{
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"SmokeLauncherMag",
+							"Laserbatteries"
+						};
+						class OpticsIn: Optics_Gunner_MBT_03
+						{
+							class UltraWide: Wide
+							{
+								initFov=1.1;
+							};
+							class Wide: Wide
+							{
+								initFov=0.50;
+							};
+							class Medium: Medium
+							{
+								initFov=0.25;
+							};
+							class Narrow: Narrow
+							{
+							};
+						};
+						class Components
+						{
+							class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner
+							{
+								class Components: components
+								{
+									class SensorDisplay
+									{
+										componentType = "SensorsDisplayComponent";
+										range[] = {4000,3000,2000,1000};
+										showTargetTypes = 1 + 2 + 4 + 8 + 16 + 64 + 128 + 256 + 1024;
+										resource = "RscCustomInfoSensors";
+									};
+								};
+							};
+							class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner
+							{
+								defaultDisplay = "SensorDisplay";
+								class Components: components
+								{
+									class SensorDisplay
+									{
+										componentType = "SensorsDisplayComponent";
+										range[] = {4000,3000,2000,1000};
+										showTargetTypes = 1 + 2 + 4 + 8 + 16 + 64 + 128 + 256 + 1024;
+										resource = "RscCustomInfoSensors";
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		class TextureSources
+		{
+			class Standard
+			{
+				displayName="Standard";
+				author="ADFRC_Quiggs";
+				factions[] = {"ADF"};
+				textures[] = {"adf_wheeled\adfrc_boxer\data\standard\boxerhull1_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxerturret1_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxerhull2_co.paa","\adf_wheeled\adfrc_boxer\data\standard\boxersusp_co.paa","\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa"};
+			};
+		};
+		hiddenSelections[]=
+		{
+			camo1,
+			camo2,
+			camo3,
+			camo4,
+			labels
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerhull1_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerturret1_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxerhull2_co.paa",
+			"\adf_wheeled\adfrc_boxer\data\standard\boxersusp_co.paa",
 			"\adf_wheeled\adfrc_boxer\data\labels\labels_01_co.paa"
 		};
 		class Attributes
@@ -1980,7 +2540,7 @@ class CfgVehicles
 			};
 		};
 	};	
-	class adfrc_boxer_apc: adfrc_boxer
+	class adfrc_boxer_apc: adfrc_boxer_crv_late
 	{
 		displayName="Boxer APC";
 		author="ADFRC - Quiggs";
@@ -1988,11 +2548,54 @@ class CfgVehicles
 		editorPreview = "adf_wheeled\adfrc_boxer\adfrc_boxer_apc.jpg";
 		picture="adf_wheeled\adfrc_boxer\data\ui\boxerapc.paa";
 		icon="adf_wheeled\adfrc_boxer\data\ui\mapboxerapc.paa";
+		unitInfoType="RscOptics_AV_driver";
+		memoryPointDriverOptics="driverview_late";
+		memoryPointDriverOutOptics="driverview_late";
+		driverOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
+		driverOpticsModel = "\adf_wheeled\adfrc_boxer\optics_boxer_driver.p3d";
 		side=1;
 		scope=2;
 		scopeCurator=2;
-		faction="ADF";
-		crew="ADFRC_crewman_amcu";
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		class ViewOptics: ViewOptics
+		{
+			initAngleX = 5;
+			minAngleX = -75;
+			maxAngleX = 85;
+			initAngleY = 0;
+			minAngleY = -150;
+			maxAngleY = 150;
+			initFov = 1;
+			minFov=0.95;
+			maxFov=1.5;
+			maxMoveX = 0.2;
+			maxMoveY = 0;
+			maxMoveZ = 0;
+			minMoveX = 0.2;
+			minMoveY = 0;
+			minMoveZ = 0;
+			thermalMode[] = {0,1};
+			visionMode[] = {"Normal","NVG","TI"};
+		};
+		class ViewPilot: ViewPilot
+		{
+			initAngleX=5;
+			initAngleY=0;
+			initFov=0.95;
+			minFov=0.25;
+			maxFov=1.25;
+			minAngleX=-65;
+			maxAngleX=85;
+			minAngleY=-150;
+			maxAngleY=150;
+			minMoveX=-0.075000003;
+			maxMoveX=0.075000003;
+			minMoveY=-0.075000003;
+			maxMoveY=0.075000003;
+			minMoveZ=-0.075000003;
+			maxMoveZ=0.1;
+		};
 		transportSoldier=8;
 		accuracy = 0.3;
 		irScanGround = 1;
@@ -2157,8 +2760,7 @@ class CfgVehicles
 				turretFollowFreeLook = 1;
 				weapons[]=
 				{
-					"ADFRC_boxer_M2HBQCB_RWS",
-					"SmokeLauncher"
+					"ADFRC_boxer_M2HBQCB_RWS",\
 				};
 				magazines[]=
 				{
@@ -2171,11 +2773,7 @@ class CfgVehicles
 					"100Rnd_127x99_mag",
 					"100Rnd_127x99_mag",
 					"100Rnd_127x99_mag",
-					"100Rnd_127x99_mag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag"
+					"100Rnd_127x99_mag"
 				};
 				commanding=1;
 				startEngine=0;
@@ -2211,14 +2809,14 @@ class CfgVehicles
 				primaryObserver=0;
 				usePip=1;
 				LODTurnedIn = 1200;
-				LODTurnedOut = 1000;
-				LODOpticsIn = 1202;
-				LODOpticsOut = 1000;
+				LODTurnedOut = 1;
+				LODOpticsIn = 1200;
+				LODOpticsOut = 1;
 				viewGunnerInExternal = 0;
 				disableSoundAttenuation=0;
-				soundElevation = ["",0.00316228,1];
-				soundServo = ["A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10];
-				soundServoVertical = ["A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10];
+				soundElevation[] = {"",0.00316228,1};
+				soundServo[] = {"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP03",0.177828,1,10};
 				class ViewOptics: RCWSOptics 
 				{	
 				};
@@ -2246,14 +2844,14 @@ class CfgVehicles
 						explosionShielding=1;
 						radius=0.20;
 					};
-				};
+				};/*
 				class CommanderOptics: CommanderOptics
 				{
 					memoryPointGunnerOutOptics="commanderview";
 					memoryPointGunnerOptics="commanderview";
 					body="commanderTurret";
 					gun="commanderGun";
-					gunnerName="Commander";
+					gunnerName="TEST";
 					proxyType="CPCommander";
 					gunnerCompartments = "Compartment1";
 					minElev=-25;
@@ -2270,9 +2868,9 @@ class CfgVehicles
 					minOutTurn=-110;
 					maxOutTurn=110;
 					LODTurnedIn = 1200;
-					LODTurnedOut = 1000;
-					LODOpticsIn = 1000;
-					LODOpticsOut = 1;
+					LODTurnedOut = 1200;
+					LODOpticsIn = 1200;
+					LODOpticsOut = 1200;
 					weapons[]=
 					{
 						"SmokeLauncher",
@@ -2285,19 +2883,9 @@ class CfgVehicles
 						"SmokeLauncherMag",
 						"Laserbatteries"
 					};
-				};
+				};*/
 			};
-		};
-		class TextureSources
-		{
-			class Standard
-			{
-				displayName="Standard";
-				author="ADFRC_Quiggs";
-				factions[] = {"ADF"};
-				textures[] = {"ADF_Wheeled\adfrc_boxer\data\standard\texture1_co.paa","ADF_Wheeled\adfrc_boxer\data\standard\texture3_co.paa","ADF_Wheeled\adfrc_boxer\data\standard\texture4_co.paa","ADF_Wheeled\adfrc_boxer\data\standard\texture5_co.paa",};
-			};
-		};
+		};/*
 		hiddenSelections[]=
 		{
 			camo1,
@@ -2311,24 +2899,20 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture3_co.paa",
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture4_co.paa",
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture5_co.paa",
-		};
+		};*/
 	};
-	class adfrc_boxer_crv_b2: adfrc_boxer_crv
+	class adfrc_boxer_crv_b2: adfrc_boxer_crv_late
 	{
 		displayName="Boxer CRV Block II";
-		author="Quiggs's Addon Vehicles";
+		author="ADFRC";
 		model = "ADF_Wheeled\adfrc_boxer\adfrc_boxer_crv_b2.p3d";
-		//editorPreview = "ADF_Wheeled\adfrc_boxer\_crv.jpg";
 		picture="ADF_Wheeled\adfrc_boxer\data\ui\boxercrv.paa";
 		icon="ADF_Wheeled\adfrc_boxer\data\ui\mapboxercrv.paa";
-		side=1;
-		scope=2;
-		scopeCurator=2;
-		faction="ADF";
-		crew="ADFRC_crewman_amcu";
-		transportSoldier=4;
+		faction="ADFRC_F_MD";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		transportSoldier=6;
 		accuracy = 0.3;
-		armor=500;
+		armor=425;
 		incomingMissileDetectionSystem = 16;
 		countermeasureActivationRadius = 2500;
 		driverCanSee = 31;
@@ -2423,45 +3007,18 @@ class CfgVehicles
 				initPhase=0;
 				author="Quiggs";
 			};
-			class earlysensors
-			{
-				DisplayName="Early Turret Layout";
-				source="user";
-				animPeriod=0.001;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"latesensors",
-					0
-				};
-			};
 			class latesensors
 			{
 				DisplayName="Late Turret Layout";
 				source="user";
 				animPeriod=0.001;
-				initPhase=0;
+				initPhase=1;
 				author="ADFRC";
-				forceAnimatePhase=0;
-				forceAnimate[]=
-				{
-					"earlysensors",
-					0
-				};
+				forceAnimatePhase=1;
 			};
 			class duke
 			{
 				DisplayName="AN/VLQ-12 Duke";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class nethull
-			{
-				DisplayName="Hull Camo Net";
 				source="user";
 				animPeriod=0;
 				initPhase=0;
@@ -2483,14 +3040,6 @@ class CfgVehicles
 				initPhase=0;
 				author="ADFRC";
 			};
-			class nethatch
-			{
-				DisplayName="Driver Camo Net";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
 			class netrack
 			{
 				DisplayName="Rack Camo Net";
@@ -2502,8 +3051,7 @@ class CfgVehicles
 		};
 		animationList[]=
 		{
-			"earlysensors", 0.8,
-			"latesensors", 0.2,
+			"latesensors", 1,
 			"duke", 0.2,
 			"towcable", 0.6,
 			"towshackles", 0.8,
@@ -2537,7 +3085,7 @@ class CfgVehicles
 				airLock = 1;
 				stabilizedInAxes=3;
 				commanding=1;
-				gunnerForceOptics=0;
+				gunnerForceOptics=1;
 				gunnerGetInAction="GetInAMV_cargo";
 				gunnerGetOutAction="GetOutLow";
 				isPersonTurret=1;
@@ -2693,7 +3241,7 @@ class CfgVehicles
 						gunnerGetOutAction="GetOutLow";
 						castGunnerShadow=1;
 						forceHideGunner=0;
-						gunnerForceOptics=0;
+						gunnerForceOptics=1;
 						inGunnerMayFire=1;
 						outGunnerMayFire=0;
 						discreteDistance[]={0,100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
@@ -2707,8 +3255,8 @@ class CfgVehicles
 						stabilizedInAxes=3;
 						primaryGunner=0;
 						primaryObserver=1;
-						usePip=2;
-						LODTurnedIn = 1200;
+						usePip=0;
+						LODTurnedIn = 1;
 						LODTurnedOut = 1;
 						LODOpticsIn = 1;
 						LODOpticsOut = 1;
@@ -2765,7 +3313,7 @@ class CfgVehicles
 					};
 				};
 			};
-		};
+		};/*
 		class TextureSources
 		{
 			class Standard
@@ -2790,6 +3338,6 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture2_co.paa",
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture3_co.paa",
 			"ADF_Wheeled\adfrc_boxer\data\standard\texture4_co.paa",
-		};
+		};*/
 	};
 };

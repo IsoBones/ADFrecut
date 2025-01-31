@@ -735,7 +735,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 			"ItemRadio", 
 			"ItemGPS", 
 			"Rangefinder", 
-			"adfrc_l3h_psq36"
+			"adfrc_l3h_psq36_recce"
 		};
 		respawnLinkedItems[]={
 			"adfrc_boonie",
@@ -747,7 +747,7 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 			"ItemRadio", 
 			"ItemGPS", 
 			"Rangefinder", 
-			"adfrc_l3h_psq36"
+			"adfrc_l3h_psq36_recce"
 		};
 	};
 	

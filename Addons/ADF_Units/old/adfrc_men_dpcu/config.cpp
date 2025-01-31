@@ -154,6 +154,17 @@ class cfgVehicles
 		scope=1;
 		scopeCurator=1;
 		author="$STR_ADF_AUTHOR";
+		nakedUniform="U_BasicBody";
+		uniformClass="ADFRC_uniform_dpcu_new";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Units\old\ADFRC_men_dpcu\data\uniform_DPCU_new_co.paa"
+		};
+		model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		_generalMacro="ADFRC_engineer_dpcu";
 		displayName="Combat Engineer";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpcu\preview\ADFRC_engineer_dpcu.jpg";
@@ -161,7 +172,6 @@ class cfgVehicles
 		saboteur=1;
 		canDeactivateMines=1;
 		detectSkill=80;
-		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		linkedItems[]=
 		{
 			"adfrc_Helmet_dpcu_canv",
@@ -1238,6 +1248,20 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="ADFRC_rifleman_dpcu";
+			containerClass="Supply20";
+			mass=80;
+		};
+	};
+	class ADFRC_uniform_dpcu_new: U_B_CombatUniform_mcam
+	{
+		scope=2;
+		author="$STR_ADF_AUTHOR";
+		displayName="Disruptive Pattern Combat Uniform (Test)";
+		picture="";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="ADFRC_rifleman_dpcu_new";
 			containerClass="Supply20";
 			mass=80;
 		};

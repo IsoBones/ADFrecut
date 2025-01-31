@@ -1171,7 +1171,7 @@ class CfgWeapons
 	};
 	class adfrc_ECH_AMCU: adfrc_ECH_Desert
 	{
-		scope = 2;
+		scope = 1;
 		author="$STR_ADF_AUTHOR";
 		displayName="ADF ECH [AMCU]";
 		picture="\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
