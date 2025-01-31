@@ -1,7 +1,7 @@
 	////////////////////////TAG-E/W Units///////////////////////////////////////////////////////////
-	class ADFRC_MD_Green_TAGE_Base;
-	class ADFRC_MD_Green_TAGE_Rolled_Base;
-	class ADFRC_MD_TAG_CDO_F: ADFRC_MD_Green_TAGE_Rolled_Base{
+	class ADFRC_MD_Green_TAG_Base;
+	class ADFRC_MD_Green_TAG_Rolled_Base;
+	class ADFRC_MD_TAG_CDO_F: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Operator";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
@@ -75,7 +75,7 @@
 			"ItemRadio"
 		};
 	};
-	class ADFRC_MD_TAG_CDO_CQB: ADFRC_MD_Green_TAGE_Rolled_Base{
+	class ADFRC_MD_TAG_CDO_CQB: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Operator (CQB)";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
@@ -149,7 +149,7 @@
 			"ItemRadio"
 		};
 	};
-	class ADFRC_MD_TAG_CDO_TL: ADFRC_MD_Green_TAGE_Rolled_Base{
+	class ADFRC_MD_TAG_CDO_TL: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Team Leader";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
@@ -225,7 +225,7 @@
 			"ItemRadio"
 		};
 	};
-	class ADFRC_MD_TAG_CDO_CFA: ADFRC_MD_Green_TAGE_Rolled_Base{
+	class ADFRC_MD_TAG_CDO_CFA: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Combat First Aider";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
@@ -303,7 +303,7 @@
 			"ItemRadio"
 		};
 	};
-	class ADFRC_MD_TAG_CDO_EOD: ADFRC_MD_Green_TAGE_Rolled_Base{
+	class ADFRC_MD_TAG_CDO_EOD: ADFRC_MD_Green_TAG_Rolled_Base{
 		displayName="Operator (EOD)";
 		author="$STR_ADF_AUTHOR";
 		scope=1;
