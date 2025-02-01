@@ -146,7 +146,7 @@ class ADFRC_G19_G5_SLICK : ADFRC_G19_G5_MOS_9
 	{
 		author = "Brucey";
 		ACE_barrelLength = 102;
-		model = "ADF_Weapons\adfrc_g19\G19";
+		model = "ADF_Weapons\adfrc_g19\G19_Slick";
 		descriptionShort = "Glock 19 <br/> Gen5 MOS<br/>Caliber: 9MM";
 		inertia = 0.75;
 		scope=2;
