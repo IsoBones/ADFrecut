@@ -967,7 +967,7 @@ class CfgVehicles{
       	maximumLoad = 360;
       	mass = 60;
     };
-    class adfrc_patrol_bullock_mc: adfrc_Bullock_Base 
+    class adfrc_patrol_bullock_mc: adfrc_Bullock_Base
 	{
       	author = "ADFU Team";
       	scope = 2;
@@ -979,7 +979,7 @@ class CfgVehicles{
       	maximumLoad = 360;
       	mass = 60;
     };
-    class adfrc_patrol_bullock_dpdu: adfrc_Bullock_Base 
+    class adfrc_patrol_bullock_dpdu: adfrc_Bullock_Base
 	{
       	author = "ADFU Team";
       	scope = 2;
@@ -991,7 +991,7 @@ class CfgVehicles{
       	maximumLoad = 360;
       	mass = 60;
     };
-    class adfrc_patrol_bullock_dpcu: adfrc_Bullock_Base 
+    class adfrc_patrol_bullock_dpcu: adfrc_Bullock_Base
 	{
       	author = "ADFU Team";
       	scope = 2;
@@ -1003,7 +1003,7 @@ class CfgVehicles{
       	maximumLoad = 360;
       	mass = 60;
     };
-    class adfrc_patrol_bullock_coyote: adfrc_Bullock_Base 
+    class adfrc_patrol_bullock_coyote: adfrc_Bullock_Base
 	{
       	author = "ADFU Team";
       	scope = 2;
@@ -1102,7 +1102,6 @@ class CfgVehicles{
 		tf_subtype = "digital_lr";
     };
 // MOLLE BACKPACKS
-	class Backpack_Base;
 	class adfrc_molle_bag_117g: ReammoBox
 	{
 		scope = 2;
@@ -1241,8 +1240,8 @@ class CfgVehicles{
 		maximumLoad = 300;
 		mass=30;
 	};
-	
-	
+
+
 	/////TBAS T5 Backpanels
 	class adfrc_T5_Backpanel: adfrc_molle_bag_117g
 	{
@@ -1257,8 +1256,8 @@ class CfgVehicles{
 		maximumLoad = 100;
 		mass=05;
 	};
-	
-	
+
+
 	/////JPC Backpanels
 	class adfrc_JPC_Backpanel: adfrc_molle_bag_117g
 	{

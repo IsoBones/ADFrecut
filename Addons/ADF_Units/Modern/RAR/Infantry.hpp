@@ -1587,13 +1587,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//backpack="";
 		weapons[]={
 			"ADFRC_M4A5_KAC_556",
-			"ADFRC_G19_G5_MOS_9",
+			"ADFRC_G19_G5_SLICK",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"ADFRC_M4A5_KAC_556",
-			"ADFRC_G19_G5_MOS_9",
+			"ADFRC_G19_G5_SLICK",
 			"Throw",
 			"Put"
 		};
@@ -1649,13 +1649,13 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_Soldier_HeliCrew.jpg";
 		weapons[]={
 			"ADFRC_M4A5_KAC_556",
-			"ADFRC_G19_G5_MOS_9",
+			"ADFRC_G19_G5_SLICK",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
 			"ADFRC_M4A5_KAC_556",
-			"ADFRC_G19_G5_MOS_9",
+			"ADFRC_G19_G5_SLICK",
 			"Throw",
 			"Put"
 		};
