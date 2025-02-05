@@ -7,10 +7,10 @@ class SensorTemplateMan;
 class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
-class cfgCloudlets 
+class cfgCloudlets
 {
 	class MachineGunCartridge;
-	class ADFRC_boxer_cartridge: MachineGunCartridge 
+	class ADFRC_boxer_cartridge: MachineGunCartridge
 	{
 		moveVelocity[] = { "-directionX * 4", "- directionY * 4", "- directionZ * 4" };
 		moveVelocityVar[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
@@ -19,7 +19,7 @@ class cfgCloudlets
 		bounceOnSurface = 0.3;
 	};
 	class MachineGunEject;
-	class ADFRC_boxer_link: MachineGunEject 
+	class ADFRC_boxer_link: MachineGunEject
 	{
 		moveVelocity[] = { "-directionX * 2", "- directionY * 2", "- directionZ * 2" };
 		moveVelocityVar[] = { "-directionX * 1", "- directionY * 1", "- directionZ * 1" };
@@ -50,8 +50,6 @@ class ADFRC_mk30_linkeject {
 };
 class cfgAmmo
 {
-	class Components;
-	class SensorTemplateIR;
 	class B_30mm_MP_Tracer_Red;
 	class ADFRC_boxer_30mm_HE: B_30mm_MP_Tracer_Red
 	{
@@ -64,6 +62,12 @@ class cfgAmmo
 		tracerScale = 2.25;
 		airLock = 1;
 		canLock = 2;
+		class CamShakePlayerFire
+		{
+			power = 0.5;
+			duration = 0.25;
+			frequency = 20;
+		};
 	};
 	class B_30mm_APFSDS;
 	class ADFRC_boxer_30mm_AP: B_30mm_APFSDS
@@ -79,6 +83,12 @@ class cfgAmmo
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 		airLock = 1;
 		canLock = 2;
+		class CamShakePlayerFire
+		{
+			power = 0.5;
+			duration = 0.25;
+			frequency = 20;
+		};
 	};
 	class B_762x54_Tracer_Green;
 	class ADFRC_boxer_762x51_Tracer: B_762x54_Tracer_Green
@@ -88,119 +98,6 @@ class cfgAmmo
 		tracerColorR[] = {0.7,0.7,0.5,0.04};
 		airLock = 1;
 		canLock = 2;
-	};
-	class M_Titan_AT_long;
-	class ADFRC_Spike_LR2: M_Titan_AT_long
-	{
-		submunitionAmmo="ammo_Penetrator_Titan_AT_long";
-		submunitionDirectionType="SubmunitionModelDirection";
-		submunitionInitSpeed=1000;
-		submunitionParentSpeedCoef=0;
-		submunitionInitialOffset[]={0,0,-0.2};
-		triggerOnImpact=1;
-		deleteParentWhenTriggered=0;
-		warheadName="TandemHEAT";
-		autoSeekTarget = 1;
-		cameraViewAvailable = 1;
-		hit=150;
-		indirectHit=40;
-		indirectHitRange=4;
-		timeToLive=35;
-		initTime=0.15000001;
-		thrustTime=8;
-		thrust=35;
-		maxSpeed=180;
-		typicalSpeed=1660;
-		missileManualControlCone = 45;
-		missileLockCone=90;
-		missileLockMaxDistance=5000;
-		missileLockMinDistance=200;
-		missileLockMaxSpeed=55;
-		maxControlRange=5000;
-		weaponLockSystem="4 + 8 + 16";
-		airLock = 1;
-		canLock = 2;
-		irLock = 1;
-		laserLock = 1;
-		cmImmunity=0.5;
-		flightProfiles[]=
-		{
-			"Direct",
-			"TopDown",
-			"LOALDistance",
-			"Cruise",
-		};
-		class Direct
-		{
-		};
-		class TopDown
-		{
-			ascendHeight=200;
-			descendDistance=240;
-			minDistance=240;
-			ascendAngle=30;
-		};
-		class LoalDistance : Direct
-		{
-			lockSeekDistanceFromParent = 300.0;
-		};
-		class Cruise : Direct
-		{
-			preferredFlightAltitude = 50.0;
-		};
-		class Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
-							minRange=250;
-							maxRange=5000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=250;
-							maxRange=5000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						animDirection = "mainTurret";
-						maxTrackableSpeed=35;
-						angleRangeHorizontal=9.5;
-						angleRangeVertical=6;
-						maxTrackableATL=0;
-					};
-					class LaserSensorComponent: SensorTemplateLaser
-					{
-						class AirTarget
-						{
-							minRange=250;
-							maxRange=5000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=250;
-							maxRange=5000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						animDirection = "mainTurret";
-						maxTrackableSpeed=35;
-						angleRangeHorizontal=9.5;
-						angleRangeVertical=6;
-						maxTrackableATL=0;
-					};
-				};
-			};
-		};
 	};
 };
 class cfgMagazines
@@ -249,9 +146,6 @@ class cfgMagazines
 	class 2Rnd_GAT_missiles;
 	class ADFRC_2RND_Spike: 2Rnd_GAT_missiles
 	{
-		scope = 2;
-		ammo="ADFRC_Spike_LR2";
-		model="\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl";
 		displayName = "SPIKE-LR";
 		displayNameShort = "SPIKE-LR";
 		initSpeed=100;
@@ -265,6 +159,11 @@ class Mode_FullAuto;
 
 class cfgWeapons
 {
+	class Default;
+	class Player;
+	class MGunCore;
+	class CannonCore;
+	class LauncherCore;
 	class Laserdesignator_mounted;
 	class ADFRC_laser_commander: Laserdesignator_mounted
 	{
@@ -272,7 +171,7 @@ class cfgWeapons
 		muzzlePos = "lasercom_pos";
 		irLaserEnd = "lasercom_dir";
 		irLaserPos = "lasercom_pos";
-		
+
 	};
 	class ADFRC_laser_gunner: Laserdesignator_mounted
 	{
@@ -282,7 +181,7 @@ class cfgWeapons
 		irLaserPos = "lasercom_pos";
 	};
 	class LMG_coax_ext;
-	class ADFRC_boxer_coax: LMG_coax_ext 
+	class ADFRC_boxer_coax: LMG_coax_ext
 	{
 		displayName = "MG 7.62mm Mag 58 Coax";
 		scope = 1;
@@ -381,18 +280,11 @@ class cfgWeapons
 		};
 	};
 	class autocannon_Base_F;
-	class player;
-	class ADFRC_boxer_mk30: autocannon_Base_F
+	class autocannon_40mm_CTWS;
+	class ADFRC_boxer_mk30: autocannon_40mm_CTWS
 	{
-		aiDispersioncoefX = 4;
-		aiDispersioncoefY = 6;
-		airateoffire = 2;
-		airateoffiredistance = 1000;
-		airLock = 1;
-		canLock = 2;
-		FCSMaxLeadSpeed = 70;
-		weaponLockSystem = 4;
-		weaponLockDelay = 2;
+		displayName = "MK 30-2/ABM 30mm Autocannon";
+		muzzles[] = {"AP","HE"};
 		class GunParticles
 		{
 			class Effect1
@@ -401,94 +293,185 @@ class cfgWeapons
 				positionName = "Usti hlavne";
 				directionName = "Konec hlavne";
 			};
-			class Effect2 
+			class Effect2
 			{
 				effectName = "ADFRC_mk30_casingeject";
 				positionName = "nabojnicestart";
 				directionName = "nabojniceend";
 			};
-			class Effect3 
+			class Effect3
 			{
-				effectName = "MachineGunCloud";
-				positionName = "nabojnicestart";
-				directionName = "nabojniceend";
+				effectName = "AutoCannonFired";
+				positionName = "nabojniceend";
+				directionName = "nabojnicestart";
 			};
-			class Effect4 
+			class Effect4
 			{
 				effectName = "ADFRC_mk30_linkeject";
 				positionName = "nabojnicestart";
 				directionName = "nabojniceend";
 			};
 		};
-		displayName = "MK 30-2/ABM 30mm Autocannon";
-		muzzles[] = {"AP","HE"};
-		class HE: autocannon_Base_F 
+		class HE: autocannon_Base_F
 		{
 			displayName = "MK 30-2/ABM 30mm Autocannon";
-			magazines[] = {"ADFRC_boxer_360RND_30mm_HE","ADFRC_boxer_360RND_30mm_AP"};
-			magazineWell[] = {};
-			airLock = 1;
-			canLock = 2;
-			ballisticsComputer = 1+2+16;
-			FCSMaxLeadSpeed = 70;
-			weaponLockSystem = 4;
-			weaponLockDelay = 2;
-			magazineReloadTime = 0.3;
-			sounds[] = {"StandardSound"};
-			modes[] = {"player","close","short","medium","far"};
+			magazines[] = {"ADFRC_boxer_360RND_30mm_HE"};
 			class player: player
 			{
-				reloadTime=__EVAL(60/200);
-				textureType = "fullAuto";
-			};
-			minZeroing = 0;
-		};
-		class AP: autocannon_Base_F {
-			displayName = "PMC287 APFSDS";
-			magazines[] = {"ADFRC_boxer_360RND_30mm_AP"};
-			magazineWell[] = {};
-			airLock = 1;
-			canLock = 2;
-			FCSMaxLeadSpeed = 70;
-			weaponLockSystem = 4;
-			weaponLockDelay = 2;
-			showToPlayer=0;
-			class player: player
-			{
-				showToPlayer = 0;
-				reloadTime=__EVAL(60/200);
+				dispersion = 0.0015;
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_01",1.9952624,1,1500};
+					begin2[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_02",1.9952624,1,1500};
+					begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
+					soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				};
 			};
 			class close: player
 			{
-				showToPlayer=0;
-				reloadTime=__EVAL(60/200);
-				aiBurstTerminable=1;
-				burst=8;
-				burstRangeMax=6;
-				aiRateOfFire = 0.35;
-				aiRateOfFireDispersion=2;
-				aiRateOfFireDistance=200;
-				minRange=0;
-				minRangeProbab=0.1;
-				midRange=400;
-				midRangeProbab=0.69999999;
-				maxRange=800;
-				maxRangeProbab=0.80000001;
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.1;
+				midRange = 400;
+				midRangeProbab = 0.7;
+				maxRange = 800;
+				maxRangeProbab = 0.8;
 			};
 			class short: close
 			{
+				aiBurstTerminable = 1;
 				showToPlayer = 0;
-				reloadTime=__EVAL(60/200);
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.75;
+				midRange = 800;
+				midRangeProbab = 0.8;
+				maxRange = 1200;
+				maxRangeProbab = 0.8;
 			};
-			class medium: short
+			class medium: close
 			{
-				showToPlayer=0;
-				reloadTime=__EVAL(60/200);
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.8;
+				midRange = 1500;
+				midRangeProbab = 0.8;
+				maxRange = 2000;
+				maxRangeProbab = 0.7;
 			};
-			class far: medium
+			class far: close
 			{
-				showToPlayer=0;
-				reloadTime=__EVAL(60/100);
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.74;
+				midRange = 2400;
+				midRangeProbab = 0.65;
+				maxRange = 3000;
+				maxRangeProbab = 0.05;
+			};
+		};
+		class AP: autocannon_Base_F
+		{
+			displayName = "MK 30-2/ABM 30mm Autocannon";
+			magazines[] = {"ADFRC_boxer_360RND_30mm_AP"};
+			class player: player
+			{
+				dispersion = 0.0009;
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_01",1.9952624,1,1500};
+					begin2[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_02",1.9952624,1,1500};
+					begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
+					soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				};
+			};
+			class close: player
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 3;
+				burstRangeMax = 6;
+				aiRateOfFire = 1;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 200;
+				minRange = 0;
+				minRangeProbab = 0.1;
+				midRange = 400;
+				midRangeProbab = 0.7;
+				maxRange = 800;
+				maxRangeProbab = 0.8;
+			};
+			class short: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 5;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 2;
+				aiRateOfFireDistance = 600;
+				minRange = 600;
+				minRangeProbab = 0.75;
+				midRange = 800;
+				midRangeProbab = 0.8;
+				maxRange = 1200;
+				maxRangeProbab = 0.8;
+			};
+			class medium: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 3;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 3;
+				aiRateOfFireDistance = 1000;
+				minRange = 1000;
+				minRangeProbab = 0.8;
+				midRange = 1500;
+				midRangeProbab = 0.8;
+				maxRange = 2000;
+				maxRangeProbab = 0.7;
+			};
+			class far: close
+			{
+				aiBurstTerminable = 1;
+				showToPlayer = 0;
+				burst = 1;
+				burstRangeMax = 1;
+				aiRateOfFire = 2;
+				aiRateOfFireDispersion = 4;
+				aiRateOfFireDistance = 1800;
+				minRange = 1800;
+				minRangeProbab = 0.74;
+				midRange = 2400;
+				midRangeProbab = 0.65;
+				maxRange = 3000;
+				maxRangeProbab = 0.05;
 			};
 		};
 		class Components
@@ -568,11 +551,11 @@ class cfgWeapons
 		};
 	};
 	class HMG_M2_Mounted;
-	class ADFRC_boxer_M2HBQCB_RWS: HMG_M2_Mounted 
+	class ADFRC_boxer_M2HBQCB_RWS: HMG_M2_Mounted
 	{
 		displayName="Kongsberg RWS - M2HB QCB";
 		ballisticsComputer = "2 + 16";
-		class GunParticles 
+		class GunParticles
 		{
 			class effect1
 			{
@@ -580,13 +563,13 @@ class cfgWeapons
 				directionName = "m2_muzzle";
 				effectName = "MachineGunCloud";
 			};
-			class effect2 
+			class effect2
 			{
 				directionName = "nabojniceend";
 				effectName = "MachineGunEject";
 				positionName = "nabojnicestart";
 			};
-			class effect3 
+			class effect3
 			{
 				directionName = "case_eject_dir";
 				effectName = "MachineGunCartridge2";
@@ -594,90 +577,33 @@ class cfgWeapons
 			};
 		};
 	};
-	class MissileLauncher;
 	class missiles_titan;
 	class ADFRC_spike_launcher: missiles_titan
 	{
 		displayName="Missile Launcher";
-		showAimCursorInternal=0;
-		magazineReloadTime=30;
-		reloadMagazineSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\reload_Missile_Launcher",
-			0.89125091,
-			1,
-			10
-		};
-		lockingTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locking_Titan",
-			0.56234133,
-			1
-		};
-		lockedTargetSound[]=
-		{
-			"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Locked_Titan",
-			0.56234133,
-			2.5
-		};
 		magazines[]=
 		{
-			"ADFRC_2RND_Spike"
+			"ADFRC_2RND_Spike",
+			"2Rnd_GAT_missiles"
 		};
-		ballisticsComputer = 1+2+16;
-		FCSMaxLeadSpeed = 55.5556;
-		weaponLockSystem = 12;
-		weaponLockDelay = 5;
-		cmImmunity=0.5;
-		modes[]=
+		class GunParticles
 		{
-			"Player",
-			"TopDown"
-		};
-		class Player: MissileLauncher
-		{
-			textureType="semi";
-			reloadTime=1;
-			sounds[]=
+			class Effect1
 			{
-				"StandardSound"
+				effectName = "AutoCannonFired";
+				positionName = "atgmeffect_f_dir";
+				directionName = "atgmeffect_f_pos";
 			};
-			class StandardSound
+			class Effect2
 			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\Titan",
-					1.4125376,
-					1,
-					1100
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
+				effectName = "AutoCannonFired";
+				positionName = "atgmeffect_r_dir";
+				directionName = "atgmeffect_r_pos";
 			};
-			minRange=100;
-			minRangeProbab=0.5;
-			midRange=600;
-			midRangeProbab=0.85000002;
-			maxRange=5000;
-			maxRangeProbab=0.89999998;
-		};
-		class TopDown: Player
-		{
-			textureType="topDown";
-			displayName="Top-down";
-			minRange=200;
-			minRangeProbab=0.40000001;
-			midRange=1000;
-			midRangeProbab=0.89999998;
-			maxRange=5000;
-			maxRangeProbab=0.94999999;
 		};
 	};
 	class TruckHorn3;
-	class adfrc_boxerhorn: TruckHorn3 
+	class adfrc_boxerhorn: TruckHorn3
 	{
 		drySound[]= {"adf_wheeled\adfrc_boxer\sound\boxer-horn.ogg",1,1,350};
 		soundcontinuous = 1;

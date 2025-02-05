@@ -84,20 +84,20 @@ class Pistol_Base_F;
 	{
 		author = "Brucey";
 		ACE_barrelTwist = 250;
-		ACE_barrelLength = 102;
+		ACE_barrelLength = 116;
 		magazines[] = {
 			"ADFRC_15rnd_9MM_BALL_G19"
 		};
 		magazineWell[] = {"CBA_9x19_Glock_Cpct","CBA_9x19_Glock_Full"};
 		model = "ADF_Weapons\adfrc_g19\G19";
-		descriptionShort = "Glock 19 <br/> Gen5 MOS<br/>Caliber: 9MM";
+		descriptionShort = "Glock 19 <br/> Gen5 MOS SOCOM<br/>Caliber: 9MM";
 		inertia = 0.75;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
 		picture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19";
 		UiPicture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_PreviewUI";
-		displayName = "Glock 19 Gen 5 MOS";
+		displayName = "Glock 19 Gen 5 MOS (SOCOM)";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;
 		opticszoominit = 0.75;
@@ -140,6 +140,51 @@ class Pistol_Base_F;
 		{
 			libTextDesc = "G19 9mm";
 		};
+	};
+	
+class ADFRC_G19_G5_SLICK : ADFRC_G19_G5_MOS_9
+	{
+		author = "Brucey";
+		ACE_barrelLength = 102;
+		model = "ADF_Weapons\adfrc_g19\G19_Slick";
+		descriptionShort = "Glock 19 <br/> Gen5 MOS<br/>Caliber: 9MM";
+		inertia = 0.75;
+		scope=2;
+		scopeWeapon=2;
+		scopeArsenal = 2;
+		picture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19";
+		UiPicture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_PreviewUI";
+		displayName = "Glock 19 Gen 5 MOS";
+		discretedistance[] = { 25 };
+		discretedistanceinitindex = 1;
+		opticszoominit = 0.75;
+		opticszoommax = 1.1;
+		opticszoommin = 0.375;
+		aiDispersionCoefY = 10;
+		aiDispersionCoefX = 8;
+		
+		reloadAction = "MPP_Slow_Reload";
+		reloadSound[] = {"ADF_Weapons\core\animsounds\MPP_Slow_Reload.ogg",2,1,30};
+		reloadMagazineSound[] = {"ADF_Weapons\core\animsounds\MPP_Slow_Reload.ogg",2,1,30};
+		
+		class WeaponSlotsInfo {
+			mass = 13.125;
+			allowedSlots[] = {901};
+            class CowsSlot : asdg_PistolOpticMount //Top / optic slot
+            {
+	iconPinpoint="center";
+	iconPosition[] = {0.65,0.25};
+	iconScale  = 0.07;
+	iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+};
+            class PointerSlot : asdg_PistolUnderRail //side slot
+          {
+	iconPinpoint="center";
+	iconPosition[] = {0.396,0.516};
+	iconScale  = 0.25;
+	iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+};
+        };
 	};
 	
 

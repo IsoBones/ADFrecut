@@ -10,7 +10,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "\ADF_Core\Vehicle\spring\spring_nohq.paa";
+	texture = "ADF_Core\Vehicle\spring\spring_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

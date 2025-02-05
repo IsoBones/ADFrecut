@@ -83,7 +83,7 @@ class CfgWeapons
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
-			"\ADF_Weapons\ADFRC_minimi\anim\f89.rtm"
+			"\ADF_Weapons\adfrc_mag58\anim\mag58.rtm"
 		};
 		reloadAction="GestureReloadM200";
 		soundBipodDeploy[]=
@@ -123,7 +123,7 @@ class CfgWeapons
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
 				compatibleItems[]={};
 			};
-			class PointerSlot: asdg_FrontSideRail 
+			class PointerSlot: asdg_FrontSideRail
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]={};
