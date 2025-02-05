@@ -33,6 +33,7 @@ class CfgPatches
 };
 /* Definitions & Inheritance */
 #include "\ADF_Core\basicDefines_A3.hpp"
+class VehicleTransport;
 class DefaultEventhandlers;
 class CfgMovesBasic
 {
@@ -437,7 +438,7 @@ class CfgVehicles
 		driverCompartments="Compartment1";
 		cargoCompartments[]=
 		{
-			"Compartment2"
+			"Compartment1"
 		};
 		LockDetectionSystem=2;
 		IncommingMisslieDetectionSystem=16;
@@ -448,6 +449,16 @@ class CfgVehicles
 		waterResistance=2;
 		gearRetracting=0;
 		slingLoadMaxCargoMass=10000;
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"ropeoriginleft","ropeoriginright"};
+		class TransportItems
+		{
+			class _xx_ace_rope36
+			{
+				name = "ace_rope36";
+				count = 4;
+			};
+		};
 		class MFD
 		{
 			class Kimi_HUD_1
@@ -4029,7 +4040,7 @@ class CfgVehicles
 						};
 					};
 				};
-				helmetMountedDisplay=1;
+				helmetMountedDisplay=0;
 				helmetPosition[]={-0.039999999,0.039999999,0.1};
 				helmetRight[]={0.079999998,0,0};
 				helmetDown[]={0,-0.079999998,0};
@@ -4315,7 +4326,7 @@ class CfgVehicles
 						};
 					};
 				};
-				helmetMountedDisplay=1;
+				helmetMountedDisplay=0;
 				helmetPosition[]={-0.035,0.035,0.1};
 				helmetRight[]={0.07,0,0};
 				helmetDown[]={0,-0.07,0};
@@ -5721,6 +5732,14 @@ class CfgVehicles
 				animPeriod=1.6;
 				initPhase=0;
 			};
+			class seats
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=1;
+				author="ADFRC";
+				forceAnimatePhase=1;
+			};
 		};
 	};
 	class ADFRC_chinook_GWOT: ADFRC_chinook
@@ -5728,6 +5747,74 @@ class CfgVehicles
 		faction = "ADFRC_F_GWOT";
 	};
 	class ADFRC_chinook_PCW: ADFRC_chinook
+	{
+		faction = "ADFRC_F_PCW";
+	};
+	class ADFRC_chinook_VIV: ADFRC_chinook
+	{
+		scope=2;
+		side=1;
+		author="Quiggs / Index";
+		faction = "ADFRC_F_MD";
+		model="ADF_Air\adfrc_chinook\CH_47F.P3D";
+		displayname="CH-47F Chinook (Cargo)";
+		transportSoldier=0;
+		class VehicleTransport: VehicleTransport
+		{
+			class Cargo
+			{
+				parachuteClass="B_Parachute_02_F";
+				parachuteHeightLimit=5;
+				canBeTransported=1;
+				dimensions[]=
+				{
+					"BBox_1_1_pos",
+					"BBox_1_2_pos"
+				};
+			};
+			class Carrier
+			{
+				cargoBayDimensions[]=
+				{
+					"vvt_cargo_1",
+					"vvt_cargo_2"
+				};
+				disableHeightLimit=0;
+				maxLoadMass=10000;
+				cargoAlignment[]=
+				{
+					"center",
+					"front"
+				};
+				cargoSpacing[]={0,0,0};
+				exits[]=
+				{
+					"vvt_exit"
+				};
+				unloadingInterval=2;
+				loadingDistance=8;
+				loadingAngle=0;
+				parachuteClassDefault="B_Parachute_02_F";
+				parachuteHeightLimitDefault=5;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class seats
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				author="ADFRC";
+				forceAnimatePhase=0;
+			};
+		};
+	};
+	class ADFRC_chinook_VIV_GWOT: ADFRC_chinook_VIV
+	{
+		faction = "ADFRC_F_GWOT";
+	};
+	class ADFRC_chinook_VIV_PCW: ADFRC_chinook_VIV
 	{
 		faction = "ADFRC_F_PCW";
 	};
