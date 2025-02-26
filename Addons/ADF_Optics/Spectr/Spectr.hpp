@@ -102,3 +102,40 @@ class ADFRC_Specter_CDO_KF : ADFRC_Specter_CDO
 		uipicture="ADF_Optics\Spectr\UI\Spectr_CDO_KF_ca.paa";
 		model = "ADF_Optics\Spectr\ADFRC_Spectr_CDO_KF.p3d";
 	};
+	
+	
+class ADFRC_Specter_C_RAR : ADFRC_Specter_RAR
+	{
+		displayName="Elcan SpecterDR 1x/4x (RAR) - Camo";
+		picture="ADF_Optics\Spectr\UI\Spectr_RAR_C_ca.paa";
+		uipicture="ADF_Optics\Spectr\UI\Spectr_RAR_C_ca.paa";
+		model = "ADF_Optics\Spectr\ADFRC_Spectr_C_RAR.p3d";
+	};
+	
+	
+class ADFRC_Specter_RAR_C_KF : ADFRC_Specter_RAR
+	{
+		displayName="Elcan SpecterDR 1x/4x (RAR - KF) - Camo";
+		author="Brucey";
+		picture="ADF_Optics\Spectr\UI\Spectr_RAR_C_KF_ca.paa";
+		uipicture="ADF_Optics\Spectr\UI\Spectr_RAR_C_KF_ca.paa";
+		model = "ADF_Optics\Spectr\ADFRC_Spectr_C_RAR_KF.p3d";
+	};
+	
+class ADFRC_Specter_C_CDO : ADFRC_Specter_RAR
+	{
+		displayName="Elcan SpecterDR 1x/4x (CDO) - Camo";
+		author="Brucey";
+		picture="ADF_Optics\Spectr\UI\Spectr_CDO_C_ca.paa";
+		uipicture="ADF_Optics\Spectr\UI\Spectr_CDO_C_ca.paa";
+		model = "ADF_Optics\Spectr\ADFRC_Spectr_C_CDO.p3d";
+	};
+	
+class ADFRC_Specter_CDO_C_KF : ADFRC_Specter_CDO
+	{
+		displayName="Elcan SpecterDR 1x/4x (CDO - KF) - Camo";
+		author="Brucey";
+		picture="ADF_Optics\Spectr\UI\Spectr_CDO_C_KF_ca.paa";
+		uipicture="ADF_Optics\Spectr\UI\Spectr_CDO_C_KF_ca.paa";
+		model = "ADF_Optics\Spectr\ADFRC_Spectr_C_CDO_KF.p3d";
+	};
