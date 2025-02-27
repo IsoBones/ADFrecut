@@ -230,6 +230,17 @@ class CfgWeapons
 			{
 			};
 		};
+	};class ADFRC_maximi_Spectr: ADFRC_maximi
+	{
+		author="$STR_ADF_AUTHOR";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				item="ADFRC_Specter_CDO";
+				slot="CowsSlot";
+			};
+		};
 	};
 	class ADFRC_maximi_elcan: ADFRC_maximi
 	{
@@ -243,22 +254,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class ADFRC_maximi_eotech: ADFRC_maximi
+	class ADFRC_maximi_V2: ADFRC_maximi
 	{
 		scope=2;
-		author="$STR_ADF_AUTHOR";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				item="ADFRC_EXPS3";
-				slot="CowsSlot";
-			};
-			class LinkItemsPointer
-			{
-				item="acc_pointer_IR";
-				slot="PointerSlot";
-			};
-		};
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_V2.p3d";
+		displayName="FN Maximi V2";
 	};
 };
