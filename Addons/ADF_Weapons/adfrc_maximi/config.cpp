@@ -254,10 +254,4 @@ class CfgWeapons
 			};
 		};
 	};
-	class ADFRC_maximi_V2: ADFRC_maximi
-	{
-		scope=2;
-		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_V2.p3d";
-		displayName="FN Maximi V2";
-	};
 };
