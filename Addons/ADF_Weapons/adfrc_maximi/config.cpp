@@ -50,17 +50,10 @@ class CfgWeapons
 			"OFP2_ManSkeleton",
 			"\ADF_Weapons\adfrc_maximi\anim\f89_max.rtm"
 		};
+		magazineWell[] = {"CBA_762x51_MINIMI"};
 		magazines[]=
 		{
-			"ADFRC_50Rnd_762_Belt",
-			"ADFRC_50Rnd_762_Belt_TR",
-			"ADFRC_50Rnd_762_Belt_TR5",
-			"ADFRC_100Rnd_762_Belt",
-			"ADFRC_100Rnd_762_Belt_TR",
-			"ADFRC_100_Rnd_762_Belt_TR5",
-			"ADFRC_150Rnd_762_Belt",
-			"ADFRC_150Rnd_762_Belt_TR",
-			"ADFRC_150Rnd_762_Belt_TR5"
+			"ADFRC_100Rnd_762_Maximi_TR5"
 		};
 		soundBipodDeploy[]=
 		{
@@ -214,22 +207,17 @@ class CfgWeapons
 			maxRange=1000;
 			maxRangeProbab=0.0099999998;
 		};
-		class WeaponSlotsInfo
-		{
-			mass=60;
-			allowedSlots[]={901};
-			class MuzzleSlot: asdg_MuzzleSlot_762
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[]={};
-			};
-			class CowsSlot: asdg_OpticRail1913
-			{
-			};
-			class PointerSlot: asdg_FrontSideRail
-			{
-			};
-		};
+	
+		   class WeaponSlotsInfo {
+			mass = 180;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
 	};class ADFRC_maximi_Spectr: ADFRC_maximi
 	{
 		author="$STR_ADF_AUTHOR";
