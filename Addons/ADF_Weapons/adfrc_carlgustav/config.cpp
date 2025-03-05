@@ -231,7 +231,6 @@ class cfgMagazines
 	{
 		scope=1;
 		author="$STR_ADFRC_AUTHOR";
-		modelSpecial="\adf_weapons\adfrc_carlgustav\carlgustav";
 		initSpeed=255;
 		count=1;
 		type="6 * 256";
@@ -246,6 +245,8 @@ class cfgMagazines
 		displaynameshort="Anti-Structure";
 		picture="\adf_weapons\adfrc_carlgustav\ui\84mm_asm_509_ca.paa";
 		model="\adf_weapons\adfrc_carlgustav\ammo\84mm_asm_509";
+		modelSpecialIsProxy = 1;
+		modelSpecial="\adf_weapons\adfrc_carlgustav\ammo\84mm_asm_509";
 		ammo="ADFRC_Shell_84mm_asm_509";
 		mass=70;
 	};
@@ -258,6 +259,8 @@ class cfgMagazines
 		displaynameshort="HE 441D";
 		picture="\adf_weapons\adfrc_carlgustav\ui\84mm_he_441d_ca.paa";
 		model="\adf_weapons\adfrc_carlgustav\ammo\84mm_he_441d";
+		modelSpecialIsProxy = 1;
+		modelSpecial="\adf_weapons\adfrc_carlgustav\ammo\84mm_he_441d";
 		ammo="ADFRC_Shell_84mm_he_441d";
 		mass=45;
 	};
@@ -270,6 +273,8 @@ class cfgMagazines
 		displaynameshort="HEAT 551C";
 		picture="\adf_weapons\adfrc_carlgustav\ui\84mm_heat_551c_ca.paa";
 		model="\adf_weapons\adfrc_carlgustav\ammo\84mm_heat_551c";
+		modelSpecialIsProxy = 1;
+		modelSpecial="\adf_weapons\adfrc_carlgustav\ammo\84mm_heat_551c";
 		ammo="ADFRC_Shell_84mm_heat_551c";
 		mass=55;
 	};
@@ -282,6 +287,8 @@ class cfgMagazines
 		displaynameshort="HEAT 751";
 		picture="\adf_weapons\adfrc_carlgustav\ui\84mm_heat_751_ca.paa";
 		model="\adf_weapons\adfrc_carlgustav\ammo\84mm_heat_751";
+		modelSpecialIsProxy = 1;
+		modelSpecial="\adf_weapons\adfrc_carlgustav\ammo\84mm_heat_751";
 		ammo="ADFRC_Shell_84mm_heat_751";
 		mass=70;
 	};
@@ -294,12 +301,34 @@ class cfgMagazines
 		displaynameshort="HEDP 502";
 		picture="\adf_weapons\adfrc_carlgustav\ui\84mm_hedp_502_ca.paa";
 		model="\adf_weapons\adfrc_carlgustav\ammo\84mm_hedp_502";
+		modelSpecialIsProxy = 1;
+		modelSpecial="\adf_weapons\adfrc_carlgustav\ammo\84mm_hedp_502";
 		ammo="ADFRC_Shell_84mm_hedp_502";
 		mass=40;
 	};
 };
+
+class CfgMagazineWells
+{
+	class CBA_Carl_Gustaf
+	{
+		// Magazines listed by mod
+		// It is possible to add new arrays to class but for now inheritance (i.e. STANAG_556x45_New: STANAG_556x45 {};) is not supported 
+		ADFRC_Magazines[] =
+		{
+			"ADFRC_magazine_84mm_asm_509",
+			"ADFRC_magazine_84mm_he_441d",
+			"ADFRC_magazine_84mm_heat_551c",
+			"ADFRC_magazine_84mm_heat_751",
+			"ADFRC_magazine_84mm_hedp_502",
+			"ADFRC_magazine_84mm_base"
+		};
+	};
+};
+
 class SlotInfo;
-class CowsSlot_ADFRC;
+class asdg_OpticRail1913;
+class asdg_FrontSideRail;
 class PointerSlot;
 class WeaponSlotsInfo;
 class launch_MRAWS_base_F;
@@ -411,14 +440,10 @@ class cfgWeapons
 		weaponLockDelay=3;
 		lockAcquire=0;
 		weaponInfoType="RscWeaponZeroing";
-		magazines[]=
-		{
-			"ADFRC_magazine_84mm_asm_509",
-			"ADFRC_magazine_84mm_he_441d",
-			"ADFRC_magazine_84mm_heat_551c",
-			"ADFRC_magazine_84mm_heat_751",
-			"ADFRC_magazine_84mm_hedp_502"
+		magazines[] = {
+			"ADFRC_magazine_84mm_heat_551c"
 		};
+		magazineWell[] = {"CBA_Carl_Gustaf"};
 		recoil="recoil_single_nlaw";
 		aiRateOfFire=7;
 		aiRateOfFireDistance=600;
@@ -443,13 +468,15 @@ class cfgWeapons
 				effectName="Gustav_ForwardBlast";
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=120;
-			class CowsSlot: CowsSlot_ADFRC
-			{
-			};
-		};
+	
+		   class WeaponSlotsInfo {
+			mass = 220;
+			allowedSlots[] = {901};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+        };
+		
+		
 		class ItemInfo
 		{
 			priority=3;
@@ -467,6 +494,17 @@ class cfgWeapons
 		displayName="Carl Gustav M4";
 		author="Brucey";
 		model="\adf_weapons\adfrc_carlgustav\ADFRC_CGM4";
+	
+	
+		class WeaponSlotsInfo {
+			mass = 145;
+			allowedSlots[] = {901};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+		
 		class Library
 		{
 			libTextDesc="84mm Recoilless Rifle";
