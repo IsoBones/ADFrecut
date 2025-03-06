@@ -86,10 +86,15 @@ class CfgWeapons
 		hasBipod=1;
 		class FullAuto: Mode_FullAuto
 		{
-			sounds[]= {"StandardSound"};
-			class StandardSound
-			{
-				soundSetShot[] = {"Mk200_Shot_SoundSet","Mk200_Tail_SoundSet","Mk200_InteriorTail_SoundSet"};
+			sounds[] = { "StandardSound", "SilencedSound" };
+			class BaseSoundModeType { /// I am too lazy to copy this twice into both standard and silenced sounds, that is why there is a base class from which both inherit (and sound of closure stays the same no matter what muzzle accessory is used)
+                weaponSoundEffect  = "DefaultRifle";
+            };
+			class SilencedSound: BaseSoundModeType {
+			SoundSetShot[] = {"Mk200_silencerShot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
+			};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
 			};
 			reloadTime=0.092500001;
 			dispersion=0.0011;
@@ -108,14 +113,15 @@ class CfgWeapons
 		};
 		class FullAutoDeployed: Mode_SemiAuto
 		{
-			displayName="Bipod Deployed";
-			sounds[]=
-			{
-				"StandardSound"
+			sounds[] = { "StandardSound", "SilencedSound" };
+			class BaseSoundModeType { /// I am too lazy to copy this twice into both standard and silenced sounds, that is why there is a base class from which both inherit (and sound of closure stays the same no matter what muzzle accessory is used)
+                weaponSoundEffect  = "DefaultRifle";
+            };
+			class SilencedSound: BaseSoundModeType {
+			SoundSetShot[] = {"Mk200_silencerShot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
 			};
-			class StandardSound
-			{
-				soundSetShot[] = {"Mk200_Shot_SoundSet","Mk200_Tail_SoundSet","Mk200_InteriorTail_SoundSet"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
 			};
 			weaponSoundEffect="DefaultRifle";
 			reloadTime=0.079999998;
