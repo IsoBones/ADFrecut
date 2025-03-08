@@ -57,6 +57,8 @@ class CfgWeapons
 	#include "F88LightLasers.HPP"
 	#include "X400\X400.HPP"
 	#include "WMLx\WMLx.HPP"
+	#include "PEQ15\PEQ15.HPP"
+	#include "L3Squad\L3Squad.HPP"
 	#include "P320\Foxtrot2.HPP"
 	
 	////Bipods/Grips

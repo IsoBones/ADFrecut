@@ -4,6 +4,12 @@ class asdg_FrontSideRail: asdg_SlotInfo {
 class compatibleItems {
 ADFRC_WMLx_BLK_R_WL = 1;
 ADFRC_WMLx_BLK_R_IR = 1;
+ADFRC_PEQ15_BLK_IRL = 1;
+ADFRC_PEQ15_BLK_IRT = 1;
+ADFRC_PEQ15_FDE_IRL = 1;
+ADFRC_PEQ15_FDE_IRT = 1;
+ADFRC_L3Squad_IRL = 1;
+ADFRC_L3Squad_IRT = 1;
 };
 };
 
