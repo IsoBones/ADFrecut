@@ -177,8 +177,8 @@ class ADFRC_EF88_Black: ADFRC_EF88_Base
 		author = "Brucey";
 		ACE_barrelTwist = 228.6;
 		ACE_barrelLength = 508;
-		recoil = "assaultRifleBase";
-		recoilProne = "assaultRifleBase";
+		recoil = "recoil_spar";
+		recoilProne = "recoil_spar";
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
@@ -208,9 +208,12 @@ class ADFRC_EF88_Black: ADFRC_EF88_Base
 class ADFRC_EF88_Camo: ADFRC_EF88_Black
 	{
 		displayName = "EF88 5.56 (Camo)";
-		hiddenSelections[] = { "Camo" };
+		hiddenSelections[] = { "CamoMetal","CamoPlastic" };
 		hiddenSelectionsTextures[] = { 
-		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
+		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = { 
+		"ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Metal_C.rvmat", "ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Poly_C.rvmat"
 		};
 	};
 	
@@ -219,12 +222,12 @@ class ADFRC_EF88C_Black: ADFRC_EF88_Base
 		author = "Brucey";
 		ACE_barrelTwist = 228.6;
 		ACE_barrelLength = 406;
-		recoil = "assaultRifleBase";
-		recoilProne = "assaultRifleBase";
+		recoil = "recoil_spar";
+		recoilProne = "recoil_spar";
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
-		model = "adf_weapons\adfrc_ef88\ADFRC_EF88";
+		model = "adf_weapons\adfrc_ef88\ADFRC_EF88C";
 		descriptionShort = "Thales-Lithgow<br/>EF88C<br/>Caliber: 5.56";
 		inertia = 0.35;
 		scope=2;
@@ -250,9 +253,12 @@ class ADFRC_EF88C_Black: ADFRC_EF88_Base
 class ADFRC_EF88C_Camo: ADFRC_EF88C_Black
 	{
 		displayName = "EF88C 5.56 (Camo)";
-		hiddenSelections[] = { "Camo" };
+		hiddenSelections[] = { "CamoMetal","CamoPlastic" };
 		hiddenSelectionsTextures[] = { 
-		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
+		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = { 
+		"ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Metal_C.rvmat", "ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Poly_C.rvmat"
 		};
 	};
 	
@@ -382,8 +388,6 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
             {};
             class CowsSlot : asdg_OpticRail1913 //Top / optic slot
             {};
-			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
             class PointerSlot : asdg_FrontSideRail //side slot
             {};
         };
@@ -476,12 +480,12 @@ class ADFRC_EF88_SL40_Black: ADFRC_EF88GL_Base
 		author = "Brucey";
 		ACE_barrelTwist = 228.6;
 		ACE_barrelLength = 508;
-		recoil = "assaultRifleBase";
-		recoilProne = "assaultRifleBase";
+		recoil = "recoil_spar";
+		recoilProne = "recoil_spar";
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
-		model = "adf_weapons\adfrc_ef88\ADFRC_EF88";
+		model = "adf_weapons\adfrc_ef88\ADFRC_EF88_SL40";
 		descriptionShort = "Thales-Lithgow<br/>EF88 SL40<br/>Caliber: 5.56 40mm";
 		inertia = 0.54;
 		scope=2;
@@ -507,8 +511,13 @@ class ADFRC_EF88_SL40_Black: ADFRC_EF88GL_Base
 class ADFRC_EF88_SL40_Camo: ADFRC_EF88_SL40_Black
 	{
 		displayName = "EF88 SL40 5.56 (Camo)";
-		hiddenSelections[] = { "Camo", "CamoGL" };
+		hiddenSelections[] = { "CamoMetal","CamoPlastic","Camogl","Camogls" };
 		hiddenSelectionsTextures[] = { 
-		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADFRC_GLS_C_CO"
+		"ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_EF88_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_SL40_C_CO.paa", "ADF_Weapons\ADFRC_EF88\Textures\ADFRC_GLS_C_CO.paa"
+		};
+		hiddenSelectionsMaterials[] = { 
+		"ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Metal_C.rvmat", "ADF_Weapons\ADFRC_EF88\Textures\adfrc_EF88_Poly_C.rvmat", "ADF_Weapons\ADFRC_EF88\Textures\adfrc_SL40_C.rvmat", "ADF_Weapons\ADFRC_EF88\Textures\adfrc_GLS_C.rvmat"
 		};
 	};
+	
+	#include "Presets.hpp"
