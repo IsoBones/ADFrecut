@@ -134,7 +134,7 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		ACE_barrelTwist = 292.1;
 		ACE_barrelLength = 368.3;
 		recoil = "recoil_spar";
-		recoilProne = "assaultRifleBase";
+		recoilProne = "recoil_spar";
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
