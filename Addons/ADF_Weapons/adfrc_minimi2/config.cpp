@@ -36,11 +36,11 @@ class asdg_UnderSlot;
 class CfgWeapons
 {
 	class ADFRC_minimi_BASE;
-	class ADFRC_minimi2: ADFRC_minimi_BASE
+	class ADFRC_F89_Minimi: ADFRC_minimi_BASE
 	{
 		scope=2;
 		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi.p3d";
-		displayName="F89 Minimi Para (Short)";
+		displayName="F89 Minimi";
 		author="Brucey";
 		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
 		ace_overheating_mrbs = 2500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
@@ -232,4 +232,80 @@ class CfgWeapons
             {};
         };
 	};
+	class ADFRC_F89_Minimi_Classic: ADFRC_F89_Minimi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi_Classic.p3d";
+		displayName="F89 Minimi (Classic)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		
+		class WeaponSlotsInfo {
+			mass = 155;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {};
+        };
+	};
+	
+	class ADFRC_F89_Minimi_Mod: ADFRC_F89_Minimi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi_Mod.p3d";
+		displayName="F89 Minimi Modernised";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	};
+	class ADFRC_F89_Minimi_Para: ADFRC_F89_Minimi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi_Para.p3d";
+		displayName="F89 Minimi Para";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	};
+	
+	class ADFRC_F89_Minimi_Mod_S: ADFRC_F89_Minimi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi_Mod_S.p3d";
+		displayName="F89 Minimi Modernised (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	
+		ACE_barrelLength = 349;
+		class WeaponSlotsInfo {
+			mass = 160;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+		
+		};
+	class ADFRC_F89_Minimi_Para_S: ADFRC_F89_Minimi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_minimi2\ADFRC_F89_Minimi_Para_S.p3d";
+		displayName="F89 Minimi Para (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+	
+		ACE_barrelLength = 349;
+		class WeaponSlotsInfo {
+			mass = 148;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_556
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	
+		};
+		#include "Presets.hpp"
 };
