@@ -306,28 +306,7 @@ class CfgWeapons
         };
 	};
 	
-	class ADFRC_maximi_Spectr: ADFRC_maximi
-	{
-		author="$STR_ADF_AUTHOR";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				item="ADFRC_Specter_CDO";
-				slot="CowsSlot";
-			};
-		};
-	};
-	class ADFRC_maximi_elcan: ADFRC_maximi
-	{
-		author="$STR_ADF_AUTHOR";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				item="ADFRC_Specter_CDO";
-				slot="CowsSlot";
-			};
-		};
-	};
+	
+	
+	#include "Presets.hpp"
 };
