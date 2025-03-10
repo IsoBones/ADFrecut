@@ -345,7 +345,7 @@ class CfgWeapons
 	};
 	class ADFRC_minimi: ADFRC_minimi_BASE
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		model="\ADF_Weapons\ADFRC_minimi\adfrc_F89.p3d";
 		displayName="F89 FN Minimi";
@@ -358,7 +358,7 @@ class CfgWeapons
 	};
 	class ADFRC_minimi_elcan: ADFRC_minimi
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
@@ -371,7 +371,7 @@ class CfgWeapons
 	};
 	class ADFRC_minimi_para: ADFRC_minimi
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		model="\ADF_Weapons\ADFRC_minimi\ADFRC_F89_Para.p3d";
 		displayName="F89 FN Minimi Para";
@@ -400,7 +400,7 @@ class CfgWeapons
 	};
 	class ADFRC_minimi_para_elcan: ADFRC_minimi_para
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
@@ -413,7 +413,7 @@ class CfgWeapons
 	};
 	class ADFRC_minimi_eotech: ADFRC_minimi
 	{
-		scope=2;
+		scope=1;
 		author="$STR_ADF_AUTHOR";
 		class LinkedItems
 		{
