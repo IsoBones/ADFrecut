@@ -356,26 +356,18 @@ class ADFRC_M4A5_556_GLBase: Rifle_Base_F
 			discreteDistance[] =
 			{
 				50,
-				75,
 				100,
 				150,
 				200,
-				250,
-				300,
-				350,
-				400
+				250
 			};
 			discreteDistanceCameraPoint[] =
 			{
 				OP_eye_50,
-				OP_eye_75,
 				OP_eye_100,
 				OP_eye_150,
 				OP_eye_200,
-				OP_eye_250,
-				OP_eye_300,
-				OP_eye_350,
-				OP_eye_400
+				OP_eye_250
 			};
 			discreteDistanceInitIndex = 1;
 			reloadAction = GestureReloadKatibaUGL;
