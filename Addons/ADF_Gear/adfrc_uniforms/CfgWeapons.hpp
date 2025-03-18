@@ -128,7 +128,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_AMCU.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -148,7 +148,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_AMCU_Rolled.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -168,7 +168,7 @@ class CfgWeapons{
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_AMCU_RAR_Tee.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -228,7 +228,7 @@ class CfgWeapons{
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_AMCU_CDO_Tee.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -248,7 +248,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_AMCU_Temperate.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -268,7 +268,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_AMCU_Tropical.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -288,7 +288,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_AMCU_Arid.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -310,7 +310,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Field_AMCU.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -335,7 +335,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_AMCU.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -360,7 +360,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_Multicam: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (AMP)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_Multicam";
@@ -370,7 +370,7 @@ class CfgWeapons{
 	class ADFRC_Uniform_G3_MMP: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (MMP)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_MMP.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_MMP";
@@ -380,7 +380,7 @@ class CfgWeapons{
 	class ADFRC_Uniform_G3_GPU: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (GPU)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_GPU.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_GPU";
@@ -390,7 +390,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPN: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPN)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPN.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPN";
@@ -400,7 +400,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Midpoint: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Midpoint)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Midpoint.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Midpoint";
@@ -410,7 +410,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Middle_East: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Middle East)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Middle_East.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Middle_East";
@@ -420,7 +420,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Early: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Early)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Early.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Early";
@@ -430,7 +430,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD";
@@ -440,7 +440,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPC: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPC)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPC.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPC";
@@ -450,7 +450,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_MTS: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (MTS)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_MTS.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_MTS";
@@ -460,7 +460,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_AMCU_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (AMC, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_AMCU_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_AMCU_Rolled";
@@ -470,7 +470,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_Multicam_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (AMP, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_Multicam_Rolled";
@@ -480,7 +480,7 @@ class CfgWeapons{
 	class ADFRC_Uniform_G3_MMP_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (MMP, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_MMP_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_MMP_Rolled";
@@ -490,7 +490,7 @@ class CfgWeapons{
 	class ADFRC_Uniform_G3_GPU_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (GPU, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_GPU_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_GPU_Rolled";
@@ -500,7 +500,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPN_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPN, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPN_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPN_Rolled";
@@ -510,7 +510,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Midpoint_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Midpoint, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Midpoint_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Midpoint_Rolled";
@@ -520,7 +520,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Middle_East_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Middle East, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Middle_East_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Middle_East_Rolled";
@@ -530,7 +530,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Early_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD Early, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Early_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Early_Rolled";
@@ -540,7 +540,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPD_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPD, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPD_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPD_Rolled";
@@ -550,7 +550,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_DPC_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (DPC, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_DPC_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_DPC_Rolled";
@@ -560,7 +560,7 @@ class CfgWeapons{
     class ADFRC_Uniform_G3_MTS_Rolled: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (MTS, Rolled Sleeves)";
-		picture     = "\ADF_Gear\adfrc_uniforms\ui\wip_flag_ca.paa";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_MTS_Rolled.paa";
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_MTS_Rolled";
@@ -573,7 +573,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Green.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -593,7 +593,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Green_Rolled.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -614,7 +614,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -634,7 +634,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_Rolled.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -654,7 +654,7 @@ class CfgWeapons{
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_SASR_Tee.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
 			"camo"
@@ -674,7 +674,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_MC_Temperate.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -694,7 +694,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_MC_Tropical.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
@@ -714,7 +714,7 @@ class CfgWeapons{
 		author="$STR_ADFRC_AUTHOR";
 		scope=2;
 		scopeArsenal=2;
-		picture="\ADF_Gear\adfrc_uniforms\ui\wip_ca.paa";
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_Ghillie_MC_Arid.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[]={
 			"camo"
