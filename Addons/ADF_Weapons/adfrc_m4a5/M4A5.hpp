@@ -139,14 +139,14 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_t_145";
-		descriptionShort = "M4A5 Troy Rail<br/>14.5in<br/>Caliber: 5.56";
+		descriptionShort = "M4A1-AU Carbine Troy Rail <br/>14.5in<br/>Caliber: 5.56";
 		inertia = 0.325;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM Troy Rail 14.5 (FDE)";
+		displayName = "M4A1-AU Carbine 5.56MM Troy Rail(FDE)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -163,7 +163,7 @@ class ADFRC_M4A5_Troy_556_14: ADFRC_M4A5_556_Base
 	
 class ADFRC_M4A5_Troy_556_14_BLK: ADFRC_M4A5_Troy_556_14
 	{
-		displayName = "M4A5 5.56MM Troy Rail 14.5 (Black)";
+		displayName = "M4A1-AU Carbine 5.56MM Troy Rail (Black)";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
 		"ADF_Weapons\ADFRC_M4A5\Textures\Handguard\adfrc_troy_blk_Co.paa"
@@ -172,7 +172,7 @@ class ADFRC_M4A5_Troy_556_14_BLK: ADFRC_M4A5_Troy_556_14
 
 class ADFRC_M4A5_Combo_556_14_BLK: ADFRC_M4A5_Troy_556_14
 	{
-		displayName = "M4A5 5.56MM Troy Rail 14.5 'Combo' (Black)";
+		displayName = "M4A1-AU Combo 5.56MM 14.5 'Combo' (Black)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
@@ -182,13 +182,13 @@ class ADFRC_M4A5_Combo_556_14_BLK: ADFRC_M4A5_Troy_556_14
 
 class ADFRC_M4A5_Combo_556_14_FDE: ADFRC_M4A5_Troy_556_14
 	{
-		displayName = "M4A5 5.56MM Troy Rail 14.5 'Combo' (FDE)";
+		displayName = "M4A1-AU Combo 5.56MM 14.5 'Combo' (FDE)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_145";
 	};
 	
 class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 	{
-		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (Black)";
+		displayName = "M4A1-AU Combo 5.56MM  11.5 'Combo' (Black)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
@@ -197,7 +197,7 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 		
 		author = "Brucey";
 		ACE_barrelTwist = 292.1;
-		ACE_barrelLength = 254;
+		ACE_barrelLength = 292.1;
 		recoil = "recoil_spar";
 		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_beta\Smgs\SMG_02\data\Anim\SMG_02.rtm"};
 		recoilProne = "assaultRifleBase";
@@ -228,7 +228,7 @@ class ADFRC_M4A5_Combo_556_10_BLK: ADFRC_M4A5_556_Base
 	
 class ADFRC_M4A5_Combo_556_10_FDE: ADFRC_M4A5_Combo_556_10_BLK
 	{
-		displayName = "M4A5 5.56MM Troy Rail 10.5 'Combo' (FDE)";
+		displayName = "M4A1-AU Combo 5.56MM 11.5 'Combo' (FDE)";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_c_105";
 		hiddenSelections[] = { "CamoTroy" };
 		hiddenSelectionsTextures[] = { 
@@ -247,14 +247,14 @@ class ADFRC_M4A5_KAC_556: ADFRC_M4A5_556_Base
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5";
-		descriptionShort = "M4A5 KAC<br/>14.5in<br/>Caliber: 5.56";
+		descriptionShort = "M4A1-AU Carbine<br/>14.5in<br/>Caliber: 5.56";
 		inertia = 0.325;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM 14.5";
+		displayName = "M4A1-AU Carbine 5.56MM";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -283,14 +283,14 @@ class ADFRC_M4A5_KAC_NOFS_556: ADFRC_M4A5_556_Base
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_NOFS";
-		descriptionShort = "M4A5 KAC<br/>14.5in<br/>Caliber: 5.56";
+		descriptionShort = "M4A1-AU Carbine<br/>14.5in<br/>Caliber: 5.56";
 		inertia = 0.325;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM 14.5 (No Front Sight)";
+		displayName = "M4A1-AU Carbine 5.56MM (No Front Sight)";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
@@ -483,14 +483,14 @@ class ADFRC_M4A5_KAC_M203_556: ADFRC_M4A5_556_GLBase
 		cursor = "srifle";
 		cursorAim = "EmptyCursor";
 		model = "adf_weapons\adfrc_m4a5\adfrc_m4A5_m203";
-		descriptionShort = "M4A5 KAC<br/>14.5in<br/>Caliber: 5.56";
+		descriptionShort = "M4A1-AU Carbine<br/>14.5in<br/>Caliber: 5.56";
 		inertia = 0.325;
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
 		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-		displayName = "M4A5 5.56MM M203 14.5";
+		displayName = "M4A1-AU Carbine M203 5.56MM 14.5";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
 		opticszoominit = 0.75;
