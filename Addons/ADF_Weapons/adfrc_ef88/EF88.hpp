@@ -87,7 +87,12 @@
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
             class PointerSlot : asdg_FrontSideRail //side slot
-            {};
+            {
+			class compatibleItems {
+			ADFRC_L3Squad_EF88_Top_IRL = 1;
+			ADFRC_L3Squad_EF88_Top_IRT = 1;
+			};
+			};
         };
 		
        class Single : Mode_SemiAuto
@@ -391,8 +396,8 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 		soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up",0.70794576,1,20};
 		modes[] = {"Single","FullAuto","single_medium_optics1","single_medium_optics2","fullauto_medium"};
 	
-		   class WeaponSlotsInfo {
-			mass = 71;
+ class WeaponSlotsInfo {
+			mass = 82;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
             {};
