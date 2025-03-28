@@ -80,7 +80,14 @@
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
             {};
             class PointerSlot : asdg_FrontSideRail //side slot
-            {};
+            {
+			class compatibleItems {
+			ADFRC_PEQ15_M4_Top_BLK_IRL = 1;
+			ADFRC_PEQ15_M4_Top_BLK_IRT = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRL = 1;
+			ADFRC_PEQ15_M4_Top_FDE_IRT = 1;
+			};
+			};
         };
 		
        class Single : Mode_SemiAuto
@@ -425,7 +432,7 @@ class ADFRC_M4A5_556_GLBase: Rifle_Base_F
             {};
             class PointerSlot : asdg_FrontSideRail //side slot
             {};
-        };
+		};
 		
        class Single : Mode_SemiAuto
 {			autofire = 0;
