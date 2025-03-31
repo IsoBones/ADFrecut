@@ -1334,6 +1334,22 @@ class CfgVehicles
 				initPhase=0;
 				animPeriod=3;
 			};
+			class hull_net
+			{
+				DisplayName="Hull Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
+			class turret_net
+			{
+				DisplayName="Turret Camo Net";
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+				author="ADFRC";
+			};
 		};
 		animationList[]=
 		{
@@ -1362,17 +1378,34 @@ class CfgVehicles
                 statement="this animateDoor [""plow"", 0]; playSound3D [""adf_wheeled\adfrc_boxer\sound\skid_extend.ogg"", this, false,(this modelToWorld (this selectionPosition ""plow_axis"")), 0, 0, 0]; ";
             };
         };
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo5",
+			"Camo4",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
+			"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
+			"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
+			"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
+			"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
+		};
 		class TextureSources
 		{
 			class Standard
 			{
-				displayName="Standard";
+				displayName="Three Tone";
 				author="ADFRC_Quiggs";
 				textures[]=
 				{
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
 				};
 			};
@@ -1382,33 +1415,36 @@ class CfgVehicles
 				author="ADFRC_Quiggs";
 				textures[]=
 				{
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\fish\texturehull_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\fish\textureturret_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\fish\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
 				};
 			};
-			class Dots
+			class Polka
 			{
 				displayName="Polka Dot";
 				author="ADFRC_Quiggs";
 				textures[]=
 				{
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\polka\texturehull_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\polka\textureturret_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\polka\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
 				};
 			};
 			class Lines
 			{
-				displayName="Tiger Stripe";
+				displayName="Lines";
 				author="ADFRC_Quiggs";
 				textures[]=
 				{
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\tiger\texturehull_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\tiger\textureturret_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\tiger\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
 					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
 				};
 			};
@@ -1418,22 +1454,11 @@ class CfgVehicles
 				author="ADFRC_Quiggs";
 				textures[]=
 				{
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
-				};
-			};
-			class Desert
-			{
-				displayName="Desert Tan";
-				author="ADFRC_Quiggs";
-				textures[]=
-				{
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
-					"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
+					"ADF_Tracked\adfrc_abrams\Data\garuda\texturehull_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\garuda\textureturret_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\garuda\texturemisc_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc2_co.paa",
+					"ADF_Tracked\adfrc_abrams\Data\garuda\texturewheels_co.paa"
 				};
 			};
 		};
@@ -2017,21 +2042,6 @@ class CfgVehicles
 		class Library
 		{
 			libTextDesc="M1A1AIM";
-		};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2",
-			"Camo3",
-			"Camo4",
-			"CamoNet"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"ADF_Tracked\adfrc_abrams\Data\Standard\texturehull_co.paa",
-			"ADF_Tracked\adfrc_abrams\Data\Standard\textureturret_co.paa",
-			"ADF_Tracked\adfrc_abrams\Data\Standard\texturemisc_co.paa",
-			"ADF_Tracked\adfrc_abrams\Data\Standard\texturewheels_co.paa"
 		};
 		soundEngineOnInt[]=
 		{
