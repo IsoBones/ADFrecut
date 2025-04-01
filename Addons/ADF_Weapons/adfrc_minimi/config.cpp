@@ -295,6 +295,8 @@ class CfgWeapons
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
             {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
         };
 	};
 	

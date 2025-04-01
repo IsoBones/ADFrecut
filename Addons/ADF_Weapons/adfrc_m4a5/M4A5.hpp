@@ -81,7 +81,7 @@
             {};
             class PointerSlot : asdg_FrontSideRail //side slot
             {
-			class compatibleItems {
+			class compatibleItems: compatibleItems {
 			ADFRC_PEQ15_M4_Top_BLK_IRL = 1;
 			ADFRC_PEQ15_M4_Top_BLK_IRT = 1;
 			ADFRC_PEQ15_M4_Top_FDE_IRL = 1;

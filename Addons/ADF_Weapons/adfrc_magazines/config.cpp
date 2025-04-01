@@ -367,7 +367,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Magazine";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball";
@@ -382,7 +382,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Tracer Red";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_red_ca.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball_TracerR";
@@ -395,7 +395,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Tracer Green";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_green_ca.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball_TracerG";
@@ -408,7 +408,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Tracer Yellow";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_yellow_CA.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball_TracerY";
@@ -421,7 +421,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Tracer IR";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_yellow_CA.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball_TracerIR";
@@ -434,7 +434,7 @@ class CfgMagazines
 		scope=2;
 		displayName="5.56mm 30Rnd PMAG F1A1 Tracer Mixed";
 		author="$STR_ADFRC_AUTHOR";
-		picture="\A3\weapons_F\data\UI\m_30stanag_red_ca.paa";
+		picture="\ADF_Weapons\adfrc_magazines\UI\adfrc_pmag_ca.paa";
 		modelSpecial = "ADF_Weapons\adfrc_magazines\PMAG30.p3d";
 		modelSpecialIsProxy = 1;
 		ammo="B_556x45_F1_Ball_TracerR";
