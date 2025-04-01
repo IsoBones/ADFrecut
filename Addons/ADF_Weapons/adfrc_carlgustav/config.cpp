@@ -341,7 +341,8 @@ class cfgWeapons
 		displayName="Carl Gustav M3";
 		author="$STR_ADFRC_AUTHOR";
 		model="\adf_weapons\adfrc_carlgustav\carlgustav_empty";
-		picture="\adf_weapons\adfrc_carlgustav\ui\carlgustav_x_ca.paa";
+		picture = "\ADF_Weapons\adfrc_carlgustav\UI\adfrc_CGM3_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_carlgustav\UI\adfrc_CGM3_ca.paa";
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
@@ -473,7 +474,11 @@ class cfgWeapons
 			mass = 220;
 			allowedSlots[] = {901};
             class CowsSlot : asdg_OpticRail1913 //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.209,0.297};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";};
         };
 		
 		
@@ -494,15 +499,28 @@ class cfgWeapons
 		displayName="Carl Gustav M4";
 		author="Brucey";
 		model="\adf_weapons\adfrc_carlgustav\ADFRC_CGM4";
+		
+		picture = "\ADF_Weapons\adfrc_carlgustav\UI\adfrc_CGM4_ca.paa";
+		UiPicture = "\ADF_Weapons\adfrc_carlgustav\UI\adfrc_CGM4_ca.paa";
 	
 	
 		class WeaponSlotsInfo {
 			mass = 145;
 			allowedSlots[] = {901};
             class CowsSlot : asdg_OpticRail1913 //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.189,0.258};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.123,0.402};
+			iconScale  = 0.18;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
+			};
         };
 		
 		class Library
