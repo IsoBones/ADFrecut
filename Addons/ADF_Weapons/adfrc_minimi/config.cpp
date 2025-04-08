@@ -101,7 +101,7 @@ class CfgWeapons
 			"\ADF_Weapons\ADFRC_minimi\anim\f89.rtm"
 		};
 		dexterity=100;
-		model="\ADF_Weapons\ADFRC_minimi\adfrc_F89_Para.p3d";
+		model="\ADF_Weapons\ADFRC_minimi\ADFRC_F89_Minimi.p3d";
 		displayName="5.56mm F89 Base Class";
 		nameSound="Mgun";
 		picture="\ADF_Weapons\ADFRC_minimi\UI\gear_f89_x_ca.paa";
