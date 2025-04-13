@@ -1228,12 +1228,11 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
 		side=1;
 		scope=2;
-		faction="ADF";
+		faction="ADFRC_F_MD";
 		vehicleClass="Armored";
-		crew="adfrc_crewman_amcu";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		typicalCargo[]=
 		{
-			"ADFRC_rifleman_amcu"
 		};
 	};
 };
