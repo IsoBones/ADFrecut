@@ -42,4 +42,60 @@ class compatibleItems;
 
 class cfgweapons{
 #include "EF88.hpp"
+//	INHERITENCE ADJUSTMENTS FROM OLD TO NEW
+//	BASE CLASSES
+	class arifle_AUG_base_F: ADFRC_EF88_Base{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+	};
+	class arifle_AUG_GL_base_F: ADFRC_EF88GL_Base{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+	};
+	class arifle_AUG_C_base_F: ADFRC_EF88_Base{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	//	OLD TAN -> NEW CAMO
+	class arifle_AUG_F: ADFRC_EF88_Camo{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	class arifle_AUG_GL_F: ADFRC_EF88_SL40_Camo{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	class arifle_AUG_C_F: ADFRC_EF88C_Camo{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	//	OLD BLACK -> NEW BLACK
+	class arifle_AUG_black_F: ADFRC_EF88_Black{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	class arifle_AUG_GL_black_F: ADFRC_EF88_SL40_Black{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
+	class arifle_AUG_C_black_F: ADFRC_EF88C_Black{
+		scope = protected;
+		scopeArsenal = protected;
+		scopeCurator = protected;
+		
+	};
 };
