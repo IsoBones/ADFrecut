@@ -2,8 +2,8 @@ class ADFRC_TA31_BLK : ItemCore
 	{
 		displayName="Trijicon ACOG TA31 4x32 (Black)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_BLK_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_BLK_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_BLK_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_BLK_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_BLK.p3d";
 		scope =2;
 		descriptionShort = "TA31 4x32";
@@ -61,8 +61,8 @@ class ADFRC_TA31_FDE : ADFRC_TA31_BLK
 	{
 		displayName="Trijicon ACOG TA31 4x32 (FDE)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_FDE_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_FDE_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_FDE_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_FDE_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_FDE.p3d";
 	};
 	
@@ -70,8 +70,8 @@ class ADFRC_TA31_RMR_BLK : ItemCore
 	{
 		displayName="Trijicon ACOG TA31 4x32 RMR (Black)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_RMR_BLK_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_RMR_BLK_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_RMR_BLK_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_RMR_BLK_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_RMR_BLK.p3d";
 		scope =2;
 		descriptionShort = "TA31 4x32";
@@ -129,8 +129,8 @@ class ADFRC_TA31_RMR_FDE : ADFRC_TA31_RMR_BLK
 	{
 		displayName="Trijicon ACOG TA31 4x32 RMR (FDE)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_RMR_FDE_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_RMR_FDE_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_RMR_FDE_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_RMR_FDE_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_RMR_FDE.p3d";
 	};
 	
@@ -138,8 +138,8 @@ class ADFRC_TA31_KF_BLK : ItemCore
 	{
 		displayName="Trijicon ACOG TA31 4x32 (Black/KF)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_KF_BLK_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_KF_BLK_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_KF_BLK_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_KF_BLK_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_KF_BLK.p3d";
 		scope =2;
 		descriptionShort = "TA31 4x32";
@@ -197,8 +197,8 @@ class ADFRC_TA31_KF_FDE : ADFRC_TA31_KF_BLK
 	{
 		displayName="Trijicon ACOG TA31 4x32 (FDE/KF)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_KF_FDE_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_KF_FDE_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_KF_FDE_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_KF_FDE_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_KF_FDE.p3d";
 	};
 	
@@ -206,8 +206,8 @@ class ADFRC_TA31_KF_RMR_BLK : ItemCore
 	{
 		displayName="Trijicon ACOG TA31 4x32 RMR (Black/KF)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_KF_RMR_BLK_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_KF_RMR_BLK_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_KF_RMR_BLK_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_KF_RMR_BLK_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_KF_RMR_BLK.p3d";
 		scope =2;
 		descriptionShort = "TA31 4x32";
@@ -265,7 +265,7 @@ class ADFRC_TA31_KF_RMR_FDE : ADFRC_TA31_KF_RMR_BLK
 	{
 		displayName="Trijicon ACOG TA31 4x32 RMR (FDE/KF)";
 		author="Brucey";
-		picture="ADF_Optics\TA31\UI\TA31_KF_RMR_FDE_ca.paa";
-		uipicture="ADF_Optics\TA31\UI\TA31_KF_RMR_FDE_ca.paa";
+		picture="\ADF_Optics\TA31\UI\TA31_KF_RMR_FDE_ca.paa";
+		uipicture="\ADF_Optics\TA31\UI\TA31_KF_RMR_FDE_ca.paa";
 		model = "ADF_Optics\TA31\ADFRC_TA31_KF_RMR_FDE.p3d";
 	};

@@ -2,8 +2,8 @@ class ADFRC_Aimpoint_Pro_S : ItemCore
 	{
 		displayName="Aimpoint PRO (Short)";
 		author=Brucey;
-		picture="ADF_Optics\PRO\UI\PRO_S_ca.paa";
-		uipicture="ADF_Optics\PRO\UI\PRO_S_ca.paa";
+		picture="\ADF_Optics\PRO\UI\PRO_S_ca.paa";
+		uipicture="\ADF_Optics\PRO\UI\PRO_S_ca.paa";
 		model = "ADF_Optics\PRO\ADFRC_PRO_S.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint PRO";
@@ -43,8 +43,8 @@ class ADFRC_Aimpoint_Pro_S : ItemCore
 class ADFRC_Aimpoint_Pro_S_FC : ADFRC_Aimpoint_Pro_S
 	{
 		displayName="Aimpoint PRO (Short - Flip Caps)";
-		picture="ADF_Optics\PRO\UI\PRO_S_FC_ca.paa";
-		uipicture="ADF_Optics\PRO\UI\PRO_S_FC_ca.paa";
+		picture="\ADF_Optics\PRO\UI\PRO_S_FC_ca.paa";
+		uipicture="\ADF_Optics\PRO\UI\PRO_S_FC_ca.paa";
 		model = "ADF_Optics\PRO\ADFRC_PRO_S_FC.p3d";
 		inertia = 0.1;
 	};
@@ -52,8 +52,8 @@ class ADFRC_Aimpoint_Pro_S_FC : ADFRC_Aimpoint_Pro_S
 class ADFRC_Aimpoint_Pro_T : ADFRC_Aimpoint_Pro_S
 	{
 		displayName="Aimpoint PRO (Tall)";
-		picture="ADF_Optics\PRO\UI\PRO_T_ca.paa";
-		uipicture="ADF_Optics\PRO\UI\PRO_T_ca.paa";
+		picture="\ADF_Optics\PRO\UI\PRO_T_ca.paa";
+		uipicture="\ADF_Optics\PRO\UI\PRO_T_ca.paa";
 		model = "ADF_Optics\PRO\ADFRC_PRO_T.p3d";
 		inertia = 0.1;
 	};
@@ -61,8 +61,8 @@ class ADFRC_Aimpoint_Pro_T : ADFRC_Aimpoint_Pro_S
 class ADFRC_Aimpoint_Pro_T_FC : ADFRC_Aimpoint_Pro_S
 	{
 		displayName="Aimpoint PRO (Tall - Flip Caps)";
-		picture="ADF_Optics\PRO\UI\PRO_T_FC_ca.paa";
-		uipicture="ADF_Optics\PRO\UI\PRO_T_FC_ca.paa";
+		picture="\ADF_Optics\PRO\UI\PRO_T_FC_ca.paa";
+		uipicture="\ADF_Optics\PRO\UI\PRO_T_FC_ca.paa";
 		model = "ADF_Optics\PRO\ADFRC_PRO_T_FC.p3d";
 		inertia = 0.1;
 	};

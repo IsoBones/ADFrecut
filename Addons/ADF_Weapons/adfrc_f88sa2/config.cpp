@@ -68,7 +68,7 @@ class CfgWeapons
 		scope=1;
 		model="ADF_Weapons\adfrc_f88sa2\ADFRC_F88SA2.p3d";
 		dexterity=1.6799999;
-		picture="ADF_Weapons\adfrc_f88sa2\UI\gear_ADFRC_f88sa2_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_f88sa2\UI\gear_ADFRC_f88sa2_x_ca.paa";
 		UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		handAnim[]=
 		{

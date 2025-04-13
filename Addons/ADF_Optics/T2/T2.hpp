@@ -2,8 +2,8 @@ class ADFRC_MicroT2 : ItemCore
 	{
 		displayName="Aimpoint T2";
 		author=Brucey;
-		picture="ADF_Optics\T2\UI\T2_ca.paa";
-		uipicture="ADF_Optics\T2\UI\T2_ca.paa";
+		picture="\ADF_Optics\T2\UI\T2_ca.paa";
+		uipicture="\ADF_Optics\T2\UI\T2_ca.paa";
 		model = "ADF_Optics\T2\ADFRC_T2.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";
@@ -47,8 +47,8 @@ class ADFRC_MicroT2_Down : ADFRC_MicroT2
 	{
 		displayName="Aimpoint T2 (Mag - Down)";
 		author=Brucey;
-		picture="ADF_Optics\T2\UI\T2_Mag_ca.paa";
-		uipicture="ADF_Optics\T2\UI\T2_Mag_ca.paa";
+		picture="\ADF_Optics\T2\UI\T2_Mag_ca.paa";
+		uipicture="\ADF_Optics\T2\UI\T2_Mag_ca.paa";
 		model = "ADF_Optics\T2\ADFRC_T2_Mag_Down.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";
@@ -91,8 +91,8 @@ class ADFRC_MicroT2_Up : ADFRC_MicroT2
 	{
 		displayName="Aimpoint T2 (Mag - UP)";
 		author=Brucey;
-		picture="ADF_Optics\T2\UI\T2_Mag_ca.paa";
-		uipicture="ADF_Optics\T2\UI\T2_Mag_ca.paa";
+		picture="\ADF_Optics\T2\UI\T2_Mag_ca.paa";
+		uipicture="\ADF_Optics\T2\UI\T2_Mag_ca.paa";
 		model = "ADF_Optics\T2\ADFRC_T2_Mag_Up.p3d";
 		scope =2;
 		descriptionShort = "Aimpoint T2";

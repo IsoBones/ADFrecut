@@ -2,8 +2,8 @@ class ADFRC_EXPS3 : ItemCore
 	{
 		displayName="EoTech EXPS3";
 		author=Brucey;
-		picture="ADF_Optics\EXPS3\UI\EXPS3_ca.paa";
-		uipicture="ADF_Optics\EXPS3\UI\EXPS3_ca.paa";
+		picture="\ADF_Optics\EXPS3\UI\EXPS3_ca.paa";
+		uipicture="\ADF_Optics\EXPS3\UI\EXPS3_ca.paa";
 		model = "ADF_Optics\EXPS3\ADFRC_EXPS3.p3d";
 		scope =2;
 		descriptionShort = "EoTech EXPS3";
@@ -47,8 +47,8 @@ class ADFRC_EXPS3_Down : ADFRC_EXPS3
 	{
 		displayName="EoTech EXPS3 (Mag - Down)";
 		author=Brucey;
-		picture="ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
-		uipicture="ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
+		picture="\ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
+		uipicture="\ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
 		model = "ADF_Optics\EXPS3\ADFRC_EXPS3_Mag_Down.p3d";
 		scope =2;
 		descriptionShort = "EoTech EXPS3";
@@ -91,8 +91,8 @@ class ADFRC_EXPS3_Up : ADFRC_EXPS3
 	{
 		displayName="EoTech EXPS3 (Mag - UP)";
 		author=Brucey;
-		picture="ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
-		uipicture="ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
+		picture="\ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
+		uipicture="\ADF_Optics\EXPS3\UI\EXPS3_Mag_ca.paa";
 		model = "ADF_Optics\EXPS3\ADFRC_EXPS3_Mag_Up.p3d";
 		scope =2;
 		descriptionShort = "EoTech EXPS3";
