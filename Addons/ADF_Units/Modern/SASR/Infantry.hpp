@@ -395,13 +395,13 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -1116,13 +1116,13 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		threat[]={0.80000001,0.30000001,0.30000001};
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -1191,13 +1191,13 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		threat[]={0.80000001,0.30000001,0.30000001};
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
@@ -1266,13 +1266,13 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		threat[]={0.80000001,0.30000001,0.30000001};
 		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
+			"ADFRC_M4A5_KAC_M203_556",
 			"ADFRC_hpII",
 			"Throw",
 			"Put"
