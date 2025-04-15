@@ -492,6 +492,8 @@ class CfgMagazines
 		displayName="100 Round 5.56 Belt";
 		author="$STR_ADFRC_AUTHOR";
 		picture="\ADF_Weapons\adfrc_magazines\UI\gear_556x200_ca.paa";
+		modelSpecial = "ADF_Weapons\adfrc_magazines\556_mg\Belt.p3d";
+		modelSpecialIsProxy = 1;
 		count=100;
 		ammo="B_556x45_F1_Ball";
 		mass=22;
@@ -520,6 +522,8 @@ class CfgMagazines
 		displayName="200 Round 5.56 Belt";
 		author="$STR_ADFRC_AUTHOR";
 		picture="\ADF_Weapons\adfrc_magazines\UI\gear_556x200_ca.paa";
+		modelSpecial = "ADF_Weapons\adfrc_magazines\556_mg\Belt.p3d";
+		modelSpecialIsProxy = 1;
 		count=200;
 		ammo="B_556x45_F1_Ball";
 		mass=40;
@@ -542,6 +546,39 @@ class CfgMagazines
 		ammo="B_556x45_F1_Ball_TracerR";
 		tracersEvery=5;
 	};
+	
+	class ADFRC_200Rnd_556_Minimi: CA_Magazine
+	{
+		scope=2;
+		displayName="200 Round 5.56 Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		picture="\ADF_Weapons\adfrc_magazines\UI\gear_556x200_ca.paa";
+		modelSpecial = "ADF_Weapons\adfrc_minimi\Magazine\200RD.p3d";
+		modelSpecialIsProxy = 1;
+		count=200;
+		ammo="B_556x45_F1_Ball";
+		mass=40;
+		initSpeed=820;
+		descriptionShort="Calibre: 5.56x45 mm NATO<br/>Rounds: 200<br/>Cartridge: Thales F1A1 Ball";
+	};
+	class ADFRC_200Rnd_556_Minimi_TR: ADFRC_200Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="200 Round 5.56 Tracer (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=1;
+	};
+	class ADFRC_200Rnd_556_Minimi_TR5: ADFRC_200Rnd_556_Minimi
+	{
+		scope=2;
+		displayName="200 Round 5.56 Tracer 1:5 (Red) Minimi";
+		author="$STR_ADFRC_AUTHOR";
+		ammo="B_556x45_F1_Ball_TracerR";
+		tracersEvery=5;
+	};
+	
+	
 	class ADFRC_50Rnd_762_Belt: CA_Magazine
 	{
 		scope=2;
