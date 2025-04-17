@@ -30,6 +30,7 @@ class SlotInfo;
 class CowsSlot;
 class PointerSlot;
 class MuzzleSlot;
+class compatibleItems;
 class CowsSlot_ADFRC_MG;
 //////////////////////////////////class asdg_SlotInfo;
 class asdg_FrontSideRail;
@@ -121,12 +122,12 @@ class CfgWeapons
 			class MuzzleSlot: asdg_MuzzleSlot_762
 			{
 				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[]={};
+				class compatibleItems: compatibleItems {};
 			};
-			class PointerSlot: asdg_FrontSideRail
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[]={};
+			 class PointerSlot : asdg_FrontSideRail //side slot
+            {
+			linkProxy="\A3\data_f\proxies\weapon_slots\SIDE";
+			class compatibleItems: compatibleItems {};
 			};
 			class CowsSlot: asdg_OpticRail1913
 			{

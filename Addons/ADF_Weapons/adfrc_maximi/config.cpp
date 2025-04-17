@@ -44,7 +44,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi.p3d";
 		displayName="F89 Maximi";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_CA.paa";
 		ace_overheating_mrbs = 2500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
         ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
         ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
@@ -241,7 +241,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mod.p3d";
 		displayName="F89 Maximi Modernised";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Mod_CA.paa";
 	};
 	
 	class ADFRC_maximi_Modern_Short: ADFRC_maximi
@@ -250,7 +250,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mods.p3d";
 		displayName="F89 Maximi Modernised (Short)";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Mod_S_CA.paa";
 		ACE_barrelLength = 349;
 	
 		   class WeaponSlotsInfo {
@@ -271,7 +271,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_para.p3d";
 		displayName="F89 Maximi Para";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Para_CA.paa";
 	
 		   class WeaponSlotsInfo {
 			mass = 155;
@@ -291,7 +291,7 @@ class CfgWeapons
 		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_paras.p3d";
 		displayName="F89 Maximi Para (Short)";
 		author="Brucey";
-		picture="\ADF_Weapons\adfrc_maximi\UI\gear_f89_max_x_ca.paa";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Para_S_CA.paa";
 		ACE_barrelLength = 349;
 	
 		   class WeaponSlotsInfo {

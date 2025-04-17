@@ -295,47 +295,6 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_CO.paa"};
 	};
 	
-	class ADFRC_30Rnd_aug_ef88_C: ADFRC_30Rnd_aug_ef88
-	{
-		displayName="30Rnd EF88 Magazine";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
-	class ADFRC_30Rnd_aug_TR_ef88_C: ADFRC_30Rnd_aug_TR_ef88
-	{
-		scope=2;
-		displayName="30Rnd EF88 Red Tracer (Camo)";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_tr_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
-	class ADFRC_30Rnd_aug_TY_ef88_C: ADFRC_30Rnd_aug_TY_ef88
-	{
-		scope=2;
-		displayName="30Rnd EF88 Yellow Tracer (Camo)";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_ty_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
-	class ADFRC_30Rnd_aug_TG_ef88_C: ADFRC_30Rnd_aug_TG_ef88
-	{
-		scope=2;
-		displayName="30Rnd EF88 Green Tracer (Camo)";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_tg_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
-	class ADFRC_30Rnd_aug_IR_ef88_C: ADFRC_30Rnd_aug_IR_ef88
-	{
-		scope=2;
-		displayName="30Rnd EF88 IR Tracer (Camo)";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_tir_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
-	class ADFRC_30Rnd_aug_mixed_ef88_C: ADFRC_30Rnd_aug_mixed_ef88
-	{
-		scope=2;
-		displayName="30Rnd EF88 Tracer Mixed (Camo)";
-		picture="\ADF_Weapons\adfrc_magazines\UI\gear_aug_mag_tr_ca.paa";
-		hiddenSelectionsTextures[] = {"\ADF_Weapons\adfrc_ef88\textures\ADFRC_EF88_C_CO.paa"};
-	};
 	
 	
 	class ADFRC_30Rnd_STANAG: 30Rnd_556x45_Stanag
@@ -790,13 +749,7 @@ class CfgMagazineWells
 			"ADFRC_30Rnd_aug_TY_ef88",
 			"ADFRC_30Rnd_aug_TG_ef88",
 			"ADFRC_30Rnd_aug_IR_ef88",
-			"ADFRC_30Rnd_aug_Mixed_ef88",
-			"ADFRC_30Rnd_aug_ef88_C",
-			"ADFRC_30Rnd_aug_TR_ef88_C",
-			"ADFRC_30Rnd_aug_TY_ef88_C",
-			"ADFRC_30Rnd_aug_TG_ef88_C",
-			"ADFRC_30Rnd_aug_IR_ef88_C",
-			"ADFRC_30Rnd_aug_Mixed_ef88_C"
+			"ADFRC_30Rnd_aug_Mixed_ef88"
 		};
 	};
 	
