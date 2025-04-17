@@ -41,7 +41,7 @@
         distanceZoomMin = 300;
         distanceZoomMax = 300;
 		
-		magazines[] = {"ADFRC_HK417_762_20_M"};
+		magazines[] = {"ADFRC_20RD_HK417_F4"};
 		magazineWell[] = {"CBA_762x51_HK417","CBA_762x51_HK417_L","CBA_762x51_HK417_XL"};
 
 
@@ -61,7 +61,7 @@
 		changeFiremodeSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode",0.177828,1,5};
 		soundBullet[] = {"bullet1",0.087,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
 		reloadAction = "GestureReloadSPAR_01";
-		reloadMagazineSound = ["A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_reload",1,1,10];
+		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_reload",1,1,10};
 		soundBipodDeploy[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_deploy",0.70794576,1,20};
 		soundBipodFold[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_fold",0.70794576,1,20};
 		soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down",0.70794576,1,20};
@@ -72,13 +72,32 @@
 			mass = 104.5;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_762
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.016,0.41};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.543,0.234};
+			iconScale  = 0.21;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+	};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.211,0.719};
+			iconScale  = 0.25;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
             {
+			iconPinpoint="center";
+			iconPosition[] = {0.291,0.41};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 			class compatibleItems: compatibleItems {
 			};
 			};
@@ -146,8 +165,8 @@ class ADFRC_HK417_Black: ADFRC_HK417_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "ADF_Weapons2\adfrc_HK417\UI\adfrc_417_CA.paa";
+		UiPicture = "ADF_Weapons2\adfrc_HK417\UI\adfrc_417_CA.paa";
 		displayName = "HK417 7.62x51";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;

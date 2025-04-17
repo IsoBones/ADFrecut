@@ -74,13 +74,32 @@
 			mass = 83;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_556
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.016,0.41};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.5,0.25};
+			iconScale  = 0.17;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
 			class UnderBarrelSlot : asdg_UnderSlot //bottom / bipod
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.211,0.719};
+			iconScale  = 0.25;
+			iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+			};
             class PointerSlot : asdg_FrontSideRail //side slot
             {
+			iconPinpoint="center";
+			iconPosition[] = {0.248,0.414};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_side.paa";
 			class compatibleItems: compatibleItems {
 			ADFRC_PEQ15_M4_Top_BLK_IRL = 1;
 			ADFRC_PEQ15_M4_Top_BLK_IRT = 1;
@@ -151,8 +170,8 @@ class ADFRC_HK416_556_115: ADFRC_HK416_556_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
-		UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+		picture = "ADF_Weapons2\adfrc_HK416\UI\adfrc_416_CA.paa";
+		UiPicture = "ADF_Weapons2\adfrc_HK416\UI\adfrc_416_CA.paa";
 		displayName = "HK416 11.5 5.56 Carbine";
 		discretedistance[] = { 100, 200, 300, 400 };
 		discretedistanceinitindex = 2;
