@@ -71,9 +71,19 @@
 			mass = 130;
 			allowedSlots[] = {901};
             class MuzzleSlot : asdg_MuzzleSlot_50
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {-0.01,0.402};
+			iconScale  = 0.25;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
+			};
             class CowsSlot : asdg_OpticRail1913_long //Top / optic slot
-            {};
+            {
+			iconPinpoint="center";
+			iconPosition[] = {0.619,0.289};
+			iconScale  = 0.15;
+			iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+			};
         };
        class Single : Mode_SemiAuto
 {			autofire = 0;
@@ -84,11 +94,11 @@
             };
 			class StandardSound : BaseSoundModeType
 			{
-				soundSetShot[] = {"MSS_M107A1_Shot_SoundSet", "GM6Lynx_Tail_SoundSet", "GM6Lynx_InteriorTail_SoundSet"};
+				soundSetShot[] = {"ADFRC_M107A1_Shot_SoundSet", "GM6Lynx_Tail_SoundSet", "GM6Lynx_InteriorTail_SoundSet"};
 			};
 			class SilencedSound : BaseSoundModeType
 			{
-				soundSetShot[] = {"MSS_M107A1_Suppressed_SoundSet", "DMR01_silencerTail_SoundSet","GM6Lynx_InteriorTail_SoundSet"};
+				soundSetShot[] = {"ADFRC_M107A1_Suppressed_SoundSet", "DMR01_silencerTail_SoundSet","GM6Lynx_InteriorTail_SoundSet"};
 			};
 						
 			canshootinwater = 1;
@@ -115,7 +125,7 @@
 		ACE_barrelLength = 737;
 		deployedPivot = "deploypoint";       /// what point should be used to be on surface while unfoldedsoundBipodUp[] = { "A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_AAF_up", db - 3, 1, 20 }; /// sound of folding the bipod
 		magazines[] = {
-			"ADFRC_10rnd_BAR_50_F1_Ball"
+			"adfrc_10rnd_50_M1022_LR"
 		};
 		magazineWell[] = {"CBA_50BMG_M107"};
 		cursor = "srifle";
