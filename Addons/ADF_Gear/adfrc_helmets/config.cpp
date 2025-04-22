@@ -39,7 +39,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 1 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","battery2","amp","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -67,7 +67,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 1 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","amp","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -95,7 +95,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 1 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","battery2","comtac","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -123,7 +123,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 1 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -151,7 +151,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 2 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","amp","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -179,7 +179,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 2 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -207,7 +207,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 2 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","comtac","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -235,7 +235,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 2 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -263,7 +263,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 3 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","amp","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -291,7 +291,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 3 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -319,7 +319,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 3 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","comtac","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -347,7 +347,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 3 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -375,7 +375,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 4 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -403,7 +403,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 4 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -431,7 +431,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 4 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery2","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -459,7 +459,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 4 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -487,7 +487,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 5 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -515,7 +515,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 5 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -543,7 +543,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Tan 5 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","battery1","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa",};
@@ -571,7 +571,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime Black 5 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_blk_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_blk_co.paa",""};
@@ -599,7 +599,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 1 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","amp","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -627,7 +627,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 1 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -655,7 +655,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 2 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -683,7 +683,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 2 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac","light"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -711,7 +711,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 3 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -739,7 +739,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 3 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -767,7 +767,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 4 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -795,7 +795,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 4 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery2","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -823,7 +823,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 5 (Comtac III)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","amp"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -851,7 +851,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU 5 (Amp)";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","comtac"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -879,7 +879,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Maritime AMCU";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_amp.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore_mt.p3d";
 		hiddenSelections[] = {"patch","camo","battery1","battery2","comtac","amp","light","strobe"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\helmetpatch_aus_co.paa","ADF_Gear\adfrc_helmets\data\helmet_amcu_co.paa",""};
@@ -910,7 +910,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Team Wendy Exfil (Gen 2) [AMC]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\exfil.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\textures\cover_amcu_co.paa"};
@@ -944,7 +944,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Team Wendy Exfil (Gen 3) [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\TW_Platatac_Cover_AMCU_CA.paa"};
@@ -972,7 +972,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Team Wendy Exfil (Gen 3) [MC]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\TW_Platatac_Cover_MC_CA.paa"};
@@ -1000,7 +1000,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Team Wendy Exfil (Gen 3) [OD]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\TW_Platatac_Cover_OD_CA.paa"};
@@ -1028,7 +1028,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Team Wendy Exfil (Gen 3) No Cover [OD]";
-		picture = "ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"ADF_Gear\adfrc_helmets\data\TW_Platatac_Cover_NO_CA.paa"};
@@ -1062,7 +1062,7 @@ class CfgWeapons
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
 		displayName = "Boonie & Peltors [AMCU]";
-		picture = "ADF_Gear\adfrc_helmets\icons\boonie.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\boonie.paa";
 		model = "ADF_Gear\adfrc_helmets\boonie.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1399,7 +1399,7 @@ class CfgWeapons
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
 		displayName = "Opscore AirFrame [OD]";
-		picture = "";
+		picture = "\ADF_Gear\adfrc_helmets\icons\icon_airframe.paa";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1429,7 +1429,7 @@ class CfgWeapons
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
 		displayName = "Opscore AirFrame (Cover) [MCAM]";
-		picture = "";
+		picture = "\ADF_Gear\adfrc_helmets\icons\icon_airframe.paa";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1458,7 +1458,7 @@ class CfgWeapons
 		ace_hearing_protection = 1;
 		ace_hearing_lowerVolume = 0.4;
 		displayName = "Opscore AirFrame (Cover) [AMC]";
-		picture = "";
+		picture = "\ADF_Gear\adfrc_helmets\icons\icon_airframe.paa";
 		model = "ADF_Gear\adfrc_helmets\Opscore_af_cover.p3d";
 		hiddenSelections[] = {"cover"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\airframe\pd_af_cover_amcu_co.paa"};
@@ -1490,7 +1490,7 @@ class CfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Opscore Fast XP (Cover) [AMC]";
-		picture = "ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
+		picture = "\ADF_Gear\adfrc_helmets\icons\opscore_img_tan_ct.paa";
 		model = "ADF_Gear\adfrc_helmets\opscore.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1521,7 +1521,7 @@ class CfgWeapons
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Tan, No Cover)";
 		model                      = "\ADF_Gear\adfrc_helmets\adfrc_pasgt.p3d";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Tan_No_Cover.paa";
 
 		scope                      = 2;
 
@@ -1563,7 +1563,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Olive_No_Cover : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Olive, No Cover)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Olive_No_Cover.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
@@ -1585,7 +1585,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPC : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPC)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPC.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
@@ -1607,7 +1607,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPC_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPC, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPC_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
@@ -1629,7 +1629,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
@@ -1651,7 +1651,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
@@ -1673,7 +1673,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Middle_East : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Middle East)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Middle_East.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
@@ -1695,7 +1695,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Middle_East_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Middle East, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Middle_East_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
@@ -1717,7 +1717,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Midpoint : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Midpoint)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Midpoint.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
@@ -1739,7 +1739,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Midpoint_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Midpoint, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Midpoint_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
@@ -1761,7 +1761,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Early : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Early)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Early.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
@@ -1783,7 +1783,7 @@ class CfgWeapons
 	class ADFRC_PASGT_DPD_Early_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (DPD Early, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_DPD_Early_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
@@ -1805,7 +1805,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Multicam : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Multicam)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Multicam.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
@@ -1827,7 +1827,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Multicam_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Multicam, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Multicam_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
@@ -1849,7 +1849,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Tan : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Tan)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Tan.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
@@ -1871,7 +1871,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Tan_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Tan, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Tan_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
@@ -1893,7 +1893,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Olive : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Olive)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Olive.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
@@ -1915,7 +1915,7 @@ class CfgWeapons
 	class ADFRC_PASGT_Olive_Goggles : ADFRC_PASGT_Tan_No_Cover {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "PASGT (Olive, Goggles)";
-		picture                    = "";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\PASGT_Olive_Goggles.paa";
 
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
