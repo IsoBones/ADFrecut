@@ -35,7 +35,7 @@ class cfgWeapons
 		author = "$STR_ADF_AUTHOR";
 		displayName = "ADF Carrier-Lite [DPCU]";
 		model = "\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
-		picture = "\ADF_Gear_2\adfrc_vests\data\icon_DPCU_Vest_ca.paa";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear_2\adfrc_vests\data\adfrc_carrierLite_dpcu.paa"};
 		class ItemInfo: ItemInfo
@@ -53,7 +53,7 @@ class cfgWeapons
 		scope = 2;
 		author = "$STR_ADF_AUTHOR";
 		displayName = "ADF Carrier Rig [DPCU]";
-		picture = "\ADF_Gear_2\adfrc_vests\data\icon_DPCU_Vest_ca.paa";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear_2\adfrc_vests\data\adfrc_carrierLite_dpcu.paa"};
 	};
@@ -62,7 +62,7 @@ class cfgWeapons
 		scope = 2;
 		author = "$STR_ADF_AUTHOR";
 		displayName = "ADF Tactical Vest [DPCU]";
-		picture = "\ADF_Gear_2\adfrc_vests\data\icon_DPCU_Vest_ca.paa";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear_2\adfrc_vests\data\tacticalVest_DPCU_co.paa"};
 	};
@@ -89,7 +89,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Medic";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_MED_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Medic.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -136,7 +136,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Team Leader";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_TL_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_TL.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -183,7 +183,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Machine Gunner";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_MG_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_MG.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -230,7 +230,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Rifleman (Pistol)";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_RFL_PST_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Pistol.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -277,7 +277,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - DMR";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_DMR_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_DMR.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -324,7 +324,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Engineer";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_ENG_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Engineer.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -371,7 +371,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Grenadier";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_GRN_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Gren.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -418,7 +418,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Scout";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_SCT_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Scout.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -465,7 +465,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Rifleman";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_RFL_PST_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -512,7 +512,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Rifleman (Light)";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_RFL_L_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Rifleman_Light.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -559,7 +559,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Officer";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_OFR_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Officer.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -606,7 +606,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "TBAS T2 - Section Commander";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_TBAS_T2_SCO_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\TBAS_T2\tbas_T2_Seco.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -1306,7 +1306,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_CFA: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1353,7 +1353,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_TL: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1400,7 +1400,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_LMG: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1447,7 +1447,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_DMR: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1494,7 +1494,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_Eng: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1541,7 +1541,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_Gren: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1588,7 +1588,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_Breacher: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1682,7 +1682,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_Commando_CQB: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1729,7 +1729,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_PatrolCom: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1823,7 +1823,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_TAG_TL: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1870,7 +1870,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_TAG_CFA: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1917,7 +1917,7 @@ class cfgWeapons
 	};
 	class ADFRC_JPC_TAG_Breacher: Vest_Camo_Base
 	{
-		scope = 2;
+		scope = 1;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
@@ -1970,7 +1970,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "Platatac Peacekeeper Mk5 (MC)";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_peacekeeper_mc_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_SOCOM.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -2024,14 +2024,14 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {};
 	};
 	
-	class ADFRC_Peacekeeper_Mk5_AMCU: Vest_Camo_Base
+	class ADFRC_Peacekeeper_Mk5_Tan: Vest_Camo_Base
 	{
 		scope = 2;
 		author = "Brucey";
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
-		displayName = "Platatac Peacekeeper Mk5 (AMCU)";
-		picture = "";
+		displayName = "Platatac Peacekeeper Mk5 (Tan)";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_peacekeeper_tan_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\Peacekeeper\Peacekeeper_RAR.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
@@ -2071,6 +2071,8 @@ class cfgWeapons
 			};
 		};
 	};
+	class ADFRC_Peacekeeper_Mk5_AMCU: ADFRC_Peacekeeper_Mk5_Tan
+	{};
 	
 	
 	class ADFRC_PilotVest: Vest_Camo_Base
@@ -2080,7 +2082,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		allowedSlots[] = {901};
 		displayName = "ADF Aircrew Vest";
-		picture = "";
+		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_Aircrew_vest_ca.paa";
 		model = "\ADF_Gear_2\adfrc_vests\vest_aircrew.p3d";
 		hiddenSelections[] = {};
 		hiddenSelectionsTextures[] = {};
