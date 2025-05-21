@@ -909,7 +909,7 @@ class CfgWeapons
 		author = "Exer";
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Team Wendy Exfil (Gen 2) [AMC]";
+		displayName = "EXFIL Rail 2.0";
 		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\exfil.p3d";
 		hiddenSelections[] = {"cover"};
@@ -941,8 +941,8 @@ class CfgWeapons
 	class adfrc_teamwendy_exfil_g3_cover_AMCU: ItemCore
 	{
 		author = "Growlor/Brucey";
-		scope = 2;
-		weaponPoolAvailable = 1;
+		scope = 1;
+		weaponPoolAvailable = 0;
 		displayName = "Team Wendy Exfil (Gen 3) [AMCU]";
 		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
@@ -969,8 +969,8 @@ class CfgWeapons
 	class adfrc_teamwendy_exfil_g3_cover_MC: ItemCore
 	{
 		author = "Growlor/Brucey";
-		scope = 2;
-		weaponPoolAvailable = 1;
+		scope = 1;
+		weaponPoolAvailable = 0;
 		displayName = "Team Wendy Exfil (Gen 3) [MC]";
 		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
@@ -997,8 +997,8 @@ class CfgWeapons
 	class adfrc_teamwendy_exfil_g3_cover_OD: ItemCore
 	{
 		author = "Growlor/Brucey";
-		scope = 2;
-		weaponPoolAvailable = 1;
+		scope = 1;
+		weaponPoolAvailable = 0;
 		displayName = "Team Wendy Exfil (Gen 3) [OD]";
 		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
@@ -1025,8 +1025,8 @@ class CfgWeapons
 	class adfrc_teamwendy_exfil_g3_NoCover: ItemCore
 	{
 		author = "Growlor/Brucey";
-		scope = 2;
-		weaponPoolAvailable = 1;
+		scope = 1;
+		weaponPoolAvailable = 0;
 		displayName = "Team Wendy Exfil (Gen 3) No Cover [OD]";
 		picture = "\ADF_Gear\adfrc_helmets\icons\tw_exfil_amcu_1.paa";
 		model = "ADF_Gear\adfrc_helmets\Brucey_exfil.p3d";
@@ -1930,6 +1930,1796 @@ class CfgWeapons
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
+			};
+		};
+	};
+
+	//?
+	//? Teamwendy Exfils
+	//?
+
+	class ADFRC_Exfil : ItemCore {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover)";
+		model                      = "\ADF_Gear\adfrc_helmets\adfrc_teamwendy.p3d";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil.paa";
+
+		scope                      = 2;
+
+		hiddenSelections[] = {
+			"camo",
+			"cover",
+			"rails",
+			"helstar",
+			"battery_pack",
+			"patch_left",
+			"patch_right",
+			"comtac_6",
+			"amp_arms_down",
+			"amp_arms_up",
+			"amp_mic_down",
+			"amp_mic_up",
+			"amp_cups_down",
+			"amp_cups_up",
+			"amp_wire_down",
+			"amp_wire_up",
+			"scrim"
+		};
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : HeadgearItem {
+			uniformModel               = "\ADF_Gear\adfrc_helmets\adfrc_teamwendy.p3d";
+
+			mass                       = 40;
+
+			modelSides[]               = { 1, 3 };
+
+			hiddenSelections[] = {
+				"camo",
+				"cover",
+				"rails",
+				"helstar",
+				"battery_pack",
+				"patch_left",
+				"patch_right",
+				"comtac_6",
+				"amp_arms_down",
+				"amp_arms_up",
+				"amp_mic_down",
+				"amp_mic_up",
+				"amp_cups_down",
+				"amp_cups_up",
+				"amp_wire_down",
+				"amp_wire_up",
+				"scrim"
+			};
+
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+
+			class HitpointsProtectionInfo {
+				class Head {
+					hitpointName = "HitHead";
+
+					armor        = 1.666 * 4; //? Level IIIA
+					passThrough  = 0.5;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6 : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Comtac 6)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, AMPS)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Comtac 6, Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, AMPS, Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Helstar)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Comtac 6, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, AMPS, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, Comtac 6, Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (No Cover, AMPS, Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Helstar, Battery)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			""  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				""  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Helstar_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Helstar, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Helstar_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Helstar, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Helstar, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Cover_Helstar_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Helstar, Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Cover_Helstar_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"", //? Patch Left
+			"", //? Patch Right
+			"", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"", //? Patch Left
+				"", //? Patch Right
+				"", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (Comtac 6, Patches, Helstar, Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+			"", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
+				"", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+			};
+		};
+	};
+
+	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery_Scrim : ADFRC_Exfil {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "EXFIL Rail 3.0 (AMPS, Patches, Helstar, Battery, Scrim)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery_Scrim.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+			"", //? Comtac 6
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+			"", //? Amp Arms Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+			"", //? Amp Mic Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+			"", //? Amp Cups Up
+			"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+			"", //? Amp Wire Up
+			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
+				"", //? Comtac 6
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
+				"", //? Amp Arms Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
+				"", //? Amp Mic Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
+				"", //? Amp Cups Up
+				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
+				"", //? Amp Wire Up
+				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
 			};
 		};
 	};
