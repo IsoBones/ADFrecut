@@ -3723,4 +3723,160 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//?
+	//? Gentex CVC
+	//?
+
+	class ADFRC_Gentex_CVC_Tan_F1 : ItemCore {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC F1 (Tan)";
+		model                      = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F1.paa";
+
+		scope                      = 2;
+
+		hiddenSelections[]         = { "camo" };
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+		};
+
+		class ItemInfo : HeadgearItem {
+			uniformModel               = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+
+			mass                       = 20;
+
+			hiddenSelections[]         = { "camo" };
+			modelSides[]               = { 1, 3 };
+
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+			};
+
+			class HitpointsProtectionInfo {
+				class Head {
+					hitpointName = "HitHead";
+
+					armor        = 2;
+					passThrough  = 0.85;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Gentex_CVC_Tan_F2 : ADFRC_Gentex_CVC_Tan_F1 {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC F2 (Tan)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F2.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+			};
+
+			class HitpointsProtectionInfo : HitpointsProtectionInfo {
+				class Head : Head {
+					armor        = 4;
+					passThrough  = 0.6;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Gentex_CVC_Tan_M9 : ADFRC_Gentex_CVC_Tan_F1 {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC M9 (Tan)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_M9.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
+			};
+
+			class HitpointsProtectionInfo : HitpointsProtectionInfo {
+				class Head : Head {
+					armor        = 6;
+					passThrough  = 0.4;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Gentex_CVC_Olive_F1 : ADFRC_Gentex_CVC_Tan_F1 {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC F1 (Olive)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Olive_F1.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+			};
+
+			class HitpointsProtectionInfo : HitpointsProtectionInfo {
+				class Head : Head {
+					armor        = 2;
+					passThrough  = 0.85;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Gentex_CVC_Olive_F2 : ADFRC_Gentex_CVC_Olive_F1 {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC F2 (Olive)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Olive_F2.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+			};
+
+			class HitpointsProtectionInfo : HitpointsProtectionInfo {
+				class Head : Head {
+					armor        = 4;
+					passThrough  = 0.6;
+				};
+			};
+		};
+	};
+
+	class ADFRC_Gentex_CVC_Olive_M9 : ADFRC_Gentex_CVC_Olive_F1 {
+		author                     = "$STR_ADF_AUTHOR";
+		displayName                = "Gentex CVC M9 (Olive)";
+		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Olive_M9.paa";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+		};
+
+		class ItemInfo : ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
+			};
+
+			class HitpointsProtectionInfo : HitpointsProtectionInfo {
+				class Head : Head {
+					armor        = 6;
+					passThrough  = 0.4;
+				};
+			};
+		};
+	};
 };
