@@ -1,0 +1,1272 @@
+<?xml version="1.0"?>
+<GenHeli600 version="1.0">
+  
+  <Mass mass="4800"/>  
+  <CenterOfGravity x="0.005" y="0.800" z="-1.741"/>   <!--z="0.105"-->
+  <MomentsOfInertia Ixx="56723" Iyy="8432" Izz="52178" Iyz="3172"/>
+
+  <Fuselage forceExertionPntX="0.0" forceExertionPntY="0.785" forceExertionPntZ="-0.177" rotationalResistance="100">
+<!--
+ 		<MainRotorDownwash >
+	      <Low_a1 a1 ="-6" scale="1">
+		0    1.11
+		10    1.09
+		20    1.08
+		30    1.065
+		40    1.05
+		50    1.04
+		60    1.02
+		70    1.01
+		80    1
+		90    0.88
+		100    0.6
+	      </Low_a1>
+	      <Medium_a1 a1 ="0" scale="1">
+		0    1.12
+		10    1.12
+		20    1.12
+		30    1.12
+		40    1.12
+		50    1.12
+		60    1.12
+		70    1.12
+		80    1.11
+		90    0.96
+		100    0.6
+	      </Medium_a1>
+	      <High_a1 a1 ="6" scale="1">
+		0    1.15
+		10    1.15
+		20    1.15
+		30    1.15
+		40    1.16
+		50    1.17
+		60    1.18
+		70    1.22
+		80    1.16
+		90    0.98
+		100    0.6
+	      </High_a1>
+    </MainRotorDownwash>
+
+    <MainRotorInplanewash scale="1">
+      <Low_a1 a1 ="-6">
+        0    0.08
+        10    0.18
+        20    0.3
+        30    0.43
+        40    0.55
+        50    0.66
+        60    0.79
+        70    0.9
+        80    1.03
+        90    0.55
+        100    0
+      </Low_a1>
+
+      <Medium_a1 a1 ="0" scale="1">
+        0    0
+        10    0.1
+        20    0.21
+        30    0.32
+        40    0.42
+        50    0.54
+        60    0.66
+        70    0.8
+        80    0.94
+        90    0.5
+        100    0
+      </Medium_a1>
+
+      <High_a1 a1 ="6" scale="1">
+        0    -0.12
+        10    0.02
+        20    0.08
+        30    0.18
+        40    0.28
+        50    0.4
+        60    0.53
+        70    0.67
+        80    0.82
+        90    0.4
+        100    0
+      </High_a1>
+    </MainRotorInplanewash>
+ -->
+  
+    <SideForceDueToSideslip scale="1">
+	-180	-0.004
+	-170	-3.277
+	-160	-6.154
+	-150	-8.289
+	-140	-9.424
+	-130	-9.423
+	-120	-8.286
+	-110	-6.149
+	-100	-3.270
+	-90	3.437
+	-80	5.946
+	-70	7.804
+	-60	9.290
+	-50	9.569
+	-40	8.547
+	-30	6.689
+	-25	6.039
+	-20	4.645
+	-15	3.252
+	-10	2.137
+	-5	1.022
+	0	0.000
+	5	-1.022
+	10	-2.137
+	15	-3.252
+	20	-4.645
+	25	-6.039
+	30	-6.689
+	40	-8.547
+	50	-9.569
+	60	-9.290
+	70	-7.804
+	80	-5.946
+	90	-3.437
+	100	3.270
+	110	6.149
+	120	8.286
+	130	9.423
+	140	9.424
+	150	8.289
+	160	6.154
+	170	3.277
+	180	0.004
+    </SideForceDueToSideslip>
+
+    <LiftDueToAoA scale="1.0">
+	-180	0.000
+	-170	1.684
+	-160	3.080
+	-150	4.117
+	-140	4.668
+	-130	4.667
+	-120	4.115
+	-110	3.078
+	-100	1.681
+	-90	-0.500
+	-80	-5.017
+	-70	-6.689
+	-60	-7.525
+	-50	-7.897
+	-40	-7.711
+	-30	-6.503
+	-25	-4.831
+	-20	-3.252
+	-15	-2.323
+	-10	-1.208
+	-5	-0.465
+	0	0.093
+	5	0.929
+	10	1.858
+	15	2.323
+	20	2.787
+	25	3.159
+	30	3.437
+	40	3.995
+	50	4.459
+	60	4.645
+	70	4.459
+	80	3.623
+	90	0.500
+	100	-1.495
+	110	-2.892
+	120	-3.929
+	130	-4.481
+	140	-4.482
+	150	-3.931
+	160	-2.894
+	170	-1.498
+	180	0.000
+   	</LiftDueToAoA>
+
+    <DragDueToAoA scale="0.9">
+      -180	2.191
+      -170	2.545
+      -160	3.565
+      -150	5.128
+      -140	7.044
+      -130	9.083
+      -120	11.000
+      -110	12.562
+      -100	13.581
+      -90	13.935
+      -80	13.471
+      -70	12.356
+      -60	10.591
+      -50	8.175
+      -40	5.667
+      -30	4.188
+      -25	3.501
+      -20 2.943
+      15	2.553
+      -10	2.328
+      -5	2.191
+      0	  2.191
+      5	  2.330
+      10	2.562
+      15	2.906
+      20  3.398
+      25	4.002
+      30	4.745
+      40	6.132
+      50	7.804
+      60	10.219
+      70	12.263
+      80	13.471
+      90	13.935
+      100	13.582
+      110	12.564
+      120	11.002
+      130	9.086
+      140	7.047
+      150	5.130
+      160	3.567
+      170	2.546
+      180	2.191
+    </DragDueToAoA>    
+
+    <DragDueToSideslip scale="1">
+	-180	0.000
+	-170	0.372
+	-160	1.514
+	-150	3.577
+	-140	7.107
+	-130	10.544
+	-120	13.146
+	-110	15.283
+	-100	15.747
+	-90	15.840
+	-80	15.747
+	-70	15.283
+	-60	13.146
+	-50	10.544
+	-40	7.107
+	-30	3.577
+	-25	2.601
+	-20	1.514
+	-15	0.836
+	-10	0.372
+	-5	0.093
+	0	0.000
+	5	0.093
+	10	0.372
+	15	0.836
+	20	1.514
+	25	2.601
+	30	3.577
+	40	7.107
+	50	10.544
+	60	13.146
+	70	15.283
+	80	15.747
+	90	15.840
+	100	15.747
+	110	15.283
+	120	13.146
+	130	10.544
+	140	7.107
+	150	3.577
+	160	1.514
+	170	0.372
+	180	0.000
+   	</DragDueToSideslip>    
+
+    <PitchingMomentDueToAoA scale="1.0">
+	-180	0.000
+	-170	6.849
+	-160	12.862
+	-150	17.324
+	-140	19.697
+	-130	19.695
+	-120	17.317
+	-110	12.851
+	-100	6.836
+	-90	-5.663
+	-80	-13.309
+	-70	-18.264
+	-60	-20.671
+	-50	-21.521
+	-40	-21.521
+	-30	-20.954
+	-25	-19.822
+	-20	-17.840
+	-15	-14.725
+	-10	-10.760
+	-5	-6.513
+	0	-2.549
+	5	0.283
+	10	2.832
+	15	8.212
+	20	12.743
+	25	16.990
+	30	21.238
+	40	22.937
+	50	23.361
+	60	19.822
+	70	18.406
+	80	13.309
+	90	5.663
+	100	-6.836
+	110	-12.851
+	120	-17.317
+	130	-19.695
+	140	-19.697
+	150	-17.324
+	160	-12.862
+	170	-6.849
+	180	0.000
+   	</PitchingMomentDueToAoA>
+
+    <YawingMomentDueToSideslip scale="1">
+	-180	0.000
+	-170	-2.165
+	-160	-4.262
+	-150	-6.231
+	-140	-8.009
+	-130	-9.545
+	-120	-10.790
+	-110	-11.708
+	-100	-12.270
+	-90	-12.459
+	-80	-11.100
+	-70	-9.401
+	-60	-7.334
+	-50	-4.531
+	-40	-1.133
+	-30	3.964
+	-25	5.380
+	-20	6.796
+	-15	6.230
+	-10	5.097
+	-5	2.832
+	0	0.000
+	5	-2.832
+	10	-5.097
+	15	-6.230
+	20	-6.796
+	25	-5.380
+	30	-3.964
+	40	-1.671
+	50	0.850
+	60	3.540
+	70	6.230
+	80	9.061
+	90	11.893
+	100	11.712
+	110	11.176
+	120	10.300
+	130	9.111
+	140	7.645
+	150	5.947
+	160	4.069
+	170	2.066
+	180	0.000
+    </YawingMomentDueToSideslip>
+
+    <LiftDueToSideslip scale="1">
+      -180	0.000
+      -170	0.000
+      -160	0.000
+      -150	0.000
+      -140	0.000
+      -130	0.000
+      -120	0.000
+      -110	0.000
+      -100	0.000
+      -90	0.000
+      -80	0.340
+      -70	1.199
+      -60	2.175
+      -50	2.813
+      -40	2.812
+      -30	2.787
+      -25	1.858
+      -20	1.115
+      -15	0.650
+      -10	0.279
+      -5	0.186
+      0	0.000
+      5	0.186
+      10	0.465
+      15	0.929
+      20	1.394
+      25	2.044
+      30	2.787
+      40	2.812
+      50	2.813
+      60	2.175
+      70	1.199
+      80	0.340
+      90	0.000
+      100	0.000
+      110	0.000
+      120	0.000
+      130	0.000
+      140	0.000
+      150	0.000
+      160	0.000
+      170	0.000
+      180	0.000
+    </LiftDueToSideslip>
+
+    <PitchingMomentDueToSideslip scale="1">
+      -180	0.000
+      -65	0.000
+      -60	0.283
+      -55	0.566
+      -50	1.416
+      -45	2.549
+      -40	3.681
+      -35	5.097
+      -30	5.097
+      -25	3.681
+      -20	2.549
+      -15	1.416
+      -10	0.566
+      -5	0.283
+      0	0.000
+      5	0.283
+      10	0.566
+      15	1.416
+      20	2.549
+      25	3.681
+      30	5.097
+      35	5.097
+      40	3.681
+      45	2.549
+      50	1.416
+      55	0.566
+      60	0.283
+      65	0.000
+      180	0.000
+    </PitchingMomentDueToSideslip>
+
+		<RollingMomentDueToSideslip>
+	-180	0.000
+	-170	1.416
+	-160	2.452
+	-150	2.832
+	-140	2.832
+	-130	2.832
+	-120	2.832
+	-110	2.832
+	-100	2.832
+	-90	2.832
+	-80	2.832
+	-70	2.832
+	-60	2.860
+	-50	2.917
+	-40	3.002
+	-30	3.115
+	-25	3.398
+	-20	2.124
+	-15	0.850
+	-10	0.252
+	-5	0.031
+	0	0.000
+	5	-0.031
+	10	-0.252
+	15	-0.850
+	20	-2.124
+	25	-3.398
+	30	-3.115
+	40	-3.002
+	50	-2.917
+	60	-2.860
+	70	-2.832
+	80	-2.832
+	90	-2.832
+	100	-2.832
+	110	-2.832
+	120	-2.832
+	130	-2.832
+	140	-2.832
+	150	-2.832
+	160	-2.452
+	170	-1.416
+	180	0.000
+		</RollingMomentDueToSideslip>
+
+  </Fuselage>
+
+  <Engines>
+		<Engine type="ConstantRPMEngine">
+			<DebugInfo printDebugInfo="false" />
+      <!--	Note: Too little inertia causes problems if the drive train is damaged. W/o loads. engine controller is not
+            		able to operate correctly. -->
+      <General inertia="0.3" /> 
+      <Performance emergencyPowerHP="1800" maxTorque="1580" rotationResistance="0.000009"/>  
+      <ControllerParams P="0.5" I="1.5" D="0.0" offset="150" targetRPM="20000" />
+		</Engine>
+
+    <Engine type="ConstantRPMEngine">
+      <DebugInfo printDebugInfo="false" />
+		 	<General inertia="0.3" />
+      <Performance emergencyPowerHP="1800" maxTorque="1580" rotationResistance="0.000009"/>
+      <ControllerParams P="0.5" I="1.5" D="0.0" offset="150" targetRPM="20000" />
+		</Engine>
+		
+  </Engines>
+
+  <DriveTrains>
+    <DriveTrain type="GenericDriveTrain">
+      <TorqueLimits emergency="3500"/>
+      <GearBox gearRatios="1" reverseGearRatio="1"/>
+      <Clutch isFreewheeling="true" maxClutchTorque="15000"/>
+      <Engine index="0"/>
+      <Engine index="1"/>
+      <Load gearRatio="77.570" name="MainRotor"/>
+      <Load gearRatio="16.806" name="TailRotor"/>
+    </DriveTrain>
+  </DriveTrains>
+
+  <ControlSystem>
+  
+		<CSComponent type="FCSAutoHoverTOH">
+      <YawController P="0.0" D="0"/>
+      <PitchController P="0.1" D="0.025"/>
+      <RollController P="0.1" D="0.025"/>
+    </CSComponent>
+    
+    <CSComponent type="FCSHelicopterAutoTrim100" >
+      <YawRateAndSideslipController printDebugInfo="false">
+        <YawRatePID P="0.04"  I="0.01" D="0.0" offset="0.0" integralMin="-25" integralMax="25" />
+        <SideslipPID P="0.04"  I="0.01" D="0.003" offset="0.0" integralMin="-25" integralMax="25" />
+        <Transition speedLow="15" speedHigh="40" />
+        <Maximums maxYawRate="60" maxSideslip="60" />
+        <InputMapping nonlinearity="1.5" />
+      </YawRateAndSideslipController>
+
+      <PitchRateController printDebugInfo="false">
+        <PID P="0.06"  I="0.01" D="0.001" offset="0.0" integralMin="-25" integralMax="25" />
+        <MaxPitchRate maxPitchRate="35" />
+        <InputMapping nonlinearity="1" />
+      </PitchRateController>
+
+      <RollRateController printDebugInfo="false">
+        <PID P="0.01"  I="0.04" D="0.001" offset="0.0" integralMin="-25" integralMax="25" />
+        <MaxRollRate maxRollRate="70" />
+        <InputMapping nonlinearity="1" />
+      </RollRateController>
+
+    </CSComponent>    
+
+    <CSComponent type="GenericControlSystem">
+      <Variables>
+        <Variable alias="latCyclic" member="roll" name="CSComponent_1/ControlOutput/pitchRollControl"/>
+        <Variable alias="lonCyclic" member="pitch" name="CSComponent_1/ControlOutput/pitchRollControl"/>
+        <Variable alias="pedals" name="CSComponent_1/ControlOutput/pedals"/>
+        <Variable alias="collective" name="CSComponent_1/ControlOutput/collective"/>
+        
+        <Variable alias="rotorBrake" name="CSComponent_1/ControlOutput/rotorBrake"  />
+
+        <Variable alias="pitchRateRad" member="X" name="angularVelocityBCS"/>
+        <Variable alias="rollRateRad" member="Y" name="angularVelocityBCS"/>
+        <Variable alias="yawRateRad" member="Z" name="angularVelocityBCS"/>
+
+        <Variable alias="p" member="P" name="attitudeHPR"/>
+        <Variable alias="r" member="R" name="attitudeHPR"/>
+
+        <Variable alias="A1m" name="MainRotor/A1"/>
+        <Variable alias="B1m" name="MainRotor/B1"/>
+        <Variable alias="Th0m" name="MainRotor/theta0"/>
+
+        <Variable alias="A1t" name="TailRotor/A1"/>
+        <Variable alias="B1t" name="TailRotor/B1"/>
+        <Variable alias="Th0t" name="TailRotor/theta0"/>
+        
+        <Variable alias="mainRotorBrake"  name="MainRotor/rotorBrakeInput" />
+
+        <Variable name="HorizontalStabilizer/controlSurfaceDeflection" alias="profondeur" />
+        <Variable name="velocityBCS" member="Y" alias="Vms" />
+
+        <!-- <Variable alias="myVar" dataType="REAL" name="myVar"/> -->
+      </Variables>
+	   
+      <MathExpression>
+        <Expression>
+          latCyclic = latCyclic - clamp(rollRateRad * 2, -0.15 , 0.15 ),
+          lonCyclic = lonCyclic + clamp(pitchRateRad * 3, -0.15 , 0.15 ),
+          pedals = pedals + clamp(yawRateRad * 3, -0.15 , 0.15 ),
+          A1m = latCyclic * 10.5,
+          A1m = clamp( A1m , -12.5 , 8.5 ),
+          B1m = linearInterp( -13 , 18 , (lonCyclic  +1) * 0.5  ),
+          B1m = clamp( B1m , -13 , 18 ),		  
+          Th0m= collective * 10.5 + 8.5,
+          A1t = 0.0,
+          B1t = 0.0,
+          Th0t = linearInterp( 30 , -5,  (pedals  +1) * 0.5 ),
+          A1m = degToRad(A1m),
+          B1m = degToRad(B1m),
+          Th0m = degToRad(Th0m),
+          Th0t = degToRad(Th0t),
+		  		profondeur = lonCyclic*10,
+          mainRotorBrake = rotorBrake          
+
+        </Expression>        
+        
+      </MathExpression>     
+
+    </CSComponent>
+    
+  </ControlSystem>
+
+  <Rotors>
+    <Rotor type="FGRotorBladeElementTheory">
+    	<ModelConfiguration  maxIntegrationStepSizeDeg="1.0" />
+      <InfoPrint printControlInputs="false" printFlappingInfo="false"/>
+
+      <Geometry>
+        <Position x="0.0" y="0.894" z="1.88"/>
+        <Tilt lateralTilt="0.0" longitudinalTilt="-3"/>
+        <Blades chord="0.527" rootCutout="1.5" count="4" flappingHingeHigherLimit="10" flappingHingeLowerLimit="-5" hingeOffset="0.255" radius="8.178"/>
+        <Rotation clockwise="false"/>
+      </Geometry>
+      
+      <MechanicalFeatures Ib="2050" Ir="8230" maxBrakeTorque="0000"/>
+
+      <AerodynamicFeatures>
+        <DesignRPM rpm="260"/>
+        <Blades twist="-11" tipLossFactor="0.03"> <!--3.5 degrees of difference due to linearisation: add it to collective -->
+          <LiftCoefficient>
+	 	0	0.3	0.4	0.5	0.6	0.7	0.8	0.9	1
+	-180	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000
+	-174	0.770	0.770	0.770	0.770	0.770	0.770	0.770	0.770	0.770
+	-158	0.650	0.650	0.650	0.650	0.650	0.650	0.650	0.650	0.650
+	-150	0.950	0.950	0.950	0.950	0.950	0.950	0.950	0.950	0.950
+	-32	-0.968	-0.968	-0.968	-0.968	-0.968	-0.968	-0.968	-0.968	-0.968
+	-30	-1.000	-1.000	-1.000	-1.000	-1.000	-1.000	-1.000	-1.000	-1.000
+	-28	-0.996	-0.996	-0.955	-0.940	-0.946	-0.944	-0.930	-0.922	-0.918
+	-26	-0.992	-0.992	-0.960	-0.930	-0.942	-0.938	-0.910	-0.894	-0.886
+	-24	-0.988	-0.988	-0.962	-0.920	-0.938	-0.932	-0.890	-0.866	-0.854
+	-22	-0.984	-0.984	-0.964	-0.925	-0.934	-0.926	-0.870	-0.838	-0.822
+	-20	-0.980	-0.980	-0.966	-0.930	-0.930	-0.920	-0.850	-0.810	-0.790
+	-18	-0.976	-0.976	-0.968	-0.935	-0.926	-0.914	-0.830	-0.782	-0.758
+	-16	-0.972	-0.972	-0.970	-0.940	-0.922	-0.908	-0.810	-0.754	-0.726
+	-14	-1.070	-1.070	-0.820	-0.800	-0.805	-0.880	-0.800	-0.726	-0.694
+	-12	-0.724	-0.724	-0.535	-0.525	-0.660	-0.830	-0.790	-0.698	-0.662
+	-10	-0.370	-0.370	-0.240	-0.400	-0.600	-0.780	-0.810	-0.670	-0.630
+	-8	-0.190	-0.190	-0.300	-0.300	-0.550	-0.735	-0.750	-0.666	-0.620
+	-6	-0.390	-0.390	-0.450	-0.320	-0.520	-0.640	-0.690	-0.660	-0.610
+	-4	-0.450	-0.450	-0.420	-0.440	-0.470	-0.590	-0.470	-0.540	-0.425
+	-2	-0.190	-0.190	-0.185	-0.195	-0.195	-0.255	-0.250	-0.410	-0.240
+	0	0.030	0.030	0.050	0.050	0.075	0.070	0.080	-0.150	-0.050
+	2	0.243	0.243	0.280	0.295	0.340	0.395	0.350	0.140	0.200
+	4	0.460	0.460	0.510	0.530	0.613	0.720	0.560	0.390	0.450
+	6	0.670	0.670	0.750	0.780	0.840	0.830	0.705	0.640	0.700
+	8	0.890	0.890	0.980	0.960	0.915	0.877	0.810	0.765	0.800
+	10	1.100	1.100	1.170	1.010	0.947	0.920	0.845	0.810	0.850
+	12	1.250	1.250	1.130	0.960	1.000	0.923	0.845	0.830	0.865
+	14	1.100	1.100	1.030	1.080	1.054	0.930	0.850	0.850	0.880
+	16	0.980	0.980	0.960	1.060	1.080	0.920	0.860	0.870	0.895
+	18	0.983	0.983	0.966	1.070	1.063	0.895	0.880	0.885	0.910
+	20	0.986	0.986	0.971	1.060	1.053	0.900	0.900	0.905	0.925
+	22	0.988	0.988	0.977	1.050	1.042	0.920	0.920	0.925	0.940
+	24	0.991	0.991	0.983	1.035	1.031	0.940	0.940	0.940	0.955
+	26	0.994	0.994	0.989	1.020	1.020	0.970	0.960	0.960	0.970
+	28	0.997	0.997	0.994	1.010	1.010	0.985	0.980	0.980	0.985
+	30	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+	32	0.968	0.968	0.968	0.968	0.968	0.968	0.968	0.968	0.968
+	150	-0.950	-0.950	-0.950	-0.950	-0.950	-0.950	-0.950	-0.950	-0.950
+	158	-0.650	-0.650	-0.650	-0.650	-0.650	-0.650	-0.650	-0.650	-0.650
+	174	-0.770	-0.770	-0.770	-0.770	-0.770	-0.770	-0.770	-0.770	-0.770
+	180	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000	0.000
+          </LiftCoefficient>
+
+          <DragCoefficient>
+	 	0	0.2	0.3	0.4	0.5	0.6	0.7	0.8	0.9	1
+	-180	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+	-174	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000
+	-150	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400
+	-94	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000
+	-86	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050
+	-78	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800
+	-70	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800
+	-62	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750
+	-32	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975
+	-30	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300
+	-28	0.5620	0.5620	0.5620	0.5700	0.5640	0.5780	0.5900	0.5930	0.5970	0.6010
+	-26	0.4880	0.4880	0.4880	0.5100	0.5100	0.5250	0.5450	0.5550	0.5630	0.5720
+	-24	0.4170	0.4170	0.4170	0.4480	0.4650	0.4690	0.5040	0.5200	0.5300	0.5430
+	-22	0.3400	0.3400	0.3400	0.3900	0.4080	0.4150	0.4600	0.4780	0.4970	0.5140
+	-20	0.2670	0.2670	0.2670	0.3300	0.3530	0.3610	0.4160	0.4400	0.4630	0.4860
+	-18	0.1950	0.1950	0.1950	0.2650	0.2960	0.3230	0.3730	0.4030	0.4300	0.4570
+	-16	0.1200	0.1200	0.1200	0.2080	0.2400	0.2850	0.3290	0.3640	0.3970	0.4280
+	-14	0.0450	0.0450	0.0450	0.1610	0.1830	0.2460	0.2850	0.3250	0.3630	0.3990
+	-12	0.0180	0.0180	0.0180	0.0220	0.1200	0.1910	0.2420	0.2900	0.3300	0.3700
+	-10	0.0120	0.0120	0.0120	0.0130	0.0670	0.1280	0.1770	0.2250	0.2620	0.2970
+	-8	0.0080	0.0080	0.0082	0.0090	0.0210	0.0700	0.1130	0.1600	0.2030	0.2480
+	-6	0.0078	0.0078	0.0079	0.0085	0.0100	0.0260	0.0600	0.1000	0.1490	0.2020
+	-4	0.0075	0.0075	0.0075	0.0080	0.0080	0.0125	0.0300	0.0650	0.1150	0.1520
+	-2	0.0075	0.0075	0.0075	0.0080	0.0075	0.0085	0.0120	0.0290	0.0660	0.1170
+	0	0.0075	0.0075	0.0075	0.0080	0.0075	0.0080	0.0080	0.0170	0.0500	0.0900
+	2	0.0080	0.0080	0.0080	0.0082	0.0075	0.0085	0.0100	0.0400	0.0800	0.1175
+	4	0.0085	0.0085	0.0085	0.0085	0.0080	0.0110	0.0350	0.0900	0.1200	0.1525
+	6	0.0090	0.0090	0.0090	0.0100	0.0110	0.0280	0.0820	0.1280	0.1670	0.2030
+	8	0.0110	0.0110	0.0110	0.0140	0.0260	0.0730	0.1260	0.1700	0.2100	0.2490
+	10	0.0170	0.0170	0.0170	0.0200	0.0800	0.1220	0.1610	0.2250	0.2620	0.2980
+	12	0.0260	0.0260	0.0260	0.0980	0.1530	0.1790	0.2400	0.2850	0.3220	0.3700
+	14	0.1450	0.1450	0.1450	0.1690	0.2120	0.2310	0.2800	0.3240	0.3560	0.3990
+	16	0.2300	0.2300	0.2300	0.2300	0.2620	0.2830	0.3230	0.3610	0.3900	0.4280
+	18	0.2930	0.2930	0.2930	0.2930	0.3150	0.3280	0.3650	0.4000	0.4250	0.4570
+	20	0.3450	0.3450	0.3450	0.3450	0.3650	0.3580	0.4080	0.4350	0.4590	0.4860
+	22	0.4000	0.4000	0.4000	0.4000	0.4160	0.4120	0.4510	0.4700	0.4930	0.5140
+	24	0.4550	0.4550	0.4550	0.4550	0.4690	0.4670	0.4930	0.5080	0.5270	0.5430
+	26	0.5070	0.5070	0.5070	0.5070	0.5200	0.5210	0.5350	0.5460	0.5620	0.5720
+	28	0.5600	0.5600	0.5600	0.5600	0.5690	0.5760	0.5780	0.5830	0.5960	0.6010
+	30	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300	0.6300
+	32	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975	0.6975
+	62	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750	1.7750
+	70	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800	1.9800
+	78	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800	2.0800
+	86	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050	2.1050
+	94	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000	2.0000
+	150	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400	0.6400
+	174	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000	1.1000
+	180	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+          </DragCoefficient>
+          
+        </Blades>
+
+      </AerodynamicFeatures>
+      
+    </Rotor>
+
+    <Rotor type="FGRotorMomentumTheory">
+      <InfoPrint printControlInputs="false" printFlappingInfo="false"/>
+
+      <Geometry>
+        <Position x="0.356" y="-9.032" z="1.50"/>
+        <Tilt lateralTilt="90.0" longitudinalTilt="0.0"/>
+        <Blades chord="0.247" count="4" hingeOffset="0.0" radius="1.676"/>
+        <Delta3 angle="35"/>
+      </Geometry>
+      <MechanicalFeatures Ib="14" Ir="57"/>
+      <AerodynamicFeatures>
+        <GroundEffect magnitude="0.1"/>
+        <DesignRPM rpm="1190"/>
+        <Blades liftCurveSlope="0.10" twist="-12" zeroLiftDragCoefficient="0.008"/>
+	<!--Not implemented in beta 5
+        <ProfilePowerVSSpeedCurve>
+		   0	1
+		300	1.05
+		400	1.3
+		500	5
+		600	10
+		700	15	
+	</ProfilePowerVSSpeedCurve>
+  -->
+        <Power inducedPowerCorrectionFactor="1.08"/>
+
+        <DynamicPressureRatio>
+          <Sideslip>
+	 -1000	1.00
+	-30	1.00
+	-25	0.88
+	-20	0.79
+	-15	0.72
+	-10	0.66
+	-5	0.64
+	0	0.62
+	5	0.64
+	10	0.66
+	15	0.72
+	20	0.79
+	25	0.88
+	30	1.00
+	1000	1.00
+          </Sideslip>
+        </DynamicPressureRatio>
+
+<!--
+        <Inplanewash>
+          <Low_a1 a1 ="-6">
+            -1000     0.0
+            0		 0.0
+            10		 -0.2
+            20		 0.05
+            30		 0.3
+            40		 0.54
+            50		 0.8
+            60		 1.04
+            70		 1.3
+            80		 1.55
+            90		 0.8
+            100		 0.0
+            1000	 0.0
+          </Low_a1>
+
+          <Medium_a1 a1 ="0">
+            -1000      0.0
+            0		 -0.4
+            10		 -0.6
+            20		 -0.2
+            30		 0.12
+            40		 0.36
+            50		 0.6
+            60		 0.83
+            70		 1.06
+            80		 1.3
+            90		 0.66
+            100		 0.0
+            1000	 0.0
+          </Medium_a1>
+
+          <High_a1 a1 ="6">
+            -1000     0.0
+            0		-0.56
+            10		-0.8
+            20		-0.74
+            30		-0.32
+            40		0.04
+            50		0.32
+            60		0.6
+            70		0.86
+            80		1.12
+            90		0.54
+            100		0.0
+            1000	 0.0
+          </High_a1>
+        </Inplanewash>
+
+        <Downwash>
+          <Low_a1 a1 ="-6">
+            -1000   0.0
+            0	  -0.13
+            10	  0.8
+            20	  1.8
+            30	  1.82
+            40	  1.86
+            50	  1.88
+            60	  1.91
+            70	  1.94
+            80	  1.69
+            90	  1.42
+            100	  1.14
+            1000  0.0
+          </Low_a1>
+
+          <Medium_a1 a1 ="0">
+            -1000 0.0
+            0	 0.4
+            10	 0.94
+            20	 1.84
+            30	 1.91
+            40	 1.98
+            50	 2.04
+            60	 2.08
+            70	 2.14
+            80	 1.89
+            90	 1.62
+            100	 1.35
+            1000 0.0
+          </Medium_a1>
+
+          <High_a1 a1 ="6">
+            -1000 0.0
+            0	0.78
+            10	1.36
+            20	1.91
+            30	1.98
+            40	2.06
+            50	2.14
+            60	2.21
+            70	2.28
+            80	2.16
+            90	1.96
+            100	1.56
+            1000	0.0
+          </High_a1>
+        </Downwash>
+  -->
+      </AerodynamicFeatures>
+      
+    </Rotor>
+    
+  </Rotors>
+
+  <StabilizersAndWings>
+    <HorizontalStabilizer>
+      <Geometry>
+        <Position x="0.0" y="-8.222" z="0.077"/>
+        <Up x="0.0" y="0.0" z="1.0"/>
+        <Front x="0.0" y="1.0" z="0.0"/>
+        <SurfaceArea area="4.181"/>
+      </Geometry>
+      <ControlResponse controlSurfaceLiftCoeffDerivative="0.4" controlSurfaceForceArmPos="0.0" maxControlSurfaceDeflection="20.0" minControlSurfaceDeflection="-20.0=" controlSurfaceDeflectionRateLimit="20.0"/>
+
+      <AerodynamicFeatures>
+        <DynamicPressureRatio>
+          <!-- Table 3.5.3 p143 -->
+          <AoA>
+            -1000 1
+	-30	1.00
+	-25	1.00
+	-20	0.95
+	-15	0.76
+	-10	0.76
+	-5	0.75
+	0	0.75
+	5	0.76
+	10	0.76
+	15	0.82
+	20	0.91
+	25	1.00
+	30	1.00
+            1000 1
+          </AoA>
+        </DynamicPressureRatio>
+
+ 
+
+        <GroundEffect startDistance="1.50" strength="0.0"/>
+        <LiftCurve>
+	-180	0.000
+	-170	0.642
+	-160	0.865
+	-150	0.867
+	-140	0.792
+	-130	0.692
+	-120	0.575
+	-110	0.431
+	-100	0.236
+	-90	0.000
+	-80	-0.294
+	-70	-0.558
+	-60	-0.745
+	-50	-0.847
+	-40	-0.847
+	-30	-0.745
+	-25	-0.795
+	-20	-0.950
+	-15	-1.030
+	-10	-0.710
+	-5	-0.356
+	0	0.000
+	5	0.356
+	10	0.710
+	15	1.030
+	20	0.950
+	25	0.795
+	30	0.745
+	40	0.847
+	50	0.847
+	60	0.745
+	70	0.558
+	80	0.294
+	90	0.000
+	100	-0.236
+	110	-0.431
+	120	-0.575
+	130	-0.692
+	140	-0.792
+	150	-0.867
+	160	-0.865
+	170	-0.642
+	180	0.000
+        </LiftCurve>
+
+        <DragCurve >
+	-180	0.006
+	-170	0.131
+	-160	0.270
+	-150	0.432
+	-140	0.595
+	-130	0.748
+	-120	0.903
+	-110	1.043
+	-100	1.135
+	-90	1.200
+	-80	1.161
+	-70	1.050
+	-60	0.888
+	-50	0.702
+	-40	0.531
+	-30	0.430
+	-25	0.370
+	-20	0.260
+	-15	0.190
+	-10	0.040
+	-5	0.022
+	0	0.010
+	5	0.022
+	10	0.040
+	15	0.190
+	20	0.260
+	25	0.370
+	30	0.430
+	40	0.531
+	50	0.702
+	60	0.888
+	70	1.050
+	80	1.161
+	90	1.200
+	100	1.135
+	110	1.043
+	120	0.903
+	130	0.748
+	140	0.595
+	150	0.432
+	160	0.270
+	170	0.131
+	180	0.006
+        </DragCurve>
+        
+      </AerodynamicFeatures>
+      
+    </HorizontalStabilizer>
+ 
+    <VerticalStabilizer>
+      <Geometry>
+        <Position x="0" y="-9.3" z="1.05"/>
+
+        <Up x="-1.0" y="0.0" z="0"/>
+        <Front x="0" y="1.0" z="0"/>
+        <SurfaceArea area="7"/>
+      </Geometry>
+      <ControlResponse controlSurfaceForceArmPos="0.0" controlSurfaceLiftCoeffDerivative="0.0"/>
+      <AerodynamicFeatures>
+       
+        <GroundEffect startDistance="0" strength="0.0"/>
+        <LiftCurve>
+          -180     0
+          -170     0.34
+          -160     0.74
+          -150     0.80
+          -140     0.72
+          -130     0.57
+          -120     0.43
+          -110     0.29
+          -100     0.15
+          -90      0
+          -80      -0.15
+          -70      -0.29
+          -60      -0.43
+          -50      -0.57
+          -40      -0.72
+          -30      -0.80
+          -25      -0.80
+          -20      -0.74
+          0        0
+          20       0.74
+          25       0.80
+          30       0.80
+          40       0.72
+          50       0.57
+          60       0.43
+          70       0.29
+          80       0.15
+          90       0
+          100      -0.15
+          110      -0.29
+          120      -0.43
+          130      -0.57
+          140      -0.72
+          150      -0.80
+          160      -0.74
+          170      -0.34
+          180      0
+        </LiftCurve>
+
+        <DragCurve>
+          -1000   0.0
+          -180    0.0
+          -140    0.42
+          -130    0.56
+          -120    0.71
+          -110    0.84
+          -100    0.93
+          -90     0.96
+          -80     0.93
+          -70     0.84
+          -60     0.71
+          -50     0.56
+          -40     0.42
+          0       0.008
+          40      0.42
+          50      0.56
+          60      0.71
+          70      0.84
+          80      0.93
+          90      0.96
+          100     0.93
+          110     0.84
+          120     0.71
+          130     0.56
+          140     0.42
+          180     0.0
+          1000    0.0
+        </DragCurve>
+        
+      </AerodynamicFeatures>
+      
+    </VerticalStabilizer>
+    
+  </StabilizersAndWings>
+  
+  <GroundContacts>
+    <GeneralConfiguration	gearExtensionTime="3"	maxSteerableGearDeflection="80" 	steerableGearSpeedCorrectionFactor="0.0"/>
+
+ 		<GroundContact type="FGGroundContact200" >
+      <Features isBrakable="true" isRetractable="true" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.295" />
+      <Suspension>
+        <MountStation  x="-1.402" y="2.746" z="-1.279"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.394" />
+        <SpringParameters springConstant="200000" damperConstant="50000" maxCompression="0.359" />
+      </Suspension>
+      <Wheel mass="1" radius="0.318" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="0.7" resistanceTorqueNoBrake="1" resistanceTorqueFullBrake="3000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>    
+    
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="true" isRetractable="true" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.295" />
+      <Suspension>
+        <MountStation  x="1.402" y="2.746" z="-1.279"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.394" />
+        <SpringParameters springConstant="200000" damperConstant="50000" maxCompression="0.359" />
+      </Suspension>
+      <Wheel mass="1" radius="0.318" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="0.7" resistanceTorqueNoBrake="1" resistanceTorqueFullBrake="3000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- tail wheel -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="true" isRetractable="true" isSteerable="true"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.067" />
+      <Suspension>
+        <MountStation  x="0" y="-6.272" z="-1.418"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.279" />
+        <SpringParameters springConstant="150000" damperConstant="50000" maxCompression="0.245" />
+      </Suspension>
+      <Wheel mass="1" radius="0.231" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="0.7" resistanceTorqueNoBrake="1" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+	  	<SteeringController inverseRotation="true" keepCenter="false" />
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>    
+    
+    <!-- nose left -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="1.054" y="4.437" z="-1.342"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.1" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0.09" />
+      </Suspension>
+      <Wheel mass="1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="2" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- nose left -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="-1.054" y="4.437" z="-1.342"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.1" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0.09" />
+      </Suspension>
+      <Wheel mass="1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="2" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- belly left -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="-0.964" y="-1.05" z="-1.432"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.1" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0.09" />
+      </Suspension>
+      <Wheel mass="1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="2" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- belly right -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="0.964" y="-1.05" z="-1.432"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0.1" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0.09" />
+      </Suspension>
+      <Wheel mass="1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="2" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- tail 1 -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="0" y="-7.055" z="-1.169"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0" />
+      </Suspension>
+      <Wheel mass="0.1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="0.5" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+    
+    <!-- tail tip -->
+    <GroundContact type="FGGroundContact200" >
+      <Features isBrakable="false" isRetractable="false" isSteerable="false"  />
+      <Aerodynamics equivalentFlatPlateArea ="0.0" />
+      <Suspension>
+        <MountStation  x="0" y="-9.279" z="-0.579"/>
+        <SliderAxis x="0" y="0" z="1" />
+        <SuspensionLength length="0" />
+        <SpringParameters springConstant="420000" damperConstant="50000" maxCompression="0" />
+      </Suspension>
+      <Wheel mass="0.1" radius="0.1" >
+        <RollAxis x="1" y="0" z="0" />
+        <Friction slidingFriction="0.5" resistanceTorqueNoBrake="1000" resistanceTorqueFullBrake="1000" />
+      </Wheel>
+      <Damage thresholdLoad="20000000" />
+    </GroundContact>
+       
+  </GroundContacts>
+
+
+</GenHeli600>
