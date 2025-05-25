@@ -194,7 +194,7 @@ class ADFRC_WP_M4A5_KAC_SpecterKF_PEQ: ADFRC_M4A5_KAC_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -276,7 +276,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_PEQ: ADFRC_M4A5_KAC_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -294,7 +294,7 @@ class ADFRC_WP_M4A5_KAC_ACOG_RD_PEQ: ADFRC_M4A5_KAC_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 	};
 };
@@ -352,7 +352,7 @@ class ADFRC_WP_M4A5_KAC_NFS_EXPS3_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 	};
 };
@@ -370,7 +370,7 @@ class ADFRC_WP_M4A5_KAC_NFS_EXPS3M_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -425,7 +425,7 @@ class ADFRC_WP_M4A5_KAC_NFS_Specter_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -443,7 +443,7 @@ class ADFRC_WP_M4A5_KAC_NFS_SpecterKF_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -499,7 +499,7 @@ class ADFRC_WP_M4A5_KAC_NFS_ACOG_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 	};
 };
@@ -517,7 +517,7 @@ class ADFRC_WP_M4A5_KAC_NFS_ACOG_RD_PEQ: ADFRC_M4A5_KAC_NOFS_556
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -587,7 +587,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -610,7 +610,7 @@ class ADFRC_WP_M4A5_Troy_10_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -680,7 +680,7 @@ class ADFRC_WP_M4A5_Troy_10_T2_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -703,7 +703,7 @@ class ADFRC_WP_M4A5_Troy_10_T2M_PEQ: ADFRC_M4A5_Combo_556_10_FDE
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -726,7 +726,7 @@ class ADFRC_WP_M4A5_Troy_10_T2_PEQ_CQB: ADFRC_M4A5_Combo_556_10_FDE
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -810,7 +810,7 @@ class ADFRC_WP_M4A5_Troy_14_EXPS3_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -833,7 +833,7 @@ class ADFRC_WP_M4A5_Troy_14_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -903,7 +903,7 @@ class ADFRC_WP_M4A5_Troy_14_T2_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -926,7 +926,7 @@ class ADFRC_WP_M4A5_Troy_14_T2M_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -997,7 +997,7 @@ class ADFRC_WP_M4A5_Troy_14_Specter_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1020,7 +1020,7 @@ class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1043,7 +1043,7 @@ class ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ_Atlas: ADFRC_M4A5_Troy_556_14
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1101,7 +1101,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1124,7 +1124,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1194,7 +1194,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1218,7 +1218,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2_PEQ_CQB: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 	};
 };
@@ -1236,7 +1236,7 @@ class ADFRC_WP_M4A5_Troy_10_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1311,7 +1311,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1334,7 +1334,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_EXPS3M_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1404,7 +1404,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_T2_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1427,7 +1427,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_T2M_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1498,7 +1498,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_Specter_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1521,7 +1521,7 @@ class ADFRC_WP_M4A5_Troy_14_BLK_SpecterKF_PEQ: ADFRC_M4A5_Troy_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1595,7 +1595,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1618,7 +1618,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1706,7 +1706,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1729,7 +1729,7 @@ class ADFRC_WP_M4A5_Combo_10_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_10_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1804,7 +1804,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1827,7 +1827,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_EXPS3M_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1897,7 +1897,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -1920,7 +1920,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_T2M_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -2010,7 +2010,7 @@ class ADFRC_WP_M4A5_Combo_14_BLK_Specter_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_FDE_IRL;
+			item = ADFRC_PEQ15_M4_Top_FDE_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
@@ -2033,7 +2033,33 @@ class ADFRC_WP_M4A5_Combo_14_BLK_SpecterKF_PEQ: ADFRC_M4A5_Combo_556_14_BLK
 		class LinkedItemsAcc
 		{
 			slot = PointerSlot;
-			item = ADFRC_PEQ15_BLK_IRL;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
+		};
+		class LinkedItemsMuzzle
+		{
+			slot = MuzzleSlot;
+			item = ADFRC_KAC_NT4;
+		};
+	};
+};
+
+
+
+///GL
+class ADFRC_WP_M4A5_203_BLK_Aimpoint_PEQ: ADFRC_M4A5_KAC_M203_556
+{
+	author = "Brucey";
+	class LinkedItems
+	{
+		class LinkedItemsOptic
+		{
+			slot = CowsSlot;
+			item = ADFRC_Aimpoint_Pro_T_FC;
+		};
+		class LinkedItemsAcc
+		{
+			slot = PointerSlot;
+			item = ADFRC_PEQ15_M4_Top_BLK_IRL;
 		};
 		class LinkedItemsMuzzle
 		{
