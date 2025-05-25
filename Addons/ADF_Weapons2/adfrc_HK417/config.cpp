@@ -35,4 +35,5 @@ class Mode_SemiAuto;
 class compatibleItems;
 class cfgweapons{
 #include "HK417.hpp"
+#include "Presets.hpp"
 };
