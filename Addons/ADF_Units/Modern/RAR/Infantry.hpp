@@ -1,6 +1,7 @@
 	class ADFRC_MD_AMCU_Soldier_Base;
 	class ADFRC_MD_AMCU_Soldier_Rolled_Base;
 	class ADFRC_MD_AMCU_Soldier_Tee_Base;
+	class ADFRC_MD_AMCU_Officer_Base;
 	////////////////////////Regular Units///////////////////////////////////////////////////////////
 	class ADFRC_MD_AMCU_Soldier_F: ADFRC_MD_AMCU_Soldier_Base{
 		displayName="Rifleman";
@@ -52,7 +53,7 @@
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit",};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_Rifleman",
 			"adfrc_facewear_gatorz_1",
 			"adfrc_l3h_psq36",
@@ -62,7 +63,7 @@
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_Rifleman",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -190,7 +191,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim",
 			"ADFRC_TBAS_T2_Rifleman_Pistol",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36",
@@ -200,7 +201,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim",
 			"ADFRC_TBAS_T2_Rifleman_Pistol",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36",
@@ -280,7 +281,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_Gren",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -290,7 +291,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_Gren",
 			"adfrc_facewear_ESS_1",
 			"adfrc_l3h_psq36",
@@ -359,7 +360,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_kondor_blk_blk",
 			"adfrc_l3h_psq36",
@@ -369,7 +370,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_kondor_blk_blk",
 			"adfrc_l3h_psq36",
@@ -446,7 +447,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_kondor_blk_blk",
 			"adfrc_l3h_psq36",
@@ -456,7 +457,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_kondor_blk_blk",
 			"adfrc_l3h_psq36",
@@ -534,7 +535,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		linkedItems[]={
 			"ADFRC_TBAS_T2_LMG",
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Battery",
 			"adfrc_facewear_kondor_blk_blk",
 			"ItemMap",
 			"ItemCompass",
@@ -544,7 +545,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		respawnLinkedItems[]={
 			"ADFRC_TBAS_T2_LMG",
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Battery",
 			"adfrc_facewear_kondor_blk_blk",
 			"ItemMap",
 			"ItemCompass",
@@ -553,7 +554,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"adfrc_l3h_psq36"
 		};
 	};
-	class ADFRC_MD_AMCU_Soldier_Officer: ADFRC_MD_AMCU_Soldier_Base{
+	class ADFRC_MD_AMCU_Soldier_Officer: ADFRC_MD_AMCU_Officer_Base{
 		displayName="Officer";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
@@ -685,7 +686,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_Scout",
 			"adfrc_facewear_kondor_tan_clr",
 			"adfrc_l3h_psq36",
@@ -695,7 +696,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_Scout",
 			"adfrc_facewear_kondor_tan_clr",
 			"adfrc_l3h_psq36",
@@ -783,7 +784,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_SECO",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36",
@@ -794,7 +795,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_SECO",
 			"adfrc_facewear_Balaclava_amc_1",
 			"adfrc_l3h_psq36",
@@ -877,7 +878,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_TL",
 			"adfrc_facewear_Bala_olv_ess_1",
 			"adfrc_l3h_psq36",
@@ -888,7 +889,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim",
 			"ADFRC_TBAS_T2_TL",
 			"adfrc_facewear_Bala_olv_ess_1",
 			"adfrc_l3h_psq36",
@@ -924,14 +925,14 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
 		backpack="ADFRC_BP_Placeholder_AMCU_1";
 		weapons[]={
-			"ADFRC_hk417_DMR",
+			"ADFRC_HK417_Black_DMR",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Binocular",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_hk417_DMR",
+			"ADFRC_HK417_Black_DMR",
 			"ADFRC_WP_F9_SWS",
 			"Throw",
 			"Binocular",
@@ -971,7 +972,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_DMR",
 			"adfrc_facewear_Balaclava_tan_1",
 			"adfrc_l3h_psq36",
@@ -982,7 +983,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_DMR",
 			"adfrc_facewear_Balaclava_tan_1",
 			"adfrc_l3h_psq36",
@@ -1248,7 +1249,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_Balaclava_tan_1",
 			"adfrc_l3h_psq36",
@@ -1258,7 +1259,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim",
 			"ADFRC_TBAS_T2_Eng",
 			"adfrc_facewear_Balaclava_tan_1",
 			"adfrc_l3h_psq36",
@@ -1365,7 +1366,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"FirstAidKit"
 			};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar",
 			"ADFRC_TBAS_T2_Medic",
 			"adfrc_facewear_kondor_blk_clr",
 			"adfrc_l3h_psq36",
@@ -1375,7 +1376,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar",
 			"ADFRC_TBAS_T2_Medic",
 			"adfrc_facewear_kondor_blk_clr",
 			"adfrc_l3h_psq36",
@@ -1750,7 +1751,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};    
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"H_HelmetCrew_I",
+			"ADFRC_Gentex_CVC_Olive_F1",
 			"ADFRC_TBAS_T2_Rifleman_Light",
 			"G_Combat",
 			"ItemMap",
@@ -1760,7 +1761,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"H_HelmetCrew_I",
+			"ADFRC_Gentex_CVC_Olive_F1",
 			"ADFRC_TBAS_T2_Rifleman_Light",
 			"G_Combat",
 			"ItemMap",
@@ -1826,7 +1827,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Cover_Helstar",
 			"ADFRC_TBAS_T2_Rifleman",
 			"adfrc_facewear_kondor_tan_blk",
 			"adfrc_l3h_psq36",
@@ -1836,7 +1837,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Cover_Helstar",
 			"ADFRC_TBAS_T2_Rifleman",
 			"adfrc_facewear_kondor_tan_blk",
 			"adfrc_l3h_psq36",
@@ -1904,7 +1905,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar",
 			"ADFRC_TBAS_T2_TL",
 			"adfrc_facewear_gatorz_1",
 			"adfrc_l3h_psq36",
@@ -1915,7 +1916,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar",
 			"ADFRC_TBAS_T2_TL",
 			"adfrc_facewear_gatorz_1",
 			"adfrc_l3h_psq36",
@@ -2022,7 +2023,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 		};    
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit"};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_Shemagh_cbr_ess_1",
 			"adfrc_l3h_psq36",
@@ -2032,7 +2033,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ItemRadio"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR",
 			"ADFRC_TBAS_T2_LMG",
 			"adfrc_facewear_Shemagh_cbr_ess_1",
 			"adfrc_l3h_psq36",
@@ -2865,7 +2866,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"ADFRC_17rnd_9MM_BALL_F9"
 		};
 		linkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR",
 			"ADFRC_TBAS_T2_Officer",
 			"G_Tactical_Clear",
 			"adfrc_l3h_psq36",
@@ -2876,7 +2877,7 @@ class ADFRC_MD_AMCU_Soldier_Sidearm: ADFRC_MD_AMCU_Soldier_Base{
 			"B_UavTerminal"
 		};
 		respawnLinkedItems[]={
-			"adfrc_teamwendy_exfil_cover",
+			"ADFRC_Exfil_Comtac6_Cover_PatchLR",
 			"ADFRC_TBAS_T2_Officer",
 			"G_Tactical_Clear",
 			"adfrc_l3h_psq36",

@@ -305,7 +305,7 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 	};
 	
 	class ADFRC_MD_MC_SASR_CQB: ADFRC_MD_MC_SASR_Base{
-		displayName="Commando (CQB)";
+		displayName="Operator (CQB)";
 		author="$STR_ADF_AUTHOR";
 		scope=2;
 		scopeCurator=2;
@@ -385,81 +385,189 @@ class ADFRC_MD_MC_SASR_Scout: ADFRC_MD_MC_SASR_Base{
 		};
 	};
 	
-	class ADFRC_MD_MC_SASR_Grenadier: ADFRC_MD_MC_SASR_Base{
-		displayName="Grenadier";
+	class ADFRC_MD_MC_SASR_CQB2: ADFRC_MD_MC_SASR_Base{
+		displayName="Operator (CQB2)";
 		author="$STR_ADF_AUTHOR";
-		scope=1;
-		scopeCurator=1;
-		editorPreview = "\ADF_Units\data\editorPreviews\MD\MC_SASR_Grenadier.jpg";
+		scope=2;
+		scopeCurator=2;
+		editorPreview = "\ADF_Units\data\editorPreviews\MD\MC_SASR_CQB.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		//backpack="ADFRC_Kitbag_AMCU";
 		weapons[]={
-			"ADFRC_M4A5_KAC_M203_556",
-			"ADFRC_hpII",
+			"ADFRC_HK416_556_115_EXPS_PEQ15_SUP",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"ADFRC_M4A5_KAC_M203_556",
-			"ADFRC_hpII",
+			"ADFRC_HK416_556_115_EXPS_PEQ15_SUP",
+			"ADFRC_WP_G19_FK_Comp",
 			"Throw",
 			"Put"
 		};
 		magazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		respawnMagazines[]={
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_15rnd_9MM_BALL_G19",
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"ADFRC_30Rnd_PMAG_mixed", 
+			"HandGrenade",
+			"HandGrenade",
 			"HandGrenade",
 			"HandGrenade"
 		};
 		items[] = {"FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit"};
-		respawnMagazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"HandGrenade",
-			"HandGrenade"
-		};
 		linkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
+			"adfrc_opscore_marine_Snakeskin_Tan_ct_3_Aus",
+			"ADFRC_JPC_Commando_CQB",
+			"adfrc_facewear_Bala_cbr_gatorz_1",
 			"ItemMap",
+			"ItemGPS",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio"
+			"ItemRadio",
+			"adfrc_l3h_psq36"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
+			"adfrc_opscore_marine_Snakeskin_Tan_ct_3_Aus",
+			"ADFRC_JPC_Commando_CQB",
+			"adfrc_facewear_Bala_cbr_gatorz_1",
 			"ItemMap",
+			"ItemGPS",
 			"ItemCompass",
 			"ItemWatch",
-			"ItemRadio"
+			"ItemRadio",
+			"adfrc_l3h_psq36"
 		};
 	};
+	
+	
+	class ADFRC_MD_MC_SASR_Grenadier: ADFRC_MD_MC_SASR_Base{
+		displayName="Grenadier";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		scopeCurator=1;
+		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_Grenadier.jpg";
+		role="Rifleman";
+		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
+		backpack="ADFRC_T5_backpanel";
+		weapons[]={
+			"ADFRC_WP_M4A5_203_BLK_Aimpoint_PEQ",
+			"ADFRC_WP_G19_FK_Comp",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]={
+			"ADFRC_WP_M4A5_203_BLK_Aimpoint_PEQ",
+			"ADFRC_WP_G19_FK_Comp",
+			"Throw",
+			"Put"
+		};
+		magazines[]={
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"UGL_FlareRed_F",
+		"UGL_FlareRed_F",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeWhite_Grenade_Shell",
+		"SmokeShell",
+		"ADFRC_F1_GRENADE",
+		"ADFRC_F1_GRENADE"
+		};
+		respawnMagazines[]={
+			"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_15rnd_9MM_BALL_G19", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"UGL_FlareRed_F",
+		"UGL_FlareRed_F",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeWhite_Grenade_Shell",
+		"SmokeShell",
+		"ADFRC_F1_GRENADE",
+		"ADFRC_F1_GRENADE"
+		};
+		linkedItems[]={
+			"adfrc_opscore_marine_Snakeskin_Tan_ct_4_Aus",
+			"ADFRC_JPC_PatrolCom",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap",
+			"ItemGPS",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"LaserDesignator",
+			"adfrc_l3h_psq36"
+		};
+		respawnLinkedItems[]={
+			"adfrc_opscore_marine_Snakeskin_Tan_ct_4_Aus",
+			"ADFRC_JPC_PatrolCom",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap",
+			"ItemGPS",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"LaserDesignator",
+			"adfrc_l3h_psq36"
+		};
+	};
+	
 	class ADFRC_MD_MC_SASR_MMG: ADFRC_MD_MC_SASR_Rolled_Base{
 		displayName="Gunner (Maximi)";
 		author="$STR_ADF_AUTHOR";

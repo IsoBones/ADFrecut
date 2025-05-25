@@ -315,79 +315,103 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 		};
 	};
 	
-	//////GRENADIER TO BE REVISITED
+	
 	class ADFRC_MD_AMCU_CDO_Grenadier: ADFRC_MD_AMCU_CDO_Base{
 		displayName="Grenadier";
 		author="$STR_ADF_AUTHOR";
-		scope=1;
+		scope=2;
 		scopeCurator=1;
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_Grenadier.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		//backpack="ADFRC_Kitbag_AMCU";
+		backpack="ADFRC_T5_backpanel";
 		weapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_203_BLK_Aimpoint_PEQ",
+			"ADFRC_WP_USP_WL",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]={
-			"arifle_AUG_black_arco_flash_F",
-			"ADFRC_hpII",
+			"ADFRC_WP_M4A5_203_BLK_Aimpoint_PEQ",
+			"ADFRC_WP_USP_WL",
 			"Throw",
 			"Put"
 		};
 		magazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"UGL_FlareRed_F",
+		"UGL_FlareRed_F",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeWhite_Grenade_Shell",
+		"SmokeShell",
+		"ADFRC_F1_GRENADE",
+		"ADFRC_F1_GRENADE"
 		};
 		respawnMagazines[]={
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"30Rnd_556x45_AUG_Mag_F",
-			"16Rnd_9x21_Mag",
-			"SmokeShell",
-			"SmokeShell",
-			"ADFRC_F1_GRENADE",
-			"ADFRC_F1_GRENADE"
+			"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_15rnd_9MM_BALL_USP", 
+		"ADFRC_F1_Grenade", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG",  
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"ADFRC_30Rnd_PMAG", 
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"1rnd_HE_Grenade_Shell",
+		"UGL_FlareRed_F",
+		"UGL_FlareRed_F",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeRed_Grenade_Shell",
+		"1rnd_SmokeWhite_Grenade_Shell",
+		"SmokeShell",
+		"ADFRC_F1_GRENADE",
+		"ADFRC_F1_GRENADE"
 		};
 		linkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Breacher",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_airframe_3",
+			"ADFRC_TBAS_T5_Breacher",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 	};
 	
@@ -461,13 +485,97 @@ class ADFRC_MD_AMCU_CDO_Light_Tee: ADFRC_MD_AMCU_CDO_Tee_Base{
 			"adfrc_l3h_psq36"
 		};
 		respawnLinkedItems[]={
-			"adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus",
-			"ADFRC_PC_Tan_1",
-			"adfrc_facewear_ESS_1",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+			"adfrc_opscore_fast_xp",
+			"ADFRC_TBAS_T5_LMG",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
+		};
+	};
+	
+	class ADFRC_MD_AMCU_CDO_LMG: ADFRC_MD_AMCU_CDO_Base{
+		displayName="Gunner (Minimi)";
+		author="$STR_ADF_AUTHOR";
+		scope=2;
+		scopeCurator=2;
+		editorPreview = "\ADF_Units\data\editorPreviews\MD\AMCU_CDO_MMG.jpg";
+		icon="iconManMG";
+		role="MachineGunner";
+		cost=220000;
+		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat 
+		backpack="ADFRC_BP_Tacbag_AMCU_1";
+		weapons[]={
+			"ADFRC_Minimi_Mod_PRESET_EXPS3_PEQ15",
+			"ADFRC_WP_G19_FK_Comp",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]={
+			"ADFRC_Minimi_Mod_PRESET_EXPS3_PEQ15",
+			"ADFRC_WP_G19_FK_Comp",
+			"Throw",
+			"Put"
+		};
+		magazines[]={
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_F1_Grenade",
+			"ADFRC_F1_Grenade",
+			"SmokeShell",
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_100Rnd_556_Minimi_TR",
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_100Rnd_556_Minimi_TR",
+			"ADFRC_200Rnd_556_Minimi_TR5",
+			"ADFRC_200Rnd_556_Minimi_TR5",
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_250Rnd_556_Minimi"
+		};
+		respawnMagazines[]={
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_F1_Grenade",
+			"ADFRC_F1_Grenade",
+			"SmokeShell",
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_15rnd_9MM_BALL_G19", 
+			"ADFRC_100Rnd_556_Minimi_TR",
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_100Rnd_556_Minimi_TR",
+			"ADFRC_200Rnd_556_Minimi_TR5",
+			"ADFRC_200Rnd_556_Minimi_TR5",
+			"ADFRC_250Rnd_556_Minimi",
+			"ADFRC_250Rnd_556_Minimi"
+		};
+		items[] = {"FirstAidKit", "FirstAidKit"};
+		linkedItems[]={
+			"adfrc_opscore_fast_xp",
+			"ADFRC_TBAS_T5_LMG",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
+		};
+		respawnLinkedItems[]={
+			"adfrc_opscore_fast_xp",
+			"ADFRC_TBAS_T5_LMG",
+			"adfrc_facewear_Bala_cbr_ess_1",
+			"ItemMap", 
+			"ItemCompass", 
+			"ItemWatch", 
+			"ItemRadio", 
+			"ItemGPS", 
+			"adfrc_l3h_psq36"
 		};
 	};
 	class ADFRC_MD_AMCU_CDO_PatrolCom: ADFRC_MD_AMCU_CDO_Base{

@@ -1,6 +1,5 @@
 	////////////////////////Recon Units/////////////////////////////////////////////////////////////
 	class ADFRC_MD_AMCU_Recon_Base;
-	class ADFRC_MD_AMCU_Recon_Rolled_Base;
 	class ADFRC_MD_AMCU_Sniper_Temperate_Base;
 	class ADFRC_MD_AMCU_Sniper_Tropical_Base;
 	class ADFRC_MD_AMCU_Sniper_Arid_Base;
