@@ -645,6 +645,70 @@ class CfgVehicles{
 		};
 	};
 
+    class ADFRC_Uniform_G3_Multicam_Dirty : ADFRC_Uniform_G3_AMCU {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Dirty";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_Dirty_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_Dirty_co.paa"
+		};
+	};
+
+    class ADFRC_Uniform_G3_MulticamTrop : ADFRC_Uniform_G3_AMCU {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_MulticamTrop_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_MulticamTrop_co.paa"
+		};
+	};
+
+    class ADFRC_Uniform_G3_AMP : ADFRC_Uniform_G3_AMCU {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMP_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMP_co.paa"
+		};
+	};
+
+    class ADFRC_Uniform_G3_Green : ADFRC_Uniform_G3_AMCU {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Green_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Green_co.paa"
+		};
+	};
+
 	class ADFRC_Uniform_G3_MMP : ADFRC_Uniform_G3_AMCU {
 		author                     = "$STR_ADFRC_AUTHOR";
 		uniformClass               = "ADFRC_Uniform_G3_MMP";
@@ -830,6 +894,67 @@ class CfgVehicles{
 		};
 	};
 
+    class ADFRC_Uniform_G3_Multicam_Dirty_Rolled : ADFRC_Uniform_G3_AMCU_Rolled {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Dirty_Rolled";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_Dirty_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_Dirty_co.paa",
+			""
+		};
+	};
+
+    class ADFRC_Uniform_G3_MulticamTrop_Rolled : ADFRC_Uniform_G3_AMCU_Rolled {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_MulticamTrop_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_MulticamTrop_co.paa",
+			""
+		};
+	};
+
+    class ADFRC_Uniform_G3_AMP_Rolled : ADFRC_Uniform_G3_AMCU_Rolled {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_AMP_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_AMP_co.paa",
+			""
+		};
+	};
+
+
+    class ADFRC_Uniform_G3_Green_Rolled : ADFRC_Uniform_G3_AMCU_Rolled {
+		author                     = "$STR_ADFRC_AUTHOR";
+		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+
+		hiddenSelectionsTextures[] = {
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Green_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+			"",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Green_co.paa",
+			""
+		};
+	};
+	
 	class ADFRC_Uniform_G3_MMP_Rolled : ADFRC_Uniform_G3_AMCU_Rolled {
 		author                     = "$STR_ADFRC_AUTHOR";
 		uniformClass               = "ADFRC_Uniform_G3_MMP_Rolled";

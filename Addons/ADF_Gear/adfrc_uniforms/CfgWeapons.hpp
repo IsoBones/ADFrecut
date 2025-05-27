@@ -367,6 +367,46 @@ class CfgWeapons{
 		};
 	};
 
+    class ADFRC_Uniform_G3_Multicam_Dirty: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Multicam Dirty)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_Multicam_Dirty";
+		};
+	};
+
+    class ADFRC_Uniform_G3_MulticamTrop: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Multicam Tropic)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_MulticamTrop";
+		};
+	};
+
+    class ADFRC_Uniform_G3_AMP: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (AMP)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_AMP";
+		};
+	};
+
+    class ADFRC_Uniform_G3_Green: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Green)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_Green";
+		};
+	};
+
 	class ADFRC_Uniform_G3_MMP: ADFRC_Uniform_G3_AMCU {
 		author      = "$STR_ADFRC_AUTHOR";
 		displayName = "Crye G3 Combat Dress (MMP)";
@@ -474,6 +514,46 @@ class CfgWeapons{
 
 		class ItemInfo: ItemInfo {
 			uniformClass = "ADFRC_Uniform_G3_Multicam_Rolled";
+		};
+	};
+
+    class ADFRC_Uniform_G3_Multicam_Dirty_Rolled: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Multicam Dirty, Rolled Sleeves)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_Multicam_Dirty_Rolled";
+		};
+	};
+
+    class ADFRC_Uniform_G3_AMP_Rolled: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (AMP, Rolled Sleeves)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_AMP_Rolled";
+		};
+	};
+
+    class ADFRC_Uniform_G3_Green_Rolled: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Green, Rolled Sleeves)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_Green_Rolled";
+		};
+	};
+
+    class ADFRC_Uniform_G3_MulticamTrop_Rolled: ADFRC_Uniform_G3_AMCU {
+		author      = "$STR_ADFRC_AUTHOR";
+		displayName = "Crye G3 Combat Dress (Multicam Tropic, Rolled Sleeves)";
+		picture     = "\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_G3_Multicam_Rolled.paa";
+
+		class ItemInfo: ItemInfo {
+			uniformClass = "ADFRC_Uniform_G3_MulticamTrop_Rolled";
 		};
 	};
 
