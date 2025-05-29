@@ -6256,6 +6256,7 @@ class CfgVehicles
 		mapSize=16.82;
 		crew="ADFRC_MD_AMCU_Soldier_HeliPilot";
 		textureList[] = {modern,1};
+		
 		weapons[]=
 		{
 			"CMFlareLauncher_Triples"
@@ -6278,7 +6279,7 @@ class CfgVehicles
 			"flare_launcher3_dir",
 			"flare_launcher4_dir"
 		};
-		class EventHandlers: Eventhandlers{};
+		class EventHandlers{};
 		hiddenSelections[]=
 		{
 			"camo1",
