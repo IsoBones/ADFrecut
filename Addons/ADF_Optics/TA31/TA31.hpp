@@ -35,8 +35,8 @@ class ADFRC_TA31_BLK : ItemCore
 					opticsZoomMin = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomMax = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomInit = "4 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
-					discreteDistance[] = {100};
-					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					discreteDistance[]={100,200,300,400};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 100;
 					distanceZoomMax = 100;
 					memoryPointCamera = "opticView";
@@ -55,7 +55,7 @@ class ADFRC_TA31_BLK : ItemCore
 					memoryPointCamera = "eye2";
 					opticsFlare = 0;
 					opticsDisablePeripherialVision = 0;
-					discreteDistance[] = {100};
+					discreteDistance[] = {50};
 					discreteDistanceInitIndex = 2;
 					distanceZoomMin = 50;
 					distanceZoomMax = 50;

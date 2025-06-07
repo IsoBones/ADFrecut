@@ -36,8 +36,8 @@
 					opticsZoomMin = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomMax = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomInit = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
-					discreteDistance[] = {100};
-					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					discreteDistance[]={100,200,300,400,500,600};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 100;
 					distanceZoomMax = 100;
 					memoryPointCamera = "opticView";
@@ -86,8 +86,8 @@
 					opticsZoomMin = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomMax = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
 					opticsZoomInit = "6 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
-					discreteDistance[] = {100};
-					discreteDistanceInitIndex = "1 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					discreteDistance[]={100,200,300,400,500,600};
+					discreteDistanceInitIndex=0;
 					distanceZoomMin = 100;
 					distanceZoomMax = 100;
 					memoryPointCamera = "opticView";
@@ -111,8 +111,8 @@
 					visionMode[]={};
 					opticsFlare=0;
 					opticsDisablePeripherialVision=0;
-					distanceZoomMin=300;
-					distanceZoomMax=300;
+					distanceZoomMin=50;
+					distanceZoomMax=50;
 					cameraDir="";
 				};
 				
