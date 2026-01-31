@@ -1,0 +1,16 @@
+# LICENSE
+
+This project is licensed under the Arma Public License Share Alike (APL-SA).
+
+For the complete license text, see:
+https://www.bohemia.net/community/licenses/arma-public-license-share-alike
+
+## Summary
+
+- You can use, modify, and share this code
+- You must share modifications under the same license
+- Only for use with Arma games
+- Non-commercial use only
+- Credit original authors
+
+See ASSETS_LICENSE.md for additional restrictions on 3D models.
