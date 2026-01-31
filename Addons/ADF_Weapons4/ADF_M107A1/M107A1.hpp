@@ -11,7 +11,7 @@
 		magazineReloadSwitchPhase = 0.3;
 		selectionFireAnim = "zasleh";
         swayDecaySpeed = 1.25;
-		handAnim[] = {"OFP2_ManSkeleton","\ADF_Weapons4\ADF_M107A1\anim\handanim_MRAD.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\Machineguns\MMG_02\Data\Anim\mmg_02.rtm"};
 		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.330957, 1, 80};
 		ace_overheating_mrbs = 800; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
         ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
@@ -114,6 +114,12 @@
 			minrangeprobab = 0.3;
             airateoffire = 4;
 };
+
+reloadaction = "ADFRC_GestureReloadM107";
+magazineReloadSwitchPhase = 0.5;
+drySound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_dry",0.56234133,1,15};
+reloadMagazineSound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\DMR_05_reload",0.251189,1,10};
+
 };
 
 

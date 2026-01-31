@@ -33,6 +33,8 @@ class asdg_SlotInfo;
 class recoil_default;
 class Mode_SemiAuto;
 class compatibleItems;
+
+
 #include "CfgRecoils.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
@@ -53,4 +55,5 @@ class cfgweapons{
 	class Eventhandlers;
 	};
 #include "M107A1.hpp"
+#include "Muzzle\Barrett.hpp"
 };
