@@ -99,8 +99,8 @@ class ADFRC_USP_9MM : ADFRC_USP_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
-		Uipicture = "\ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
+		picture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
+		UiPicture = "ADF_Weapons\ADFRC_USP\data\ui\gear_ADFRC_USP_ca";
 		displayName = "HK USP TAC 9mm";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;

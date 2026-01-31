@@ -6,7 +6,7 @@ class ADFRC_13Rnd_9x19_Mag : 16Rnd_9x21_Mag {
 			modelSpecialIsProxy = 1;
 			displayname = "Browning HP 13rd 9mm NATO Ball";
 			lastroundstracer = 0;
-			picture = "\ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_Mag.paa";
+			picture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_Mag.paa";
 			scope = 2;
 			tracersevery = 0;
 			mass = 2.75;

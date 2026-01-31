@@ -3,8 +3,8 @@ class ADFRC_F9_FOXTROT2: ItemCore
 		author = "Brucey";
 		scope = 2;
 		displayName = "Sig Sauer Foxtrot2 FDE";
-		picture = "\ADF_Weapons\adfrc_accessories\P320\data\ui\ADFRC_Foxtrot2_FDE.paa";
-		uipicture = "\ADF_Weapons\adfrc_accessories\P320\data\ui\ADFRC_Foxtrot2_FDE.paa";
+		picture = "ADF_Weapons\adfrc_accessories\P320\data\ui\ADFRC_Foxtrot2_FDE.paa";
+		uipicture = "ADF_Weapons\adfrc_accessories\P320\data\ui\ADFRC_Foxtrot2_FDE.paa";
 		model = "ADF_Weapons\adfrc_accessories\P320\ADFRC_Foxtrot2_FDE";
 		
 		class ItemInfo: InventoryFlashLightItem_Base_F

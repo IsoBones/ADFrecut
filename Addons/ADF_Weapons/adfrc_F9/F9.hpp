@@ -14,8 +14,8 @@ class ADFRC_F9 : ADFRC_G19_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\ADF_Weapons\ADFRC_F9\data\ui\Gear_ADFRC_P320_F_ca";
-		Uipicture = "\ADF_Weapons\ADFRC_F9\data\ui\Gear_ADFRC_P320_F_Preview_ca";
+		picture = "ADF_Weapons\ADFRC_F9\data\ui\Gear_ADFRC_P320_F_ca";
+		UiPicture = "ADF_Weapons\ADFRC_F9\data\ui\Gear_ADFRC_P320_F_Preview_ca";
 		displayName = "F9 SWS 9MM (P320 X-Carry Pro)";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;

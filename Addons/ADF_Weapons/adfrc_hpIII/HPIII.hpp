@@ -99,8 +99,8 @@ class ADFRC_HP_MK3 : ADFRC_BHP_Base
 		scope=2;
 		scopeWeapon=2;
 		scopeArsenal = 2;
-		picture = "\ADF_Weapons\ADFRC_HPIII\data\ui\gear_ADFRC_hpIII_ca";
-		Uipicture = "\ADF_Weapons\ADFRC_HPIII\data\ui\gear_ADFRC_hpIII_ca";
+		picture = "ADF_Weapons\ADFRC_HPIII\data\ui\gear_ADFRC_hpIII_ca";
+		UiPicture = "ADF_Weapons\ADFRC_HPIII\data\ui\gear_ADFRC_hpIII_ca";
 		displayName = "FN-Browning HiPower Mk3 9mm";
 		discretedistance[] = { 25 };
 		discretedistanceinitindex = 1;

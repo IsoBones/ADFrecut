@@ -6,7 +6,7 @@ class ADFRC_15rnd_9MM_BALL_USP : 16Rnd_9x21_Mag {
 			modelSpecialIsProxy = 1;
 			displayname = "HK USP 15rd 9mm NATO Ball";
 			lastroundstracer = 0;
-			picture = "\ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_Mag.paa";
+			picture = "ADF_Weapons\adfrc_g19\data\ui\Gear_ADFRC_G19_Mag.paa";
 			scope = 2;
 			tracersevery = 0;
 			mass = 4.1;
