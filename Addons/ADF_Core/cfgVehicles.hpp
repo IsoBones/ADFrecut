@@ -26,7 +26,7 @@ class CfgVehicles
 	class FLAG_UNCUT_F: FLAG_NATO_F
 	{
 		scope=1;
-		displayName="$STR_adfrc_MARKER_UNCUT";
+		displayName="Flag (Uncut)";
 		class eventHandlers
 		{
 			init="(_this select 0) setFlagTexture '\ADF_Core\data\adfuncut_flag_co.paa'";
@@ -35,7 +35,7 @@ class CfgVehicles
 	class FLAG_adfrc_F: FLAG_NATO_F
 	{
 		scope=2;
-		displayName="$STR_adfrc_MARKER_ADF";
+		displayName="Flag (Australia)";
 		class eventHandlers
 		{
 			init="(_this select 0) setFlagTexture '\ADF_Core\data\adf_flag_co.paa'";
@@ -45,7 +45,7 @@ class CfgVehicles
 	class FLAG_ADFOPFOR_F: FLAG_CSAT_F
 	{
 		scope=2;
-		displayName="$STR_adfrc_MARKER_ADFOPFOR";
+		displayName="Flag (Australia OPFOR)";
 		class eventHandlers
 		{
 			init="(_this select 0) setFlagTexture '\ADF_Core\data\adfopfor_flag_co.paa'";
