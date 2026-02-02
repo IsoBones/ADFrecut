@@ -2,26 +2,26 @@
 
 ## 3D Models (.p3d files)
 
-### Existing Models
+### Legacy Models (Protected by Developer Agreement)
 
-All existing .p3d files in this repository are provided in **binarized format only**.
-
-These models are the property of their original creators:
+All 3D models created prior to open sourcing remain the exclusive property of their original creators under the ADF Re-Cut Developer License Agreement:
 - Quiggs
 - Brucey
 - Index
 - Codex
 - exer
-- Any other community contributors who have donated models pre open-sourcing
+- Any other community contributors who donated models pre open-sourcing
 
-**These legacy assets may NOT be:**
+**These legacy models may NOT be:**
+- Extracted from the mod or git history for use in other projects
+- Modified or used to create derivative works
+- Redistributed separately from this mod
 - Reverse-engineered or debinarized
-- Extracted for use in other projects
-- Modified or redistributed separately from this mod
-- Used commercially
+- Used in other media (commercial or personal)
+- Uploaded to Steam Workshop as part of another mod
 
-These restrictions exist to protect the work of developers who 
-contributed to this project and are no longer actively maintaining it.
+These models are protected by copyright and the Developer License Agreement. Unauthorized use is prohibited.
+These restrictions exist to protect the work of developers who contributed to this project and are no longer actively maintaining it.
 
 ### New Model Contributions
 
@@ -32,8 +32,7 @@ contributed to this project and are no longer actively maintaining it.
 - Your models will be distributed in binarized format in this public repository
 - You are responsible for binarizing your own models before submission
 
-If you wish to contribute models but retain stricter licensing, please discuss 
-this with the project maintainer before submitting.
+If you wish to contribute models but retain stricter licensing, please discuss this with the project maintainer before submitting.
 
 ## Code and Configurations
 
