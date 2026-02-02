@@ -1,0 +1,100 @@
+# .github/ISSUE_TEMPLATE/bug_report.yml
+
+name: Bug Report
+description: Report a bug or issue with ADF Re-Cut
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please provide as much detail as possible to help us track it down.
+  
+  - type: input
+    id: title
+    attributes:
+      label: Bug Title
+      description: Brief, specific description of the issue
+      placeholder: "e.g ASLAV model clipping through terrain"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed description of the bug and how it affects gameplay
+      placeholder: |
+        Describe what's happening, what should happen instead, and how it impacts your experience.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we recreate this issue?
+      placeholder: |
+        1. Spawn a Bushmaster
+        2. Enter from cargo slot
+        3. Observe textures disappearing
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: gamemode
+    attributes:
+      label: Game Mode
+      description: Where did this occur?
+      options:
+        - Single Player
+        - Multiplayer (Listen Server)
+        - Multiplayer (Dedicated Server)
+        - Editor
+        - Zeus
+        - Other
+    validations:
+      required: true
+  
+  - type: input
+    id: version
+    attributes:
+      label: Mod Version
+      description: What version of ADF Re-Cut are you running?
+      placeholder: "Check Steam Workshop or @adf folder (e.g., 2.1.0)"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other Mods Active
+      description: List any other mods you had loaded when this occurred
+      placeholder: |
+        - CBA_A3
+        - ACE
+        - CUP
+        - RHSUSAF
+      render: markdown
+  
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages / RPT Logs
+      description: Paste any relevant errors from your Arma 3 RPT file
+      placeholder: "Paste error messages here if available. Pastebin links are preferred."
+      render: shell
+  
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots / Videos
+      description: Attach or link any media that demonstrates the problem
+      placeholder: "Drag and drop images here, or paste links to videos"
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might be relevant
+      placeholder: "e.g., This started happening after the last patch, only occurs at night, etc."
