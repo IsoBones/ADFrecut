@@ -749,6 +749,50 @@ class CfgWeapons{
 			mass=40;
 		};
 	};
+	class ADFRC_Uniform_G3_MC_UT: Uniform_Base
+	{
+		displayName="Combat Dress (MC)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_MC_UT_Base";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class ADFRC_Uniform_G3_MC_UT_Rolled: Uniform_Base
+	{
+		displayName="Combat Dress (MC)(Rolled)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_Rolled.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_MC_UT_Rolled_Base";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 	class ADFRC_Uniform_Ghillie_MC_Temperate: Uniform_Base{
 		displayName="Ghillie Suit (MC-Temperate)";
 		author="$STR_ADFRC_AUTHOR";
