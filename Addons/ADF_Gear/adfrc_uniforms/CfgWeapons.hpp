@@ -692,8 +692,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MC: Uniform_Base{
 		displayName="Combat Dress (Multicam)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -712,8 +712,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MC_Rolled: Uniform_Base{
 		displayName="Combat Dress (Multicam)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_Rolled.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
