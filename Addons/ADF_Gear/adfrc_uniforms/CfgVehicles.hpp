@@ -1414,7 +1414,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+		uniformClass               = "ADFRC_Uniform_MC";
 
 		hiddenSelections[] = {
 			"Gloves_1",
@@ -1457,7 +1457,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+		uniformClass               = "ADFRC_Uniform_MC_Rolled";
 
 		hiddenSelections[] = {
 			"Gloves_1",
