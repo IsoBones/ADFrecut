@@ -1414,7 +1414,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+		uniformClass               = "ADFRC_Uniform_MC";
 
 		hiddenSelections[] = {
 			"Gloves_1",
@@ -1457,7 +1457,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+		uniformClass               = "ADFRC_Uniform_MC_Rolled";
 
 		hiddenSelections[] = {
 			"Gloves_1",
@@ -1474,8 +1474,8 @@ class CfgVehicles{
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
 			"", //Sleeves down, untucked
-			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, untucked
-			"", //Sleeves rolled, tucked
+			"", //Sleeves rolled, untucked
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, tucked
 			"" //Sleeves down, tucked
 		};
 	};
