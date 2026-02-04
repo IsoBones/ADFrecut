@@ -692,8 +692,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MC: Uniform_Base{
 		displayName="Combat Dress (Multicam)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -712,8 +712,8 @@ class CfgWeapons{
 	class ADFRC_Uniform_MC_Rolled: Uniform_Base{
 		displayName="Combat Dress (Multicam)(Rolled Sleeves)";
 		author="$STR_ADFRC_AUTHOR";
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_Rolled.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {
@@ -745,6 +745,50 @@ class CfgWeapons{
 		class ItemInfo: UniformItem{
 			uniformModel="-";
 			uniformClass="ADFRC_MD_MC_SASR_Tee_Base";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class ADFRC_Uniform_G3_MC_UT: Uniform_Base
+	{
+		displayName="Combat Dress (MC)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_MC_UT_Base";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class ADFRC_Uniform_G3_MC_UT_Rolled: Uniform_Base
+	{
+		displayName="Combat Dress (MC)(Rolled)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		picture="\ADF_Gear\adfrc_uniforms\ui\ADFRC_Uniform_MC_Rolled.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {
+			"camo"
+		};
+		hiddenSelectionsTextures[] = {
+			"\A3\Characters_F\Common\Suitpacks\data\suitpack_soldier_blufor_co.paa"
+		};
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ADFRC_Uniform_G3_MC_UT_Rolled_Base";
 			containerClass="Supply40";
 			mass=40;
 		};

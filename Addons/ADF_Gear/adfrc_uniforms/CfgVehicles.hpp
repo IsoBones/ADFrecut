@@ -1414,7 +1414,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam";
+		uniformClass               = "ADFRC_Uniform_MC";
 
 		hiddenSelections[] = {
 			"Gloves_1",
@@ -1457,7 +1457,7 @@ class CfgVehicles{
 		
 		
 		model                      = "\adf_gear\adfrc_uniforms\crye_g3.p3d";
-		uniformClass               = "ADFRC_Uniform_G3_Multicam_Rolled";
+		uniformClass               = "ADFRC_Uniform_MC_Rolled";
 
 		hiddenSelections[] = {
 			"Gloves_1",
@@ -1474,8 +1474,8 @@ class CfgVehicles{
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
 			"", //Sleeves down, untucked
-			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, untucked
-			"", //Sleeves rolled, tucked
+			"", //Sleeves rolled, untucked
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa", //Sleeves rolled, tucked
 			"" //Sleeves down, tucked
 		};
 	};
@@ -1504,6 +1504,66 @@ class CfgVehicles{
 		hiddenSelectionsTextures[]={
 			"\ADF_Gear\adfrc_uniforms\data\uniform_mc_flagless_co.paa",
 			"\ADF_Gear\adfrc_uniforms\data\basicbody_sasr_co.paa"
+		};
+	};
+	class ADFRC_Uniform_G3_MC_UT_Base: ADFRC_Uniform_G3_AMCU
+	{
+		displayName="Combat Dress (MC)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		uniformClass="ADFRC_Uniform_G3_MC_UT";
+		hiddenSelections[]=
+		{
+			"Gloves_1",
+			"Pants_1",
+			"Skin_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
+			"",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+            "\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa",
+			"",
+			"",
+			""
+		};
+	};
+	class ADFRC_Uniform_G3_MC_UT_Rolled_Base: ADFRC_Uniform_G3_AMCU
+	{
+		displayName="Combat Dress (MC)(Rolled)(Untucked)";
+		author="ADF Recut";
+		scope=1;
+		scopeCurator=1;
+		scopeArsenal=2;
+		uniformClass="ADFRC_Uniform_G3_MC_UT_Rolled";
+		hiddenSelections[]=
+		{
+			"Gloves_1",
+			"Pants_1",
+			"Shoes_1",
+			"Shirt_1",
+			"Shirt_2",
+			"Shirt_3",
+			"Shirt_4"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Gloves_Grey_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Pants_Multicam_co.paa",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Boots_Coyote_Brown_co.paa",
+            "",
+			"\ADF_Gear\adfrc_uniforms\data\Crye_G3_Shirt_Multicam_co.paa",
+			"",
+			""
 		};
 	};
 	class ADFRC_MD_SASR_Sniper_Temperate_Base: ADFRC_Soldier_Base_F{

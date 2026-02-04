@@ -13,7 +13,7 @@
 		editorPreview = "\ADF_Units\data\editorPreviews\MD\MC_SASR_F.jpg";
 		role="Rifleman";
 		//threat[]={0.80000001,0.1,0.1}; <---For us to tweak the threat it poses to other units https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#threat
-		backpack="ADFRC_BP_hyrdration_AMCU_1";
+		backpack="ADFRC_BP_hydration_AMCU_1";
 		weapons[]={
 			"ADFRC_WP_M4A5_Troy_14_SpecterKF_PEQ",
 			"ADFRC_WP_G19_FK_Comp",
